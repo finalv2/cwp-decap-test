@@ -1,8 +1,8 @@
 local_backend: true
 backend:
   name: 'github'
-  repo: 'bloom-works/child-welfare-playbook'
-  branch: '2025-rewrite'
+  repo: 'bloom-works/child-welfare-playbook-v2'
+  branch: 'main'
 
 media_folder: 'images'
 
