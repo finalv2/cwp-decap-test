@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+---
+
+{% set blog_posts = collections.blog %}
+
+<div class="page-banner" data-bg-color="dark">
+    <div class="page-banner-inner">
+        <h1>Blog</h1>
+    </div>
+</div>
+
+<div class="breadcrumb-wrapper">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li aria-current="page">
+                <div>
+                    <span>/</span>
+                    <strong>Blog</strong>
+                </div>
+            </li>
+        </ol>
+    </nav>
+</div>
+
+<div class="card-grid-wrapper">
+    <div>
+        <ul class="card-grid">
+            {% for post in blog_posts %}
+                <li>
+                    <a class="card" data-type="post" href="/blog/{{ post.fileSlug }}">
+                        <h3>{{ post.title }}</h3>
+                        <p>Posted on {{ post.date | readableDate }}</p>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

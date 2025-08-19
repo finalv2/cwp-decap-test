@@ -1,0 +1,25 @@
+{
+  "name": "child-welfare-playbook",
+  "version": "2.0.0",
+  "scripts": {
+    "start": "npx -y pagefind --site _site && npx @11ty/eleventy --serve --watch --output=_site",
+    "build": "npx @11ty/eleventy --output=_site && npx -y pagefind --site _site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "common-tags": "^1.8.2",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-attrs": "^4.3.1"
+  },
+  "devDependencies": {
+    "eleventy-auto-cache-buster": "^0.8.1",
+    "eleventy-plugin-svg-sprite": "^2.4.3",
+    "luxon": "^3.6.1"
+  }
+}

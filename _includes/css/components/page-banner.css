@@ -1,0 +1,75 @@
+/* Banner with image on main section pages (e.g. "All Topics") */
+.page-banner {
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-block: calc(var(--font-base-leading) * 3);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: -5vw;
+  background: url("/images/header-bg.svg");
+  rotate: -6deg;
+}
+
+.page-banner-img {
+  position: absolute;
+  left: 30%;
+  top: 0;
+  bottom: 0;
+  right: -35%;
+  background: var(--background) center center no-repeat;
+  background-size: cover;
+  mask: url("/images/banners/mask.svg") no-repeat;
+  mask-size: 100%;
+  mask-position: 10% 20%;
+}
+
+.page-banner .l-wrapper {
+    position: relative;
+    z-index: 3;
+}
+
+.page-banner p {
+    max-inline-size: calc(var(--t-measure) * 0.75);
+    text-wrap: balance;
+    background: rgb(255 255 255 / 0.5);
+}
+
+.page-banner h2 {
+  color: var(--c-blue);
+}
+
+.page-banner h1 {
+    text-align: left;
+    color: var(--c-base);
+    max-inline-size: 38ch;
+}
+
+.page-banner[data-type="story"] {
+  background-image: var(--story-gradient),
+                    var(--bg-image);
+}
+
+.page-banner[data-bg-image] h1 {
+    max-inline-size: 48rem;
+}
+
+.page-banner[data-bg-color="dark"] *,
+.page-banner[data-type="story"] * {
+    color: #fff;
+}
+
+.page-banner-topic h1 {
+    color: var(--t-base);
+}
+
+.page-banner-subhead {
+    margin-block-start: 0.5rem;
+}

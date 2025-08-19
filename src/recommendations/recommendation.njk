@@ -1,0 +1,143 @@
+---
+layout: default
+pagination:
+  data: recommendations.recommendations
+  size: 1
+  alias: recommendation
+permalink: "/recommendations/{{ recommendation.title }}/"
+---
+
+<div class="page-banner">
+    <div class="page-banner-inner">
+        <h1>{{ recommendation.heading }}</h1>
+    </div>
+</div>
+<div class="breadcrumb-wrapper">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <span>/</span>
+                <a href="/recommendations">Plays</a>
+            </li>
+            <li aria-current="page">
+                <span>/</span>
+                <strong>{{ recommendation.heading }}</strong>
+            </li>
+        </ol>
+    </nav>
+</div>
+<div class="page-content">
+    <div class="toc">
+        <div class="toc-inner">
+            <h3>On this page</h3>
+            <hr />
+            <ul>
+                <li>
+                    <a href="#about">
+                        {{ recommendation.aboutTitle or "About this recommendation" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="#how">
+                        {{ recommendation.howTitle or "How to do this" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="#cost">
+                        {{ recommendation.costTitle or "Anticipated costs and benefits" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="#cost">
+                        {{ recommendation.outcomeTitle or "Outcome data" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="#whos">
+                        {{ recommendation.whoTitle or "Who's doing this" }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-content-prose l-stack" data-padded>
+        {% if recommendation.about %}
+            <section>
+                <h2 class="page-h2" id="about">
+                    {{ recommendation.aboutTitle or "About this recommendation" }}
+                </h2>
+                {{ recommendation.about | markdown | safe }}
+            </section>
+        {% endif %}
+        {% if recommendation.how %}
+            <section>
+                <h2 class="page-h2" id="how">
+                    {{ recommendation.howTitle or "How to do this" }}
+                </h2>
+                {{ recommendation.how | markdown | safe }}
+            </section>
+        {% endif %}
+        {% if recommendation.costs %}
+            <section>
+                <h2 class="page-h2" id="cost">
+                    {{ recommendation.costTitle or "Anticipated costs and benefits" }}
+                </h2>
+                <div class="cost-benefits-table" data-header>
+                    <div>
+                        <h3>Costs</h3>
+                    </div>
+                    <div>
+                        <h3>Benefits</h3>
+                    </div>
+                </div>
+                <div class="cost-benefits-table" data-body>
+                    <div>
+                        <ul>
+                            {% for cost in recommendation.costs %}
+                                <li>{{ cost }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            {% for benefit in recommendation.benefits %}
+                                <li>{{ benefit }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+        {% if recommendation.outcome %}
+            <section>
+                <h2 class="page-h2" id="outcome">
+                    {{ recommendation.outcomeTitle or "Outcome data" }}
+                </h2>
+                {{ recommendation.outcome | markdown | safe }}
+            </section>
+        {% endif %}
+        {% if recommendation.who %}
+            <section>
+                <h2 class="page-h2" id="whos">
+                    {{ recommendation.whoTitle or "Who's doing this" }}
+                </h2>
+                {% if recommendation.who.number %}
+                    <p><strong>{{ recommendation.who.number }} of 54</strong> states and territories have implemented this
+                    recommendation.</p>
+                {% endif %}
+                {% if recommendation.who.image %}
+                    <img src="{{ recommendation.who.image }}" alt="" role="presentation" />
+                {% endif %}
+                {% if recommendation.who.what %}
+                    {{ recommendation.who.what | markdown | safe }}
+                {% endif %}
+            </section>
+        {% endif %}
+        {% if recommendation.extraContent %}
+            {{ recommendation.extraContent | markdown | safe }}
+        {% endif %}
+    </div>
+</div>

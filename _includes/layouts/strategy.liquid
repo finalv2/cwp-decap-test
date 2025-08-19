@@ -1,0 +1,60 @@
+---
+layout: layouts/default.njk
+pagefind:
+  type: Strategy
+  image: /images/play.svg
+---
+
+<div class="l-wrapper play-wrapper">
+
+{%- capture pagefindMetaTags -%}
+  {%- for tag in tags -%}
+    {{ topics[tag].title }}
+    {%- if not loop.last -%}, {% endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+<div class="strategy-header">
+  <div class="strategy-title">
+    <span class="subhead">Strategy</span>
+    <h2 data-pagefind-meta="title">{{ title }}</h2>
+  </div>
+
+  <div class="topic-list">
+    <h3 class="subhead">Topics</h3>
+    <ul>
+      {%- for topic in collections.topics -%}
+        {%- for tag in tags -%}
+          {%- if topic.data.id == tag -%}
+            <li><a href="{{ topic.url }}">{{ topic.data.title }}</a></li>
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+<div class="l-section">
+<div class="l-stack" data-pagefind-meta="topics:{{ pagefindMetaTags }}">
+  {{ content }}
+</div>
+</div>
+
+  {% if resources %}
+    <h3>Resources</h3>
+    <div class="l-grid">
+      {% for relatedResource in resources %}
+        {% assign targetResource = collections.resources | find: relatedResource %}
+
+        {%- include "components/card.liquid",
+          type: "resource",
+          filetype: targetResource.data.filetype,
+          title: targetResource.data.title,
+          description: targetResource.content,
+          url: targetResource.data.url
+        -%}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

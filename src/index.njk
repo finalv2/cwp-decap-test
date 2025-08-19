@@ -1,0 +1,64 @@
+---
+layout: default
+title: Child welfare playbook
+path: home
+class: home
+---
+
+{% set hero = home.home.hero %}
+{% set topicSection = home.home.topicSection %}
+{% set features = home.home.features %}
+{% set mission = home.home.mission %}
+
+
+<div class="home-banner">
+    <div class="home-banner-image">
+        <img src="{{ hero.image | replace('/src', '') }}" role="presentation" />
+    </div>
+    <div class="home-banner-content">
+        <h1>{{ hero.title }}</h1>
+        <p>{{ hero.content }}</p>
+        <form action="/search" method="GET" class="home-search">
+            <input type="text" name="q" id="q" placeholder="Search the playbook" />
+            <input type="submit" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="home-whats-new-wrapper">
+    <h2>{{ features.whatsNew }}</h2>
+    <div class="home-whats-new" style="background-image: url({{ features.largeFeature.image | replace('/src', '') }})">
+        <h3>{{ features.largeFeature.title }}</h3>
+        <p>{{ features.largeFeature.content }}</p>
+        <a href="{{ features.largeFeature.link }}" class="button">{{ features.largeFeature.linkText }}</a>
+    </div>
+</div>
+
+<div class="home-topic">
+    <h2 class="page-h2">Popular Topics</h2>
+    <div class="card-grid">
+        {% for topic in topicSection.topics %}
+            {% for candidateTopic in topics.topics %}
+                {% if topic === candidateTopic.title %}
+                    <a class="card" href="/topics/{{ candidateTopic.title }}">
+                        <div class="card-icon">
+                            <img src="{{ candidateTopic.image | replace('/src', '') }}" role="presentation" />
+                        </div>
+                        <div class="card-title">{{ candidateTopic.hero.title }}</div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="home-mission">
+    <div>
+        <img src="{{ mission.image | replace('/src', '') }}" alt="{{ mission.title }}" />
+    </div>
+    <div class="home-mission-content">
+        <h2>{{ mission.title }}</h2>
+        <div class="page-content-prose l-stack-basic">{{ mission.content | markdown | safe }}</div>
+    </div>
+
+</div>
