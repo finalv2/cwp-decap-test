@@ -9,14 +9,17 @@
   max-inline-size: unset;
   font-size: var(--font-xl-size);
   line-height: var(--font-xl-leading);
+  overflow: hidden;
 }
 
 .home-banner::before {
   content: "";
   position: absolute;
-  inset: -5vw;
+  inset: -30vw;
+  margin-block-start: -10vh;
   background: url("/images/header-bg.svg");
   rotate: -12deg;
+  z-index: -1;
 }
 
 .home-banner .l-wrapper {

@@ -16,6 +16,9 @@
   inset: -5vw;
   background: url("/images/header-bg.svg");
   rotate: -12deg;
+    margin-block-start: -10vh;
+
+  z-index: -1;
 }
 
 .page-banner-img {
