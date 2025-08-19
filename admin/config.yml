@@ -4,6 +4,24 @@ backend:
 media_folder: 'images'
 
 collections:
+  - name: "homepage"
+    label: "Homepage"
+    create: false
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "_data/home.yml"
+        fields:
+          - { label: "Page title", name: "title", widget: "string" }
+          - { label: "Banner header", name: "bannerHeader", widget: "string" }
+          - { label: "Banner subheader", name: "bannerSubheader", widget: "string" }
+          - { label: "Topics section header", name: "topicHeader", widget: "string" }
+          - { label: "Topics section subheader", name: "topicSubheader", widget: "string" }
+          - { label: "Stories section header", name: "storyHeader", widget: "string" }
+          - { label: "Stories section subheader", name: "storySubheader", widget: "string" }
+          - { label: "About section header", name: "aboutHeader", widget: "string" }
+          - { label: "About section content", name: "aboutContent", widget: "markdown" }
+
   - name: "topics"
     label: "Topics"
     folder: "topics"

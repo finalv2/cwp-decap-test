@@ -1,29 +1,15 @@
 ---
 layout: layouts/default
-title: Child welfare playbook
 class: home
 tags: ["noTopic"]
 pagefind:
   type: Page
-bannerHeader: Welcome to the Child Welfare Playbook.
-bannerSubheader: This playbook is a collection of proven, practical strategies that you can use to prevent family separation and improve outcomes for children and youth in the child welfare system.
-topicHeader: Explore topics
-topicSubheader: Find strategies in key topics of child welfare.
-storyHeader: Read stories
-storySubheader: Read reports and case studies from across the field of child welfare.
-aboutHeader: About the playbook
-aboutContent: >-
-  All young people should get to grow up safely and with people who care about them. This playbook gives you strategies to prevent family separation and improve outcomes for children and youth in the child welfare system. Each strategy includes guidance, examples, and resources for implementing it in your location.
-
-  The playbook is the product of a working group of child welfare professionals from every state, many tribes, and most territories. We meet every month to develop and refine its strategies.
-
-  <a href="/community/">Learn more about the working group.</a>
 ---
 
 <section class="home-banner">
   <div class="l-wrapper">
-    <h1>{{ bannerHeader }}</h1>
-    <p>{{ bannerSubheader }}
+    <h1>{{ home.bannerHeader }}</h1>
+    <p>{{ home.bannerSubheader }}
   </div>
   <img src="/images/banners/baby.png" alt="A young African-American child hugging her father. Her eyes are closed with a content expression." />
 </section>
@@ -33,8 +19,8 @@ aboutContent: >-
   <div class="l-wrapper">
     <header class="home-header">
       <div>
-        <h2>{{ topicHeader }}</h2>
-        <p>{{ topicSubheader }}</p>
+        <h2>{{ home.topicHeader }}</h2>
+        <p>{{ home.topicSubheader }}</p>
       </div>
       <button class="button" data-type="secondary">More topics</button>
     </header>
@@ -59,8 +45,8 @@ aboutContent: >-
   <div class="l-wrapper">
     <header class="home-header">
       <div>
-        <h2>{{ storyHeader }}</h2>
-        <p> {{ storySubheader }}</p>
+        <h2>{{ home.storyHeader }}</h2>
+        <p> {{ home.storySubheader }}</p>
       </div>
     </header>
 
@@ -82,8 +68,8 @@ aboutContent: >-
 
 <section class="l-section">
   <div class="l-wrapper">
-    <h2>{{ aboutHeader }}</h2>
-    {{ aboutContent }}
+    <h2>{{ home.aboutHeader }}</h2>
+    {{ home.aboutContent }}
   </div>
 </section>
 
