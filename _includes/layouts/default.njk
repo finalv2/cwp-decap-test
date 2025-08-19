@@ -19,6 +19,18 @@
     <link rel="stylesheet" type="text/css" href="/theme.css"/>
   </head>
   <body{% if class %} class="{{ class }}"{% endif %}>
+    <svg class="sr-only">
+    <defs>
+      <filter id="tornEdge">
+        <feTurbulence type="fractalNoise" id="turbulence" baseFrequency=".04" numOctaves="1"></feTurbulence>
+        <feDisplacementMap id="displacement" in="SourceGraphic" scale="3"></feDisplacementMa>
+      </filter>
+      <filter id="tornEdgeSmall">
+        <feTurbulence type="fractalNoise" id="turbulence" baseFrequency=".1" numOctaves="2"></feTurbulence>
+        <feDisplacementMap id="displacement" in="SourceGraphic" scale="2"></feDisplacementMa>
+      </filter>
+    </defs>
+  </svg>
     {% include "partials/navbar.njk" %}
     <div class="content" data-pagefind-body>
       {{ content | md | safe }}

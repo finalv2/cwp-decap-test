@@ -1,7 +1,11 @@
 ---
 title: Permanency Planning with Kin Caregivers in Oklahoma
 date: 2025-01-23T12:00:00.000
-author: Child Welfare Playbook Team
+author: Bloom Works
+description: Learn about Oklahoma’s amended licensure requirements and their impact on adoption and guardianship outcomes with kin caregivers.
+type: Research report
+tags: ["caregiver-licensing", "story"]
+layout: "layouts/story"
 ---
 
 

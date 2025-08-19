@@ -1,7 +1,11 @@
 ---
 title: Engagement in Voluntary Prevention Services
 date: 2025-04-06T12:00:00.000
-author: Child Welfare Playbook Team
+author: Bloom Works
+type: Blog post
+layout: "layouts/story"
+description: Learn about effective strategies for reaching and engaging people in voluntary prevention services.
+tags: ["prevention", "story"]
 ---
 
 > The biggest thing to make families show up to stuff is let them plan it, because they are so excited about the planning process. They tell their neighbors, they tell their other friends, and **we max out and we can’t even get any more people in the door because so many people are showing up**. 

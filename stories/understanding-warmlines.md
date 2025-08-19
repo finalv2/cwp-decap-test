@@ -1,7 +1,11 @@
 ---
 title: "Understanding warmlines: key features and lessons learned"
+description: Learn about warmlines as a way to prevent child welfare system involvement, reduce reports to hotlines, and connect families to prevention services.
 date: 2025-07-10T12:00:00.000
-author: Child Welfare Playbook Team
+type: Research report
+author: Bloom Works
+tags: ["story", "prevention"]
+layout: "layouts/story"
 ---
 
 ![Thumbnail image of the warmlines component map.](/images/warmlines-component-map.png)
