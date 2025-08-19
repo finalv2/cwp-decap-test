@@ -4,13 +4,19 @@
 }
 
 .home-banner {
-  background: var(--c-blue) right bottom no-repeat;
   position: relative;
   padding-block: 8vw;
   max-inline-size: unset;
   font-size: var(--font-xl-size);
   line-height: var(--font-xl-leading);
-  color: #fff;
+}
+
+.home-banner::before {
+  content: "";
+  position: absolute;
+  inset: -5vw;
+  background: url("/images/header-bg.svg");
+  rotate: -12deg;
 }
 
 .home-banner .l-wrapper {
@@ -19,6 +25,7 @@
 
 .home-banner h1 {
   max-inline-size: max(35rem, 50%);
+  color: var(--c-blue);
 }
 
 .home-banner img {

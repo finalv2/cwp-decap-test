@@ -1,7 +1,15 @@
 .footer {
-    background: var(--c-blue);
-    color: #fff;
+    color: var(--c-blue);
     position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: -5vw;
+  background: url("/images/header-bg.svg");
+  rotate: -12deg;
 }
 
 .footer-wave {

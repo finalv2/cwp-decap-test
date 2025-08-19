@@ -2,6 +2,7 @@
 id: prevention
 title: Prevention
 icon: barricade
+featured: true
 layout: "layouts/topic.njk"
 summary: Strengthen and support families and communities to avoid the need for child welfare involvement.
 ---
