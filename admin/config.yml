@@ -1,7 +1,6 @@
 backend:
-  name: 'github'
-  repo: 'bloom-works/child-welfare-playbook-v2'
-  branch: 'main'
+  name: git-gateway
+  branch: main
 media_folder: 'images'
 
 collections:
