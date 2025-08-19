@@ -15,15 +15,15 @@
   position: absolute;
   inset: -5vw;
   background: url("/images/header-bg.svg");
-  rotate: -6deg;
+  rotate: -12deg;
 }
 
 .page-banner-img {
   position: absolute;
-  left: 30%;
+  left: 50%;
   top: 0;
   bottom: 0;
-  right: -35%;
+  right: -10vw;
   background: var(--background) center center no-repeat;
   background-size: cover;
   mask: url("/images/banners/mask.svg") no-repeat;

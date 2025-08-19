@@ -2,6 +2,7 @@
 
 .nav {
   border-block-end: 1px solid #fff;
+  padding-block: 0.5rem;
 }
 
 .nav ul {
@@ -24,6 +25,7 @@
 .nav h1 {
   font-size: var(--font-3xl-size);
   color: #fff;
+  margin: 0;
 }
 
 .nav-logo {
