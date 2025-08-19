@@ -20,6 +20,7 @@
   border: 3px solid var(--c-blue);
   border-radius: var(--radius-lg);
   filter: url("#tornEdge");
+  z-index: -1;
 }
 
 .topic-card div {
