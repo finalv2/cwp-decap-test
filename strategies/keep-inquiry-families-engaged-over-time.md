@@ -1,13 +1,12 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Keep inquiry families engaged over time
-order: 3
 tags:
   - strategy
   - recruitment
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 3
 ---
-
 Families often take years between first showing interest in fostering and actually applying. When someone fills out an inquiry form, they might be ready to become a caregiver right away. Or they might need time and more information to think about such a big commitment.
 
 But if too much time passes before they get a response, potential families may get discouraged or change their mind. Keep all inquiries open and, if you have the bandwidth to do so, stay in regular, gentle contact to help families stay engaged until they're ready.
@@ -16,7 +15,7 @@ But if too much time passes before they get a response, potential families may g
 
 ### Respond quickly to new inquiries
 
-**Set a response time of one to seven days for new inquiries.** Track your response times. If they start getting slower, work with your team to respond faster.
+**Set a response time of 1 to 7 days for new inquiries.** Track your response times. If they start getting slower, work with your team to respond faster.
 
 **Create an automated email with links to fostering information.** Include ways to support foster youth without becoming a foster parent. Provide a printed version for families who don't use email.
 
@@ -53,4 +52,4 @@ But if too much time passes before they get a response, potential families may g
 * **Washington, D.C.** adds new inquiries to their newsletter and checks in with families quarterly. They don't close inquiries and sometimes have families become licensed after being on their inquiry list for a decade.  
 * **Michigan** sends interested families an email newsletter with agency news, information about children and youth that need placements, and ways to get involved. They use electronic calendar reminders to track check-ins with potential foster families.  
 * **Oklahoma** checks back with inquiry families within a week, at 14 days, and at 30 days.   
-* **Ohio** requires all inquiries to receive a response within seven days and has developed a packet of materials for new inquiries.  
+* **Ohio** requires all inquiries to receive a response within seven days and has developed a packet of materials for new inquiries.
