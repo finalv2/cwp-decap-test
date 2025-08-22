@@ -19,7 +19,7 @@ Use shared electronic lists and visual mapping tools to ensure comprehensive kin
 
 ## How to do this
 
-**Create shared electronic lists for team coordination.** Include kin names, their relationship to the child, their contact information, and their contact method preferences. Add brief but relevant context notes, including the last contact date and team member who made contact. Make the list accessible to the whole team, including those outside the agency like CASAs (court-appointed special advocates), attorneys, parents, and foster parents. 
+**Create shared electronic lists for team coordination.** Include kin names, their relationship to the child or youth, their contact information, and their contact method preferences. Add brief but relevant context notes, including the last contact date and team member who made contact. Make the list accessible to the whole team, including those outside the agency like CASAs (court-appointed special advocates), attorneys, parents, and foster parents. 
 
 If IT restrictions prevent file sharing, get creative with your solutions, like monthly emailed updates or collectively updating lists at planning meetings. Coordinate with tribal partners on record-keeping for Native children.
 
