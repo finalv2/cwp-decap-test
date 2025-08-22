@@ -8,4 +8,4 @@ tags:
   - resource
   - retention
 ---
-Insights on foster home recruitment for state agencies from the Center for State Child Welfare Data.
+Insights for public agencies on foster home recruitment, based on a study from the Center for State Child Welfare Data.
