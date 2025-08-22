@@ -22,11 +22,11 @@ Process check requests faster by handling them efficiently and removing administ
 * Convert your form to a fillable PDF or web form.  
 * If you need to make system IT upgrades, consider using a web-based system for accepting and fulfilling these requests in the meantime. Make sure to allow multiple users in a state to make requests.
 
-**Use a general inbox for requests.** Sending requests to an email address that only one person can access creates delays when that staff member goes on vacation, gets sick, or retires. Make sure that multiple staff members can access the email address for requests, rather than directing requests to a specific individual.
+**Use a general inbox for requests.** Sending requests to an email address that only 1 person can access creates delays when that staff member goes on vacation, gets sick, or retires. Make sure that multiple staff members can access the email address for requests, rather than directing requests to a specific individual.
 
 **Let agencies attest they have consent.** Requiring a separate consent form for each individual being checked with every request creates extra paperwork and delays. Instead, allow the requesting agency to check a box to confirm that they have consent on file. This dramatically reduces the time and complexity of completing checks.
 
-**Don't require notarized or witnessed signatures.** It's hard for a social worker to gather all household applicants together at one time to visit a notary or witness, and this step doesn't provide any safety benefits. Remove requirements for notarized or witnessed signatures on consent forms. Accept regular signatures instead.
+**Don't require notarized or witnessed signatures.** It's hard for a social worker to gather all household applicants together at once to visit a notary or witness, and this step doesn't provide any safety benefits. Remove requirements for notarized or witnessed signatures on consent forms. Accept regular signatures instead.
 
 **Remove processing fees.** For some states, it's so difficult to issue a check to another state (even for a few dollars) that many licensing workers report paying these fees out of their own pockets. Even if they can pay, fees create extra work and delay the process. Remove any fees you charge other agencies for processing requests.
 
