@@ -13,7 +13,7 @@ Kin caregivers who are already licensed and familiar with the system can make ex
 
 **Create a clear path for kin caregivers to become general caregivers.** Make sure they don't have to start the licensing process from scratch.
 
-**Have case workers discuss this option with kin caregivers.** Encourage them to bring up the possibility of becoming a general foster home. Make a note when a kin caregiver has capacity for additional children in their home, even if they currently have only a kin-specific license.
+**Have caseworkers discuss this option with kin caregivers.** Encourage them to bring up the possibility of becoming a general foster home. Make a note when a kin caregiver has capacity for additional children in their home, even if they currently have only a kin-specific license.
 
 **Check for matching kin caregivers when you can't find general caregivers.** If your system doesn't allow you to search across both kinds of caregivers, consider changing this when it's time to update your case management system.
 
@@ -21,7 +21,7 @@ Kin caregivers who are already licensed and familiar with the system can make ex
 
 **Colorado's [Kin Connect](https://kinconnect.org/) Child Placing Agency** specializes in encouraging and helping relative caregivers to become generally licensed caregivers.
 
-**Washington, D.C.** case workers track kin caregivers' capacity and milestones on a monthly basis. If they see that a kin caregiver may have extra capacity after a child or youth returns home, they start conversations about becoming a general foster home instead of closing.
+**Washington, D.C.** caseworkers track kin caregivers' capacity and milestones on a monthly basis. If they see that a kin caregiver may have extra capacity after a child or youth returns home, they start conversations about becoming a general foster home instead of closing.
 
 **Indiana** case workers are encouraged to discuss the possibility of taking on additional foster placements with kin caregivers on an individual basis.
 
