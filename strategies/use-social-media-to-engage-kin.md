@@ -7,10 +7,10 @@ tags:
   - kin-engagement
 order: 12
 resources:
-  - DC social media use policy
   - Diligent search checklist
   - A Second Chance, Inc.'s family finding approach
   - "Kinship Support Network session: Using social media"
+  - DC Child and Family Services social media policy
 ---
 Social media can help you identify kin that traditional search tactics might miss. Make social media searches part of your regular process for locating and connecting with kin.
 
