@@ -1,13 +1,12 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Make recruitment materials representative of your community
-order: 4
 tags:
   - strategy
   - recruitment
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 4
 ---
-
 Some potential foster parents may feel discouraged or excluded before they even submit an inquiry. The way foster parenting is portrayed in marketing materials, forms, and the process can send unintended signals about who should (and shouldn't) be a foster parent.
 
 Updating your recruitment materials, forms, and processes to reflect your community will help you recruit more diverse foster families and give you more good placement options.
@@ -20,7 +19,7 @@ Updating your recruitment materials, forms, and processes to reflect your commun
 
 **Ask for pronouns and preferred names on your inquiry and application forms, and use them.** Make it normal for everyone to share pronouns when meeting potential families at orientation or training. You may need to use legal names for background checks, but otherwise use preferred names.
 
-**Make sure that inquiry and application forms work for households with single applicants and households with two or three applicants.** This supports multi-generational households.
+**Make sure that inquiry and application forms work for households with single applicants and households with 2 or 3 applicants.** This supports multi-generational households.
 
 **Prioritize hiring staff who reflect your community's demographics and languages.** This improves communication and helps families feel more comfortable throughout the process.
 
