@@ -13,7 +13,7 @@ Many child welfare systems license hundreds of families who only want to adopt i
 
 ## How to do this
 
-**Update your recruitment materials, messaging, and inquiry forms to emphasize fostering over adoption.** Remove references to adoption from your inquiry form. Create email and letter templates to respond to families who only want to adopt. Redirect them to children and youth who are legally-free and need families. Make sure adoption materials show the children who actually need adoptive homes. Remove or replace any photos or references to babies and toddlers.
+**Update your recruitment materials, messaging, and inquiry forms to emphasize fostering over adoption.** Remove references to adoption from your inquiry form. When choosing photos for your adoption materials, show children who actually need adoptive homes and remove or replace photos or references to babies and toddlers. For families who only want to adopt, create an email and letter template that redirects them to children and youth who are legally-free and need families. 
 
 **Train staff to set expectations with families who want to foster to adopt.** Case workers should have multiple conversations about what families can expect. They should also clarify that fostering isn't right for families who only want to adopt an infant.
 
