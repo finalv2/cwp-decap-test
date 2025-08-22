@@ -23,6 +23,6 @@ Kin caregivers who are already licensed and familiar with the system can make ex
 
 **Washington, D.C.** caseworkers track kin caregivers' capacity and milestones on a monthly basis. If they see that a kin caregiver may have extra capacity after a child or youth returns home, they start conversations about becoming a general foster home instead of closing.
 
-**Indiana** case workers are encouraged to discuss the possibility of taking on additional foster placements with kin caregivers on an individual basis.
+**Indiana** caseworkers are encouraged to discuss the possibility of taking on additional foster placements with kin caregivers on an individual basis.
 
-**Oklahoma** case workers are trained to discuss options with kin caregivers. Through training classes for both kin caregivers and foster parents, kin caregivers are exposed to the idea of general foster care and can interact with foster parent caregivers.
+**Oklahoma** caseworkers are trained to discuss options with kin caregivers. Through training classes for both kin caregivers and foster parents, kin caregivers are exposed to the idea of general foster care and can interact with foster parent caregivers.
