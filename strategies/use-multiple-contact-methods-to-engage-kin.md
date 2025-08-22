@@ -1,14 +1,13 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Use multiple contact methods to engage kin
-order: 9
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 9
 ---
-
-Personal preferences, technology literacy, and mobility all impact which communication channels kin can use. If you are only using one method to reach kin, such as mailing physical letters, you are not reaching everyone you need to find. Plus, people may think letters from unknown government agencies are fraudulent, so having multiple ways to contact and verify your identity helps build trust.
+Personal preferences, technology literacy, and mobility all impact which communication channels kin can use. If you are only using 1 method to reach kin, such as mailing physical letters, you are not reaching everyone you need to find. Plus, people may think letters from unknown government agencies are fraudulent, so having multiple ways to contact and verify your identity helps build trust.
 
 ## How to do this
 
@@ -20,4 +19,4 @@ Personal preferences, technology literacy, and mobility all impact which communi
 
 ## This strategy in action
 
-**Some agencies** use customer service tools to communicate with kin via email, text message, and social media. These tools can often handle the security, document retention, and discovery needs of an agency while providing a convenient single interface for employees and the ability for teams to collaborate (like one employee jumping into messaging with kin when another is on leave).
+**Some agencies** use customer service tools to communicate with kin via email, text message, and social media. These tools can often handle the security, document retention, and discovery needs of an agency while providing a convenient single interface for employees and the ability for teams to collaborate (like 1 employee jumping into messaging with kin when another is on leave).
