@@ -1,9 +1,11 @@
 ---
-title: The dynamics of foster home recruitment and retention
+layout: layouts/resource.njk
+title: Foster home retention and recruitment data
 filetype: pdf
-url: https://fcda.chapinhall.org/wp-content/uploads/2018/10/Foster-Home-Report-Final_FCDA_October2018.pdf
-layout: "layouts/resource.njk"
-tags: ["resource", "retention"]
+url: https://drive.google.com/file/d/1829uH7KkjOHSWrH6umpySMvONqQHpyk2/view
+file: /images/foster-home-recruitment-data-2018.pdf
+tags:
+  - resource
+  - retention
 ---
-
-Insights for public agencies based on evidence and analyzing longitudinal administrative data.
+Insights on foster home recruitment for state agencies from the Center for State Child Welfare Data.
