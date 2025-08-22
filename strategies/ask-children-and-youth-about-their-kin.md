@@ -26,9 +26,9 @@ Children and youth are often placed in general foster care or group homes when t
 
 **Indiana** is piloting a practice of asking child welfare workers for a child or youth's input whenever they call the placement desk.
 
-**New Mexico** increased initial kinship placements significantly in one year by shifting to practices that focus on the child or youth. This includes asking about their supportive connections. 
+**New Mexico** increased initial kinship placements significantly in 1 year by shifting to practices that focus on the child or youth. This includes asking about their supportive connections. 
 
-During the COVID-19 pandemic, **Rhode Island** set up Zoom meetings with each group home facility and met with each child or youth one-on-one to discuss their placement options. They successfully moved many children and youth from group homes into kin placements.
+During the COVID-19 pandemic, **Rhode Island** set up Zoom meetings with each group home facility and met with each child or youth 1-on-1 to discuss their placement options. They successfully moved many children and youth from group homes into kin placements.
 
 **Fairfax County, Virginia** conducts family finding for children and youth annually and at every placement change.
 
