@@ -1,6 +1,6 @@
 ---
 layout: layouts/resource.njk
-title: Child welfare social media policy (DC)
+title: DC Child and Family Services social media policy
 filetype: pdf
 url: https://drive.google.com/file/d/18NDPMKB9nPn-xZZExi3MMaGlgmN7KHuQ/view
 file: /images/dc-child-family-social-media-policy.pdf
