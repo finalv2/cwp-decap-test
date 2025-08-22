@@ -13,7 +13,7 @@ Since child welfare cases appear before judges regularly, court hearings provide
 
 ## How to do this
 
-**Use court hearings as checkpoints for efforts to engage kin.** At each step of the case, work with the courts to have a bench card with questions for judges asking about activities, challenges, and next steps for identifying and connecting with kin. This should be done at the first protective custody order, the shelter care hearing, the adjudicatory hearing, the dispositional hearing, and the permanency hearing.
+**Use court hearings as checkpoints for efforts to engage kin.** Work with the courts to create a bench card with questions for judges to ask about activities, challenges, and next steps for identifying and connecting with kin. This should be done at each step of the case, including the first protective custody order, the shelter care hearing, the adjudicatory hearing, the dispositional hearing, and the permanency hearing.
 
 **Emphasize the importance of following up on these efforts to judges.** This isn't a box-checking exercise: if there hasn’t been a thorough attempt to find and connect with a child or youth’s kin, judges should request timely follow-ups.
 
