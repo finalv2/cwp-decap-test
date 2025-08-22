@@ -20,11 +20,11 @@ Social media can help you identify kin that traditional search tactics might mis
 
 **Search and engage kin through social media platforms.** Search popular social media platforms to find known kin of the child or youth, such as parents or older siblings, focusing on the most up-to-date platforms. Look through public messages, photos, and friend lists of these known connections to identify more kin, including who comments or reacts to posts.
 
-**Send clear, professional messages to potential connections.** Make sure your first message is clear, concise, and includes the case worker's name and number in case this is the only contact you have. Be careful not to reveal identifying details about the child or youth, or the case.
+**Send clear, professional messages to potential connections.** Make sure your first message is clear, concise, and includes the caseworker's name and number in case this is the only contact you have. Be careful not to reveal identifying details about the child or youth, or the case.
 
 ## This strategy in action
 
-**New Mexico** increased initial kinship placements from 3% to over 40% in one year by shifting to practices that included using social media to identify and reach kin. They encourage workers to create second, separate social media accounts under their name that they use exclusively for work.
+**New Mexico** increased initial kinship placements from 3% to over 40% in 1 year by shifting to practices that included using social media to identify and reach kin. They encourage workers to create second, separate social media accounts under their name that they use exclusively for work.
 
 **A Second Chance, Inc.** uses Facebook and other forms of social media to identify at least 40 kin for each child. 
 
