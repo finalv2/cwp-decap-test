@@ -1,20 +1,19 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Hire current caregivers to help train new caregivers
-order: 2
 tags:
   - strategy
   - retention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 2
 ---
-
 Current caregivers who do not work for your department can provide additional empathy and perspectives that help new families decide to sign up or expand their placement preferences. 
 
-Hire current caregivers to assist as co-trainers in new or continuing trainings, orientations, or early home visits. This increases recruitment and retention for both new families and the caregivers who are hired.
+Hire current caregivers to assist as co-leads in new or continuing trainings, orientations, or early home visits. This increases recruitment and retention for both new families and the caregivers who are hired.
 
 ## How to do this
 
-**Develop hiring processes for current caregivers.** Work with your HR department to develop contracts for hiring and paying current caregivers as co-trainers.
+**Develop hiring processes for current caregivers.** Work with your HR department to develop contracts for hiring and paying current caregivers as training co-leads.
 
 **Set clear role expectations.** Establish clear expectations early about the roles for hired caregivers at trainings or other events. They should complement, not replace, experienced trainers and staff.
 
