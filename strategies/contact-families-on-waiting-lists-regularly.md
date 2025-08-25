@@ -1,20 +1,19 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Contact families on waiting lists regularly
-order: 7
 tags:
   - strategy
   - prevention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 7
 ---
-
 When demand for prevention services is greater than the supply, families end up on waiting lists. Families may lose interest while they’re waiting, or they may not be ready to participate when services become available.
 
 Contact families regularly through calls, texts, or emails to keep them engaged.
 
 ## How to do this
 
-**Set a standard timeline for offering services.** For example, you may determine that you should reach out to families within one to three business days. If it takes longer than that to offer services to a family, consider them to be on the waiting list.
+**Set a standard timeline for offering services.** For example, you may determine that you should reach out to families within 1 to 3 business days. If it takes longer than that to offer services to a family, consider them to be on the waiting list.
 
 **Figure out what staffing and contact systems you need.** For example, you can use automated updates for basic information and have staff contact them directly to build relationships. Prioritize your list so that families with greater need are more likely to get services first.
 
@@ -30,6 +29,6 @@ Contact families regularly through calls, texts, or emails to keep them engaged.
 
 **Hennepin County, Minnesota** has a dedicated employee who stays in touch with people on their wait list.
 
----
+- - -
 
-~~The Prevention section is generously supported by the Doris Duke Foundation as part of the [OPT-In for Families Initiative](https://www.ddf-opt-in.org/).~~  
+~~The Prevention section is generously supported by the Doris Duke Foundation as part of the [OPT-In for Families Initiative](https://www.ddf-opt-in.org/).~~
