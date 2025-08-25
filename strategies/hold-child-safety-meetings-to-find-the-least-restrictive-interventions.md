@@ -18,7 +18,7 @@ Hold child safety meetings that include the family, other supportive people, and
 
 **Hold a child safety meeting for any safety concern.** This applies ever after emergency interventions, like removing the child.
 
-**Schedule the meeting quickly.** Hold the meeting before implementing a safety intervention whenever possible. If an emergency decision was made, hold the meeting within two business days.
+**Schedule the meeting quickly.** Hold the meeting before implementing a safety intervention whenever possible. If an emergency decision was made, hold the meeting within 2 business days.
 
 **Include the right people.** Bring together parents, children (when appropriate), other supportive people, and agency staff.
 
