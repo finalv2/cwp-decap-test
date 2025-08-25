@@ -1,20 +1,19 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Help kin caregivers access financial assistance
-order: 3
 tags:
   - strategy
   - caregiver-licensing
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 3
 ---
-
 Kin caregivers may face financial barriers that make it difficult to provide for children and youth in their care, even though they're willing and able to provide safe, loving homes. License kin caregivers regardless of their financial situation and connect them with financial assistance and support programs.
 
 ## How to do this
 
 **License kin caregivers without financial requirements.** Don't require minimum income or financial stability to approve kin. Instead, focus on the caregiver's ability to meet the physical, emotional, medical, and educational needs of the child.
 
-**Connect kin caregivers to assistance at the start.** Provide a list of benefits that families may qualify for, or offer one-on-one application assistance. Examples include TANF, SNAP, unemployment insurance, social security, and VA benefits.
+**Connect kin caregivers to assistance at the start.** Provide a list of benefits that families may qualify for, or offer 1-on-1 application assistance. Examples include TANF, SNAP, unemployment insurance, social security, and VA benefits.
 
 **Provide application assistance that’s customized to your area.** This includes providing translated materials and local program information.
 
