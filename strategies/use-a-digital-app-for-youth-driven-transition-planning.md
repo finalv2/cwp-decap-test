@@ -17,7 +17,7 @@ A digital app can empower youth to define their own goals and collaborate with t
 
 ## How to do this
 
-**Start with a pilot approach.** Work with a small team to [prototype and pilot a web app](https://www.aspentechpolicyhub.org/wp-content/uploads/Glow-Up-App-Proposal.pdf). Focus on one or two goal areas that the youth needs or is interested in. Consider partnering with other states and organizations to reduce costs and work at scale.
+**Start with a pilot approach.** Work with a small team to [prototype and pilot a web app](https://www.aspentechpolicyhub.org/wp-content/uploads/Glow-Up-App-Proposal.pdf). Focus on 1 or 2 goal areas that the youth needs or is interested in. Consider partnering with other states and organizations to reduce costs and work at scale.
 
 **Include key features for youth ownership.** Use flexible goal-setting that allows youth to adapt goals suggested by the state or set their own goals. Include suggested steps to help youth break down big goals into achievable steps, links to related resources to help youth access programs and assistance, and progress tracking with reminders and digital achievement badges to motivate continued engagement.
 
