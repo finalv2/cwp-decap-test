@@ -1,13 +1,12 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Hire prevention navigators
-order: 3
 tags:
   - strategy
   - prevention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 3
 ---
-
 Prevention services are complex and families may find them difficult to navigate. Even when support is available, they may not engage with it. Hire prevention navigators to help families understand and access important prevention services.
 
 ## How to do this
@@ -16,7 +15,7 @@ Prevention services are complex and families may find them difficult to navigate
 
 **Make navigation the person's primary responsibility.** Jurisdictions reported more success when navigation was their only job.
 
-**Create a structure that allows for flexibility.** Parents don't keep business hours, so navigators need to be available at other times. Provide clear boundaries and backup support to avoid having them on-call  at all times. Encourage navigators to respond quickly, but make it clear they don't have to respond immediately.
+**Create a structure that allows for flexibility.** Parents don't keep business hours, so navigators need to be available at other times. Provide clear boundaries and backup support to avoid having them on-call at all times. Encourage navigators to respond quickly, but make it clear they don't have to respond immediately.
 
 **Set clear performance measures and expectations.** Track how many contacts navigators make and how many people respond. Monitor last contact dates and track who they closed out of services. For a new program, you may need to hire the best possible navigators and give them freedom to contact families as appropriate, then set standards.
 
