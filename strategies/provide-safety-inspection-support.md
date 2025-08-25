@@ -20,7 +20,7 @@ Safety inspections often delay the licensing process when families don't know wh
 
 **Collect critical safety items and give them to families who need them.** The most frequently needed items include fire extinguishers, baby gates, first aid kits, and medication lock boxes. You can collect these items through safety inspection drives, similar to backpack or food drives. Work with local partners like churches to host drive events or fundraisers, or use Family Preservation Service dollars to buy items.
 
-**Keep a stash of essentials in locations that are easy to access.** You might use a supply closet or the trunk of a case worker's car. You can also provide important items at training or orientation.
+**Keep a stash of essentials in locations that are easy to access.** You might use a supply closet or the trunk of a caseworker's car. You can also provide important items at training or orientation.
 
 **Simplify how you resolve minor issues.** Allow families to send photos to confirm that they have resolved minor pending inspection items rather than requiring return visits for validation. Create a list of inspection items that can be resolved by photograph, such as beds, smoke detectors, and home repairs. Tell families with minor pending items to send a photo once the item has been resolved and store the photo with the family's file. If you use a foster family online portal, request the ability for families to upload photo attachments.
 
