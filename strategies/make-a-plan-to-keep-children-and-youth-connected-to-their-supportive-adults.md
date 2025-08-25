@@ -35,7 +35,7 @@ But if a supportive adult can't serve as the caregiver, it requires more intenti
 * "Who do you think about when you lay your head on your pillow at night?"  
 * For older youth: "If you had a flat tire, who would you call?"
 
-**Remember this isn't a one-time conversation.** Start with maybe 5 minutes, then spend more time as the child or youth opens up and builds trust. Continue the conversation throughout the entire course of the case, as they may develop new supportive relationships as they grow.
+**Remember this is an ongoing conversation.** Start with maybe 5 minutes, then spend more time as the child or youth opens up and builds trust. Continue the conversation throughout the entire course of the case, as they may develop new supportive relationships as they grow.
 
 ### Reach out to each supportive adult
 
@@ -49,7 +49,7 @@ But if a supportive adult can't serve as the caregiver, it requires more intenti
 
 **Talk with the supportive adult, the youth, and the caregiver about their needs and their relationships with each other.** Discuss ways the adult can support the youth based on what you learn. For example, if they used to go to baseball games together, find out whether the adult can take the youth to games now. Or if the adult has a car and free time in the afternoon, talk about whether they can pick up the youth from school. 
 
-Talk to the caregiver about their needs also. They might have ideas of support that could lighten their load or gaps in care that need to be filled. They may also have insight into the youth’s current emotional state and what support a meaningful connection could provide. Be sure to learn about their relationship with the adult. If there are difficulties in their relationship, discuss ways to offer support.
+Talk to the caregiver about their needs also. They might have ideas of support that could lighten their load or gaps in care that need to be filled. They may also have insight into the youth’s current emotional state and what support a meaningful connection could provide. Be sure to learn about their relationship with the supportive adult. If there are difficulties in their relationship, discuss ways to offer support.
 
 **Draft an initial plan for children and youth to stay in contact with supportive adults.** Use what you’ve learned from your conversations to make a plan that makes sense based on their needs and their relationships.
 
