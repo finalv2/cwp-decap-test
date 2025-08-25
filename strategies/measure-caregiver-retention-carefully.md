@@ -23,6 +23,6 @@ Focus your retention efforts on caregivers who drop out due to frustration or bu
 
 ## This strategy in action
 
-**Chapin Hall** provides a framework for categorizing retention reasons in their report "The Dynamics of Foster Home Recruitment and Retention." It includes seven specific categories.
+**Chapin Hall** provides a framework for categorizing retention reasons in their report "The Dynamics of Foster Home Recruitment and Retention." It includes 7 specific categories.
 
 **Washington State** tracks detailed termination reasons. They track more than 20 specific categories.[](https://fcda.chapinhall.org/wp-content/uploads/2018/10/Foster-Home-Report-Final_FCDA_October2018.pdf)
