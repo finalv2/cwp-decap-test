@@ -1,14 +1,13 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Provide training for supportive adults
-order: 3
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 3
 ---
-
-Supportive adults want to be helpful, but they may not know how. Offer training and support to supportive adults to help them be a more active and supportive presence in the lives of children in your system.
+Supportive adults want to be helpful, but they may not know how. Offer training and support to supportive adults to help them be a more active and supportive presence in the lives of children or youth in your system.
 
 ## How to do this
 
