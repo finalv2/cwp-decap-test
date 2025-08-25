@@ -1,13 +1,12 @@
 ---
+layout: layouts/strategy.liquid
+templateEngineOverride: md,njk
 title: Find ways to recognize and appreciate caregivers
-order: 5
 tags:
   - strategy
   - retention
-layout: layouts/strategy.liquid
-templateEngineOverride: md,njk
+order: 5
 ---
-
 Caregivers often leave the system when they feel overextended and undervalued. Recognize current caregivers through awards, events, welcome bags, and other gestures so they feel appreciated and supported. This may also attract potential foster parents or encourage kin to become caregivers through positive word-of-mouth.
 
 ## How to do this
@@ -20,10 +19,10 @@ Caregivers often leave the system when they feel overextended and undervalued. R
 
 ## This strategy in action
 
-**Washington, DC** has "squads" of foster families who support one another with monthly get-togethers and events that include recognition awards and modest prizes. The squads build relationships and help one another through challenges. Each year, there is a competition to see which squad recruits the most new families, with a ceremony and gift card prizes for the winning squad.
+**Washington, DC** has "squads" of foster families who support each other with monthly get-togethers and events that include recognition awards and modest prizes. The squads build relationships and help each other through challenges. Each year, there is a competition to see which squad recruits the most new families, with a ceremony and gift card prizes for the winning squad.
 
 **Frederick County, MD** hosts an annual adults-only reception with free childcare, drive-through celebrations with catered meals, drive-by caravans with signs and music, recognition baskets with games and snacks, and welcome baskets for new families with handbooks, mugs, and books.
 
 **Ohio** uses billboards to recognize individual foster families. Some families take friends to visit their billboard.
 
-**Indiana** works with local businesses to make discounts and offers available for foster families. 
+**Indiana** works with local businesses to make discounts and offers available for foster families.
