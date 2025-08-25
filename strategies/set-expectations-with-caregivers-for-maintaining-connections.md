@@ -10,25 +10,25 @@ resources:
   - Oklahoma policy on visits with parents and siblings
   - Washington State policy on visits with relatives
 ---
-Caregivers often don't realize they're expected to help maintain a child or youth's connections with siblings and other important people. Without clear expectations, these relationships can fade during a child's time in care. Set clear expectations to help children and youth keep these important relationships throughout their time in care.
+Caregivers often don't realize they're expected to help maintain a child or youth's connections with siblings and other important people. Without clear expectations, these relationships can fade while they are in care. Set clear expectations to help children and youth keep these important relationships throughout their time in care.
 
 ## How to do this
 
 ### Establish formal policies requiring sibling contact
 
-Create and enforce policies that require regular sibling visits and ongoing efforts to reunite siblings when they're separated. Copy policy language that specifies minimum contact requirements, like Oklahoma's comprehensive policy or Washington's framework that requires two or more in-person visits per month.
+Create and enforce policies that require regular sibling visits and ongoing efforts to reunite siblings when they're separated. Copy policy language that specifies minimum contact requirements, like Oklahoma's comprehensive policy or Washington's framework that requires 2 or more in-person visits per month.
 
 Include key protections in your policy:
 
 * Sibling visits can't be limited or used as sanctions for behavior.  
-* Visits continue after termination of parental rights.  
+* Visits must continue after termination of parental rights.  
 * Visit plans must be developed within 14 days.
 
 ### Connect and train caregivers for collaboration
 
 When siblings are separated in care, connect their caregivers right away (unless there are case-specific reasons not to). Caregivers should collaborate to help keep siblings connected through invitations to school events, birthdays, and other normal interactions.
 
-Case workers should encourage caregivers to collaborate by checking in regularly about how sibling visits are going. If caregivers are hesitant, case workers should set up an initial visit to break the ice. Caregivers should be expected to facilitate sibling connections through phone calls, video chats, and in-person visits. They shouldn't be allowed to opt out of this responsibility.
+Caseworkers should encourage caregivers to collaborate by checking in regularly about how sibling visits are going. If caregivers are hesitant, caseworkers should set up an initial visit to break the ice. Caregivers should be expected to facilitate sibling connections through phone calls, video chats, and in-person visits. They shouldn't be allowed to opt out of this responsibility.
 
 ### Include connection expectations in training
 
