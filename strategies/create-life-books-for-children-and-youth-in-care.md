@@ -21,4 +21,4 @@ Children's histories, relationships, and important memories can easily get lost 
 
 ## This strategy in action
 
-**Frederick County, MD** prints Life Book templates and puts them in a three-ring binder.
+**Frederick County, MD** prints Life Book templates and puts them in a 3-ring binder.
