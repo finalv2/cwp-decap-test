@@ -1,9 +1,12 @@
 ---
+layout: layouts/resource.njk
 title: Life book templates
 filetype: pdf
-url: https://childwelfareplaybook.com/static/assets/Lifebook-floral-water-color.pdf
-layout: "layouts/resource.njk"
-tags: ["resource", "supportive-relationships", "no-meta"]
+url: https://drive.google.com/file/d/11PYPnK2M65Qa-FeSW1WfrP9kQtopfeYo/view
+file: /images/life-book-for-youth.pdf
+tags:
+  - resource
+  - supportive-relationships
+  - no-meta
 ---
-
-Caregivers and children can use one of these 3 designed templates to capture milestones, relationships, and memories.
+Caregivers and youth can use a life book to capture milestones, relationships, and memories.
