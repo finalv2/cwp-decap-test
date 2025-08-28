@@ -1,7 +1,7 @@
 :root {
-    --c-base: rgb(51 50 64);
+    --c-base: #575B60;
 
-    --c-primary: oklch(0.3723 0.1612 257.28);
+    --c-primary: #0052AF;
     --c-blue: var(--c-primary, #003993);
     --c-gray-200: rgb(229 231 235);
     --c-gray-300: rgb(39 39 39);
@@ -10,6 +10,8 @@
     --c-faded-blue: #6495DA;
 
     --story-gradient: linear-gradient(to bottom, rgb(88 39 7 / 0.45) 30%, rgb(88 39 7 / 0.9) 80%);
+
+    --c-headline: #3A4450;
 
     --c-prose: #374151;
     --c-prose-headings: #111827;
