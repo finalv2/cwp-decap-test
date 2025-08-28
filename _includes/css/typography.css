@@ -107,7 +107,6 @@ h2, .h2 {
 h3, .h3 {
   font-size: var(--font-3xl-size);
   line-height: var(--font-3xl-leading);
-  color: var(--c-accent);
   --l-stack-gap: calc(var(--t-paragraph) * 2);
 }
 
@@ -127,10 +126,6 @@ h4, .h4 {
 
 h4, .h4, h5, .h5, dt, h6, .h6 {
   font-size: var(--t-base);
-}
-
-h5, .h5, dt, h6, .h6 {
-  color: var(--c-accent);
 }
 
 h6, .h6 {

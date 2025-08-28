@@ -14,10 +14,13 @@
 .page-banner::before {
   content: "";
   position: absolute;
-  inset: -5vw;
-  rotate: -12deg;
-  margin-block-start: -10vh;
-  z-index: -1;
+  inset-block-end: calc(var(--t-paragraph) * -2);
+  inset-inline-end: 0;
+  opacity: 0.15;
+  background: url("images/banners/bg-scribble.svg") center bottom no-repeat;
+  background-size: contain;
+  block-size: 100%;
+  inline-size: 60vw;
 }
 
 .page-banner-img {
@@ -29,8 +32,18 @@
   background: var(--background) center center no-repeat;
   background-size: cover;
   mask: url("/images/banners/mask.svg") no-repeat;
-  mask-size: 100%;
-  mask-position: 10% 20%;
+  mask-size: 50vw;
+  mask-position: 50% 15%;
+}
+
+.page-banner-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: url("/images/banners/banner-circle-1.svg") center center no-repeat;
+  background-size: contain;
+  mix-blend-mode: overlay;
 }
 
 .page-banner .l-wrapper {
@@ -42,10 +55,6 @@
     max-inline-size: calc(var(--t-measure) * 0.75);
     text-wrap: balance;
     background: rgb(255 255 255 / 0.5);
-}
-
-.page-banner h2 {
-  color: var(--c-blue);
 }
 
 .page-banner h1 {
