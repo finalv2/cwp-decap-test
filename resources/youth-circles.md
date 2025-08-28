@@ -8,4 +8,4 @@ tags:
   - resource
   - supportive-relationships
 ---
-Describes Hawaii’s process for arranging voluntary, facilitated group conversations to help youth plan for independence.
+Hawaii’s process for arranging voluntary, facilitated group conversations to help youth plan for independence.
