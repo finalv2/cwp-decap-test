@@ -51,10 +51,13 @@
     z-index: 3;
 }
 
+.page-banner h2,
 .page-banner p {
-    max-inline-size: calc(var(--t-measure) * 0.75);
+  max-inline-size: 40vw;
+}
+
+.page-banner p {
     text-wrap: balance;
-    background: rgb(255 255 255 / 0.5);
 }
 
 .page-banner h1 {

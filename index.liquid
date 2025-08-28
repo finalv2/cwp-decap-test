@@ -1,19 +1,20 @@
 ---
 layout: layouts/default
+title: Child welfare playbook
 class: home
 tags: ["noTopic"]
+image: /images/banners/home.jpg
 pagefind:
   type: Page
 ---
 
-<section class="home-banner">
+<div class="page-banner">
   <div class="l-wrapper">
-    <h1>{{ home.bannerHeader }}</h1>
-    <p>{{ home.bannerSubheader }}
+    <h2>{{ home.bannerHeader }}</h2>
+    <p>{{ home.bannerSubheader }}</p>
   </div>
-  <img src="/images/banners/baby.png" alt="A young African-American child hugging her father. Her eyes are closed with a content expression." />
-</section>
-
+  <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
+</div>
 
 <section class="l-section">
   <div class="l-wrapper">
@@ -22,23 +23,23 @@ pagefind:
         <h2>{{ home.topicHeader }}</h2>
         <p>{{ home.topicSubheader }}</p>
       </div>
-      <button class="button" data-type="secondary">More topics</button>
     </header>
     <div class="l-grid">
-      {% for topic in collections.topics %}
-        {% if topic.data.featured %}
-          {% capture topicUrl %}/topics/{{ topic.data.id }}{% endcapture %}
-{% include "components/topic-card.liquid",
-  type: "topic",
-  icon: topic.data.icon,
-  title: topic.data.title,
-  summary: topic.content,
-  url: topicUrl
-%}
-{% endif %}
-{% endfor %}
-</div>
-</div>
+      <div class="l-grid topic-grid">
+        {%- for topic in collections.topics -%}
+          {% unless topic.url == false %}
+            {%- include "components/topic-card.liquid",
+              url: topic.url,
+              id: topic.data.id,
+              icon: topic.data.icon,
+              title: topic.data.title,
+              summary: topic.data.summary
+            -%}
+          {% endunless %}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="l-section">
