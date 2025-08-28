@@ -17,7 +17,7 @@
   position: absolute;
   content: "";
   inset: 0;
-  border: 3px solid var(--c-blue);
+  border: 2px solid var(--c-blue);
   border-radius: var(--radius-lg);
   filter: url("#tornEdge");
   z-index: -1;
