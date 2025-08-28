@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   branch: main
 media_folder: 'images'
-
 collections:
   - name: "homepage"
     label: "Homepage"
@@ -12,16 +11,14 @@ collections:
         name: "home"
         file: "_data/home.yml"
         fields:
-          - { label: "Page title", name: "title", widget: "string" }
           - { label: "Banner header", name: "bannerHeader", widget: "string" }
-          - { label: "Banner subheader", name: "bannerSubheader", widget: "string" }
+          - { label: "Banner subheader", name: "bannerSubheader", widget: "markdown", minimal: true }
           - { label: "Topics section header", name: "topicHeader", widget: "string" }
-          - { label: "Topics section subheader", name: "topicSubheader", widget: "string" }
+          - { label: "Topics section subheader", name: "topicSubheader", widget: "markdown", minimal: true }
           - { label: "Stories section header", name: "storyHeader", widget: "string" }
-          - { label: "Stories section subheader", name: "storySubheader", widget: "string" }
+          - { label: "Stories section subheader", name: "storySubheader", widget: "markdown", minimal: true }
           - { label: "About section header", name: "aboutHeader", widget: "string" }
           - { label: "About section content", name: "aboutContent", widget: "markdown" }
-
   - name: "topics"
     label: "Topics"
     folder: "topics"
@@ -77,8 +74,8 @@ collections:
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
       - { label: "Name of resource", name: "title", widget: "string" }
       - { label: "File type", name: "filetype", widget: "select", options: ["pdf", "doc", "link"] }
-      - { label: "Link to resource", name: "url", widget: "string" }
-      - { label: "Upload resource", name: "file", widget: "file"}
+      - { label: "Link to resource", name: "url", widget: "string", required: false }
+      - { label: "Upload resource", name: "file", widget: "file", media_library: { media_folder: "/assets/"}, required: false}
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "general-engagement", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["resource"], hint: "Add your topics here"}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "meetings"
