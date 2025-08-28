@@ -26,7 +26,7 @@ Create plans of safe care to connect families to parenting classes, safety guida
 
 **Create guidance for healthcare providers.** Give clear criteria for a child abuse report versus a plan of safe care.
 
-**Create a plan of safe care template.** The plan must address both the infant's health needs and the family's addiction treatment needs.
+**Create a plan of safe care template.** The plan must address both the [infant's health needs](https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr) and the family's addiction treatment needs.
 
 **Collect only required data.** This includes the number of infants for whom you created a plan and made referrals for services. 
 
