@@ -19,7 +19,7 @@ pagefind:
     <h3>Strategies</h3>
     <ul class="l-stack-basic">
     {%- for play in collections[id + '-strategies'] -%}
-    <li class="play-card">
+    <li class="strategy-card">
       <a href="{{ play.url }}">{{ play.data.title }}</a>
     </li>
     {%- endfor -%}
@@ -31,7 +31,7 @@ pagefind:
       <h4>{{ collections.topics[item].data.title }}</h4>
       <ul class="l-stack-basic">
        {%- for play in collections[item + '-strategies'] -%}
-          <li class="play-card">
+          <li class="strategy-card">
             <a href="{{ play.url }}">{{ play.data.title }}</a>
           </li>
         {%- endfor -%}

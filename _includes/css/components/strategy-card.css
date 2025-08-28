@@ -20,11 +20,11 @@
   transition: scale 0.1s ease-out;
 }
 
-:is(.card, .play-card):is(:focus, :hover) {
+:is(.card, .strategy-card):is(:focus, :hover) {
   scale: 1.03;
 }
 
-:is(.card, .play-card):active {
+:is(.card, .strategy-card):active {
   scale: 1.01;
 }
 
@@ -150,7 +150,8 @@
 
 /* Play card */
 
-.play-card {
+.strategy-card a {
+  text-decoration: none;
   padding: 1rem 2rem;
   display: block;
   border-radius: var(--radius-lg);
@@ -164,21 +165,17 @@
               color 50ms ease-out;
 }
 
-.play-card::before {
+.strategy-card a::before {
   position: absolute;
   content: "";
   inset: 0;
-  border: 0.25rem solid var(--c-blue);
+  border: 2px solid var(--c-blue);
   border-radius: var(--radius-lg);
   filter: url("#tornEdge");
   z-index: -1;
 }
 
-.play-card a {
-  text-decoration: none;
-}
-
-.play-card:is(:hover, :focus) {
+.strategy-card a:is(:hover, :focus) {
   background: var(--c-blue);
   color: #fff;
 }
