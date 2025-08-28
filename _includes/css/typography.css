@@ -52,7 +52,7 @@ body {
 /* Set bold weight according to imported font */
 
 b, strong {
-  font-weight: var(--t-bold);
+  font-weight: var(--font-bold);
 }
 
 /* Heading styles */
