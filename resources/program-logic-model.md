@@ -1,9 +1,11 @@
 ---
-title: "Logic model: Oregon tribal family coach"
+layout: layouts/resource.njk
+title: "Oregon tribal family coach: Logic model"
 filetype: pdf
 url: https://drive.google.com/file/d/1W8Q1M14JaWD0rOd37XmFD48QQ879ay0-/view?usp=drive_link
-layout: "layouts/resource.njk"
-tags: ["resource", "prevention"]
+file: https://drive.google.com/file/d/13i_thxow_Dd1dkJyS2Zz-uaPmLlahWXx/view?usp=share_link
+tags:
+  - resource
+  - prevention
 ---
-
-Describes pathway for families with tribal support, from being identified for intervention to becoming self sufficient.
+Expected steps to connect families with tribal support.
