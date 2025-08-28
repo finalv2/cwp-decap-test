@@ -41,7 +41,7 @@ pagefind:
 </div>
 </div>
 
-  {% if resources %}
+  {%- if resources -%}
     <h3>Resources</h3>
     <div class="l-grid">
       {% for relatedResource in resources %}
@@ -56,5 +56,5 @@ pagefind:
         -%}
       {% endfor %}
     </div>
-  {% endif %}
+  {%- endif -%}
 </div>
