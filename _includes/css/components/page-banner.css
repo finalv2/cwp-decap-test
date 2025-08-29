@@ -1,7 +1,5 @@
 /* Banner with image on main section pages (e.g. "All Topics") */
 .page-banner {
-  display: flex;
-  align-items: flex-end;
   background-repeat: no-repeat;
   background-position: right center;
   padding-block: calc(var(--font-base-leading) * 3);
@@ -9,6 +7,8 @@
   position: relative;
   overflow: hidden;
   background: url("/images/header-bg.svg");
+  display: flex;
+  align-items: flex-end;
 }
 
 .page-banner::before {
@@ -21,6 +21,7 @@
   background-size: contain;
   block-size: 100%;
   inline-size: 60vw;
+  z-index: -1;
 }
 
 .page-banner-img {
@@ -31,9 +32,15 @@
   right: -10vw;
   background: var(--background) center center no-repeat;
   background-size: cover;
-  mask: url("/images/banners/mask.svg") no-repeat;
-  mask-size: cover;
-  mask-position: 50% 15%;
+
+}
+
+@media (min-width: 60rem) {
+  .page-banner-img {
+    mask: url("/images/banners/mask.svg") no-repeat;
+    mask-size: cover;
+    mask-position: 50% 15%;
+  }
 }
 
 .page-banner-img::after {
@@ -70,6 +77,77 @@
   background-image: var(--story-gradient),
                     var(--bg-image);
 }
+
+.page-banner[data-type="strategy"] .l-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.strategy-title {
+  position: relative;
+}
+
+.strategy-title span {
+  position: absolute;
+  inset-block-end: calc(100% - var(--rhythm) * 2);
+  z-index: 2;
+  background: var(--c-blue);
+  border-radius: 1em;
+  padding: var(--rhythm) calc(var(--rhythm) * 2);
+  color: #fff;
+  transform: rotate(-2deg);
+}
+
+.strategy-title h2 {
+  margin-block-start: 0;
+  padding: var(--t-paragraph);
+  background: #fff;
+  border: 1px solid var(--c-blue);
+  color: var(--c-blue);
+  border-radius: var(--radius-lg);
+  max-inline-size: min(60vw, calc(var(--t-measure) / 1.5))
+}
+
+.strategy-topics i {
+  font-style: normal;
+  color: var(--c-blue);
+  vertical-align: text-top;
+}
+
+.strategy-topics ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+.strategy-topics li {
+  list-style: none;
+  padding: 0;
+}
+
+.strategy-topics a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: calc(var(--radius-lg) * 2);
+  border: 1px solid var(--c-blue);
+  background: var(--c-light-blue);
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.06);
+}
+
+.strategy-topics svg {
+  inline-size: 1.5rem;
+  display: block;
+  position: relative;
+  margin-inline-end: 0.5rem;
+  aspect-ratio: 1 / 1;
+  fill: var(--c-blue);
+}
+
 
 .page-banner[data-bg-image] h1 {
     max-inline-size: 48rem;

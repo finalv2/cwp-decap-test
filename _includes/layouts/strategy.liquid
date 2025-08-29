@@ -4,24 +4,15 @@ pagefind:
   type: Strategy
   image: /images/play.svg
 ---
-
-<div class="l-wrapper play-wrapper">
-
-{%- capture pagefindMetaTags -%}
-  {%- for tag in tags -%}
-    {{ topics[tag].title }}
-    {%- if not loop.last -%}, {% endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-
-<div class="strategy-header">
+<div class="page-banner" data-type="strategy">
+<div class="l-wrapper">
   <div class="strategy-title">
     <span class="subhead">Strategy</span>
     <h2 data-pagefind-meta="title">{{ title }}</h2>
   </div>
 
-  <div class="topic-list">
-    <h3 class="subhead">Topics</h3>
+  <div class="strategy-topics">
+    <h3 class="sr-only">Topics</h3>
     <ul>
       {%- for topic in collections.topics -%}
         {%- for tag in tags -%}
@@ -34,10 +25,22 @@ pagefind:
     </ul>
   </div>
 </div>
+</div>
+
+<div class="l-wrapper play-wrapper">
+
+{%- capture pagefindMetaTags -%}
+  {%- for tag in tags -%}
+    {{ topics[tag].title }}
+    {%- if not loop.last -%}, {% endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
 
 <div class="l-section">
+<div class="l-wrapper-text">
 <div class="l-stack" data-pagefind-meta="topics:{{ pagefindMetaTags }}">
   {{ content }}
+</div>
 </div>
 </div>
 
