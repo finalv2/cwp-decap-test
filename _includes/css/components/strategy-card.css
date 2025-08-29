@@ -20,11 +20,11 @@
   transition: scale 0.1s ease-out;
 }
 
-:is(.card, .strategy-card):is(:focus, :hover) {
+:is(.card, .strategy-card a):is(:focus, :hover) {
   scale: 1.03;
 }
 
-:is(.card, .strategy-card):active {
+:is(.card, .strategy-card a):active {
   scale: 1.01;
 }
 
@@ -158,9 +158,22 @@
   font-weight: var(--font-bold);
   color: var(--c-blue);
   text-decoration: none;
+  transform-origin: 0% 50%;
   transition: scale 0.1s ease-out,
               background 50ms ease-out,
               color 50ms ease-out;
+}
+
+
+@keyframes arrowWiggle {
+    to {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+}
+
+.strategy-card a:is(:focus, :hover) svg {
+  animation: arrowWiggle 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
 }
 
 .play-list-links,
