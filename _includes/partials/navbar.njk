@@ -20,7 +20,7 @@
         <ul>
           {% for link in navigation.items %}
           <li>
-            <a href="{{ link.url }}">
+            <a href="{{ link.url }}"{% if link.url == page.url %} class="active"{% endif %}>
               {{ link.text }}
               {% if link.icon %}
               {{ link.icon | safe }}

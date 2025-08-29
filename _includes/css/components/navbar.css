@@ -17,6 +17,12 @@
   text-decoration: none;
 }
 
+.nav a.active,
+.nav a.active:is(:hover, :focus, :active) {
+  background: var(--c-blue);
+  color: #fff;
+}
+
 .nav-inner {
   display: flex;
   flex-wrap: wrap;
