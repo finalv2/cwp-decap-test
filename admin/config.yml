@@ -43,7 +43,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/strategy.liquid" }
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "general-engagement", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["strategy"], hint: "Add your topics here"}
+      - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["strategy"], hint: "Add your topics here"}
       - { label: "Order", name: "order", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Related resources", required: false, name: "resources", widget: "relation", collection: "resources", value_field: "title", search_fields: ["title", "url"], multiple: true}
@@ -62,7 +62,7 @@ collections:
       - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", date_format: "MM-DD-YYYY"}
       - { label: "Story type", name: "type", widget: "select", options: ["Blog post", "Case study", "Research report"], default: ["Blog post"]}
       - { label: "Header image", name: "image", widget: "image", allow_multiple: false, media_folder: "/images/stories", public_folder: ".images/stories/"}
-      - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "general-engagement", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
+      - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "resources"
     label: "Resources"
@@ -76,7 +76,7 @@ collections:
       - { label: "File type", name: "filetype", widget: "select", options: ["pdf", "doc", "link"] }
       - { label: "Link to resource", name: "url", widget: "string", required: false }
       - { label: "Upload resource", name: "file", widget: "file", media_library: { media_folder: "/assets/"}, required: false}
-      - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "general-engagement", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["resource"], hint: "Add your topics here"}
+      - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["resource"], hint: "Add your topics here"}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "meetings"
     label: "Meetings"

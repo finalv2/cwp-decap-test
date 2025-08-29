@@ -2,7 +2,6 @@
 id: recruitment
 title: Foster parent recruitment
 icon: signature
-related: ["general-engagement"]
 layout: "layouts/topic.njk"
 summary: Find and engage potential foster parents who can meet the specific needs of children and youth in your community.
 ---

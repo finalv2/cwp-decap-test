@@ -3,7 +3,6 @@ id: kin-engagement
 title: Kin engagement
 icon: binoculars
 featured: true
-related: ["general-engagement"]
 layout: "layouts/topic.njk"
 summary: Find and engage family members and other trusted adults who can care for children and youth or provide ongoing support.
 ---

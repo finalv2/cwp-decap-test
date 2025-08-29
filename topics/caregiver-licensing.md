@@ -2,7 +2,6 @@
 id: caregiver-licensing
 title: Caregiver licensing
 icon: certificate
-related: ["general-licensing"]
 layout: "layouts/topic.njk"
 summary: Simplify the licensing process and provide support to help caregivers get licensed and maintain their licenses.
 ---
