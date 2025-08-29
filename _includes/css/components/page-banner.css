@@ -127,7 +127,6 @@
   inline-size: var(--font-5xl-size);
   block-size: var(--font-5xl-size);
   position: relative;
-  top: -0.25rem;
   left: -0.25rem;
 }
 
