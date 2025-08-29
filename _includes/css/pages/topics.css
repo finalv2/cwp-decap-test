@@ -5,6 +5,7 @@
 }
 
 .topic-card {
+  --header-color: var(--c-blue);
   text-decoration: none;
   padding: calc(var(--t-paragraph) * 1.5);
   transition: all 0.15s ease-out;
@@ -40,7 +41,7 @@
   margin-block-start: 0;
   font-size: var(--font-xl-size);
   line-height: var(--font-xl-leading);
-  color: var(--c-blue);
+  color: var(--header-color);
 }
 
 .topic-card:hover {
@@ -50,12 +51,16 @@
 }
 
 .topic-card svg {
-  color: var(--c-blue);
+  fill: var(--header-color);
   inline-size: 2em;
   aspect-ratio: 1 / 1;
 }
 
-.topic-card:hover * {
+.topic-card:hover {
+  --header-color: #fff;
+}
+
+.topic-card:hover p {
   color: #fff;
 }
 
