@@ -7,8 +7,8 @@ tags:
   - prevention
 order: 8
 resources:
-  - "Logic model: Oregon tribal family coach"
-  - "Job description: Oregon tribal family coach"
+  - "Oregon tribal family coach: Job description"
+  - "Oregon tribal family coach: Logic model"
 ---
 Native American and Alaska Native families are disproportionately likely to be involved with child welfare systems. And they may not get culturally appropriate support from standard services.
 
