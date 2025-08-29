@@ -6,9 +6,17 @@ pagefind:
 
 <div class="page-banner">
   <div class="l-wrapper">
-    <h2 class="h1">{{ title }}</h2>
-    <p>{{ content | md | safe}}</p>
-    <p><a href="/topics/">Back to all topics</a></p>
+    <div class="l-stack-basic">
+      <div class="nametag">
+        <span class="nametag-badge subhead">Topic</span>
+        <div class="nametag-text">
+          {% icon icon %}
+          <h2 class="h1">{{ title }}</h2>
+        </div>
+      </div>
+      <p>{{ content | md | safe}}</p>
+      <p><a href="/" class="page-banner-back subhead">{% icon "arrow-u-up-left" %} Back to all topics</a></p>
+    </div>
   </div>
 </div>
 
@@ -28,7 +36,7 @@ pagefind:
     {%- endfor -%}
     </ul>
 
-    {% if related %}
+    {%- if related.length > 1 -%}
     <h3>Related strategies</h3>
     {%- for item in related -%}
       <h4>{{ collections.topics[item].data.title }}</h4>
@@ -40,7 +48,7 @@ pagefind:
         {%- endfor -%}
       </ul>
     {%- endfor -%}
-    {% endif %}
+    {%- endif -%}
   </div>
   </div>
 </div>

@@ -24,8 +24,12 @@
   scale: 1.03;
 }
 
-:is(.card, .strategy-card a):active {
+.card:active {
   scale: 1.01;
+}
+
+.strategy-card a:active {
+  scale: 1.02;
 }
 
 .card svg {
@@ -160,9 +164,12 @@
 
 /* Play card */
 
+.strategy-card {
+  padding: 0;
+}
+
 .strategy-card a {
   text-decoration: none;
-  padding-block: 1rem;
   display: flex;
   gap: 1rem;
   font-weight: var(--font-bold);

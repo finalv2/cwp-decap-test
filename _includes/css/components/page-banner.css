@@ -85,11 +85,13 @@
   justify-content: stretch;
 }
 
-.strategy-title {
+.nametag {
   position: relative;
+  inline-size: max-content;
+  max-inline-size: 50vw;
 }
 
-.strategy-title span {
+.nametag-badge {
   position: absolute;
   inset-block-end: calc(100% - var(--rhythm) * 2);
   z-index: 2;
@@ -100,14 +102,33 @@
   transform: rotate(-2deg);
 }
 
-.strategy-title h2 {
+.nametag-text {
   margin-block-start: 0;
   padding: var(--t-paragraph);
   background: #fff;
   border: 1px solid var(--c-blue);
   color: var(--c-blue);
   border-radius: var(--radius-lg);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.nametag-text h2 {
+  margin: 0;
+}
+
+.page-banner[data-type="strategy"] .nametag {
   max-inline-size: min(60vw, calc(var(--t-measure) / 1.5))
+}
+
+.nametag-text svg {
+  fill: var(--c-blue);
+  inline-size: var(--font-5xl-size);
+  block-size: var(--font-5xl-size);
+  position: relative;
+  top: -0.25rem;
+  left: -0.25rem;
 }
 
 .strategy-topics i {
@@ -121,6 +142,7 @@
   margin: 0;
   display: flex;
   width: 100%;
+  gap: 1rem;
 }
 
 .strategy-topics li {
@@ -164,4 +186,18 @@
 
 .page-banner-subhead {
     margin-block-start: 0.5rem;
+}
+
+.page-banner-back {
+  display: flex;
+  color: var(--c-blue);
+  font-weight: 700;
+  text-decoration: none;
+  gap: 1em;
+}
+
+.page-banner-back svg {
+  inline-size: 1.5em;
+  block-size: 1.5em;
+  fill: currentColor;
 }
