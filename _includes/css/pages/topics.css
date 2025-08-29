@@ -6,11 +6,10 @@
 
 .topic-card {
   text-decoration: none;
-  padding: var(--t-paragraph) calc(var(--t-paragraph) * 1.5);
+  padding: calc(var(--t-paragraph) * 1.5);
   transition: all 0.15s ease-out;
   position: relative;
   border-radius: var(--radius-lg);
-
 }
 
 .topic-card::before {
@@ -27,6 +26,7 @@
   display: flex;
   gap: 0.5rem;
   margin-block-end: var(--t-paragraph);
+  align-items: center;
 }
 
 .topic-card div * {
@@ -51,10 +51,9 @@
 
 .topic-card svg {
   color: var(--c-blue);
-  inline-size: 1.5rem;
+  inline-size: 2em;
   aspect-ratio: 1 / 1;
 }
-
 
 .topic-card:hover * {
   color: #fff;

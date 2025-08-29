@@ -20,7 +20,10 @@ pagefind:
     <ul class="l-stack-basic">
     {%- for play in collections[id + '-strategies'] -%}
     <li class="strategy-card">
-      <a href="{{ play.url }}">{{ play.data.title }}</a>
+      <a href="{{ play.url }}">
+        <span>{{ play.data.title }}</span>
+        {% icon 'arrow-right' %}
+      </a>
     </li>
     {%- endfor -%}
     </ul>
