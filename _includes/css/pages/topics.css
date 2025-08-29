@@ -7,10 +7,11 @@
 .topic-card {
   --header-color: var(--c-blue);
   text-decoration: none;
-  padding: calc(var(--t-paragraph) * 1.5);
+  padding: var(--t-paragraph) calc(var(--t-paragraph) * 1.5);
   transition: all 0.15s ease-out;
   position: relative;
   border-radius: var(--radius-lg);
+  align-self: start;
 }
 
 .topic-card::before {
