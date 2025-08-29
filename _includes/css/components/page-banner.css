@@ -1,12 +1,9 @@
 /* Banner with image on main section pages (e.g. "All Topics") */
 .page-banner {
-  background-repeat: no-repeat;
-  background-position: right center;
   padding-block: calc(var(--font-base-leading) * 3);
-  background-size: cover;
+  background: #FBFCFD url("/images/header-bg.svg");
   position: relative;
   overflow: hidden;
-  background: url("/images/header-bg.svg");
   display: flex;
   align-items: flex-end;
 }
@@ -58,9 +55,11 @@
     z-index: 3;
 }
 
-.page-banner h2,
-.page-banner p {
-  max-inline-size: 40vw;
+@media (min-width: 48rem) {
+  .page-banner h2,
+  .page-banner p {
+    max-inline-size: 40vw;
+  }
 }
 
 .page-banner p {
@@ -89,7 +88,7 @@
 .nametag {
   position: relative;
   inline-size: max-content;
-  max-inline-size: 50vw;
+  max-inline-size: max(50vw, 40rem);
 }
 
 .nametag-badge {
