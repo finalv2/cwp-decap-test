@@ -3,6 +3,7 @@ id: supportive-relationships
 title: Supportive relationships
 icon: hand-heart
 featured: true
+image: /images/banners/supportive-relationships.jpg
 layout: "layouts/topic.njk"
 summary: Help children and youth maintain relationships with siblings, family members, and other important people in their lives.
 ---

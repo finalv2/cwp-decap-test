@@ -2,6 +2,7 @@
 id: retention
 title: Caregiver retention
 icon: handshake
+image: /images/banners/retention.jpg
 layout: "layouts/topic.njk"
 summary: Keep experienced caregivers engaged through support, financial assistance, and recognition.
 ---
