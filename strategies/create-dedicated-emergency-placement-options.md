@@ -21,15 +21,22 @@ Provide incentive payments for being on call and accepting any child during off-
 
 ### Create dedicated emergency homes
 
-Some foster homes are particularly well-suited to supporting emergency placement for short stays. Create a specific license or license designation for emergency homes. Set clear expectations, including the following:
+Some foster homes are particularly well-suited to supporting emergency placement for short stays. Create a specific license or license designation for emergency homes. 
 
-* When they need to answer the phone  
-* Whether they can reject placements  
-* Whether they must commit to keeping a placement for a certain length of time  
-* Specific responsibilities like getting a child set up with enough clothes or transporting to the school of origin.  
-* You might require specific training for these homes.
+Set clear expectations, including the following:
 
-Limit emergency placement lengths to 7 days, and ideally not more than 2 or 3 days. The goal is just to have enough time to identify and reach kin, or find a well-matched foster family.
+* When they need to answer the phone
+* Whether they can reject placements
+* Whether they must commit to keeping a placement for a certain length of time
+* Specific responsibilities, like clothing or transportation
+
+Provide trauma-informed training tailored for short-term, emergency placements to help families manage the emotional intensity of crisis placements.
+
+Consider offering on-call stipends even when they don’t receive a placement. Offer higher rates when a child or youth is placed with them. This helps to maintain a reliable pool of emergency families.
+
+Limit emergency placement lengths to 7 days, and ideally not more than 2 or 3 days. The goal is just to have enough time to identify and reach kin, or find a well-matched foster family. 
+
+Start transition planning within 24 to 48 hours after the child or youth is placed. This ensures that they move to their best long-term placement option as quickly as possible.
 
 ### Use short-term emergency shelter homes strategically
 
