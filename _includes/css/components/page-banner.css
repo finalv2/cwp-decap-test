@@ -83,6 +83,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: stretch;
+  gap: var(--t-paragraph);
 }
 
 .nametag {
@@ -118,8 +119,8 @@
   margin: 0;
 }
 
-.page-banner[data-type="strategy"] .nametag {
-  max-inline-size: min(60vw, calc(var(--t-measure) / 1.5))
+.page-banner[data-type="strategy"] :is(.nametag, .nametag *) {
+  max-inline-size: calc(var(--t-measure) * 1.5);
 }
 
 .nametag-text svg {
