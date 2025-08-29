@@ -46,6 +46,7 @@
 .card-header svg {
   inline-size: 1.5em;
   block-size: 1.5em;
+  fill: currentColor;
 }
 
 .card > * {
@@ -160,6 +161,7 @@
   position: absolute;
   inset: 0;
   margin: 0;
+  fill: var(--c-blue);
 }
 
 /* Play card */

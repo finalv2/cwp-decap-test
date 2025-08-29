@@ -12,8 +12,8 @@ pagefind:
     <h2 data-pagefind-meta="title">{{ title }}</h2>
   </div>
 
-  <div class="topic-list">
-    <h3 class="subhead">Topics</h3>
+  <div class="strategy-topics">
+    <h3 class="sr-only">Topics</h3>
     <ul>
       {%- for topic in collections.topics -%}
         {%- for tag in tags -%}
@@ -35,22 +35,23 @@ pagefind:
     </div>
 
     {{ content }}
+
+    <h3>Resources</h3>
+    <div class="l-stack-basic">
+      {%- for relatedResource in resources -%}
+        {% assign targetResource = collections.resources | find: relatedResource %}
+
+        {%- include "components/card.liquid",
+          type: "resource",
+          filetype: targetResource.data.filetype,
+          title: targetResource.data.title,
+          description: targetResource.content,
+          url: targetResource.data.url
+        -%}
+      {%- endfor -%}
+    </div>
   </div>
 </div>
 </div>
 
-  <h3>Resources</h3>
-  <div class="l-grid">
-    {% for relatedResource in resources %}
-      {% assign targetResource = collections.resources | find: relatedResource %}
-
-      {%- include "components/card.liquid",
-        type: "resource",
-        filetype: targetResource.data.filetype,
-        title: targetResource.data.title,
-        description: targetResource.content,
-        url: targetResource.data.url
-      -%}
-    {% endfor %}
-  </div>
 </div>
