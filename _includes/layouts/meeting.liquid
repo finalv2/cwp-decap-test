@@ -1,16 +1,18 @@
 ---
 layout: layouts/default.njk
+video: true
 pagefind:
   type: Meeting
 ---
 
-<div class="l-wrapper play-wrapper">
-
-<div class="strategy-header">
-  <div class="strategy-title">
-    <span class="subhead">Community meeting</span>
-    <h2 data-pagefind-meta="title">{{ title }}</h2>
-  </div>
+<div class="page-banner" data-type="strategy">
+  <div class="l-wrapper">
+    <div class="nametag">
+      <span class="nametag-badge subhead">Community meeting</span>
+      <div class="nametag-text">
+        <h2 data-pagefind-meta="title">{{ title }}</h2>
+      </div>
+    </div>
 
   <div class="strategy-topics">
     <h3 class="sr-only">Topics</h3>
@@ -18,40 +20,53 @@ pagefind:
       {%- for topic in collections.topics -%}
         {%- for tag in tags -%}
           {%- if topic.data.id == tag -%}
-            <li><a href="{{ topic.url }}">{{ topic.data.title }}</a></li>
+            <li><a href="{{ topic.url }}">{% icon topic.data.icon %} {{ topic.data.title }}</a></li>
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
       {%- endfor -%}
     </ul>
   </div>
+  </div>
 </div>
+
+<div class="l-wrapper play-wrapper">
 
 <div class="l-section">
 <div class="l-text-wrapper">
-  <div class="l-stack" data-pagefind-meta="topics:{{ pagefindMetaTags }}">
-    <div class="l-frame">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ youtubeId }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="plyr-wrapper">
+      <div id="plyr" data-plyr-provider="youtube" data-plyr-embed-id="{{ youtubeId }}"></div>
     </div>
 
-    {{ content }}
+<div class="l-stack" data-pagefind-meta="topics:{{ pagefindMetaTags }}">
 
-    <h3>Resources</h3>
-    <div class="l-stack-basic">
-      {%- for relatedResource in resources -%}
-        {% assign targetResource = collections.resources | find: relatedResource %}
 
-        {%- include "components/card.liquid",
-          type: "resource",
-          filetype: targetResource.data.filetype,
-          title: targetResource.data.title,
-          description: targetResource.content,
-          url: targetResource.data.url
-        -%}
-      {%- endfor -%}
-    </div>
+{{ content }}
+
+{%- if resources -%}
+  <h3>Resources</h3>
+
+  <div class="l-stack-basic">
+  {%- for relatedResource in resources -%}
+    {% assign targetResource = collections.resources | find: relatedResource %}
+
+    {%- include "components/card.liquid",
+      type: "resource",
+      filetype: targetResource.data.filetype,
+      title: targetResource.data.title,
+      description: targetResource.content,
+      url: targetResource.data.url
+    -%}
+  {%- endfor -%}
+{%- endif -%}
+</div>
   </div>
 </div>
 </div>
 
 </div>
+
+<script>
+  const player = new Plyr('#plyr', {});
+  window.player = player;
+</script>
