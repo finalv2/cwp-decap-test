@@ -20,6 +20,13 @@
   inline-size: 60vw;
 }
 
+.page-banner[data-type="topic"]::before {
+  background-image: url("/images/banners/bg-scribble-light.svg");
+  mix-blend-mode: overlay;
+  z-index: 3;
+  opacity: 1;
+}
+
 .page-banner-img {
   position: absolute;
   left: 50%;
@@ -28,14 +35,22 @@
   right: -10vw;
   background: var(--background) center center no-repeat;
   background-size: cover;
-
 }
 
 @media (min-width: 48rem) {
   .page-banner-img {
-    mask: url("/images/banners/mask.svg") no-repeat;
-    mask-size: cover;
     mask-position: 0 15%;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-image: url("/images/banners/mask.svg");
+  }
+
+  [data-type="search"] .page-banner-img {
+    mask-image: url("/images/banners/mask2.svg");
+  }
+
+  [data-type="topic"] .page-banner-img {
+    mask-image: url("/images/banners/mask3.svg");
   }
 }
 
@@ -48,6 +63,16 @@
   background-size: contain;
   mix-blend-mode: overlay;
 }
+
+[data-type="search"] .page-banner-img::after {
+  background-image: url("/images/banners/banner-circle-5.svg");
+}
+
+[data-type="topic"] .page-banner-img::after {
+  content: none;
+}
+
+
 
 .page-banner .l-wrapper {
     position: relative;
