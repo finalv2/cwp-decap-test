@@ -5,6 +5,10 @@
   background: url("/images/header-bg.svg");
 }
 
+.footer * {
+  max-inline-size: unset;
+}
+
 .footer-wave {
   position: absolute;
   bottom: 100%;
@@ -23,32 +27,6 @@
     align-items: center;
     gap: var(--rhythm);
     padding-block: 2rem;
-}
-
-.footer ul * {
-  display: flex;
-  align-items: center;
-}
-
-.footer ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    max-inline-size: unset;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-
-.footer img {
-  block-size: 1.5rem;
-}
-
-[data-logo="foster-america"] img,
-[data-logo="think-of-us"] img {
-  block-size: 2rem;
 }
 
 .footer li {
