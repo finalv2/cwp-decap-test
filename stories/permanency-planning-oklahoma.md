@@ -2,10 +2,12 @@
 title: Permanency Planning with Kin Caregivers in Oklahoma
 date: 2025-01-23T12:00:00.000
 author: Bloom Works
-description: Learn about Oklahoma’s amended licensure requirements and their impact on adoption and guardianship outcomes with kin caregivers.
+description: Oklahoma researched whether streamlined kin-specific licensing requirements would affect permanency outcomes and found no negative impacts.
 type: Research report
 tags: ["caregiver-licensing", "story"]
 layout: "layouts/story"
+featured: true
+image: /images/oklahoma.jpg
 ---
 
 

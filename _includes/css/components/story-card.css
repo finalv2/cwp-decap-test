@@ -5,6 +5,10 @@
 .story-card {
   display: flex;
   gap: var(--g-column-gap);
+
+  * {
+    text-decoration: none;
+  }
 }
 
 .story-card-image {
@@ -14,10 +18,11 @@
 
 .story-card img {
   block-size: calc(var(--font-base-leading) * 6);
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius-lg);
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  mask: url("/images/mask-story-thumbnail.svg") center center no-repeat;
+  mask-size: cover;
 }
 
 .story-card-badge {
@@ -34,8 +39,6 @@
 }
 
 .story-card h3 {
-  font-size: var(--font-3xl-size);
-  line-height: var(--font-3xl-leading);
   margin-block: 0;
 }
 
@@ -43,25 +46,4 @@
   font-size: var(--font-sm-size);
   display: flex;
   gap: 1.5rem;
-}
-
-/* Featured stories */
-
-.story-card[data-featured] {
-  display: block;
-  background-image: var(--story-gradient),
-                    var(--bg-image);
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-  padding: calc(var(--font-base-leading) * 2);
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-lg);
-}
-
-.story-card[data-featured] * {
-  color: #fff;
-  margin-inline: auto;
-  text-decoration: none;
 }

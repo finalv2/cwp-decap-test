@@ -53,6 +53,11 @@
     mask-image: url("/images/banners/mask3.svg");
   }
 
+  [data-type="story"] .page-banner-img {
+    mask-image: url("/images/banners/mask-story.svg");
+  }
+
+
   [data-type="about"] .page-banner-img {
     mask-image: url("/images/banners/mask4.svg");
   }
@@ -75,6 +80,12 @@
 [data-type="about"] .page-banner-img::after {
   background-image: url("/images/banners/banner-circle-3.svg");
   background-size: cover;
+}
+
+[data-type="story"] .page-banner-img::after {
+  background-image: url("/images/scribbles/story.svg");
+  inset-block-end: 30%;
+  background-position: right top;
 }
 
 [data-type="topic"] .page-banner-img::after {
@@ -103,11 +114,6 @@
     text-align: left;
     color: var(--c-base);
     max-inline-size: 38ch;
-}
-
-.page-banner[data-type="story"] {
-  background-image: var(--story-gradient),
-                    var(--bg-image);
 }
 
 .page-banner[data-type="strategy"] .l-wrapper {
@@ -204,15 +210,6 @@
   flex: none;
 }
 
-
-.page-banner[data-bg-image] h1 {
-    max-inline-size: 48rem;
-}
-
-.page-banner[data-bg-color="dark"] *,
-.page-banner[data-type="story"] * {
-    color: #fff;
-}
 
 .page-banner-topic h1 {
     color: var(--t-base);
