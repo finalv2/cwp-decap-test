@@ -203,12 +203,13 @@ blockquote + figcaption {
 
 hr {
   --hr-margin: calc(var(--font-base-leading) * 2);
-
+  background: url("/images/hr.svg") center center no-repeat;
+  background-size: contain;
   border: 0;
-  border-block-start: 1px solid var(--c-accent-light);
   color: inherit;
-  margin-block-end: var(--hr-margin);
-  inline-size: 100%;
+  max-inline-size: unset;
+  block-size: 5rem;
+  opacity: 0.2;
 }
 
 hr, hr + * {
