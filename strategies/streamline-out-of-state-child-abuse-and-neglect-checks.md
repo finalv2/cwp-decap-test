@@ -32,4 +32,4 @@ Process check requests faster by handling them efficiently and removing administ
 
 ## This strategy in action
 
-Check out the [Out-of-State Child Abuse and Neglect dashboard](https://childwelfareplaybook.com/compare/background-checks/) to compare which jurisdictions have implemented these promising practices.[](https://www.google.com/url?q=https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab%3Dt.0%23heading%3Dh.yd2gyy5b38kz&sa=D&source=docs&ust=1750798774259355&usg=AOvVaw2yTL2zyUIGHpRFEo_0wQvZ)
+Check out the [Out-of-State Child Abuse and Neglect dashboard](/dashboards/adam-walsh/) to compare which jurisdictions have implemented these promising practices.[](https://www.google.com/url?q=https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab%3Dt.0%23heading%3Dh.yd2gyy5b38kz&sa=D&source=docs&ust=1750798774259355&usg=AOvVaw2yTL2zyUIGHpRFEo_0wQvZ)
