@@ -2,7 +2,7 @@
 items:
 - text: Read
   url: "/"
-- text: Search
-  url: "/search/"
 - text: About
   url: "/about/"
+- text: Search
+  url: "/search/"
