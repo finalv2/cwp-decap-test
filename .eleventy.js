@@ -71,6 +71,14 @@ export default async function(eleventyConfig) {
       return collectionsApi.getFilteredByTags('strategy', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
 
+    eleventyConfig.addCollection(`${topicList[topic]}-stories`, function (collectionsApi) {
+      return collectionsApi.getFilteredByTags('story', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
+    });
+
+    eleventyConfig.addCollection(`${topicList[topic]}-resources`, function (collectionsApi) {
+      return collectionsApi.getFilteredByTags('resource', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
+    });
+
     eleventyConfig.addCollection(`${topicList[topic]}-dashboards`, function (collectionsApi) {
       return collectionsApi.getFilteredByTags('dashboard', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
