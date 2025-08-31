@@ -70,6 +70,10 @@ export default async function(eleventyConfig) {
     eleventyConfig.addCollection(`${topicList[topic]}-strategies`, function (collectionsApi) {
       return collectionsApi.getFilteredByTags('strategy', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
+
+    eleventyConfig.addCollection(`${topicList[topic]}-dashboards`, function (collectionsApi) {
+      return collectionsApi.getFilteredByTags('dashboard', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
+    });
   }
 
   // Stories
