@@ -39,6 +39,11 @@
 .nav-logo {
   display: flex;
   align-items: center;
+  background: url("/images/logo-sprite.png") no-repeat;
+  background-size: cover;
+  background-position: 0 var(--bgPosition, 0);
+  aspect-ratio: 308 / 158;
+  block-size: calc(var(--t-paragraph) * 3);
 }
 
 .nav-logo img {
