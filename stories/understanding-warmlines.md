@@ -6,9 +6,8 @@ type: Research report
 author: Bloom Works
 tags: ["story", "prevention"]
 layout: "layouts/story"
+image: /images/warmlines-component-map.png
 ---
-
-![Thumbnail image of the warmlines component map.](/images/warmlines-component-map.png)
 
 From April to June 2025, the Bloom Works Prevention Learning Collaborative team, funded by the Doris Duke Foundation, began a project to explore warmlines as a way to prevent child welfare system involvement, reduce reports to hotlines, and connect families to prevention services. 
 
