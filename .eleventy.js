@@ -41,7 +41,7 @@ export default async function(eleventyConfig) {
     html: true,
     breaks: false,
     linkify: true,
-  });
+  }).disable(['code']);
 
   eleventyConfig.setLibrary('md', markdownLibrary);
 

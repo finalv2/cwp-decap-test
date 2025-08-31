@@ -4,6 +4,8 @@ pagefind:
   type: Topic
 ---
 
+{%- from '_macros/story-card.njk' import storyCard %}
+
 <div class="page-banner" data-type="topic" data-topic="{{ id }}">
   <div class="l-wrapper">
     <div class="l-stack-basic">
@@ -39,18 +41,32 @@ pagefind:
     {%- endfor -%}
     </ul>
 
-    {%- if related.length > 1 -%}
-    <h3>Related strategies</h3>
-    {%- for item in related -%}
-      <h4>{{ collections.topics[item].data.title }}</h4>
-      <ul class="l-stack-basic">
-       {%- for play in collections[item + '-strategies'] -%}
-          <li class="strategy-card">
-            <a href="{{ play.url }}">{{ play.data.title }}</a>
-          </li>
-        {%- endfor -%}
+    {%- if collections[id + '-stories'].length -%}
+      <h3>Stories</h3>
+      <div class="l-grid">
+      {%- for story in collections[id + '-stories'] -%}
+        {{ storyCard({
+              image: story.data.image,
+              type: story.data.type,
+              title: story.data.title,
+              description: story.data.description,
+              author: story.data.author,
+              date: story.date,
+              featured: false,
+              url: story.url
+            })
+          }}
+      {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if collections[id + '-dashboards'].length -%}
+      <h3>Dashboards</h3>
+      <ul class="l-stack-basic strategy-list">
+      {%- for dashboard in collections[id + '-dashboards'] -%}
+        <li class="strategy-card"><a href="{{ dashboard.url }}"><span>{{ dashboard.data.title }}</span> {% icon 'arrow-right' %}</a></li>
+      {%- endfor -%}
       </ul>
-    {%- endfor -%}
     {%- endif -%}
   </div>
   </div>

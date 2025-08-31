@@ -1,0 +1,9 @@
+{%- macro topicCard(params) -%}
+  <a href="{{ params.url }}" class="topic-card" id="{{ params.id }}">
+    <div>
+      {%- if params.icon -%} {%- icon params.icon -%}{%- endif -%}
+      <h2 class="h3">{{ params.title }}</h2>
+    </div>
+    <p>{{ params.summary }}</p>
+  </a>
+{%- endmacro -%}

@@ -25,7 +25,7 @@ collections:
     create: true
     label_singular: "topic"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/topic.liquid" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/topic.njk" }
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
       - { label: "Name of topic", name: "title", widget: "string" }
       - { label: "ID", name: "id", widget: "string" }

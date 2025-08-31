@@ -4,11 +4,45 @@
 
 .story-card {
   display: flex;
-  gap: var(--g-column-gap);
+  flex-direction: column;
+  position: relative;
+}
 
-  * {
-    text-decoration: none;
-  }
+.story-card:not([data-featured])::before,
+.story-card-content:not([data-featured])::before {
+  --border: 2px solid var(--c-blue);
+  position: absolute;
+  content: "";
+  inset: 0;
+  filter: url("#tornEdge");
+  z-index: 2;
+  pointer-events: none;
+}
+
+.story-card::before {
+  border: var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.story-card:not([data-featured]) .story-card-content::before {
+  border-block-start: var(--border);
+}
+
+.story-card-content {
+  position: relative;
+}
+
+.story-card:not([data-featured]) .story-card-content * {
+  padding-block: calc(var(--t-paragraph) / 2);
+  padding-inline: var(--t-paragraph);
+}
+
+.story-card {
+  text-decoration: none;
+}
+
+.story-card .nametag {
+  margin-block-start: var(--font-base-leading);
 }
 
 .story-card-image {
@@ -17,33 +51,43 @@
 }
 
 .story-card img {
-  block-size: calc(var(--font-base-leading) * 6);
+  block-size: calc(var(--t-paragraph) * 10);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-  mask: url("/images/mask-story-thumbnail.svg") center center no-repeat;
-  mask-size: cover;
 }
 
-.story-card-badge {
-  border-end-start-radius: var(--radius-lg);
-  border-start-end-radius: var(--radius-lg);
-  padding: 0.25rem 0.5rem;
-  background: var(--c-blue);
-  color: var(--c-white);
-  font-weight: var(--font-bold);
-  position: absolute;
-  inset-inline-start: 0;
-  inset-block-end: 0;
-  font-size: var(--font-sm-size);
+.story-card:not([data-featured]) .nametag-badge {
+  color: var(--c-blue);
+  background: var(--c-light-blue);
+  border: 2px solid currentColor;
 }
 
-.story-card h3 {
+.story-card:not([data-featured]) h3 {
   margin-block: 0;
+  background: var(--c-blue);
+  color: #fff;
+  font-size: var(--font-xl-size);
+  line-height: var(--font-xl-leading);
+  text-balance: none;
 }
 
 .story-card-meta {
   font-size: var(--font-sm-size);
   display: flex;
   gap: 1.5rem;
+}
+
+.story-card[data-featured] {
+  flex-direction: row;
+  gap: var(--g-column-gap);
+}
+
+.story-card[data-featured] h3 {
+  margin-block: 0;
+}
+
+.story-card[data-featured] img {
+  mask: url("/images/mask-story-thumbnail.svg") center center no-repeat;
+  mask-size: cover;
 }
