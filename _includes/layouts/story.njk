@@ -11,6 +11,18 @@ layout: layouts/default.njk
           <h2 class="h1">{{ title }}</h2>
         </div>
       </div>
+      <div class="page-topics">
+        <h3 class="sr-only">Topics</h3>
+        <ul>
+          {%- for topic in collections.topics -%}
+            {%- for tag in tags -%}
+              {%- if topic.data.id == tag -%}
+                <li><a href="{{ topic.url }}">{% icon topic.data.icon %} {{ topic.data.title }}</a></li>
+                {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      </div>
       <p class="subhead">Written by {{ author }} on {{ date | humanDate }}</p>
     </div>
   </div>

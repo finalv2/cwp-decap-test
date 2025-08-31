@@ -9,6 +9,19 @@ tags:
 <div class="page-banner" data-bg-color="dark">
   <div class="l-wrapper">
     <h2 class="h1"><a href="{{ url }}">{{ title }}</a></h2>
+
+    <div class="page-topics">
+      <h3 class="sr-only">Topics</h3>
+      <ul>
+        {%- for topic in collections.topics -%}
+          {%- for tag in tags -%}
+            {%- if topic.data.id == tag -%}
+              <li><a href="{{ topic.url }}">{% icon topic.data.icon %} {{ topic.data.title }}</a></li>
+              {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </ul>
+    </div>
     {% if description %}<p>{{ description }}</p>{% endif %}
   </div>
 </div>

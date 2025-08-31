@@ -169,13 +169,13 @@
   left: -0.25rem;
 }
 
-.strategy-topics i {
+.page-topics i {
   font-style: normal;
   color: var(--c-blue);
   vertical-align: text-top;
 }
 
-.strategy-topics ul {
+.page-topics ul {
   padding: 0;
   margin: 0;
   display: flex;
@@ -183,12 +183,12 @@
   gap: 1rem;
 }
 
-.strategy-topics li {
+.page-topics li {
   list-style: none;
   padding: 0;
 }
 
-.strategy-topics a {
+.page-topics a {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -200,7 +200,7 @@
   white-space: nowrap;
 }
 
-.strategy-topics svg {
+.page-topics svg {
   inline-size: 1.5rem;
   display: block;
   position: relative;
