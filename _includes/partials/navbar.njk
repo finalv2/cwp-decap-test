@@ -4,7 +4,7 @@
       <h1>
         <a href="/" class="nav-logo" id="nav-logo"><span class="sr-only">Child Welfare Playbook</span></a>
       </h1>
-      <button class="nav-hamburger" aria-expanded="false" id="nav-button" aria-controls="mobile-menu">
+      <button class="nav-hamburger" id="nav-button" aria-controls="mobile-menu">
         <span class="sr-only">Open main menu</span>
         <span data-nav-closed>
   {% icon 'x' %}
@@ -14,8 +14,8 @@
   {% icon 'list' %}
 </span>
       </button>
-      <div class="nav-mobile-menu" aria-hidden="true" id="mobile-menu">
-        <ul>
+      <div class="nav-mobile-menu" data-hidden id="mobile-menu">
+        <ul class="l-cluster">
           {% for link in navigation.items %}
           <li>
             <a href="{{ link.url }}"{% if link.url == page.url %} class="active"{% endif %}>
