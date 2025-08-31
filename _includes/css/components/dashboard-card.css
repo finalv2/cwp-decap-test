@@ -1,0 +1,68 @@
+.dashboard-grid {
+  margin-block-start: calc(var(--t-paragraph) * 3);
+}
+
+.dashboard-card {
+  background: var(--c-light-blue);
+  padding: var(--t-paragraph);
+  padding-block-start: calc(var(--t-paragraph) * 1.5);
+  border-radius: var(--radius-lg);
+  border: 3px solid rgb(0 0 0 / 0.07);
+  position: relative;
+}
+
+.dashboard-card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dashboard-card li {
+  padding-left: 1.5rem;
+  margin-block-end: calc(var(--t-paragraph) / 2);
+  position: relative;
+}
+
+.dashboard-card h3 {
+  margin: 0;
+}
+
+.dashboard-status {
+  font-size: var(--font-sm-size);
+  border-radius: calc(var(--radius-lg) * 2);
+  margin-block-start: var(--t-paragraph);
+  border: 1px solid var(--c-blue);
+  padding: 0.125rem 0.625rem;
+  display: inline-block;
+}
+
+.dashboard-card li::before {
+  content: "";
+  position: absolute;
+  color: var(--c-base);
+  inline-size: calc(var(--font-base-leading) * 0.75);
+  block-size: calc(var(--font-base-leading) * 0.75);
+  border: 2px solid currentColor;
+  left: 0;
+  border-radius: 50%;
+  top: calc(var(--font-base-leading) / 8);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: calc(var(--font-base-leading) * 0.5);
+  color: #666;
+}
+
+.dashboard-card [data-checked="true"]::before,
+.dashboard-card [data-checked="partial"]::before {
+  color: var(--c-blue);
+  background-color: currentColor;
+}
+
+.dashboard-card [data-checked="true"]::before {
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22none%22%2F%3E%3Cpolyline%20points%3D%2240%20144%2096%20200%20224%2072%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2224%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.dashboard-card [data-checked="partial"]::before {
+  opacity: 0.5;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M40%2C130.42c72-89.55%2C104%2C84.71%2C176-4.84%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2224%22%2F%3E%3C%2Fsvg%3E');
+}

@@ -1,0 +1,324 @@
+- name: Alabama
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Alaska
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: American Samoa
+  noFee: Not Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Not Implemented
+  acceptsElectronic: Not Implemented
+- name: Arizona
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Arkansas
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: California
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Colorado
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Connecticut
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Delaware
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Washington, D.C.
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Florida
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Georgia
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Guam
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Partially Implemented
+  generalInbox: Not Implemented
+  acceptsElectronic: Fully Implemented
+- name: Hawaii
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Idaho
+  noFee: Not Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Illinois
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Indiana
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Partially Implemented
+- name: Iowa
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Kansas
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Kentucky
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Louisiana
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Maine
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Maryland
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Massachusetts
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Michigan
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Minnesota
+  noFee: Not Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Mississipi
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Missouri
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Montana
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Nebraska
+  noFee: Not Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Nevada
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: New Hampshire
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: New Jersey
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: New Mexico
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: New York
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: North Carolina
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: North Dakota
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Ohio
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Oklahoma
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Oregon
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Pennsylvania
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Puerto Rico
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Partially Implemented
+  acceptsElectronic: Partially Implemented
+- name: Rhode Island
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Partially Implemented
+  acceptsElectronic: Fully Implemented
+- name: South Carolina
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: South Dakota
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Tennessee
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Texas
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Utah
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Vermont
+  noFee: Fully Implemented
+  noSignature: Not Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Virginia
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Washington
+  noFee: Not Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: West Virginia
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Not Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Not Implemented
+- name: Wisconsin
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
+- name: Wyoming
+  noFee: Fully Implemented
+  noSignature: Fully Implemented
+  acceptsAttestation: Fully Implemented
+  generalInbox: Fully Implemented
+  acceptsElectronic: Fully Implemented
