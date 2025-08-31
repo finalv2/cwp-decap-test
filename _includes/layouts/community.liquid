@@ -5,14 +5,4 @@ layout: layouts/content.njk
 <div class="l-stack-basic">
 {{ content }}
 
-<h2>Meetings</h2>
-<div class="l-grid topic-grid">
-{%- for meeting in collections.meetings reversed -%}
-<a href="{{ meeting.url }}" class="topic-card">
-  <h2 class="h3">{{ meeting.data.title }}</h2>
-
-  <p>{{ meeting.content }}</p>
-</a>
-{%- endfor -%}
-</div>
 </div>

@@ -1,5 +1,9 @@
 /* New layout */
 
+.search-wrapper {
+  min-block-size: 45dvh;
+}
+
 .search-form {
   inline-size: 100%;
   max-inline-size: unset;

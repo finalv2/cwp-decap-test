@@ -22,7 +22,7 @@
     {% endif %}
     <link rel="stylesheet" type="text/css" href="/theme.css"/>
   </head>
-  <body{% if class %} class="{{ class }}"{% endif %}>
+  <body{% if class %} class="{{ class }}"{% endif %}{% if type %} data-type="{{ type }}"{% endif %}>
     <svg class="sr-only">
     <defs>
       <filter id="tornEdge">

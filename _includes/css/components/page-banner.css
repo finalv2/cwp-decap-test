@@ -57,7 +57,6 @@
     mask-image: url("/images/banners/mask-story.svg");
   }
 
-
   [data-type="about"] .page-banner-img {
     mask-image: url("/images/banners/mask4.svg");
   }
@@ -99,9 +98,18 @@
     z-index: 3;
 }
 
+.page-banner h1,
+.page-banner .h1 {
+    text-align: left;
+    color: var(--c-base);
+    max-inline-size: 38ch;
+    margin-block-start: 0;
+}
+
 @media (min-width: 48rem) {
   .page-banner h2,
-  .page-banner p {
+  .page-banner h1,
+  .page-banner .h1 {
     max-inline-size: 40vw;
   }
 }
@@ -110,11 +118,6 @@
     text-wrap: balance;
 }
 
-.page-banner h1 {
-    text-align: left;
-    color: var(--c-base);
-    max-inline-size: 38ch;
-}
 
 .page-banner[data-type="strategy"] .l-wrapper {
   display: flex;

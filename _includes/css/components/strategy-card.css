@@ -195,10 +195,6 @@
   animation: arrowWiggle 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
 }
 
-.play-list-links,
-.play-list-links * {
-  max-inline-size: unset;
-}
 
 .strategy-card svg {
   inline-size: 1.5rem;

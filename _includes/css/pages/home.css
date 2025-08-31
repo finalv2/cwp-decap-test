@@ -36,8 +36,8 @@
   margin-block-end: calc(var(--t-paragraph) * 2);
 }
 
-.home-header h2 {
-  margin: 0;
+.home-header * {
+  max-inline-size: unset;
 }
 
 .home-whats-new-wrapper {

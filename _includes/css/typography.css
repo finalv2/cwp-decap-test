@@ -100,10 +100,6 @@ h2, .h2 {
   --l-stack-gap: calc(var(--t-paragraph) * 3);
 }
 
-:is(h2, .h2) + * {
-  --l-stack-gap: calc(var(--t-paragraph) * 2);
-}
-
 h3, .h3 {
   font-size: var(--font-3xl-size);
   line-height: var(--font-3xl-leading);
@@ -187,7 +183,8 @@ ol li:last-child {
 /* Other elements */
 
 blockquote {
-  border-inline-start: 0.5rem solid var(--c-accent);
+  margin: 0;
+  border-inline-start: 0.5rem solid var(--c-blue);
   padding-inline-start: var(--t-paragraph);
   color: var(--c-headline);
 }
