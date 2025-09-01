@@ -1,5 +1,7 @@
 ---
 layout: layouts/default.njk
+pagefind:
+  type: story
 ---
 
 <div class="page-banner" data-type="story" data-pagefind-filter="pageType:Story" style="--background: url('{{ image }}')">
@@ -40,7 +42,4 @@ layout: layouts/default.njk
 
 <div hidden>
   <span data-pagefind-meta="image">/images/stories/{{image}}</span>
-  {%- for tag in tags -%}
-    <span data-pagefind-filter="topics">{{ topics[tag].title }}</span>
-  {%- endfor -%}
 </div>

@@ -1,7 +1,8 @@
 ---
 layout: layouts/default.njk
 pagefind:
-  type: Topic
+  type: Page
+  topic: noTopic
 ---
 
 {%- from '_macros/story-card.njk' import storyCard %}
@@ -13,7 +14,7 @@ pagefind:
         <span class="nametag-badge subhead">Topic</span>
         <div class="nametag-text">
           {% icon icon %}
-          <h2 class="h1">{{ title }}</h2>
+          <h2 class="h1" data-pagefind-meta="title">{{ title }}</h2>
         </div>
       </div>
       <p>{{ content | md | safe}}</p>

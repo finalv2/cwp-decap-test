@@ -54,17 +54,16 @@
     {% include "partials/footer.njk" %}
 
     {% if pagefind %}
-
       <div hidden>
         {% if pagefind.type %}<span data-pagefind-filter="pageType">{{ pagefind.type }}</span>{% endif %}
         {% if pagefind.image %}<span data-pagefind-meta="image">{{ pagefind.image }}</span>{% endif %}
-        {% if tags %}
-          {%- for tag in tags -%}
-            <span data-pagefind-filter="topics">
-              {%- if pagefindTopics -%}{{ pagefindTopics }}{%- else -%}noTopic{%- endif -%}
-            </span>
-          {%- endfor -%}
-        {% endif %}
+        <span data-pagefind-filter="topics">
+        {%- if pagefindTopics -%}
+          {{ pagefindTopics }}
+        {%- else -%}
+          noTopic
+        </span>
+        {%- endif -%}
       </div>
     {% endif %}
 
