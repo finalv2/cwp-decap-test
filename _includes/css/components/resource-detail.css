@@ -1,0 +1,44 @@
+.resource-detail {
+  background: url("/images/banners/resource.jpg") center center no-repeat;
+  background-size: cover;
+  min-block-size: 80dvh;
+  display: flex;
+  align-items: center;
+}
+
+.resource-detail .l-wrapper {
+  justify-items: center;
+}
+
+.resource-detail .page-topics {
+  justify-items: start;
+  padding: 0;
+}
+
+.resource-detail .nametag-badge {
+  left: 50%;
+  translate: -50% 0;
+}
+
+.resource-detail .nametag-text {
+  flex-direction: column;
+  justify-items: start;
+  color: var(--c-base);
+  text-align: center;
+}
+
+.resource-download {
+  position: relative;
+  z-index: 2;
+  margin-block-start: calc(var(--t-paragraph) * 2);
+}
+
+.resource-download::before {
+  position: absolute;
+  content: "";
+  inset: -2rem;
+  background: url("/images/banners/banner-circle-1.svg") center center no-repeat;
+  background-size: contain;
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
