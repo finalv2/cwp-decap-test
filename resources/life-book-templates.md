@@ -7,6 +7,6 @@ file: /images/life-book-for-youth.pdf
 tags:
   - resource
   - supportive-relationships
-  - no-meta
+  - noTopic
 ---
 Caregivers and youth can use a life book to capture milestones, relationships, and memories.
