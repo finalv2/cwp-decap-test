@@ -47,7 +47,6 @@ pagefind:
   {{ content | md | safe }}
 
 {%- if resources -%}
-  <h3>Resources</h3>
   {% for relatedResource in resources %}
     {% for item in collections.resources %}
       {%- if item.data.title === relatedResource -%}

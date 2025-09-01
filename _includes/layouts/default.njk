@@ -36,19 +36,32 @@
     </defs>
   </svg>
     {% include "partials/navbar.njk" %}
+
+    {%- set pagefindTopics -%}
+      {%- for topic in collections.topics -%}
+        {%- for tag in tags -%}
+          {%- if topic.data.id == tag -%}
+            {{ topic.data.title }}
+            {%- if not loop.last -%}, {% endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endset -%}
+
     <div class="content" data-pagefind-body>
       {{ content | md | safe }}
     </div>
     {% include "partials/footer.njk" %}
 
     {% if pagefind %}
+
       <div hidden>
         {% if pagefind.type %}<span data-pagefind-filter="pageType">{{ pagefind.type }}</span>{% endif %}
         {% if pagefind.image %}<span data-pagefind-meta="image">{{ pagefind.image }}</span>{% endif %}
         {% if tags %}
           {%- for tag in tags -%}
             <span data-pagefind-filter="topics">
-              {%- if tag == "noTopic" -%}noTopic{%- else -%}{{ topics[tag].title }}{%- endif -%}
+              {%- if pagefindTopics -%}{{ pagefindTopics }}{%- else -%}noTopic{%- endif -%}
             </span>
           {%- endfor -%}
         {% endif %}

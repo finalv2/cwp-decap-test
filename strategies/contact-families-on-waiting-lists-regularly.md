@@ -28,7 +28,3 @@ Contact families regularly through calls, texts, or emails to keep them engaged.
 ## This strategy in action
 
 **Hennepin County, Minnesota** has a dedicated employee who stays in touch with people on their wait list.
-
-- - -
-
-~~The Prevention section is generously supported by the Doris Duke Foundation as part of the [OPT-In for Families Initiative](https://www.ddf-opt-in.org/).~~
