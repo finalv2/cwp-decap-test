@@ -224,3 +224,7 @@ mark {
   padding-inline: 0.25rem;
   border-radius: 4px;
 }
+
+p:empty {
+  display: none;
+}
