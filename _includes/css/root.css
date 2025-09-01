@@ -17,6 +17,8 @@
 
     --radius-lg: 0.5rem;
 
+    --bg-graph-paper: #FBFCFD url("/images/header-bg.svg") center center;
+
     --font-primary: "Libre Franklin", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     --font-secondary: "Space Mono", monospace;
 

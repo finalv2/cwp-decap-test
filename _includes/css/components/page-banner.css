@@ -1,7 +1,7 @@
 /* Banner with image on main section pages (e.g. "All Topics") */
 .page-banner {
   padding-block: calc(var(--font-base-leading) * 3);
-  background: #FBFCFD url("/images/header-bg.svg");
+  background: var(--bg-graph-paper);
   position: relative;
   overflow: hidden;
   display: flex;

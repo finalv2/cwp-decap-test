@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   overflow: hidden;
-  background: url("/images/header-bg.svg");
+  background: var(--bg-graph-paper);
   padding-block: calc(var(--t-paragraph) * 5);
 }
 
