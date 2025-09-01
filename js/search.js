@@ -159,7 +159,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     for (const filter of allFilters) {
       const input = filter.querySelector("input");
       const filterType = input.dataset.typeFilter ? "pageType" : "topics";
-      const counter = filter.querySelector(".search-counter");
+      // const counter = filter.querySelector(".search-counter");
       const isAllResults = filter.dataset.allResults;
       const criteria = input.dataset.typeFilter || input.dataset.topicFilter;
       const currentCount = search.filters[filterType][criteria];
@@ -176,11 +176,11 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       }
 
       if (searchType === "query" || (searchType === "type" && input.dataset.topicFilter)) {
-        if (isAllResults) {
-          counter.innerHTML = allResultsCount;
-        } else {
-          counter.innerHTML = count;
-        }
+        // if (isAllResults) {
+        //   counter.innerHTML = allResultsCount;
+        // } else {
+        //   counter.innerHTML = count;
+        // }
         if (count || isAllResults) {
           filter.hidden = false;
         } else if (!count && input.checked) {
