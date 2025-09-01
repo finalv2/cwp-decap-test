@@ -1,5 +1,5 @@
 ---
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 title: Create life books for children and youth in care
 tags:

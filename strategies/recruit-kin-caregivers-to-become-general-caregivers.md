@@ -1,5 +1,5 @@
 ---
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 title: Recruit kin caregivers to become general caregivers
 tags:

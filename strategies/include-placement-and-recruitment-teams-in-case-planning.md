@@ -5,7 +5,7 @@ tags:
   - strategy
   - kin-engagement
   - recruitment
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 ---
 

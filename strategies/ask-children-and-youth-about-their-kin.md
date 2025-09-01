@@ -1,5 +1,5 @@
 ---
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 title: Ask children and youth about their kin
 tags:

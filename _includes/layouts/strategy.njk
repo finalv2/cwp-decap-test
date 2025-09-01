@@ -4,6 +4,10 @@ pagefind:
   type: Strategy
   image: /images/play.svg
 ---
+
+{%- from '_macros/resource-card.njk' import resourceCard %}
+
+
 <div class="page-banner" data-type="strategy">
 <div class="l-wrapper">
   <div class="nametag">
@@ -46,15 +50,15 @@ pagefind:
   {%- if resources -%}
     <h3>Resources</h3>
     {% for relatedResource in resources %}
-      {% assign targetResource = collections.resources | find: relatedResource %}
+      {% set targetResource = collections.resources | selectAttr("relatedResource") %}
 
-      {%- include "components/card.liquid",
-        type: "resource",
+      {{ resourceCard({
         filetype: targetResource.data.filetype,
         title: targetResource.data.title,
         description: targetResource.content,
         url: targetResource.data.url
-      -%}
+        })
+      }}
     {% endfor %}
   {%- endif -%}
 </div>

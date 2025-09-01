@@ -4,7 +4,7 @@ order: 3
 tags:
   - strategy
   - supporting-older-youth
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 ---
 

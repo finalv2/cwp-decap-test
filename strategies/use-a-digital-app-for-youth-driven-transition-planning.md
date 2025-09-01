@@ -1,5 +1,5 @@
 ---
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 title: Use a digital app for youth-driven transition planning
 tags:

@@ -5,6 +5,8 @@ pagefind:
   type: Meeting
 ---
 
+{%- from '_macros/resource-card.njk' import resourceCard %}
+
 <div class="page-banner" data-type="meeting">
   <div class="l-wrapper">
     <div class="l-stack-basic">
@@ -45,22 +47,22 @@ pagefind:
 
 {{ content }}
 
-{%- if resources -%}
-  <h3>Resources</h3>
 
-  <div class="l-stack-basic">
-  {%- for relatedResource in resources -%}
-    {% assign targetResource = collections.resources | find: relatedResource %}
+  {%- if resources -%}
+    <h3>Related resources</h3>
+    {% for relatedResource in resources %}
+      {% set targetResource = collections.resources | selectAttr("relatedResource") %}
 
-    {%- include "components/card.liquid",
-      type: "resource",
-      filetype: targetResource.data.filetype,
-      title: targetResource.data.title,
-      description: targetResource.content,
-      url: targetResource.data.url
-    -%}
-  {%- endfor -%}
-{%- endif -%}
+      {{ resourceCard({
+        filetype: targetResource.data.filetype,
+        title: targetResource.data.title,
+        description: targetResource.content,
+        url: targetResource.data.url
+        })
+      }}
+    {% endfor %}
+  {%- endif -%}
+</div>
 </div>
   </div>
 </div>

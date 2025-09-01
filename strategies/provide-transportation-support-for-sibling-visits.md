@@ -4,7 +4,7 @@ order: 10
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 ---
 

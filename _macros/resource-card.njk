@@ -1,0 +1,22 @@
+{%- macro storyCard(params) -%}
+
+{% if filetype == "pdf" %}
+  {% set cardIcon = "file-pdf" %}
+{% elif filetype == "doc" %}
+  {% set cardIcon = "file-doc" %}
+{% else %}
+  {% set cardIcon =  "link" %}
+{% endif %}
+
+<a href="{{ params.url }}" class="card" data-type="{{ params.type }}">
+  <h3 class="card-header h5">{% if cardIcon %}{% icon cardIcon %}{% endif %}{{ params.title }}</h3>
+  <p class="card-body">{{ params.description }}</p>
+  <p class="card-cta">
+    <span class="card-download">
+      {% icon 'download-simple-arrow', 'card-download-arrow' %}
+      {% icon 'download-simple-box' %}
+    </span>
+    Download
+  </p>
+</a>
+{%- endmacro -%}

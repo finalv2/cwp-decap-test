@@ -4,7 +4,7 @@ order: 8
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 ---
 

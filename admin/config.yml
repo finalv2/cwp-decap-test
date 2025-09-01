@@ -40,7 +40,7 @@ collections:
     create: true
     label_singular: "strategy"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/strategy.liquid" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/strategy.njk" }
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["strategy"], hint: "Add your topics here"}
@@ -84,7 +84,7 @@ collections:
     create: true
     label_singular: "meeting"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/meeting.liquid" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/meeting.njk" }
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Links", name: "body", widget: "markdown" }

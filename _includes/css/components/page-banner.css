@@ -101,7 +101,6 @@
 .page-banner h1,
 .page-banner .h1 {
     text-align: left;
-    color: var(--c-base);
     max-inline-size: 38ch;
     margin-block-start: 0;
 }

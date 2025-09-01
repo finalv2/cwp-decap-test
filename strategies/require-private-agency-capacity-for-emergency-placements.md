@@ -4,7 +4,7 @@ order: 2
 tags:
   - strategy
   - emergency-placements
-layout: layouts/strategy.liquid
+layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 ---
 
