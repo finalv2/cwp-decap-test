@@ -48,9 +48,9 @@ Placing children who are new to foster care in short-term emergency homes can gi
 
 **Indiana** provides a higher per diem rate in exchange for specific commitments:
 
-* You can only say no twice every quarter  
-* You're open to taking children ages 0-18  
-* You will answer the phone in the middle of the night  
+* You can only say no twice every quarter.
+* You're open to taking children ages 0-18.
+* You will answer the phone in the middle of the night.
 * You will maintain placement for up to 7 days.
 
 **Montgomery County, MD** asks foster families to commit to being on call for 1 or 2 weeks. They can generally specify their own availability.
