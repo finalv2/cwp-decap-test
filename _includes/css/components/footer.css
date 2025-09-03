@@ -15,16 +15,22 @@
   top: 0;
   bottom: 0;
   right: -10vw;
-  background: url("/images/banners/contribute.jpg") center center no-repeat;
-  background-size: cover;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
+  .footer h2,
+  .footer p {
+    max-inline-size: 40vw;
+    justify-self: start;
+  }
+
   .footer-img {
     mask-position: 0 50%;
-    mask-size: contain;
+    mask-size: cover;
     mask-repeat: no-repeat;
     mask-image: url("/images/mask-footer.svg");
+    background: url("/images/banners/contribute.jpg") right center no-repeat;
+    background-size: cover;
   }
 }
 

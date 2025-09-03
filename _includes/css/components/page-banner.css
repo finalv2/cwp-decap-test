@@ -33,33 +33,6 @@
   top: 0;
   bottom: 0;
   right: -10vw;
-  background: var(--background) center center no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 48rem) {
-  .page-banner-img {
-    mask-position: 0 15%;
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    mask-image: url("/images/banners/mask.svg");
-  }
-
-  [data-type="search"] .page-banner-img {
-    mask-image: url("/images/banners/mask2.svg");
-  }
-
-  [data-type="topic"] .page-banner-img {
-    mask-image: url("/images/banners/mask3.svg");
-  }
-
-  [data-type="story"] .page-banner-img {
-    mask-image: url("/images/banners/mask-story.svg");
-  }
-
-  [data-type="about"] .page-banner-img {
-    mask-image: url("/images/banners/mask4.svg");
-  }
 }
 
 .page-banner-img::after {
@@ -103,14 +76,6 @@
     text-align: left;
     max-inline-size: 38ch;
     margin-block-start: 0;
-}
-
-@media (min-width: 48rem) {
-  .page-banner h2,
-  .page-banner h1,
-  .page-banner .h1 {
-    max-inline-size: 40vw;
-  }
 }
 
 .page-banner p {
@@ -233,4 +198,37 @@
   inline-size: 1.5em;
   block-size: 1.5em;
   fill: currentColor;
+}
+
+@media (min-width: 60rem) {
+  .page-banner h2,
+  .page-banner h1,
+  .page-banner .h1 {
+    max-inline-size: 40vw;
+  }
+
+  .page-banner-img {
+    mask-position: 0 15%;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background: var(--background) center center no-repeat;
+    background-size: cover;
+    mask-image: url("/images/banners/mask.svg");
+  }
+
+  [data-type="search"] .page-banner-img {
+    mask-image: url("/images/banners/mask2.svg");
+  }
+
+  [data-type="topic"] .page-banner-img {
+    mask-image: url("/images/banners/mask3.svg");
+  }
+
+  [data-type="story"] .page-banner-img {
+    mask-image: url("/images/banners/mask-story.svg");
+  }
+
+  [data-type="about"] .page-banner-img {
+    mask-image: url("/images/banners/mask4.svg");
+  }
 }
