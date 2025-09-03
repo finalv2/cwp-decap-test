@@ -2,9 +2,9 @@
 layout: "layouts/community"
 permalink: "/about/"
 title: About
+description: Learn about our mission, how we develop strategies, and how you can get involved.
 type: about
 image: /images/banners/about.jpg
-description: The Child Welfare Playbook is a collection of proven, practical strategies to prevent family separation and improve outcomes for children and youth in the child welfare system. We bring together child welfare agencies from across the country to identify successful approaches, document them clearly, and make them available for anyone to adopt.
 pagefind:
   type: Page
 tags:
