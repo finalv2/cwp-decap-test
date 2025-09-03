@@ -11,31 +11,22 @@ tags:
   - noTopic
 ---
 
-## Our mission
+## What we do
 
 The Child Welfare Playbook is a collection of proven, practical strategies to prevent family separation and improve outcomes for children and youth in the child welfare system. We bring together child welfare agencies from across the country to identify successful approaches, document them clearly, and make them available for anyone to adopt.
 
-## How we work
+Everything in the playbook is designed for immediate use, including templates, checklists, policy language, and implementation guides. We believe in sharing what we learn, so feel free to copy anything you find useful.
 
-Every month, our nationwide working group focuses on a specific child welfare challenge. We interview practitioners, share findings and emerging practices, and document successful strategies in the playbook. These collaborative sessions generate practical, field-tested approaches that any jurisdiction can implement.
+## How we do it
 
-All playbook content is designed for immediate use, including templates, checklists, policy language, and implementation guides. We believe in sharing what we learn, so feel free to copy anything you find useful.
+The playbook is developed by a working group of child welfare professionals from every state, many tribes, and most territories. The group meets every month to focus on specific child welfare challenges. Outside of our monthly meetings, [Bloom Works](https://bloomworks.digital/) collaborates with working group members to design, develop, and write the playbook.
 
-## Join our community
+The work is supported by the A.L. Mailman Family Foundation, [Aviv Foundation](https://www.avivfoundation.org/), [Ballmer Group](https://www.ballmergroup.org/), [Beeck Center for Social Impact & Innovation](https://beeckcenter.georgetown.edu), [Doris Duke Foundation](https://www.dorisduke.org/), [Foster America](https://www.foster-america.org/), [Greenbridge Family Foundation](https://www.greenbridge.foundation/), [New America](https://www.newamerica.org/new-practice-lab/), [North Forty Group](https://raikesfoundation.org), [Schmidt Futures](https://www.schmidtfutures.com), [Stand Together Trust](https://standtogether.org), and [Think of Us](https://www.thinkof-us.org/).
 
-The Child Welfare Playbook working group includes participants from every state, most territories, and many title IV-E tribes. We welcome any child welfare agency, organization, or individual with expertise to join us.
+## Join us
 
-Participation is free and requires just two hours a month. Members get the following benefits:
+We welcome any child welfare agency, organization, or individual with expertise to join us. There is no cost to participate and meetings are held once a month.
 
-* Access to promising practices in ready-to-use formats
-* Comparative data on practices across jurisdictions
-* Opportunities to participate in cross-state projects
-* Implementation assistance for adapting strategies
+Email us at [members@childwelfareplaybook.com](mailto:members@childwelfareplaybook.com) to join the working group.
 
-To join, email [members@childwelfareplaybook.com](mailto:members@childwelfareplaybook.com).
-
-## Our partners
-
-The Child Welfare Playbook is a collaboration between states leading child welfare innovation, [Bloom Works](https://bloomworks.digital/), and [New America’s Public Interest Technology team](https://www.newamerica.org/pit/), in partnership with [Foster America](https://www.foster-america.org/) and [Think of Us](https://www.thinkof-us.org/).
-
-This work is supported by the A.L. Mailman Family Foundation, [Aviv Foundation](https://www.avivfoundation.org/), [Ballmer Group](https://www.ballmergroup.org/), [Beeck Center for Social Impact & Innovation](https://beeckcenter.georgetown.edu), [Doris Duke Foundation](https://www.dorisduke.org/), [Greenbridge Family Foundation](https://www.greenbridge.foundation/), [New America's New Practice Lab](https://www.newamerica.org/new-practice-lab/), [Schmidt Futures](https://www.schmidtfutures.com), [Stand Together Trust](https://standtogether.org), and [North Forty Group](https://raikesfoundation.org).
+Watch recordings of our past meetings.
