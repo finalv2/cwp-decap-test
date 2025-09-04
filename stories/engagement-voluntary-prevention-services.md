@@ -5,7 +5,7 @@ author: Bloom Works
 type: Blog post
 layout: "layouts/story"
 description: Learn about effective strategies for reaching and engaging people in voluntary prevention services.
-tags: ["prevention", "story"]
+tags: ["story", "prevention"]
 image: /images/engagement-voluntary-prevention.jpg
 ---
 

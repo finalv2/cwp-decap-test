@@ -4,7 +4,7 @@ date: 2025-01-23T12:00:00.000
 author: Bloom Works
 description: Oklahoma researched whether streamlined kin-specific licensing requirements would affect permanency outcomes and found no negative impacts.
 type: Research report
-tags: ["caregiver-licensing", "story"]
+tags: ["story", "caregiver-licensing"]
 layout: "layouts/story"
 featured: true
 image: /images/oklahoma.jpg
