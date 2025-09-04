@@ -1,0 +1,8 @@
+title: Share your ideas
+description: |
+  Child welfare agencies and professionals across the country contribute to the playbook. You can share your ideas for adding or improving strategies, stories, and resources. Or, you can share your feedback on something that isn't working.
+
+  Submit a form to share your ideas.
+buttonText: Contribute
+buttonURL: "#"
+copyright: "&copy;{{ helpers.currentYear() }}  •   Managed by Bloom Works"
