@@ -59,6 +59,27 @@ pagefind:
       }}
     {% endfor %}
   {%- endif -%}
+
+  {%- if stories -%}
+    <h2>Stories</h2>
+    {% for relatedStory in stories %}
+      {% for item in collections.stories %}
+        {%- if item.data.title === relatedStory -%}
+          {{ storyCard({
+              image: story.data.image,
+              type: story.data.type,
+              title: story.data.title,
+              description: story.data.description,
+              author: story.data.author,
+              date: story.date,
+              featured: false,
+              url: story.url
+            })
+          }}
+        {%- endif -%}
+      {% endfor %}
+    {%- endfor -%}
+  {%- endif -%}
 </div>
 </div>
   </div>

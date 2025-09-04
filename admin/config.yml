@@ -110,3 +110,5 @@ collections:
       - { label: "YouTube ID", name: "youtubeId", widget: "string", hint: "The YouTube ID is the set of ~12 characters that appears after https://www.youtube.com/watch?v= in the video URL." }
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
       - { label: "Description of meeting", name: "body", widget: "markdown", required: false }
+      - { label: "Related resources", required: false, name: "resources", widget: "relation", collection: "resources", value_field: "title", search_fields: ["title", "url"], multiple: true}
+      - { label: "Related stories", required: false, name: "stories", widget: "relation", collection: "stories", value_field: "title", search_fields: ["title", "url"], multiple: true}
