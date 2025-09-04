@@ -2,11 +2,10 @@
   <div class="footer-img"></div>
   <div class="l-wrapper">
     <div class="l-stack-basic">
-      <h2>Share your ideas</h2>
-      <p>Child welfare agencies and professionals across the country contribute to the playbook. You can share your ideas for adding or improving strategies, stories, and resources. Or, you can share your feedback on something that isn't working.</p>
-      <p>Submit a form to share your ideas.</p>
-      <p><a href="#" class="button">Contribute</a></p>
-      <p class="footer-copyright subhead"> &copy;{{ helpers.currentYear() }}  •   Managed by Bloom Works</p>
+      <h2>{{ footer.title }}</h2>
+      {{ footer.description | md | safe}}
+      <p><a href="{{ footer.buttonURL }}" class="button">{{ footer.buttonText }}</a></p>
+      <p class="footer-copyright subhead">&copy;{{ helpers.currentYear() }}  •   {{ footer.credit }}</p>
     </div>
   </div>
 </footer>

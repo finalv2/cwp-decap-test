@@ -3,22 +3,42 @@ backend:
   branch: main
 media_folder: 'images'
 collections:
-  - name: "homepage"
-    label: "Homepage"
+  - name: "pages"
+    label: "Pages"
     create: false
     files:
       - label: "Homepage"
         name: "home"
         file: "_data/home.yml"
         fields:
-          - { label: "Banner header", name: "bannerHeader", widget: "string" }
-          - { label: "Banner subheader", name: "bannerSubheader", widget: "markdown", minimal: true }
-          - { label: "Topics section header", name: "topicHeader", widget: "string" }
-          - { label: "Topics section subheader", name: "topicSubheader", widget: "markdown", minimal: true }
-          - { label: "Stories section header", name: "storyHeader", widget: "string" }
-          - { label: "Stories section subheader", name: "storySubheader", widget: "markdown", minimal: true }
-          - { label: "About section header", name: "aboutHeader", widget: "string" }
-          - { label: "About section content", name: "aboutContent", widget: "markdown" }
+          - { label: "Banner header", name: "bannerHeader", widget: "string", required: false }
+          - { label: "Banner subheader", name: "bannerSubheader", widget: "markdown", minimal: true, required: false }
+          - { label: "Topics section header", name: "topicHeader", widget: "string", required: false }
+          - { label: "Topics section subheader", name: "topicSubheader", widget: "markdown", minimal: true, required: false }
+          - { label: "Stories section header", name: "storyHeader", widget: "string", required: false }
+          - { label: "Stories section subheader", name: "storySubheader", widget: "markdown", minimal: true, required: false }
+      - label: "About"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "markdown", minimal: true, required: false }
+          - { label: "Content", name: "content", widget: "markdown", required: false }
+      - label: "Search"
+        name: "search"
+        file: "_data/search.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "markdown", minimal: true, required: false }
+      - label: "Footer"
+        name: "footer"
+        file: "_data/footer.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "markdown", required: false }
+          - { label: "Button text", name: "buttonText", widget: "markdown", minimal: true, required: false }
+          - { label: "Button URL", name: "buttonURL", widget: "string", required: false }
+          - { label: "Copyright credit", name: "credit", widget: "string", required: false }
   - name: "topics"
     label: "Topics"
     folder: "topics"

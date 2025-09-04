@@ -1,7 +1,8 @@
 ---
 layout: "layouts/content.njk"
-title: Search
-description: Search the playbook for strategies, stories, resources, and working group meetings.
+eleventyComputed:
+  title: "{{ search.title }}"
+  description: "{{ search.description }}"
 type: search
 search: true
 image: /images/banners/search.jpg
@@ -78,8 +79,11 @@ pageTypes:
         </label>
       {%- endfor -%}
     </fieldset>
+
     <fieldset id="search-topic-filters" class="search-topic-filters l-stack-basic">
-      <h4>Filter by topic</h4>
+      <h4>Filter by&hellip;</h4>
+
+      <h5 class="subhead">Topic</h5>
       {%- for topic in collections.topics -%}
         {%- unless topic.url == false -%}
           <label for="{{ topic.data.title | slugify }}" class="filter-label" hidden>

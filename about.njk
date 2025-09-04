@@ -1,0 +1,17 @@
+---
+layout: "layouts/content.njk"
+permalink: "/about/"
+type: about
+eleventyComputed:
+  title: "{{ about.title }}"
+  description: "{{ about.description }}"
+image: '/images/banners/about.jpg'
+pagefind:
+  type: Page
+tags:
+  - noTopic
+---
+
+<div class="l-stack-basic">
+  {{ about.content | md | safe }}
+</div>

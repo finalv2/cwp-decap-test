@@ -5,4 +5,4 @@ description: |
   Submit a form to share your ideas.
 buttonText: Contribute
 buttonURL: "#"
-copyright: "&copy;{{ helpers.currentYear() }}  •   Managed by Bloom Works"
+credit: "Managed by Bloom Works"
