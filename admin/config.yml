@@ -106,5 +106,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/meeting.njk" }
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Links", name: "body", widget: "markdown" }
+      - { label: "Date of meeting", name: "title", widget: "string" }
+      - { label: "YouTube ID", name: "youtubeId", widget: "string", hint: "The YouTube ID is the set of ~12 characters that appears after https://www.youtube.com/watch?v= in the video URL." }
+      - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
+      - { label: "Description of meeting", name: "body", widget: "markdown", required: false }
