@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   background: var(--bg-graph-paper);
-  padding-block: calc(var(--t-paragraph) * 5);
+  padding-block: calc(var(--t-paragraph) * 3);
 }
 
 .footer :is(h2, p) {
