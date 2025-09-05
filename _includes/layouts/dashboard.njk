@@ -4,13 +4,20 @@ layout: layouts/default.njk
 
 <div class="page-banner" data-type="dashboard">
   <div class="l-wrapper">
-  <div class="nametag" data-pagefind-meta="title">
-    <span class="nametag-badge subhead">Dashboard<span class="sr-only">: </span></span>
-    <div class="nametag-text">
-      <h2 class="h1">{{ title }}</h2>
+    <div class="l-stack-basic">
+      <div class="nametag" data-pagefind-meta="title">
+        <span class="nametag-badge subhead">Dashboard<span class="sr-only">: </span></span>
+        <div class="nametag-text">
+          <h2 class="h1">{{ title }}</h2>
+        </div>
+      </div>
+      {% if description %}<p>{{ description }}</p>{% endif %}
+      {% if tags and tags.length <= 2 %}
+        {% for tag in tags %}
+          {% if tag != "dashboard" %}<p><a href="/topics/{{ tag }}" class="page-banner-back subhead">{% icon "arrow-u-up-left" %} Back to topic</a></p>{% endif %}
+        {% endfor %}
+      {% endif %}
     </div>
-  </div>
-  {% if description %}<p>{{ description }}</p>{% endif %}
   </div>
   <div class="page-banner-img" style="--background: url('/images/banners/dashboard.jpg')"></div>
 </div>

@@ -69,7 +69,9 @@
     z-index: 3;
 }
 
-.page-banner .l-wrapper * {
+.page-banner p,
+.page-banner h1,
+.page-banner h2 {
   max-inline-size: var(--t-measure);
 }
 
@@ -113,7 +115,7 @@
   margin-block-start: 0;
   padding: var(--t-paragraph);
   background: #fff;
-  border: 1px solid var(--c-blue);
+  border: 2px solid var(--c-blue);
   color: var(--c-blue);
   border-radius: var(--radius-lg);
   display: flex;
