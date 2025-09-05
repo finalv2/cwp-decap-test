@@ -1,6 +1,21 @@
 .story-list-wrapper {
-  --l-stack-gap: calc(var(--font-base-leading) * 3);
+  margin-block-start: calc(var(--font-base-leading) * 1.5);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100%);
 }
+
+@media (min-width: 60rem) {
+  .story-list-wrapper {
+    grid-template-columns: repeat(auto-fit, calc(var(--t-measure) * 0.75));
+  }
+}
+
+@media (min-width: 80rem) {
+  .story-list-wrapper {
+    grid-template-columns: repeat(auto-fit, var(--t-measure));
+  }
+}
+
 
 .story-card {
   display: flex;
@@ -75,6 +90,7 @@
   font-size: var(--font-xl-size);
   line-height: var(--font-xl-leading);
   text-balance: none;
+  inline-size: 100%;
 }
 
 .story-card-meta {
