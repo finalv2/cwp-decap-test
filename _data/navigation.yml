@@ -1,7 +1,7 @@
 ---
 items:
 - text: Read
-  url: "/"
+  url: "/#browse-topics"
 - text: About
   url: "/about/"
 - text: Search

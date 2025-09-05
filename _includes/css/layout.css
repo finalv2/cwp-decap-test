@@ -91,10 +91,6 @@ within specific components.
   }
 }
 
-.l-grid > * {
-  margin-block-end: var(--font-base-leading);
-}
-
 /*
 ## For vertical layouts (like multi-paragraph blocks of prose:)
 

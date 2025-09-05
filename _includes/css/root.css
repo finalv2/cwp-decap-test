@@ -1,6 +1,7 @@
 :root {
   --c-base: #575B60;
 
+
   --c-primary: #0052AF;
   --c-blue: var(--c-primary, #003993);
   --c-gray-200: rgb(229 231 235);
@@ -8,6 +9,8 @@
   --c-gray-900: rgb(217 217 217);
   --c-light-blue: rgb(248 251 255);
   --c-faded-blue: #6495DA;
+
+  --c-link-text: var(--c-blue);
 
   --c-headline: #3A4450;
 
