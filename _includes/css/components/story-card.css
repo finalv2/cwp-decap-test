@@ -8,6 +8,11 @@
   position: relative;
 }
 
+.story-card p,
+.story-card-meta {
+  color: var(--c-base);
+}
+
 .story-card:not([data-featured])::before,
 .story-card-content:not([data-featured])::before {
   --border: 2px solid var(--c-blue);

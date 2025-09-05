@@ -147,6 +147,7 @@
   text-align: left;
   flex: 1;
   padding-block: 0.75rem;
+  color: var(--c-base);
 }
 
 .card-cta {

@@ -24,6 +24,10 @@
   z-index: -1;
 }
 
+.topic-card p {
+  color: var(--c-base);
+}
+
 .topic-card div {
   display: flex;
   gap: 0.5rem;
