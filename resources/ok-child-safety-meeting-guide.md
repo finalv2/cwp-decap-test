@@ -2,7 +2,8 @@
 layout: layouts/resource.njk
 title: Child safety guidebook
 filetype: pdf
-url: https://oklahoma.gov/content/dam/ok/en/okdhs/documents/okdhs-publication-library/14-41_CWSSafetyGuideBook_cws_10152020.pdf
+url: child-welfare-playbook-v2/images/oklahoma-safety-guidebook.pdf
+file: /images/oklahoma-safety-guidebook.pdf
 tags:
   - resource
   - prevention
