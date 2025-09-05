@@ -5,7 +5,7 @@
       <h2>{{ footer.title }}</h2>
       {{ footer.description | md | safe}}
       <p><a href="{{ footer.buttonURL }}" class="button">{{ footer.buttonText }}</a></p>
-      <p class="footer-copyright subhead">&copy;{{ helpers.currentYear() }}  •   {{ footer.credit }}</p>
+      <p class="footer-copyright subhead">{{ footer.credit }}  •  &copy;{{ helpers.currentYear() }} </p>
     </div>
   </div>
 </footer>
