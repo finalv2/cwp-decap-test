@@ -82,6 +82,7 @@
 
 .page-banner p {
     text-wrap: balance;
+    max-inline-size: var(--t-measure);
 }
 
 
