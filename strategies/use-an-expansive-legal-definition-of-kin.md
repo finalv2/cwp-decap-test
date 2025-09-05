@@ -17,8 +17,7 @@ Use an expansive legal definition that includes both biological relatives and pe
 
 ### Use the recommended definition
 
-| \[block quote] *“Individuals related to a child by blood, marriage, tribal custom, and/or adoption and other individuals who have an emotionally significant relationship with the child or the child’s parents or other family members.”* |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+> Individuals related to a child by blood, marriage, tribal custom, and/or adoption and other individuals who have an emotionally significant relationship with the child or the child’s parents or other family members.
 
 This definition includes what's often called "fictive kin": people who aren't related by blood, marriage, or adoption but have meaningful relationships with the child or family.
 
