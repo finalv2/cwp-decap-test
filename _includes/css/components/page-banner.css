@@ -69,9 +69,7 @@
     z-index: 3;
 }
 
-.page-banner p,
-.page-banner h1,
-.page-banner h2 {
+.page-banner:not[data-type="strategy"] :is(p, h1, h2) {
   max-inline-size: var(--t-measure);
 }
 
@@ -97,7 +95,7 @@
 .nametag {
   position: relative;
   inline-size: max-content;
-  max-inline-size: max(50vw, 40rem);
+  max-inline-size: 75ch;
 }
 
 .nametag-badge {
@@ -125,10 +123,6 @@
 
 .nametag-text h2 {
   margin: 0;
-}
-
-.page-banner[data-type="strategy"] :is(.nametag, .nametag *) {
-  max-inline-size: calc(var(--t-measure) * 1.5);
 }
 
 .nametag-text svg {
@@ -204,9 +198,7 @@
 }
 
 @media (min-width: 60rem) {
-  .page-banner h2,
-  .page-banner h1,
-  .page-banner .h1 {
+  .page-banner:not([data-type="strategy"]) :is(h2, h1, .h1) {
     max-inline-size: 40vw;
   }
 
