@@ -1,5 +1,5 @@
 ---
-layout: "layouts/content.njk"
+layout: "layouts/default.njk"
 eleventyComputed:
   title: "{{ search.title }}"
   description: "{{ search.description }}"
@@ -36,6 +36,16 @@ pageTypes:
     iconName: cards-three
 ---
 
+<div class="page-banner" data-type="search">
+  <div class="l-wrapper">
+    <h2 class="h1" data-pagefind-meta="title">{{ title }}</h2>
+    <p>{{ description }}</p>
+  </div>
+  <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
+</div>
+
+<div class="l-section">
+<div class="l-wrapper">
 <div class="search-wrapper">
 <form id="search" class="search-form">
   <fieldset class="search-input-wrapper">
@@ -111,4 +121,5 @@ pageTypes:
   </div>
 </div>
 </div>
+</div></div>
 <script type="module" src="/js/search.js"></script>

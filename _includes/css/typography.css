@@ -1,21 +1,5 @@
 /* Set maximum width of all prose elements to typographic measure */
 
-* {
-  max-inline-size: var(--t-measure);
-}
-
-html,
-body,
-div,
-header,
-nav,
-main,
-footer,
-figure,
-iframe {
-  max-inline-size: unset;
-}
-
 /* Responsive font sizing
    (See https://css-tricks.com/simplified-fluid-typography/ for a detailed explanation)
 */

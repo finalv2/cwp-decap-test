@@ -14,12 +14,12 @@
 .l-wrapper,
 .l-wrapper-text {
   inline-size: var(--w-container);
-  margin: 0 auto;
   container-type: inline-size;
 }
 
 .l-wrapper {
   max-inline-size: var(--w-max);
+  margin: 0 auto;
 }
 
 .l-wrapper-text {

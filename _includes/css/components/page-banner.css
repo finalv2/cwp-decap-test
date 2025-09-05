@@ -64,11 +64,13 @@
   content: none;
 }
 
-
-
 .page-banner .l-wrapper {
     position: relative;
     z-index: 3;
+}
+
+.page-banner .l-wrapper * {
+  max-inline-size: var(--t-measure);
 }
 
 .page-banner h1,
@@ -86,7 +88,6 @@
 .page-banner[data-type="strategy"] .l-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: stretch;
   gap: var(--t-paragraph);
 }
