@@ -14,7 +14,7 @@ pagefind:
         <span class="nametag-badge subhead">Topic</span>
         <div class="nametag-text">
           {% icon icon %}
-          <h2 class="h1" data-pagefind-meta="title">{{ title }}</h2>
+          <h2 class="h1">{{ title }}</h2>
         </div>
       </div>
       <p>{{ content | md | safe}}</p>
@@ -71,3 +71,5 @@ pagefind:
   </div>
   </div>
 </div>
+
+<span data-pagefind-meta="title" hidden>Topic: {{ title }}</span>

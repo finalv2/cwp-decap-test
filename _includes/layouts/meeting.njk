@@ -1,6 +1,7 @@
 ---
 layout: layouts/default.njk
 video: true
+pageIndex: all
 pagefind:
   type: Meeting
 ---
@@ -10,7 +11,7 @@ pagefind:
 <div class="page-banner" data-type="meeting">
   <div class="l-wrapper">
     <div class="l-stack-basic">
-      <div class="nametag" data-pagefind-meta="title">
+      <div class="nametag" data-pagefind-meta="title:{{ title}} community meeting">
         <span class="nametag-badge subhead">Community meeting<span class="sr-only">:</span></span>
         <div class="nametag-text">
           <h2>{{ title }}</h2>
@@ -41,7 +42,7 @@ pagefind:
       <div id="plyr" data-plyr-provider="youtube" data-plyr-embed-id="{{ youtubeId }}"></div>
     </div>
 
-<div class="l-stack" data-pagefind-meta="topics:{{ pagefindMetaTags }}">
+<div class="l-stack">
 {{ content | md | safe }}
 
 
@@ -54,7 +55,8 @@ pagefind:
         filetype: targetResource.data.filetype,
         title: targetResource.data.title,
         description: targetResource.content,
-        url: targetResource.data.url
+        url: targetResource.data.url,
+        file: targetResource.data.file
         })
       }}
     {% endfor %}
