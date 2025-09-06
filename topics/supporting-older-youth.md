@@ -2,7 +2,7 @@
 id: supporting-older-youth
 title: Supporting older youth
 image: /images/banners/older-youth.jpg
-icon: butterfly
+icon: cake
 layout: "layouts/topic.njk"
 summary: Provide guidance and resources to support older youth as they transition to independence.
 ---

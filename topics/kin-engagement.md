@@ -1,7 +1,7 @@
 ---
 id: kin-engagement
 title: Kin engagement
-icon: binoculars
+icon: pulse
 featured: true
 image: "/images/banners/kin-engagement.jpg"
 layout: "layouts/topic.njk"
