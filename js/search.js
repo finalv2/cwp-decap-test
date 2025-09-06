@@ -15,13 +15,14 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const resultsWrapper = document.querySelector("#search-results");
 
   const allResultsInput = document.querySelector(`label[for="type-all"] input`);
-  const allResultsCounter = document.querySelector(`label[for="type-all"] .search-counter`);
 
   const filterWrapper = document.querySelector("#search-filters");
   const allFilters = document.querySelectorAll("#search-filters label");
   const typeFilters = document.querySelectorAll ("#search-type-filters label");
   const topicFilters = document.querySelectorAll("#search-topic-filters label");
   const resultCountText = document.querySelector("#search-result-count");
+  const searchInput = document.querySelector("#search-input");
+
   let allResultsCount = 0;
   let visibleResultsCount;
 
@@ -38,7 +39,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const noMatchesTemplate = document.querySelector("#search-no-matches");
     const resultTemplate = document.querySelector("#search-result");
 
-    const currentQuery = document.querySelector("#search-input").value;
+    const currentQuery = searchInput.value;
 
     // If the user has already filtered their search,
     // store the filters so we can re-apply them once the
@@ -201,6 +202,26 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     resultsWrapper.innerHTML = resultPane.innerHTML;
   }
+
+
+  // Preload index
+
+  const debounce = (callback, wait) => {
+    let timeoutId = null;
+    return (...args) => {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => {
+        callback.apply(null, args);
+      }, wait);
+    };
+  }
+
+  const debouncedSearch = debounce(updateSearch("query"), 300);
+
+  searchInput.addEventListener('input', (e) => {
+    pagefind.preload(searchInput.value);
+    debouncedSearch(searchInput.value);
+  })
 
   // Handle new search queries
   searchButton.addEventListener('click', async (e) => {
