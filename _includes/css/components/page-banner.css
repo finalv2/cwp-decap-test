@@ -95,7 +95,7 @@
 
 .nametag {
   position: relative;
-  inline-size: max-content;
+  inline-size: fit-content;
   max-inline-size: 75ch;
 }
 
@@ -132,6 +132,7 @@
   block-size: var(--font-5xl-size);
   position: relative;
   left: -0.25rem;
+  flex: none;
 }
 
 .page-topics i {

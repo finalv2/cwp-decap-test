@@ -8,15 +8,29 @@
   {% set cardIcon =  "link" %}
 {% endif %}
 
-<a href="{{ params.url }}" class="card" data-type="{{ params.type }}">
+{% if params.file %}
+  {% set link = params.file %}
+{% else %}
+  {% set link = params.url %}
+{% endif %}
+
+<a href="{{ link }}" class="card" data-type="{{ params.type }}">
   <h3 class="card-header h5">{% icon cardIcon %}{{ params.title | safe }}</h3>
   <div class="card-body">{{ params.description | md | safe }}</div>
   <p class="card-cta">
-    <span class="download-animation">
+    {%- if params.file -%}
+    <span class="icon-animation download-animation">
       {% icon 'download-simple-arrow', 'card-download-arrow' %}
       {% icon 'download-simple-box' %}
     </span>
     Download
+    {%- else -%}
+    <span class="icon-animation learn-more-animation">
+      {% icon 'learn-more-circle' %}
+      {% icon 'learn-more-arrow', 'card-learn-arrow' %}
+    </span>
+    Learn more
+  {%- endif -%}
   </p>
 </a>
 {%- endmacro -%}

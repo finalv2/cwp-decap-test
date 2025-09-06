@@ -73,27 +73,43 @@ h3, .h3 {
 }
 
 h1, .h1 {
-  font-size: var(--font-5xl-size);
-  line-height: var(--font-5xl-leading);
+  font-size: var(--font-4xl-size);
+  line-height: var(--font-4xl-leading);
   margin-block-end: 0.5em;
 }
 
 h2, .h2 {
-  font-size: var(--font-4xl-size);
-  line-height: var(--font-4xl-leading);
-  --l-stack-gap: calc(var(--t-paragraph) * 3);
-}
-
-h3, .h3 {
   font-size: var(--font-3xl-size);
   line-height: var(--font-3xl-leading);
   --l-stack-gap: calc(var(--t-paragraph) * 2);
 }
 
+h3, .h3 {
+  font-size: var(--font-2xl-size);
+  line-height: var(--font-2xl-leading);
+  --l-stack-gap: calc(var(--t-paragraph) * 1.5);
+}
+
 h4, .h4 {
   font-size: var(--font-xl-size);
   line-height: var(--font-xl-leading);
-  --l-stack-gap: calc(var(--t-paragraph) * 1.5);
+}
+
+@media (min-width: 48rem) {
+  h1, .h1 {
+    font-size: var(--font-5xl-size);
+    line-height: var(--font-5xl-leading);
+  }
+
+  h2, .h2 {
+    font-size: var(--font-4xl-size);
+    line-height: var(--font-4xl-leading);
+  }
+
+  h3, .h3 {
+    font-size: var(--font-3xl-size);
+    line-height: var(--font-3xl-leading);
+  }
 }
 
 .small-caps {
@@ -108,7 +124,10 @@ h4, .h4, h5, .h5, dt, h6, .h6 {
   font-size: var(--t-base);
 }
 
+h5, .h5,
 h6, .h6 {
+  font-size: var(--font-base-size);
+  line-height: var(--font-base-leading);
   font-weight: var(--t-normal);
 }
 
@@ -136,6 +155,10 @@ dt {
 ul,
 ol {
   padding-inline-start: min(10vw, 2.5rem);
+}
+
+.l-wrapper-text li {
+  --l-stack-gap: calc(var(--t-paragraph) / 2);
 }
 
 ul li,
