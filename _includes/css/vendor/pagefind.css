@@ -90,7 +90,7 @@
   display: block;
   block-size: calc(var(--font-base-size) * 2);
   inline-size: 100%;
-  animation: resultFade 1.5s infinite alternate;
+  animation: resultFade 0.5s ease-out infinite alternate;
   border-radius: var(--radius-lg);
 }
 

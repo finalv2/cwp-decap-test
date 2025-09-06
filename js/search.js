@@ -37,6 +37,17 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
   };
 
+  const populateSkeleton = count => {
+    const skeletonTemplate = document.querySelector("#search-skeleton");
+
+    const skeletonCount = count >= 5 ? 5 : count;
+
+    for (let i = 1; i <= skeletonCount; i++) {
+      resultsWrapper.innerHTML += skeletonTemplate.innerHTML;
+    }
+  }
+
+
   // Handle each search
   const updateSearch = async (searchType, target) => {
     // Get markup templates
@@ -44,10 +55,13 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const noMatchesTemplate = document.querySelector("#search-no-matches");
     const resultTemplate = document.querySelector("#search-result");
 
-    const skeletonTemplate = document.querySelector("#search-skeleton");
 
 
     const currentQuery = searchInput.value;
+
+    if (searchType !== "paginate") {
+      resultsWrapper.innerHTML = '';
+    }
 
     // If the user has already filtered their search,
     // store the filters so we can re-apply them once the
@@ -136,11 +150,11 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       } else if (visibleResultsCount !== allResultsCount) {
         resultCountText.hidden = false;
         resultCountText.innerHTML = `Showing ${visibleResultsCount} of ${pluralizeResultCount(allResultsCount)}`;
-        resultsWrapper.innerHTML += skeletonTemplate.innerHTML;
+        populateSkeleton(visibleResultsCount - (resultsPerPage * (pageCount - 1)));
       } else {
         resultCountText.hidden = false;
         resultCountText.innerHTML = pluralizeResultCount(allResultsCount);
-        resultsWrapper.innerHTML += skeletonTemplate.innerHTML;
+        populateSkeleton(allResultsCount - (resultsPerPage * (pageCount - 1)));
       }
     }
 
