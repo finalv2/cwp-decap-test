@@ -102,28 +102,29 @@ pageTypes:
       {%- endfor -%}
     </fieldset>
 
-    <fieldset id="search-topic-filters" class="search-topic-filters l-stack-basic">
-      <h4>Filter by&hellip;</h4>
+    <fieldset id="search-topic-filters" class="search-topic-filters">
+      <h4>Filter by topic</h4>
 
-      <h5 class="subhead">Topic</h5>
-      {%- for topic in collections.topics -%}
-        {%- unless topic.url == false -%}
-          <label for="{{ topic.data.title | slugify }}" class="filter-label" hidden>
-            <span class="filter-label-name">
-              <input type="checkbox" id="{{ topic.data.title | slugify }}" data-topic-filter="{{ topic.data.title }}" name="topic-filter">
-              {% icon topic.data.icon %}{{ topic.data.title }}
-            </span>
-              <!-- <span class="search-counter">0</span> -->
-          </label>
-        {%- endunless -%}
-      {%- endfor -%}
-        <label for="no-topic" class="filter-label" hidden>
-            <span class="filter-label-name">
-              <input type="checkbox" id="no-topic" data-topic-filter="noTopic" name="topic-filter">
-              {%- icon 'prohibit' -%}No topic
-            </span>
-              <!-- <span class="search-counter">0</span> -->
-          </label>
+      <div class="search-topic-filter-inputs">
+        {%- for topic in collections.topics -%}
+          {%- unless topic.url == false -%}
+            <label for="{{ topic.data.title | slugify }}" class="filter-label" hidden>
+              <span class="filter-label-name">
+                <input type="checkbox" id="{{ topic.data.title | slugify }}" data-topic-filter="{{ topic.data.title }}" name="topic-filter">
+                {% icon topic.data.icon %}{{ topic.data.title }}
+              </span>
+                <!-- <span class="search-counter">0</span> -->
+            </label>
+          {%- endunless -%}
+        {%- endfor -%}
+          <label for="no-topic" class="filter-label" hidden>
+              <span class="filter-label-name">
+                <input type="checkbox" id="no-topic" data-topic-filter="noTopic" name="topic-filter">
+                {%- icon 'prohibit' -%}No topic
+              </span>
+                <!-- <span class="search-counter">0</span> -->
+            </label>
+      </div>
     </fieldset>
   </form>
 

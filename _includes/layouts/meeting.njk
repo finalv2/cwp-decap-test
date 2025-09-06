@@ -11,14 +11,14 @@ pagefind:
 <div class="page-banner" data-type="meeting">
   <div class="l-wrapper">
     <div class="l-stack-basic">
-      <div class="nametag" data-pagefind-meta="title:{{ title}} community meeting">
+      <div class="nametag" data-pagefind-meta="title:{{ title}} community meeting" data-pagefind-weight="9">
         <span class="nametag-badge subhead">Community meeting<span class="sr-only">:</span></span>
         <div class="nametag-text">
           <h2>{{ title }}</h2>
         </div>
       </div>
 
-      <div class="page-topics">
+      <div class="page-topics" data-pagefind-weight="0.5">
         <h3 class="sr-only">Topics</h3>
         <ul>
           {%- for topic in collections.topics -%}

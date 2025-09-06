@@ -9,15 +9,15 @@ pagefind:
     <div class="nametag">
       <span class="nametag-badge subhead">Resource</span>
       <div class="nametag-text">
-        <h2 data-pagefind-meta="title">{{ title }}</h2>
+        <h2 data-pagefind-meta="title" data-pagefind-weight="9">{{ title }}</h2>
         {%- if content -%}
           <p data-pagefind-body>{{ content | md | safe }}</p>
         {%- endif -%}
       </div>
     </div>
 
-    <h3 class="sr-only">Topics</h3>
-    <ul class="page-topics">
+    <h3 class="sr-only" data-pagefind-weight="0.5">Topics</h3>
+    <ul class="page-topics" data-pagefind-weight="0.5">
       {%- for topic in collections.topics -%}
         {%- for tag in tags -%}
           {%- if topic.data.id == tag -%}
