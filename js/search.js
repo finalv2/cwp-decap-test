@@ -44,10 +44,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const noMatchesTemplate = document.querySelector("#search-no-matches");
     const resultTemplate = document.querySelector("#search-result");
 
-    if (searchType === "paginate") {
-      loadMoreButton.innerHTML = "Loading&hellip;";
-    }
-
     const currentQuery = searchInput.value;
 
     // If the user has already filtered their search,
@@ -219,12 +215,19 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     resultsWrapper.innerHTML = resultPane.innerHTML;
   }
 
+  const updateLoadButtonText = () => { loadMoreButton.innerHTML = "Loading&hellip;" };
   const restoreLoadButtonText = () => { loadMoreButton.innerHTML = "Load more results" };
 
   loadMoreButton.addEventListener('click', async (e) => {
     pageCount += 1;
 
-    updateSearch("paginate").then(restoreLoadButtonText());
+    const updateLoadButtonPromise = new Promise(updateLoadButtonText);
+
+    updateLoadButtonPromise.then(
+      updateSearch("paginate")
+    ).then(
+      restoreLoadButtonText()
+    );
 
   });
 
