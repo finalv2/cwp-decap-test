@@ -1,28 +1,13 @@
 {%- macro storyCard(params) -%}
-  {%- if params.featured -%}
-    <a class="story-card" href="{{ params.url }}" data-featured>
-      <img src="{{ params.image }}" alt="" />
-      <div class="story-card-content l-stack-basic">
-        <div class="nametag">
-          <span class="nametag-badge subhead">{{ params.type }}</span>
-          <div class="nametag-text">
-            <h3>{{ params.title }}</h3>
-          </div>
-        </div>
-        <p>{{ params.description }}</p>
-        <div class="story-card-meta">
-          <span>Written by {{ params.author }} on {{ params.date | humanDate }}</span>
-        </div>
-      </div>
-    </a>
-  {%- else -%}
+  <div class="story-card-wrapper">
     <a class="story-card" href="{{ params.url }}">
       <span class="nametag-badge subhead">{{ params.type }}</span>
       <img src="{{ params.image }}" alt="" />
       <div class="story-card-content">
         <h3>{{ params.title }}</h3>
         <p>{{ params.description }}</p>
+        <p class="story-card-meta">Written by {{ params.author }} on {{ params.date | humanDate }}</p>
       </div>
     </a>
-  {%- endif -%}
+  </div>
 {%- endmacro -%}
