@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   let otherSearchCounts = {};
 
   let pageCount = 1;
-  let resultsPerPage = 10;
+  let resultsPerPage = 8;
 
   const pluralizeResultCount = resultCount => {
     return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
@@ -52,7 +52,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     const currentTopicFilter = activeFilters.topics;
     const currentTypeFilter = activeFilters.pageType;
-
 
     // For accurate result count numbers,
     // always retrieve unfiltered results for new search terms
@@ -140,6 +139,14 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       }
     }
 
+    if (resultsPerPage * pageCount >= visibleResultsCount) {
+      loadMoreButton.hidden = true;
+    } else if (visibleResultsCount > resultsPerPage) {
+      loadMoreButton.hidden = false;
+    } else {
+      loadMoreButton.hidden = true;
+    }
+
     // Populate search results
     if (visibleResultsCount >= 1) {
       for (const i in search.results.slice(0, resultsPerPage * pageCount)) {
@@ -210,7 +217,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
   loadMoreButton.addEventListener('click', async (e) => {
     pageCount += 1;
-    updateSearch("query");
+    updateSearch();
   });
 
 

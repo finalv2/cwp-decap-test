@@ -226,8 +226,9 @@ time {
 }
 
 mark {
-  background: var(--c-blue);
-  color: #fff;
+  background: var(--c-light-blue);
+  border: 1px solid var(--c-blue);
+  color: var(--c-blue);
   padding-inline: 0.25rem;
   border-radius: 4px;
 }
