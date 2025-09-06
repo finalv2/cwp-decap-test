@@ -39,17 +39,21 @@
 
     {%- set pagefindTopics -%}
       {%- if tags -%}
-        {%- for tag in tags -%}
-          {%- if tag == "noTopic" -%}
-            <span data-pagefind-filter="topics">noTopic</span>
-          {%- else -%}
-            {%- for topic in collections.topics -%}
-              {%- if topic.data.id == tag -%}
-                <span data-pagefind-filter="topics">{{ topic.data.title }}</span>
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endif -%}
-        {%- endfor -%}
+        {%- if tags.length == 1 and (tags | first == "resource" or tags | first == "story" or  tags | first == "dashboard" or tags | first == "topic" or tags | first == "meeting") %}
+          <span data-pagefind-filter="topics">noTopic</span>
+        {%- else -%}
+          {%- for tag in tags -%}
+            {%- if tag == "noTopic" -%}
+              <span data-pagefind-filter="topics">noTopic</span>
+            {%- else -%}
+              {%- for topic in collections.topics -%}
+                {%- if topic.data.id == tag -%}
+                  <span data-pagefind-filter="topics">{{ topic.data.title }}</span>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
       {%- else -%}
         <span data-pagefind-filter="topics">noTopic</span>
       {%- endif -%}
