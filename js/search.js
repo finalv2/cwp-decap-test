@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   let otherSearchCounts = {};
 
   let pageCount = 1;
-  let resultsPerPage = 8;
+  let resultsPerPage = 5;
 
   const pluralizeResultCount = resultCount => {
     return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
@@ -44,7 +44,14 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const noMatchesTemplate = document.querySelector("#search-no-matches");
     const resultTemplate = document.querySelector("#search-result");
 
+    const skeletonTemplate = document.querySelector("#search-skeleton");
+
+
     const currentQuery = searchInput.value;
+
+    if(searchType === "paginate") {
+      console.log("paginating");
+    }
 
     // If the user has already filtered their search,
     // store the filters so we can re-apply them once the
@@ -133,9 +140,11 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       } else if (visibleResultsCount !== allResultsCount) {
         resultCountText.hidden = false;
         resultCountText.innerHTML = `Showing ${visibleResultsCount} of ${pluralizeResultCount(allResultsCount)}`;
+        resultsWrapper.innerHTML += skeletonTemplate.innerHTML;
       } else {
         resultCountText.hidden = false;
         resultCountText.innerHTML = pluralizeResultCount(allResultsCount);
+        resultsWrapper.innerHTML += skeletonTemplate.innerHTML;
       }
     }
 
@@ -146,6 +155,9 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     } else {
       loadMoreButton.hidden = true;
     }
+
+    // Show the search content area
+    searchContent.hidden = false;
 
     // Populate search results
     if (visibleResultsCount >= 1) {
@@ -164,9 +176,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         resultPane.appendChild(resultClone);
       }
     }
-
-    // Show the search content area
-    searchContent.hidden = false;
 
     // Populate the result counts next to each filter
     for (const filter of allFilters) {
@@ -212,24 +221,24 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       activeFilters.pageType = currentTypeFilter;
     }
 
+    const skeletonItems = document.querySelectorAll(".search-result[data-blank]");
+
+    for (let item of skeletonItems) {
+      item.remove();
+    }
+
     resultsWrapper.innerHTML = resultPane.innerHTML;
   }
 
-  const updateLoadButtonText = () => { loadMoreButton.innerHTML = "Loading&hellip;" };
-  const restoreLoadButtonText = () => { loadMoreButton.innerHTML = "Load more results" };
-
   loadMoreButton.addEventListener('click', async (e) => {
     pageCount += 1;
-
-    const updateLoadButtonPromise = new Promise(updateLoadButtonText);
-
-    updateLoadButtonPromise.then(
-      updateSearch("paginate")
-    ).then(
-      restoreLoadButtonText()
-    );
+    updateSearch("paginate");
 
   });
+
+  searchInput.addEventListener("input", (e) => {
+    pagefind.preload(e.target.value);
+  })
 
 
   // Handle new search queries

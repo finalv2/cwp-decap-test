@@ -70,6 +70,20 @@
   display: block;
 }
 
+.search-result[data-blank] {
+  block-size: calc(var(--t-paragraph) * 5);
+  animation: resultFade 0.375s infinite alternate;
+}
+
+@keyframes resultFade {
+  from {
+    background: #fff;
+  }
+  to {
+    background: var(--c-light-blue);
+  }
+}
+
 .search-result:last-of-type:not(.search-result-blank) {
   border-block-end: var(--border);
 }
@@ -145,6 +159,7 @@
   background: #fafafa;
   border-radius: var(--radius-lg);
   padding: 1rem;
+  inline-size: calc(var(--t-measure) * 2 / 3);
 }
 
 .search-topic-filters h5 {
