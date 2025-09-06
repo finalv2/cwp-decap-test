@@ -1,5 +1,6 @@
 ---
 layout: layouts/default.njk
+pageIndex: all
 pagefind:
   type: story
 ---
@@ -34,8 +35,10 @@ pagefind:
 
 <div class="l-wrapper">
 <div class="l-section">
+<div class="l-wrapper-text">
 <div class="l-stack">
       {{ content | md | safe }}
+</div>
 </div>
 </div>
 </div>

@@ -43,7 +43,7 @@ pagefind:
 
     {%- if collections[id + '-stories'].length -%}
       <h3>Stories</h3>
-      <div class="l-grid">
+      <div class="l-grid story-list-wrapper">
       {%- for story in collections[id + '-stories'] -%}
         {{ storyCard({
               image: story.data.image,
