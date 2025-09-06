@@ -70,18 +70,33 @@
   display: block;
 }
 
-.search-result[data-blank] {
-  block-size: calc(var(--t-paragraph) * 5);
-  animation: resultFade 0.375s infinite alternate;
-}
-
 @keyframes resultFade {
   from {
-    background: #fff;
+    background: #ddd;
   }
+
   to {
-    background: var(--c-light-blue);
+    background: #bbb;
   }
+}
+
+.search-result[data-skeleton] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.search-result[data-skeleton] span {
+  display: block;
+  block-size: calc(var(--font-base-size) * 2);
+  inline-size: 100%;
+  animation: resultFade 1.5s infinite alternate;
+  border-radius: var(--radius-lg);
+}
+
+.search-result[data-skeleton] span:first-child {
+  inline-size: 50%;
+  block-size: var(--font-base-size);
 }
 
 .search-result:last-of-type:not(.search-result-blank) {

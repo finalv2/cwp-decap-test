@@ -49,10 +49,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     const currentQuery = searchInput.value;
 
-    if(searchType === "paginate") {
-      console.log("paginating");
-    }
-
     // If the user has already filtered their search,
     // store the filters so we can re-apply them once the
     // search is done

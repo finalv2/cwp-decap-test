@@ -54,12 +54,20 @@ pageTypes:
   </fieldset>
 </form>
 
+
+{% capture skeleton %}
+<li class="search-result" data-skeleton>
+  <span></span>
+  <span></span>
+</li>
+{% endcapture %}
+
 <template id="search-skeleton">
-  <li class="search-result" data-blank></li>
-  <li class="search-result" data-blank></li>
-  <li class="search-result" data-blank></li>
-  <li class="search-result" data-blank></li>
-  <li class="search-result" data-blank></li>
+  {{ skeleton }}
+  {{ skeleton }}
+  {{ skeleton }}
+  {{ skeleton }}
+  {{ skeleton }}
 </template>
 
 <template id="search-no-results">
