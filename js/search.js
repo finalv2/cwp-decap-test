@@ -23,10 +23,15 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const resultCountText = document.querySelector("#search-result-count");
   const searchInput = document.querySelector("#search-input");
 
+  const loadMoreButton = document.querySelector("#load-more-button");
+
   let allResultsCount = 0;
   let visibleResultsCount;
 
   let otherSearchCounts = {};
+
+  let pageCount = 1;
+  let resultsPerPage = 10;
 
   const pluralizeResultCount = resultCount => {
     return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
@@ -137,7 +142,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     // Populate search results
     if (visibleResultsCount >= 1) {
-      for (const i in search.results) {
+      for (const i in search.results.slice(0, resultsPerPage * pageCount)) {
         const thisResult = await search.results[i].data();
 
         const resultClone = resultTemplate.content.cloneNode(true);
@@ -203,28 +208,15 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     resultsWrapper.innerHTML = resultPane.innerHTML;
   }
 
+  loadMoreButton.addEventListener('click', async (e) => {
+    pageCount += 1;
+    updateSearch("query");
+  });
 
-  // Preload index
-
-  const debounce = (callback, wait) => {
-    let timeoutId = null;
-    return (...args) => {
-      window.clearTimeout(timeoutId);
-      timeoutId = window.setTimeout(() => {
-        callback.apply(null, args);
-      }, wait);
-    };
-  }
-
-  const debouncedSearch = debounce(updateSearch("query"), 300);
-
-  searchInput.addEventListener('input', (e) => {
-    pagefind.preload(searchInput.value);
-    debouncedSearch(searchInput.value);
-  })
 
   // Handle new search queries
   searchButton.addEventListener('click', async (e) => {
+    pageCount = 1;
     e.preventDefault();
     allResultsInput.checked = true;
 
@@ -233,6 +225,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
 
     updateSearch("query");
+
   });
 
   // Handle updates to topic filters
@@ -242,6 +235,8 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const criteria = input.dataset.topicFilter;
 
     input.addEventListener("change", (e) => {
+      pageCount = 1;
+
       if (!activeFilters.topics) {
         activeFilters.topics = new Object();
         activeFilters.topics.any = new Array();
@@ -264,6 +259,8 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   // Handle updates to type filter
   for (const tab of typeFilters) {
     tab.addEventListener('change', async (e) => {
+      pageCount = 1;
+
       const currentType = e.target.dataset.typeFilter;
 
       if (currentType === "all") {
