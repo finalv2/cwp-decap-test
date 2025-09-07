@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', async (e) => {
 
+  const urlParams = new URLSearchParams(document.location.search);
+
   // Initialize Pagefind
   const pagefind = await import("/pagefind/pagefind.js");
   const filters = await pagefind.filters();
@@ -47,9 +49,8 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
   }
 
-
   // Handle each search
-  const updateSearch = async (searchType, target) => {
+  const updateSearch = async (searchType, isNew, target) => {
     // Get markup templates
     const noResultsTemplate = document.querySelector("#search-no-results");
     const noMatchesTemplate = document.querySelector("#search-no-matches");
@@ -70,6 +71,26 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const currentTopicFilter = activeFilters.topics;
     const currentTypeFilter = activeFilters.pageType;
 
+    if (urlParams.has('query')) {
+      urlParams.set('query', currentQuery);
+    } else {
+      urlParams.append('query', currentQuery);
+    }
+
+    if (currentTopicFilter) {
+      urlParams.set('topic', currentTopicFilter.any.toString());
+    } else {
+      urlParams.set('topic', 'all');
+    }
+
+    if (currentTypeFilter) {
+      urlParams.set('type', currentTypeFilter);
+    } else {
+      urlParams.set('type', 'all');
+    }
+
+    window.history.replaceState({}, '', `${location.pathname}?${urlParams}`);
+
     // For accurate result count numbers,
     // always retrieve unfiltered results for new search terms
     if (searchType === "query") {
@@ -84,55 +105,56 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       }
     );
 
-    if (searchType === "query") {
-      otherSearchCounts.all = search.filters.topics;
+    const unfilteredSearch = await pagefind.search(currentQuery);
 
-      otherSearchCounts.Strategy = await pagefind.search(
-        currentQuery, {
-          filters: {
-            pageType: "Strategy"
-          }
-        }
-      );
+    allResultsCount = unfilteredSearch.results.length;
 
-      otherSearchCounts.Story = await pagefind.search(
-        currentQuery, {
-          filters: {
-            pageType: "Story"
-          }
-        }
-      );
+    // if (isNew) {
+    //   otherSearchCounts.Strategy = await pagefind.search(
+    //     currentQuery, {
+    //       filters: {
+    //         pageType: "Strategy"
+    //       }
+    //     }
+    //   );
 
-      otherSearchCounts.Resource = await pagefind.search(
-        currentQuery, {
-          filters: {
-            pageType: "Resource"
-          }
-        }
-      );
+    //   otherSearchCounts.Story = await pagefind.search(
+    //     currentQuery, {
+    //       filters: {
+    //         pageType: "Story"
+    //       }
+    //     }
+    //   );
 
-      otherSearchCounts.Meeting = await pagefind.search(
-        currentQuery, {
-          filters: {
-            pageType: "Meeting"
-          }
-        }
-      );
+    //   otherSearchCounts.Resource = await pagefind.search(
+    //     currentQuery, {
+    //       filters: {
+    //         pageType: "Resource"
+    //       }
+    //     }
+    //   );
 
-      otherSearchCounts.Page = await pagefind.search(
-        currentQuery, {
-          filters: {
-            pageType: "Page"
-          }
-        }
-      );
-    }
+    //   otherSearchCounts.Meeting = await pagefind.search(
+    //     currentQuery, {
+    //       filters: {
+    //         pageType: "Meeting"
+    //       }
+    //     }
+    //   );
+
+    //   otherSearchCounts.Page = await pagefind.search(
+    //     currentQuery, {
+    //       filters: {
+    //         pageType: "Page"
+    //       }
+    //     }
+    //   );
+    // }
 
     // Populate the search page with markup
     const resultPane = document.createElement("div");
 
     if (searchType === "query") {
-      allResultsCount = search.results.length;
       visibleResultsCount = allResultsCount;
     } else {
       visibleResultsCount = search.results.length;
@@ -149,7 +171,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         resultPane.innerHTML = noMatchesTemplate.innerHTML;
       } else if (visibleResultsCount !== allResultsCount) {
         resultCountText.hidden = false;
-        resultCountText.innerHTML = `Showing ${visibleResultsCount} of ${pluralizeResultCount(allResultsCount)}`;
+        resultCountText.innerHTML = `${visibleResultsCount} of ${pluralizeResultCount(allResultsCount)} match your filters`;
         populateSkeleton(visibleResultsCount - (resultsPerPage * (pageCount - 1)));
       } else {
         resultCountText.hidden = false;
@@ -187,41 +209,75 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       }
     }
 
-    // Populate the result counts next to each filter
-    for (const filter of allFilters) {
-      const input = filter.querySelector("input");
-      const filterType = input.dataset.typeFilter ? "pageType" : "topics";
-      // const counter = filter.querySelector(".search-counter");
-      const isAllResults = filter.dataset.allResults;
-      const criteria = input.dataset.typeFilter || input.dataset.topicFilter;
-      const currentCount = search.filters[filterType][criteria];
-      let count;
+    // Toggle filter visibility
 
-      if (searchType === "type" && input.dataset.topicFilter) {
-        if (target === "all") {
-          count = otherSearchCounts.all[criteria];
-        } else {
-          count = otherSearchCounts[target].filters.topics[criteria];
-        }
-      } else {
-        count = currentCount;
-      }
+    if (isNew) {
+      for (const typeFilter of typeFilters) {
+        const input = typeFilter.querySelector("input");
+        const filterName = input.dataset.typeFilter;
 
-      if (searchType === "query" || (searchType === "type" && input.dataset.topicFilter)) {
-        // if (isAllResults) {
-        //   counter.innerHTML = allResultsCount;
-        // } else {
-        //   counter.innerHTML = count;
-        // }
-        if (count || isAllResults) {
-          filter.hidden = false;
-        } else if (!count && input.checked) {
-          filter.hidden = false;
-        } else {
-          filter.hidden = true;
+        if (filterName !== "all") {
+          const unfilteredCount = unfilteredSearch.filters["pageType"][filterName];
+
+          if (unfilteredCount > 0 && allResultsCount > 1) {
+            typeFilter.hidden = false;
+          } else {
+            typeFilter.hidden = true;
+          }
         }
       }
     }
+
+    for (const topicFilter of topicFilters) {
+      const input = topicFilter.querySelector("input");
+      const filterName = input.dataset.topicFilter;
+      const filteredCount = search.filters.topics[filterName];
+
+      if (filteredCount > 0) {
+        topicFilter.hidden = false;
+      } else {
+        topicFilter.hidden = true;
+      }
+    }
+
+    // // Populate the result counts next to each filter
+    // for (const filter of allFilters) {
+    //   const input = filter.querySelector("input");
+    //   const filterType = input.dataset.typeFilter ? "pageType" : "topics";
+    //   // const counter = filter.querySelector(".search-counter");
+    //   const isAllResults = filter.dataset.allResults;
+    //   const criteria = input.dataset.typeFilter || input.dataset.topicFilter;
+    //   const unfilteredCount = unfilteredSearch.filters[filterType][criteria]
+    //   const currentCount = search.filters[filterType][criteria];
+    //   let count;
+
+
+
+    //   if (searchType === "type" && input.dataset.topicFilter) {
+    //     if (target === "all") {
+    //       count = unfilteredSearch[criteria];
+    //     } else {
+    //       count = otherSearchCounts[target].filters.topics[criteria];
+    //     }
+    //   } else {
+    //     count = currentCount;
+    //   }
+
+    //   if (isNew || (searchType === "type" && input.dataset.topicFilter)) {
+    //     // if (isAllResults) {
+    //     //   counter.innerHTML = allResultsCount;
+    //     // } else {
+    //     //   counter.innerHTML = count;
+    //     // }
+    //     if (count || isAllResults) {
+    //       filter.hidden = false;
+    //     } else if (!count && input.checked) {
+    //       filter.hidden = false;
+    //     } else {
+    //       filter.hidden = true;
+    //     }
+    //   }
+    // }
 
     if (currentTopicFilter) {
       activeFilters.topics = currentTopicFilter;
@@ -238,6 +294,38 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
 
     resultsWrapper.innerHTML = resultPane.innerHTML;
+  }
+
+  if (urlParams.size > 0) {
+    const queryParam = urlParams.get("query");
+    const typeParam = urlParams.get("type");
+    const topicParam = urlParams.get("topic");
+
+    searchInput.value = queryParam;
+
+    if (topicParam !== "all") {
+      activeFilters.topics = new Object();
+      activeFilters.topics.any = new Array();
+
+      const topicArray = topicParam.split(",");
+
+      activeFilters.topics.any = topicArray;
+
+      for (let i in topicArray) {
+        const topicInput = document.querySelector(`[data-topic-filter="${topicArray[i]}"]`);
+        topicInput.checked = true;
+      }
+    }
+
+    if (typeParam !== "all") {
+      activeFilters.pageType = typeParam;
+
+      const typeInput = document.querySelector(`[data-type-filter="${typeParam}"]`);
+
+      typeInput.checked = true;
+    }
+
+    updateSearch(undefined, true);
   }
 
   loadMoreButton.addEventListener('click', async (e) => {
@@ -261,7 +349,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       filter.querySelector("input").checked = false;
     }
 
-    updateSearch("query");
+    updateSearch("query", true);
 
   });
 
@@ -306,7 +394,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         activeFilters.pageType = currentType;
       }
 
-      updateSearch("type", currentType);
+      updateSearch("type", false, currentType);
     });
 
   };
