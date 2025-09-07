@@ -71,16 +71,16 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const currentTopicFilter = activeFilters.topics;
     const currentTypeFilter = activeFilters.pageType;
 
-    if (urlParams.has('query')) {
-      urlParams.set('query', currentQuery);
+    if (urlParams.has('q')) {
+      urlParams.set('q', currentQuery);
     } else {
-      urlParams.append('query', currentQuery);
+      urlParams.append('q', currentQuery);
     }
 
     if (currentTopicFilter) {
-      urlParams.set('topic', currentTopicFilter.any.toString());
+      urlParams.set('topics', currentTopicFilter.any.toString());
     } else {
-      urlParams.set('topic', 'all');
+      urlParams.set('topics', 'all');
     }
 
     if (currentTypeFilter) {
@@ -297,9 +297,9 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   }
 
   if (urlParams.size > 0) {
-    const queryParam = urlParams.get("query");
+    const queryParam = urlParams.get("q");
     const typeParam = urlParams.get("type");
-    const topicParam = urlParams.get("topic");
+    const topicParam = urlParams.get("topics");
 
     searchInput.value = queryParam;
 
@@ -374,7 +374,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
           activeFilters.topics.any.splice(index,1);
         }
       } else {
-
         activeFilters.topics.any.push(criteria);
       }
       updateSearch("topic");
