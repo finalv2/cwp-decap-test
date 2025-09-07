@@ -72,11 +72,11 @@
   transition: all 0.15s ease-out;
 }
 
-.search-result:is(:hover, :focus) {
+.search-result:not([data-skeleton]):is(:hover, :focus) {
   background: var(--c-light-blue);
 }
 
-.search-result:active {
+.search-result:not([data-skeleton]):active {
   scale: 0.99;
 }
 
