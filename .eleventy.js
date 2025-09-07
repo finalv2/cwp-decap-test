@@ -4,6 +4,7 @@ import markdownLibrary from "./markdown.js";
 import svgSprite from "eleventy-plugin-svg-sprite";
 import eleventyAutoCacheBuster from "eleventy-auto-cache-buster";
 import dateFilters from './filters/dateFilters.js'
+import CleanCSS from "clean-css";
 
 
 const alphaSort = (a, b) => {
@@ -31,6 +32,10 @@ const topicList = [
 
 export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyAutoCacheBuster);
+
+  eleventyConfig.addNunjucksFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   eleventyConfig.addPassthroughCopy("./images/");
   eleventyConfig.addPassthroughCopy("./js/");

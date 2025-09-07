@@ -1,7 +1,7 @@
 ---
 permalink: theme.css
 ---
-
+{% set css %}
 {% include "css/root.css" %}
 {% include "css/base.css" %}
 {% include "css/normalize.css" %}
@@ -22,3 +22,5 @@ permalink: theme.css
 
 {% include "css/vendor/pagefind.css" %}
 {% include "css/vendor/plyr.css" %}
+{% endset %}
+{{ css | cssmin | safe }}
