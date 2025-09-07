@@ -188,7 +188,7 @@
 .page-banner-back {
   display: flex;
   color: var(--c-blue);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-decoration: none;
   gap: 1em;
 }

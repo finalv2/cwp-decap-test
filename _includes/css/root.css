@@ -1,7 +1,6 @@
 :root {
   --c-base: #575B60;
 
-
   --c-primary: #0052AF;
   --c-blue: var(--c-primary, #003993);
   --c-gray-200: rgb(229 231 235);
@@ -26,9 +25,7 @@
   --font-secondary: "Space Mono", monospace;
 
   --font-normal: 400;
-  --font-medium: 500;
   --font-bold: 800;
-  --font-black: 900;
 
   --rhythm: 0.3125rem;
 

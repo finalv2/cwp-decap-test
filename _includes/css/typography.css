@@ -133,7 +133,7 @@ h6, .h6 {
 
 .subhead {
   font-size: var(--t-small);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   font-family: var(--font-secondary);
   font-size: var(--font-sm-size);
   line-height: var(--font-sm-leading);

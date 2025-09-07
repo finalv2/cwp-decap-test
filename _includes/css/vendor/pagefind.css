@@ -120,7 +120,7 @@
 
 .search-result h3 {
   margin-block-start: 0;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .search-result a {

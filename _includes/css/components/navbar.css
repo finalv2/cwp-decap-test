@@ -101,7 +101,7 @@
 
 .nav-mobile-menu ul {
   display: flex;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   color: var(--c-blue);
   font-family: var(--font-secondary);
   text-transform: uppercase;
