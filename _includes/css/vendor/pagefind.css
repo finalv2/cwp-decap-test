@@ -286,6 +286,18 @@
   border-radius: var(--radius-lg);
   margin-block-start: var(--t-paragraph);
   font-weight: var(--font-bold);
+  transition: all 0.15s ease-out;
+  color: var(--c-base);
+}
+
+#load-more-button:is(:hover, :focus) {
+  background: var(--c-light-blue);
+  border-color: var(--c-blue);
+  scale: 1.02;
+}
+
+#load-more-button:active {
+  scale: 0.99;
 }
 
 @media (min-width: 60rem) {
