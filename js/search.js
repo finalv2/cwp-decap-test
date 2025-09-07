@@ -228,17 +228,21 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       }
     }
 
-    for (const topicFilter of topicFilters) {
-      const input = topicFilter.querySelector("input");
-      const filterName = input.dataset.topicFilter;
-      const filteredCount = search.filters.topics[filterName];
+    if (isNew || searchType === "type") {
+      for (const topicFilter of topicFilters) {
+        const input = topicFilter.querySelector("input");
+        const filterName = input.dataset.topicFilter;
+        const filteredCount = search.filters.topics[filterName];
 
-      if (filteredCount > 0) {
-        topicFilter.hidden = false;
-      } else {
-        topicFilter.hidden = true;
+        if (filteredCount > 0 || input.checked) {
+          topicFilter.hidden = false;
+        } else {
+          topicFilter.hidden = true;
+        }
       }
     }
+
+
 
     // // Populate the result counts next to each filter
     // for (const filter of allFilters) {
