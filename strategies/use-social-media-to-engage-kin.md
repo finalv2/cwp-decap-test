@@ -24,7 +24,7 @@ Social media can help you identify kin that traditional search tactics might mis
 
 ## This strategy in action
 
-**New Mexico** increased initial kinship placements from 3% to over 40% in 1 year by shifting to practices that included using social media to identify and reach kin. They encourage workers to create second, separate social media accounts under their name that they use exclusively for work.
+**New Mexico** increased initial kinship placements from 3 percent to over 40 percent in 1 year by shifting to practices that included using social media to identify and reach kin. They encourage workers to create second, separate social media accounts under their name that they use exclusively for work.
 
 **A Second Chance, Inc.** uses Facebook and other forms of social media to identify at least 40 kin for each child. 
 
