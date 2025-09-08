@@ -7,8 +7,8 @@ tags:
   - prevention
 order: 6
 resources:
-  - "Podcast: Family finding in a public child welfare agency"
   - Iowa release of information form
+  - "Podcast: Kin engagement in Wisconsin"
 ---
 Sometimes a family could stay together safely if they had more support, but the agency may not engage kin before it's necessary to remove the child or youth.
 
