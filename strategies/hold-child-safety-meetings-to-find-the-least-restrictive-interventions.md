@@ -8,7 +8,7 @@ tags:
 order: 4
 resources:
   - Child safety guidebook
-  - Safety plan template for families
+  - Safety plan template
 ---
 Even when there are safety concerns, it isn't always necessary to remove a child or youth from their home. 
 
