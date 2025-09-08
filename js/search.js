@@ -15,8 +15,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const searchButton = document.querySelector("#search-button");
   const resultsWrapper = document.querySelector("#search-results");
 
-  const allResultsInput = document.querySelector(`label[for="type-all"] input`);
-
   const filterWrapper = document.querySelector("#search-filters");
   const allFilters = document.querySelectorAll("#search-filters label");
   const typeFilters = document.querySelectorAll ("#search-type-filters label");
@@ -49,23 +47,15 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   }
 
   // Handle each search
-  const updateSearch = async (searchType, target) => {
+  const updateSearch = async (searchType, isNew) => {
     // Get markup templates
     const noResultsTemplate = document.querySelector("#search-no-results");
     const noMatchesTemplate = document.querySelector("#search-no-matches");
     const resultTemplate = document.querySelector("#search-result");
-    let isNew;
 
     const hasQuery = urlParams.has("query");
     const hasType = urlParams.has("type");
-    const hasTopic = urlParams.has("topic");
-
-    if (!hasQuery && !hasType && !hasTopic) {
-      isNew = true;
-    } else {
-      isNew = false;
-    }
-
+    const hasTopic = urlParams.has("topics");
 
     const currentQuery = searchInput.value || null;
 
@@ -95,7 +85,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
 
     if (currentTypeFilter) {
-      urlParams.set('type', currentTypeFilter);
+      urlParams.set('type', currentTypeFilter.any.toString());
     } else {
       urlParams.set('type', 'all');
     }
@@ -219,32 +209,18 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     // Toggle filter visibility
 
-
-    if (currentQuery !== null) {
-      for (const typeFilter of typeFilters) {
-        const input = typeFilter.querySelector("input");
-        const filterName = input.dataset.typeFilter;
-
-        if (filterName !== "all") {
-          const unfilteredCount = unfilteredSearch.filters["pageType"][filterName];
-
-          if (unfilteredCount > 0 && allResultsCount > 1) {
-            typeFilter.hidden = false;
-          } else {
-            typeFilter.hidden = true;
-          }
-        }
-      }
-
-      for (const topicFilter of topicFilters) {
-        const input = topicFilter.querySelector("input");
-        const filterName = input.dataset.topicFilter;
-        const filteredCount = search.filters.topics[filterName];
+    if (isNew && currentQuery !== null) {
+      for (const filter of allFilters) {
+        const input = filter.querySelector("input");
+        const filterType = input.dataset.filterType;
+        const filterName = input.dataset.filterName;
+        console.log(`${filterType}.${filterName}`)
+        const filteredCount = search.filters[filterType][filterName];
 
         if (filteredCount > 0 || input.checked) {
-          topicFilter.hidden = false;
+          filter.hidden = false;
         } else {
-          topicFilter.hidden = true;
+          filter.hidden = true;
         }
       }
     }
@@ -312,11 +288,11 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const typeParam = urlParams.get("type");
     const topicParam = urlParams.get("topics");
 
-    if (queryParam !== "null") {
+    if (queryParam && queryParam !== "null") {
       searchInput.value = queryParam;
     }
 
-    if (topicParam !== "all") {
+    if (topicParam && topicParam !== "all") {
       activeFilters.topics = new Object();
       activeFilters.topics.any = new Array();
 
@@ -325,17 +301,23 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       activeFilters.topics.any = topicArray;
 
       for (let i in topicArray) {
-        const topicInput = document.querySelector(`[data-topic-filter="${topicArray[i]}"]`);
+        const topicInput = document.querySelector(`[data-filter-name="${topicArray[i]}"]`);
         topicInput.checked = true;
       }
     }
 
-    if (typeParam !== "all") {
-      activeFilters.pageType = typeParam;
+    if (typeParam && typeParam !== "all") {
+      activeFilters.pageTypes = new Object();
+      activeFilters.pageTypes.any = new Array();
 
-      const typeInput = document.querySelector(`[data-type-filter="${typeParam}"]`);
+      const pageTypesArray = typeParam.split(",");
 
-      typeInput.checked = true;
+      activeFilters.pageTypes.any = pageTypesArray;
+
+      for (let i in pageTypesArray) {
+        const typeInput = document.querySelector(`[data-filter-name="${pageTypesArray[i]}"]`);
+        typeInput.checked = true;
+      }
     }
 
     updateSearch(undefined, true);
@@ -356,9 +338,8 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   searchButton.addEventListener('click', async (e) => {
     pageCount = 1;
     e.preventDefault();
-    allResultsInput.checked = true;
 
-    for (const filter of topicFilters) {
+    for (const filter of allFilters) {
       filter.querySelector("input").checked = false;
     }
 
@@ -366,49 +347,39 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
   });
 
-  // Handle updates to topic filters
-  for (const filter of topicFilters) {
-
+  const updateFilters = (filter, filterType) => {
     const input = filter.querySelector("input");
-    const criteria = input.dataset.topicFilter;
+    const criteria = input.dataset.filterName;
 
     input.addEventListener("change", (e) => {
       pageCount = 1;
 
-      if (!activeFilters.topics) {
-        activeFilters.topics = new Object();
-        activeFilters.topics.any = new Array();
+      if (!activeFilters[filterType]) {
+        activeFilters[filterType] = new Object();
+        activeFilters[filterType]["any"] = new Array();
       }
       if (!input.checked) {
-        if (activeFilters.topics.any.length === 1) {
-          activeFilters.topics = undefined;
+        if (activeFilters[filterType]["any"].length === 1) {
+          activeFilters[filterType] = undefined;
         } else {
-          const index = activeFilters.topics.any.indexOf(criteria);
-          activeFilters.topics.any.splice(index,1);
+          const index = activeFilters[filterType]["any"].indexOf(criteria);
+          activeFilters[filterType]["any"].splice(index,1);
         }
       } else {
-        activeFilters.topics.any.push(criteria);
+        activeFilters[filterType]["any"].push(criteria);
       }
-      updateSearch("topic");
+      updateSearch(filterType);
     })
+  }
+
+  // Handle updates to topic filters
+  for (const filter of topicFilters) {
+    updateFilters(filter, "topics");
   };
 
   // Handle updates to type filter
-  for (const tab of typeFilters) {
-    tab.addEventListener('change', async (e) => {
-      pageCount = 1;
-
-      const currentType = e.target.dataset.typeFilter;
-
-      if (currentType === "all") {
-        activeFilters.pageType = undefined;
-      } else {
-        activeFilters.pageType = currentType;
-      }
-
-      updateSearch("type", false, currentType);
-    });
-
+  for (const filter of typeFilters) {
+    updateFilters(filter, "pageType");
   };
 
 });
