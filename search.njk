@@ -9,11 +9,6 @@ image: /images/banners/search.jpg
 tags:
   - noTopic
 pageTypes:
-  - id: all
-    filterName: all
-    title: All results
-    iconName: list-checks
-    checked: true
   - id: strategy
     filterName: Strategy
     title: Strategies
@@ -83,36 +78,40 @@ pageTypes:
   </li>
 </template>
 
-<div class="search-content" hidden>
+<div class="search-content">
   <form id="search-filters" class="search-filters">
-    <fieldset class="search-type-filters l-cluster" id="search-type-filters">
-      {%- for type in pageTypes -%}
-        <label for="type-{{ type.id }}" {%- if type.id == "all" -%}data-all-results="true"{%- else -%}hidden{%- endif -%}>
-          <span class='filter-label-name'>
-            <input type="radio" name="type-filter" id="type-{{ type.id }}" data-type-title="{{ type.title | downcase }}"data-type-filter="{{ type.filterName }}"{%- if type.checked -%} checked{%- endif -%}>
-            {% icon type.iconName %} {{ type.title }}
-          </span>
-          <!-- <span class="search-counter"{%- if type.id == "all" -%} data-counter-all{%- endif -%}></span> -->
-        </label>
-      {%- endfor -%}
+    <h4>Filter by&hellip;</h4>
+    <h5 class="subhead">Page type</h5>
+    <fieldset class="search-type-filters" id="search-type-filters">
+      <div class="search-filter-inputs">
+        {%- for type in pageTypes -%}
+          <label for="type-{{ type.id }}">
+            <span class='filter-label-name'>
+              <input type="checkbox" name="type-filter" id="type-{{ type.id }}" data-type-title="{{ type.title | lower }}"data-type-filter="{{ type.filterName }}"{%- if type.checked -%} checked{%- endif -%}>
+              {% icon type.iconName %} {{ type.title }}
+            </span>
+            <!-- <span class="search-counter"{%- if type.id == "all" -%} data-counter-all{%- endif -%}></span> -->
+          </label>
+        {%- endfor -%}
+      </div>
     </fieldset>
 
+    <h5 class="subhead">Topic</h5>
     <fieldset id="search-topic-filters" class="search-topic-filters">
-      <h4>Filter by topic</h4>
 
-      <div class="search-topic-filter-inputs">
+      <div class="search-filter-inputs">
         {%- for topic in collections.topics -%}
-          {%- unless topic.url == false -%}
-            <label for="{{ topic.data.title | slugify }}" class="filter-label" hidden>
+          {%- if topic.url -%}
+            <label for="{{ topic.data.title | slugify }}" class="filter-label">
               <span class="filter-label-name">
                 <input type="checkbox" id="{{ topic.data.title | slugify }}" data-topic-filter="{{ topic.data.title }}" name="topic-filter">
                 {% icon topic.data.icon %}{{ topic.data.title }}
               </span>
                 <!-- <span class="search-counter">0</span> -->
             </label>
-          {%- endunless -%}
+          {%- endif -%}
         {%- endfor -%}
-          <label for="no-topic" class="filter-label" hidden>
+          <label for="no-topic" class="filter-label">
               <span class="filter-label-name">
                 <input type="checkbox" id="no-topic" data-topic-filter="noTopic" name="topic-filter">
                 {%- icon 'prohibit' -%}No topic

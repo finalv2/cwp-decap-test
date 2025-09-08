@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
   // Select elements
   const searchButton = document.querySelector("#search-button");
-  const searchContent = document.querySelector(".search-content");
   const resultsWrapper = document.querySelector("#search-results");
 
   const allResultsInput = document.querySelector(`label[for="type-all"] input`);
@@ -50,15 +49,25 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   }
 
   // Handle each search
-  const updateSearch = async (searchType, isNew, target) => {
+  const updateSearch = async (searchType, target) => {
     // Get markup templates
     const noResultsTemplate = document.querySelector("#search-no-results");
     const noMatchesTemplate = document.querySelector("#search-no-matches");
     const resultTemplate = document.querySelector("#search-result");
+    let isNew;
+
+    const hasQuery = urlParams.has("query");
+    const hasType = urlParams.has("type");
+    const hasTopic = urlParams.has("topic");
+
+    if (!hasQuery && !hasType && !hasTopic) {
+      isNew = true;
+    } else {
+      isNew = false;
+    }
 
 
-
-    const currentQuery = searchInput.value;
+    const currentQuery = searchInput.value || null;
 
     if (searchType !== "paginate") {
       resultsWrapper.innerHTML = '';
@@ -73,8 +82,10 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     if (urlParams.has('q')) {
       urlParams.set('q', currentQuery);
-    } else {
+    } else if (currentQuery) {
       urlParams.append('q', currentQuery);
+    } else {
+      urlParams.set('q', null);
     }
 
     if (currentTopicFilter) {
@@ -154,7 +165,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     // Populate the search page with markup
     const resultPane = document.createElement("div");
 
-    if (searchType === "query") {
+    if (isNew) {
       visibleResultsCount = allResultsCount;
     } else {
       visibleResultsCount = search.results.length;
@@ -188,9 +199,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       loadMoreButton.hidden = true;
     }
 
-    // Show the search content area
-    searchContent.hidden = false;
-
     // Populate search results
     if (visibleResultsCount >= 1) {
       for (const i in search.results.slice(0, resultsPerPage * pageCount)) {
@@ -211,7 +219,8 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     // Toggle filter visibility
 
-    if (isNew) {
+
+    if (currentQuery !== null) {
       for (const typeFilter of typeFilters) {
         const input = typeFilter.querySelector("input");
         const filterName = input.dataset.typeFilter;
@@ -226,9 +235,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
           }
         }
       }
-    }
 
-    if (isNew || searchType === "type") {
       for (const topicFilter of topicFilters) {
         const input = topicFilter.querySelector("input");
         const filterName = input.dataset.topicFilter;
@@ -305,7 +312,9 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const typeParam = urlParams.get("type");
     const topicParam = urlParams.get("topics");
 
-    searchInput.value = queryParam;
+    if (queryParam !== "null") {
+      searchInput.value = queryParam;
+    }
 
     if (topicParam !== "all") {
       activeFilters.topics = new Object();
