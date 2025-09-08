@@ -1,6 +1,6 @@
 ---
 layout: layouts/resource.njk
-title: "Maintaining family connections manual "
+title: "Maintaining connections manual "
 filetype: pdf
 url: ""
 file: /images/hawaii-maintaining-connections-manual.pdf
