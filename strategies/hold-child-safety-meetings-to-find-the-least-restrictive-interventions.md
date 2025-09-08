@@ -26,4 +26,4 @@ Hold child safety meetings that include the family, other supportive people, and
 
 ## This strategy in action
 
-**Oklahoma** holds child safety meetings in any situation that might require a safety intervention. They include parents, children and youth (when appropriate), family supports, and agency staff. These meetings have helped Oklahoma serve more children through prevention services and safely reduce the number of children in out-of-home care.[](https://web.archive.org/web/20230615042836/https://sde.ok.gov/sites/default/files/OSDE_Safety%20Plan%203.pdf)
+**Oklahoma** holds child safety meetings in any situation that might require a safety intervention. They include parents, children and youth (when appropriate), family supports, and agency staff. These meetings have helped Oklahoma serve more children through prevention services and safely reduce the number of children in out-of-home care.[](https://child-welfare-playbook-v2.netlify.app/images/oklahoma-youth-safety-plan.pdf)
