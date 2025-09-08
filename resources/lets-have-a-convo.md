@@ -1,9 +1,11 @@
 ---
-title: "Podcast: Family finding in a public child welfare agency"
+layout: layouts/resource.njk
+title: "Podcast: Kin engagement in Wisconsin"
 filetype: audio
 url: https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd
-layout: "layouts/resource.njk"
-tags: ["resource", "prevention"]
+tags:
+  - resource
+  - prevention
 ---
 
-Outgamie County Child Welfare talks about their ongoing work with finding and engaging kin.
+Outgamie County Child Welfare joins the "Let’s Have a Conversation” podcast to talk about their ongoing work finding and engaging with kin.
