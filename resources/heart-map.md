@@ -7,4 +7,4 @@ tags:
   - resource
   - kin-engagement
 ---
-Youth can use this diagram to list people important to them to help identify and maintain connections.
+Youth can diagram people important to them to help identify and maintain connections.
