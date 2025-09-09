@@ -8,10 +8,7 @@ tags:
 order: 5
 resources:
   - Finding and engaging relative and non-relative caregivers
-  - Washington State tribal engagement policy
-  - 30 Days to Family logic model [DEADLINK]
   - Diligent search checklist
-  - Smartsheet for government
 ---
 Kin information often gets lost in case notes or scattered across different workers' files, leaving children and youth without access to potential placements and ongoing support.
 
@@ -33,7 +30,7 @@ Aim for comprehensive mapping. Some programs recommend identifying 150-200 peopl
 
 **30 Days to Family** suggests that agencies identify at least 80 kin upfront for each child, with balanced representation across both parents whenever possible.
 
-**Washington State** maintains a policy for engaging local tribal partners to source kin connections.
+**Washington State** maintains a [policy for engaging local tribal partners](https://www.dcyf.wa.gov/tribal-relations/icw) to source kin connections.
 
 **Michigan**’s Diligent Search Checklist has many prompts for sourcing kin connections.
 
