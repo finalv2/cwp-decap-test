@@ -7,8 +7,8 @@ tags:
   - kin-engagement
 order: 5
 resources:
-  - Finding and engaging relative and non-relative caregivers
   - Diligent search checklist
+  - Florida kin engagement template
 ---
 Kin information often gets lost in case notes or scattered across different workers' files, leaving children and youth without access to potential placements and ongoing support.
 
@@ -22,7 +22,7 @@ If IT restrictions prevent file sharing, get creative with your solutions, like 
 
 **Use visual mapping to identify and organize connections.** Create a genogram (family tree) to show relationships using genogram software, blank paper, or a dry-erase board. Include all important connections, even if they aren't legal or blood relatives. Use the visual map to generate new leads and spot missing connections. 
 
-Aim for comprehensive mapping. Some programs recommend identifying 150-200 people. Update the genogram as you learn about new connections.
+Aim for comprehensive mapping. Some programs recommend identifying 150 to 200 people. Update the genogram as you learn about new connections.
 
 ## This strategy in action
 
