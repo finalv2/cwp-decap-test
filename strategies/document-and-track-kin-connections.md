@@ -34,4 +34,4 @@ Aim for comprehensive mapping. Some programs recommend identifying 150-200 peopl
 
 **Michigan**’s Diligent Search Checklist has many prompts for sourcing kin connections.
 
-Some agencies have been able to use Smartsheet to securely store and share kin contact information outside of their child welfare IT system (with the full blessing of their IT department).[](https://www.smartsheet.com/solutions/federal-government)
+Some agencies have been able to use [Smartsheet](https://www.smartsheet.com/solutions/federal-government) to securely store and share kin contact information outside of their child welfare IT system (with the full blessing of their IT department).[](https://www.smartsheet.com/solutions/federal-government)
