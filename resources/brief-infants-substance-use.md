@@ -8,4 +8,4 @@ tags:
   - resource
   - prevention
 ---
-Washington-aligned definitions for infants impacted by substance use, withdrawal, and fetal alcohol spectrum disorders.
+Washington state-aligned definitions for infants impacted by substance use, withdrawal, and fetal alcohol spectrum disorders.
