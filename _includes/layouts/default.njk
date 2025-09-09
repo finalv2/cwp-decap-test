@@ -10,6 +10,11 @@
     {% if description %}
       <meta name="description" content="{{description}}"/>
     {% endif %}
+    {% if image %}
+      <meta data-pagefind-default-meta="image[content]" content="{{ image }}" property="og:image">
+    {% elif pagefind.image %}
+      <meta data-pagefind-default-meta="image[content]" content="{{ pagefind.image }}" property="og:image">
+    {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,800;1,400;1,800&family=Space+Mono&display=swap" rel="stylesheet"><link rel="manifest" href="/manifest.webmanifest">
@@ -68,7 +73,6 @@
     {%- if pagefind -%}
       <div hidden>
         {% if pagefind.type %}<span data-pagefind-filter="pageType">{{ pagefind.type }}</span>{% endif %}
-        {% if pagefind.image %}<span data-pagefind-meta="image">{{ pagefind.image }}</span>{% endif %}
         {{ pagefindTopics | safe }}
       </div>
     {%- endif -%}
