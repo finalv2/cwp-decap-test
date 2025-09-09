@@ -26,7 +26,7 @@ Aim for comprehensive mapping. Some programs recommend identifying 150 to 200 pe
 
 ## This strategy in action
 
-**Florida** has a [template for logging communication efforts](/resources/florida-kin-engagement-guide) to source kin connections.
+**Florida** has a template for logging communication efforts to source kin connections.
 
 **30 Days to Family** suggests that agencies identify at least 80 kin upfront for each child, with balanced representation across both parents whenever possible.
 
