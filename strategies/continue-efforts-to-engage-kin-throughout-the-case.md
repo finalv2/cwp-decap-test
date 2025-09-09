@@ -7,8 +7,8 @@ tags:
   - kin-engagement
 order: 6
 resources:
-  - Relative notification letter
   - Kin placement case review template
+  - Michigan’s kin notification form
 ---
 The beginning of foster care is a difficult and emotional time for children or youth and their families. They may be too stressed or afraid to share a complete list of connections during an initial meeting. By continuing to search for kin throughout a child or youth's time in care and asking each connection about others, you can uncover more supportive relationships and help them leave care with more connections than they entered with.
 
