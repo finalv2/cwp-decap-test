@@ -56,6 +56,13 @@ pageTypes:
   </li>
 </template>
 
+<template id="search-blank">
+  <li class="search-result search-result-blank">{% icon "search" %}
+  <strong>Start your search</strong>
+  <span>Type in keywords or select a filter to start seeing results.</span>
+  </li>
+</template>
+
 <template id="search-no-results">
   <li class="search-result search-result-blank">{% icon "empty" %}
   <strong>No results</strong>
@@ -81,7 +88,7 @@ pageTypes:
 <div class="search-content">
   <form id="search-filters" class="search-filters">
     <h4>Filter by&hellip;</h4>
-    <h5 class="subhead">Page type</h5>
+    <h5 class="subhead">Type</h5>
     <fieldset class="search-type-filters" id="search-type-filters">
       <div class="search-filter-inputs">
         {%- for type in pageTypes -%}
