@@ -1,6 +1,6 @@
 ---
 layout: layouts/resource.njk
-title: Florida kin engagement template
+title: Florida kin engagement guide
 filetype: pdf
 url: ""
 file: /images/finding-engaging-relative-nonrelative-caregivers.pdf
