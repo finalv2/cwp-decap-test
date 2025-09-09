@@ -19,6 +19,8 @@ Many child welfare systems license hundreds of families who only want to adopt i
 
 ## This strategy in action
 
-* **Montgomery County, MD**’s statute states “our purpose is to meet the needs of the kids in our community” and they have no children awaiting adoption. They use this statute to politely decline families who are only interested in adoption.  
-* **Washington, D.C.** sets expectations during orientation. They tell families that they haven’t had a legally-free infant available in over a decade. They also remind families that the agency is not an adoption agency.  
-* **Indiana** maintains clear messaging with potential foster families and staff that everyone’s role is to support family reunification.
+**Montgomery County, MD**’s statute states “our purpose is to meet the needs of the kids in our community” and they have no children awaiting adoption. They use this statute to politely decline families who are only interested in adoption.  
+
+**Washington, D.C.** sets expectations during orientation. They tell families that they haven’t had a legally-free infant available in over a decade. They also remind families that the agency is not an adoption agency.  
+
+**Indiana** maintains clear messaging with potential foster families and staff that everyone’s role is to support family reunification.
