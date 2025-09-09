@@ -26,12 +26,12 @@ Aim for comprehensive mapping. Some programs recommend identifying 150 to 200 pe
 
 ## This strategy in action
 
-**Florida** has a template for logging communication efforts to source kin connections.
+**Florida** has a [template for logging communication efforts](/resources/florida-kin-engagement-guide) to source kin connections.
 
 **30 Days to Family** suggests that agencies identify at least 80 kin upfront for each child, with balanced representation across both parents whenever possible.
 
 **Washington State** maintains a [policy for engaging local tribal partners](https://www.dcyf.wa.gov/tribal-relations/icw) to source kin connections.
 
-**Michigan**’s Diligent Search Checklist has many prompts for sourcing kin connections.
+**Michigan**’s [diligent search checklist](/resources/michigan-diligent-search-checklist) has many prompts for sourcing kin connections.
 
 Some agencies have been able to use [Smartsheet](https://www.smartsheet.com/solutions/federal-government) to securely store and share kin contact information outside of their child welfare IT system (with the full blessing of their IT department).[](https://www.smartsheet.com/solutions/federal-government)
