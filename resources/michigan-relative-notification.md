@@ -7,4 +7,4 @@ tags:
   - resource
   - kin-engagement
 ---
-This “relative notification letter” is available under Relative Search forms in Spanish, English, and Arabic, for reaching out to kin to gauge interest in involvement.
+This relative notification letter found under "Relative Search" is offered in Spanish, English, and Arabic to reach out to kin and gauge interest in involvement.
