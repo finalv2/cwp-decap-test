@@ -8,7 +8,7 @@ tags:
 order: 5
 resources:
   - Diligent search checklist
-  - Florida kin engagement template
+  - Florida kin engagement guide
 ---
 Kin information often gets lost in case notes or scattered across different workers' files, leaving children and youth without access to potential placements and ongoing support.
 
