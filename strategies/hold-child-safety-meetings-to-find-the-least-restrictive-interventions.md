@@ -8,7 +8,7 @@ tags:
 order: 4
 resources:
   - Child safety guidebook
-  - Safety plan template for families
+  - Safety plan template
 ---
 Even when there are safety concerns, it isn't always necessary to remove a child or youth from their home. 
 
@@ -26,4 +26,4 @@ Hold child safety meetings that include the family, other supportive people, and
 
 ## This strategy in action
 
-**Oklahoma** holds child safety meetings in any situation that might require a safety intervention. They include parents, children and youth (when appropriate), family supports, and agency staff. These meetings have helped Oklahoma serve more children through prevention services and safely reduce the number of children in out-of-home care.[](https://web.archive.org/web/20230615042836/https://sde.ok.gov/sites/default/files/OSDE_Safety%20Plan%203.pdf)
+**Oklahoma** holds child safety meetings in any situation that might require a safety intervention. They include parents, children and youth (when appropriate), family supports, and agency staff. These meetings have helped Oklahoma serve more children through prevention services and safely reduce the number of children in out-of-home care.

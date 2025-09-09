@@ -9,10 +9,10 @@ order: 5
 resources:
   - Heart map template
   - Permanency pact
-  - Hawaii manual on maintaining connections
   - Relative notification letter
   - Wisconsin kin engagement guide
   - Iowa child protective services assessment
+  - "Maintaining connections manual "
 ---
 Long-term, consistent relationships with supportive adults are critical to a child or youth’s well-being. Supportive adults can provide emotional support, stability, and a sense of belonging, as well as practical support like transportation, tutoring, and advice. 
 

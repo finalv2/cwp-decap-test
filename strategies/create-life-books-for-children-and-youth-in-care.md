@@ -19,6 +19,6 @@ Children's histories, relationships, and important memories can easily get lost 
 
 ## This strategy in action
 
-**Frederick County, MD** prints Life Book templates and puts them in a 3-ring binder.
+**Frederick County, MD** prints [life book templates](https://child-welfare-playbook-v2.netlify.app/images/life-book-templates-combined.pdf) and puts them in a 3-ring binder.
 
-Other jurisdictions have used free online photo sharing websites like [Family Album](http://www.family-album.com) and [Moment Garden](http://www.momentgarden.com).
+**Other jurisdictions** have used free online photo sharing websites like [Family Album](http://www.family-album.com) and [Moment Garden](http://www.momentgarden.com).

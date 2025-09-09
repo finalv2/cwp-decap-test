@@ -1,9 +1,11 @@
 ---
-title: Hawaii manual on maintaining connections
+layout: layouts/resource.njk
+title: "Maintaining connections manual "
 filetype: pdf
-url: https://www.grandfamilies.org/Portals/0/Documents/Wikihow/Hawaii%20Maintaining%20Connections%20manual.pdf?ver=lrUOaC2XwUsJMdzVcHOW4g%3d%3d
-layout: "layouts/resource.njk"
-tags: ["resource", "supportive-relationships"]
+url: ""
+file: /images/hawaii-maintaining-connections-manual.pdf
+tags:
+  - resource
+  - supportive-relationships
 ---
-
-Guide for people interested in family engagement and the values behind its processes within the child welfare system.
+Guide from Hawaii’s EPIC ‘Ohana for people interested in kin engagement and the values behind its practices in the child welfare system.

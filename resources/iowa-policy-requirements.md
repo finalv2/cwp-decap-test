@@ -1,9 +1,10 @@
 ---
-title: Iowa child protective services assessment
-filetype: pdf
-url: https://hhs.iowa.gov/sites/default/files/18-B1.pdf
-layout: "layouts/resource.njk"
-tags: ["resource", "supportive-relationships"]
+layout: layouts/resource.njk
+title: Iowa Child Protective Services Assessment
+filetype: link
+url: https://hhs.iowa.gov/media/3917/download?inline
+tags:
+  - resource
+  - supportive-relationships
 ---
-
-Policy manual for the state of Iowa, outlining legal requirements and procedures.
+Employee policy manual that outlines legal requirements and procedures for assessing youth safety.
