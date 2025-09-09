@@ -13,7 +13,7 @@ tags:
 ---
 Child welfare agencies use different terms for the same roles and practices. Here’s the terminology that we use in the Child Welfare Playbook and what it means.
 
-### Caregiver
+## Caregiver
 
 We use *caregiver* to describe any adult providing care to a child. This includes:
 
@@ -21,6 +21,6 @@ We use *caregiver* to describe any adult providing care to a child. This include
 * **Kin caregivers**: Relatives and other people who have pre-existing emotional relationships to the child and provide care for them. We use *kin* rather than *kinship*.
 * **Residential staff**: Any adults who work and provide care in a residential facility.
 
-### Kin engagement
+## Kin engagement
 
 We use *kin engagement* to describe the overall practice of identifying, finding, and building connections with kin who may be able to care for a child in the foster care system.
