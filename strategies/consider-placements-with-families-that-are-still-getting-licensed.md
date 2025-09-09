@@ -21,5 +21,6 @@ Include families who have applied to foster but haven't finished their license i
 
 ## This strategy in action
 
-* **Frederick County, MD** pays close attention to new families in the application process. They consider whether the families would be a good match for any children or youth who need a new placement or a better-fitting placement. When they find a match, they work with the family to speed up their application process.  
-* **Washington, D.C.** looks for strong matches between children and youth and new families. In some cases, they set up visits between a child or youth and potential families (with caseworker involvement and approval). This allows them to build relationships while the family is finishing licensing.
+**Frederick County, MD** pays close attention to new families in the application process. They consider whether the families would be a good match for any children or youth who need a new placement or a better-fitting placement. When they find a match, they work with the family to speed up their application process.  
+
+**Washington, D.C.** looks for strong matches between children and youth and new families. In some cases, they set up visits between a child or youth and potential families (with caseworker involvement and approval). This allows them to build relationships while the family is finishing licensing.
