@@ -7,8 +7,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const filters = await pagefind.filters();
   await pagefind.init();
 
-  const pageTypes = ["Strategy", "Story", "Resource", "Meeting", "Page"]
-
   const activeFilters = {};
 
   // Select elements
@@ -27,10 +25,10 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   let allResultsCount = 0;
   let visibleResultsCount;
 
-  let otherSearchCounts = {};
+  // let otherSearchCounts = {};
 
   let pageCount = 1;
-  let resultsPerPage = 5;
+  const resultsPerPage = 5;
 
   const pluralizeResultCount = resultCount => {
     return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
@@ -53,9 +51,9 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const noMatchesTemplate = document.querySelector("#search-no-matches");
     const resultTemplate = document.querySelector("#search-result");
 
-    const hasQuery = urlParams.has("query");
-    const hasType = urlParams.has("type");
-    const hasTopic = urlParams.has("topics");
+    // const hasQuery = urlParams.has("query");
+    // const hasType = urlParams.has("type");
+    // const hasTopic = urlParams.has("topics");
 
     const currentQuery = searchInput.value || null;
 
@@ -163,7 +161,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     if (allResultsCount < 1) {
       resultCountText.hidden = true;
-      filterWrapper.hidden = true;
       resultPane.innerHTML = noResultsTemplate.innerHTML;
     } else {
       filterWrapper.hidden = false;
