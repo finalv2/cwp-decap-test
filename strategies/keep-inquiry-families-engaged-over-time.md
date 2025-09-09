@@ -47,9 +47,14 @@ But if too much time passes before they get a response, potential families may g
 
 ## This strategy in action
 
-* **Frederick County, MD** keeps families engaged even when they take time to complete applications. More families take 6 or more months to apply than complete the application right away. If a family completes PRIDE training but doesn't submit an application within a year, they take a PRIDE refresher. Frederick County also sends interested families a list of 12 ways to support youth without becoming foster parents. They also have recruiters conduct foster parent training. This helps families feel more comfortable as they start the process.  
-* **Fairfax County, VA** keeps all inquiries open. They’ve found that families take an average of 2 to 3 years to move from inquiry to application. They track families who aren't ready due to short-term issues like a move and set reminders to check in afterward. They also have recruitment team members join a family’s initial home visit for a warm introduction to the licensor.  
-* **Washington, D.C.** adds new inquiries to their newsletter and checks in with families quarterly. They don't close inquiries and sometimes have families become licensed after being on their inquiry list for a decade.  
-* **Michigan** sends interested families an email newsletter with agency news, information about children and youth that need placements, and ways to get involved. They use electronic calendar reminders to track check-ins with potential foster families.  
-* **Oklahoma** checks back with inquiry families within a week, at 14 days, and at 30 days.   
-* **Ohio** requires all inquiries to receive a response within 7 days and has developed a packet of materials for new inquiries.
+**Frederick County, MD** keeps families engaged even when they take time to complete applications. More families take 6 or more months to apply than complete the application right away. If a family completes PRIDE training but doesn't submit an application within a year, they take a PRIDE refresher. Frederick County also sends interested families a list of 12 ways to support youth without becoming foster parents. They also have recruiters conduct foster parent training. This helps families feel more comfortable as they start the process.  
+
+**Fairfax County, VA** keeps all inquiries open. They’ve found that families take an average of 2 to 3 years to move from inquiry to application. They track families who aren't ready due to short-term issues like a move and set reminders to check in afterward. They also have recruitment team members join a family’s initial home visit for a warm introduction to the licensor.  
+
+**Washington, D.C.** adds new inquiries to their newsletter and checks in with families quarterly. They don't close inquiries and sometimes have families become licensed after being on their inquiry list for a decade.  
+
+**Michigan** sends interested families an email newsletter with agency news, information about children and youth that need placements, and ways to get involved. They use electronic calendar reminders to track check-ins with potential foster families.  
+
+**Oklahoma** checks back with inquiry families within a week, at 14 days, and at 30 days.   
+
+**Ohio** requires all inquiries to receive a response within 7 days and has developed a packet of materials for new inquiries.
