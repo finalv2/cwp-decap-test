@@ -7,8 +7,8 @@ tags:
   - kin-engagement
 order: 5
 resources:
-  - Diligent search checklist
-  - Florida kin engagement guide
+  - Michigan diligent search checklist
+  - Florida kin engagement template
 ---
 Kin information often gets lost in case notes or scattered across different workers' files, leaving children and youth without access to potential placements and ongoing support.
 
