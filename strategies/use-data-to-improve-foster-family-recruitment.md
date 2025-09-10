@@ -15,7 +15,7 @@ It can be hard to tell which recruitment methods work best or whether you're rec
 
 Create a report you can run regularly to see the traits of children and youth entering foster care. Include things like school district, gender identity, age, race, ethnicity, religion, language spoken, and special needs. Work with your recruitment team to create local strategies to attract matching families. Target recruitment efforts in neighborhoods where there are higher removal rates, so those children and youth can remain in their communities.
 
-Consider using a [Foster Home Estimator](https://assets.aecf.org/m/blogdoc/aecf-FosterHomeEstimatorInstructions-2016.pdf) to configure your data collection efforts.
+Consider using a [Foster Home Estimator](https://www.aecf.org/blog/foster-home-estimator-helping-child-welfare-agencies-plan-for-family-recruitment) to configure your data collection efforts.
 
 ### Track which recruitment methods work
 
