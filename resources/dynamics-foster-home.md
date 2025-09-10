@@ -2,7 +2,7 @@
 layout: layouts/resource.njk
 title: Foster home retention and recruitment data
 filetype: pdf
-url: https://drive.google.com/file/d/1829uH7KkjOHSWrH6umpySMvONqQHpyk2/view
+url: ""
 file: /images/foster-home-recruitment-data-2018.pdf
 tags:
   - resource
