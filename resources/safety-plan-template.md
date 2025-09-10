@@ -1,8 +1,8 @@
 ---
 layout: layouts/resource.njk
-title: Safety plan template
+title: Oklahoma safety plan template
 filetype: pdf
-url: https://drive.google.com/file/d/1FA60h6AJkpyT3EBtvDswcRGkaoQrHREm/view
+url: ""
 file: /images/oklahoma-youth-safety-plan.pdf
 tags:
   - resource
