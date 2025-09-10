@@ -7,8 +7,8 @@ tags:
   - prevention
 order: 4
 resources:
-  - Child safety guidebook
   - Safety plan template
+  - Oklahoma child safety guidebook
 ---
 Even when there are safety concerns, it isn't always necessary to remove a child or youth from their home. 
 
