@@ -1,6 +1,6 @@
 ---
 layout: layouts/resource.njk
-title: Iowa’s policy requirements
+title: Iowa policy requirements
 filetype: link
 url: https://hhs.iowa.gov/media/3917/download?inline
 tags:
