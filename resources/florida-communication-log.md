@@ -1,9 +1,11 @@
 ---
-title: Finding and engaging relative and non-relative caregivers
+layout: layouts/resource.njk
+title: Florida kin engagement guide
 filetype: pdf
-url: https://drive.google.com/file/d/1AmvqcgmzLc2ll0esj2JvFC3vWjKhMAxg/view?usp=drive_link
-layout: "layouts/resource.njk"
-tags: ["resource", "kin-engagement"]
+url: ""
+file: /images/finding-engaging-relative-nonrelative-caregivers.pdf
+tags:
+  - resource
+  - kin-engagement
 ---
-
-Kin-first guide to engaging with youth caregivers, with tips and templates.
+Kin-first guide to communicating with youth caregivers, with tips and templates.

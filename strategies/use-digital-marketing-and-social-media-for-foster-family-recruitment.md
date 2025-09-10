@@ -19,8 +19,12 @@ Online ads cost money, but can give you a higher return on investment than some 
 
 ## This strategy in action
 
-* **Colorado** posts about becoming a foster family on NextDoor.   
-* **Frederick County, MD** has an active Facebook page.   
-* **Rhode Island DCYF** maintains an active Facebook presence and posts a "Friday Win" (a bit of good news) every Friday on social media to build interaction.  
-* Several **California** counties partnered with Mark Daley, a child welfare advocate and digital marketing specialist, to run targeted recruitment campaigns for specific types of homes, such as homes for youth who have experienced commercial sexual exploitation and child-specific campaigns.  
-* **Washington, D.C**. runs paid Facebook marketing campaigns to attract the hardest-to-find types of families.
+**Colorado** posts about becoming a foster family on NextDoor.   
+
+**Frederick County, MD** has an active Facebook page.   
+
+**Rhode Island DCYF** maintains an active Facebook presence and posts a "Friday Win" (a bit of good news) every Friday on social media to build interaction.  
+
+Several **California** counties partnered with Mark Daley, a child welfare advocate and digital marketing specialist, to run targeted recruitment campaigns for specific types of homes, such as homes for youth who have experienced commercial sexual exploitation and child-specific campaigns.  
+
+**Washington, D.C**. runs paid Facebook marketing campaigns to attract the hardest-to-find types of families.

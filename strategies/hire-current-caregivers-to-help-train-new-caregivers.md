@@ -21,5 +21,6 @@ Hire current caregivers to assist as co-leads in new or continuing trainings, or
 
 ## This strategy in action
 
-* **Frederick County, MD** hires experienced foster parents to co-facilitate PRIDE foster parent training.  
-* **Fairfax County, VA** hires experienced foster parents to conduct initial home visits for prospective foster families.
+**Frederick County, MD** hires experienced foster parents to co-facilitate PRIDE foster parent training.  
+
+**Fairfax County, VA** hires experienced foster parents to conduct initial home visits for prospective foster families.

@@ -1,9 +1,10 @@
 ---
+layout: layouts/resource.njk
 title: "Family Connections: Yuvia’s Story"
 filetype: video
 url: https://www.youtube.com/watch?v=bdTyJUO5Vqw
-layout: "layouts/resource.njk"
-tags: ["resource", "recruitment"]
+tags:
+  - resource
+  - recruitment
 ---
-
-Video story from Amara on creating family connections in support of reunification.
+Video story from Washington State on supporting reunification through maintaining family connections.

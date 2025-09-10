@@ -7,7 +7,7 @@ tags:
   - retention
 order: 7
 resources:
-  - Treehouse store for clothing and other essentials
+  - Treehouse store
 ---
 Caregivers often leave the system feeling overextended and underappreciated, especially when basic maintenance payments don't cover the full costs of caregiving. Caregivers need regular breaks to avoid burnout and maintain their ability to provide quality care.
 
@@ -30,8 +30,6 @@ Provide summer camp stipends to caregivers, including unlicensed kinship caregiv
 Prioritize caregivers when hiring for part-time and full-time roles at your agency. Hire current caregivers to co-lead trainings and orientations and compensate caregivers who attend required training sessions. Provide an up-to-date list of local stores and restaurants that offer discounts.
 
 ## This strategy in action
-
-**Colorado** provides $0.66 per day for respite on top of foster care maintenance payments. Foster parents can use it towards any approved babysitter.
 
 **Maryland** offers 7 paid respite days per year at approved respite providers. Both families get paid for those 7 days.
 

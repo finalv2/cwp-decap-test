@@ -1,9 +1,10 @@
 ---
-title: New York's kinship firewall policy
+layout: layouts/resource.njk
+title: New York's kin-first policy
 filetype: pdf
-url: https://www.grandfamilies.org/Portals/0/Documents/Wikihow/20-OCFS-ADM-18%20kinfirst%20firewall.pdf?ver=aRW2qPM7j_EMROWXTct8SA%3d%3d
-layout: "layouts/resource.njk"
-tags: ["resource", "noTopic"]
+url: https://drive.google.com/file/d/1GeJN4ogdAmq0qWnkmdxFU4TNO7_WOcKQ/view?usp=sharing
+tags:
+  - resource
+  - noTopic
 ---
-
-TK
+Administrative directive from New York State on establishing safe and appropriate kin-first placements.

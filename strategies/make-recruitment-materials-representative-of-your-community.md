@@ -25,5 +25,6 @@ Updating your recruitment materials, forms, and processes to reflect your commun
 
 ## This strategy in action
 
-* **Prince George’s County, MD**; **Fairfax County, VA**; **Colorado**; and **Washington State** use inclusive and representative pictures and stories in their recruitment materials.  
-* **Washington State** and **Oregon** added pronouns and preferred names to their inquiry and application forms.
+**Prince George’s County, MD**; **Fairfax County, VA**; **Colorado**; and **Washington State** use inclusive and representative pictures and stories in their recruitment materials.  
+
+**Washington State** and **Oregon** added pronouns and preferred names to their inquiry and application forms.

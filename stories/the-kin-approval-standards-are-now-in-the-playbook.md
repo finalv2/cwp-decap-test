@@ -6,7 +6,7 @@ description: The Child Welfare Playbook now includes strategies and resources
   from the federal kin approval standards to help agencies improve approval
   processes for kin caregivers.
 author: Bloom Works
-date: 09-09-2025
+date: 2025-09-09
 type: Blog post
 image: .images/stories/kin-engagement.jpg
 tags:
