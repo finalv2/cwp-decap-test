@@ -2,7 +2,8 @@
 layout: layouts/resource.njk
 title: Rhode Island fire and lead safety inspection checklist
 filetype: pdf
-url: https://drive.google.com/file/d/1yAfzz7pREFC4yFDMF2fSiVSZMvy8kyYL/view?usp=sharing
+url: ""
+file: /images/rhode-island-fire-lead-safety-checklist-english-spanish.pdf
 tags:
   - resource
   - caregiver-licensing
