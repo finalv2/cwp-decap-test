@@ -7,9 +7,9 @@ tags:
   - kin-engagement
 order: 12
 resources:
-  - "Kinship Support Network session: Using social media"
   - DC Child and Family Services social media policy
   - Michigan diligent search checklist
+  - "Kin finding learning community session: Using social media"
 ---
 Social media can help you identify kin that traditional search tactics might miss. Make social media searches part of your regular process for locating and connecting with kin.
 
