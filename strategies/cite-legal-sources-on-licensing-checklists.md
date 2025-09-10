@@ -7,7 +7,7 @@ tags:
   - caregiver-licensing
 order: 2
 resources:
-  - Foster home licensing inspection checklist
+  - Washington State inspection checklist
 ---
 Licensing checklists often include requirements that seem arbitrary or outdated to families and staff. And when decision-makers can't see the legal source behind each requirement, it's hard to know which items can be updated and which require policy changes.
 
