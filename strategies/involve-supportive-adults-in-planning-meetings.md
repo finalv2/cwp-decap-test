@@ -7,7 +7,7 @@ tags:
   - supportive-relationships
 order: 9
 resources:
-  - "Youth Circle program "
+  - "Hawaii Youth Circle program "
 ---
 Most youth leave foster care with fewer connections than they entered with. However, most supportive adults want to be more involved in supporting the youth in their lives. Keeping these supportive adults engaged and involved in case planning can keep youth from exiting care without connections. Invite supportive adults to planning meetings to keep these connections strong.
 
