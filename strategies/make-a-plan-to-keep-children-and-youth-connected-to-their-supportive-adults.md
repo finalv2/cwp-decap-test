@@ -9,10 +9,9 @@ order: 5
 resources:
   - Heart map template
   - Permanency pact
-  - Wisconsin kin engagement guide
   - "Maintaining connections manual "
-  - Iowa’s policy requirements
   - Michigan’s kin notification form
+  - Iowa policy requirements
 ---
 Long-term, consistent relationships with supportive adults are critical to a child or youth’s well-being. Supportive adults can provide emotional support, stability, and a sense of belonging, as well as practical support like transportation, tutoring, and advice. 
 
