@@ -31,8 +31,6 @@ Prioritize caregivers when hiring for part-time and full-time roles at your agen
 
 ## This strategy in action
 
-**Colorado** makes daily payments for respite on top of foster care maintenance payments. Foster parents can use it towards any approved babysitter.
-
 **Maryland** offers 7 paid respite days per year at approved respite providers. Both families get paid for those 7 days.
 
 **Washington State** provides 2 paid respite days per month to foster families.
