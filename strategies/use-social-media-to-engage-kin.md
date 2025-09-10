@@ -29,6 +29,6 @@ Social media can help you identify kin that traditional search tactics might mis
 
 **Rhode Island** uses accounts under their individual names, but identifies on their accounts that they work for the state. They also clearly identify that they work for the state in each message to potential kin.
 
-**Michigan** includes social media sites on its [Diligent Search checklist](https://drive.google.com/drive/folders/1icxQrLVQ1wlnKqo28bxN6lJ7XRKsWM36). 
+**Michigan** includes social media sites on its [Diligent Search checklist](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.michigan.gov%2Fmdhhs%2F-%2Fmedia%2FProject%2FWebsites%2Fmdhhs%2FDoing-Business-with-MDHHS%2FContract-and-Subrecipient-Resources%2FFoster-Care-Forms%2FDHS-0991.dot%3Frev%3Dfa425292062744dfa643ad9bce715742%26hash%3DD65CDDE85BE1AF1DAE5F86FA20C24EEA&wdOrigin=BROWSELINK). 
 
 **Virginia** central family-finding social media accounts are called "Virginia Family Finding 1" (and 2, and 3) to protect worker privacy.[](https://www.gksnetwork.org/resources/kin-mobilization-learning-collaborative/)
