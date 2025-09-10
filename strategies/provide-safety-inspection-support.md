@@ -8,9 +8,7 @@ tags:
 order: 7
 resources:
   - Fire and lead safety inspection checklist
-  - Foster home licensing inspection checklist
-  - Sample IT request to allow uploads in online portal [DEADLINK]
-  - Sample email to request photo validation [DEADLINK]
+  - Washington State inspection checklist
 ---
 Safety inspections often delay the licensing process when families don't know what items they need ahead of time, can't afford required safety equipment, or have to wait for return visits to resolve minor issues. Provide support throughout the inspection process so families can pass inspections quickly and staff spend less time on return visits.
 
