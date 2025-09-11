@@ -7,4 +7,4 @@ url: https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_S
 tags:
   - resource
 ---
-*Kin-Specific Foster Home Approval* provides national recommended standards for working with kin, including guidance on conducting background checks and assessments and reviewing existing policies.
+*Kin-Specific Foster Home Approval* provides national recommended standards for working with kin, with guidance on conducting background checks and assessments and reviewing existing policy.
