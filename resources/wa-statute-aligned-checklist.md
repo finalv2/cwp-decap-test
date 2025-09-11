@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 title: Washington State inspection checklist
-filetype: url
+filetype: doc
 url: ""
 file: /images/washington-state-home-licensing-inspection-policy-checklist.docx
 tags:

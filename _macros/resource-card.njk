@@ -1,8 +1,8 @@
 {%- macro resourceCard(params) -%}
 
-{% if filetype == "pdf" %}
+{% if params.filetype == "pdf" %}
   {% set cardIcon = "file-pdf" %}
-{% elif filetype == "doc" %}
+{% elif params.filetype == "doc" %}
   {% set cardIcon = "file-doc" %}
 {% else %}
   {% set cardIcon =  "link" %}
