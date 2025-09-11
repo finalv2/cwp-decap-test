@@ -37,6 +37,14 @@ export default async function(eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  eleventyConfig.addPassthroughCopy("./favicon.ico");
+  eleventyConfig.addPassthroughCopy("./favicon.svg");
+  eleventyConfig.addPassthroughCopy("./favicon-180.png");
+  eleventyConfig.addPassthroughCopy("./favicon-192.png");
+  eleventyConfig.addPassthroughCopy("./favicon-512.png");
+  eleventyConfig.addPassthroughCopy("./site.webmanifest");
+
+
   eleventyConfig.addPassthroughCopy("./images/");
   eleventyConfig.addPassthroughCopy("./js/");
   eleventyConfig.addPassthroughCopy("./admin/");
