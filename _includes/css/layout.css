@@ -24,6 +24,7 @@
 
 .l-wrapper-text {
   max-inline-size: var(--t-measure);
+  /*margin-inline: auto;*/
 }
 
 /* Horizontal centering */

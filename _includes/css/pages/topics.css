@@ -1,5 +1,5 @@
 .topic-grid {
-  --grid-col-width: calc(var(--t-measure) * 0.75);
+  --grid-col-width: calc(var(--t-measure) * 0.5);
   max-inline-size: unset;
   align-content: center;
 }

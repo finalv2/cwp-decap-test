@@ -90,8 +90,17 @@
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  /*align-items: center;*/
   gap: var(--t-paragraph);
 }
+
+/*.page-banner[data-type="strategy"] * {
+  text-align: center;
+}
+
+.page-banner[data-type="strategy"] .nametag-badge {
+  translate: -50% 0;
+}*/
 
 .nametag {
   position: relative;
@@ -112,7 +121,7 @@
 
 .nametag-text {
   margin-block-start: 0;
-  padding: var(--t-paragraph);
+  padding: var(--t-paragraph) calc(var(--t-paragraph) * 1.5);
   background: #fff;
   border: 2px solid var(--c-blue);
   color: var(--c-blue);
@@ -200,8 +209,9 @@
 }
 
 @media (min-width: 60rem) {
-  .page-banner:not([data-type="strategy"]) :is(h2, h1, .h1) {
-    max-inline-size: 40vw;
+
+  .page-banner:not([data-type="strategy"]) :is(h2, h1, .h1, p) {
+    max-inline-size: 40dvi;
   }
 
   .page-banner-img {
