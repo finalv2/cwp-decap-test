@@ -34,4 +34,8 @@ Create plans of safe care to connect families to parenting classes, safety guida
 
 ## This strategy in action
 
-**Washington State** created an online portal that healthcare providers use to collect de-identified data about prenatal substance exposure and guide appropriate referrals. When possible, the system connects families to community-based services through [Help Me Grow](https://helpmegrowwa.org/) rather than the child abuse hotline, while still meeting federal requirements. Washington developed these tools with experts and community members who have lived experience, creating resources that help reduce bias and improve family support.[](https://drive.google.com/file/d/1Y1SY_Toqf9cAo-1EExCsY2FtEkhW7J0e/view?usp=drive_link)
+**Washington State** created an online portal that healthcare providers use to collect de-identified data about prenatal substance exposure and guide appropriate referrals. 
+
+When possible, the system connects families to community-based services through [Help Me Grow](https://helpmegrowwa.org/) rather than the child abuse hotline, while still meeting federal requirements. 
+
+Washington developed these tools with experts and community members who have lived experience, creating resources that help reduce bias and improve family support.[](https://drive.google.com/file/d/1Y1SY_Toqf9cAo-1EExCsY2FtEkhW7J0e/view?usp=drive_link)
