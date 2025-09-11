@@ -7,8 +7,8 @@ tags:
   - supportive-relationships
 order: 8
 resources:
-  - Oklahoma policy on visits with parents and siblings
   - Washington State policy on visits with relatives
+  - Oklahoma policy on visits with parents and siblings
 ---
 Caregivers often don't realize they're expected to help maintain a child or youth's connections with siblings and other important people. Without clear expectations, these relationships can fade while they are in care. Set clear expectations to help children and youth keep these important relationships throughout their time in care.
 
