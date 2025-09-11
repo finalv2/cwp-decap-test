@@ -9,6 +9,7 @@ order: 7
 resources:
   - Washington State inspection checklist
   - Rhode Island fire and lead safety inspection checklist
+  - Kin licensing standards
 ---
 Safety inspections often delay the licensing process when families don't know what items they need ahead of time, can't afford required safety equipment, or have to wait for return visits to resolve minor issues. Provide support throughout the inspection process so families can pass inspections quickly and staff spend less time on return visits.
 

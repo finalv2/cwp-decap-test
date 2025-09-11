@@ -6,6 +6,8 @@ tags:
   - strategy
   - caregiver-licensing
 order: 5
+resources:
+  - Kin licensing standards
 ---
 There is no federal requirement for kin caregivers to be in the country legally in order to get licensed. These caregivers should be eligible for licensing and financial support. License undocumented family members to increase your pool of kin caregivers and ensure they can get financial support.
 
