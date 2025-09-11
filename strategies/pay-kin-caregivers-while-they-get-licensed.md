@@ -6,6 +6,8 @@ tags:
   - strategy
   - caregiver-licensing
 order: 4
+resources:
+  - "Kin-Specific Foster Home Approval: Model Standards"
 ---
 Kin caregivers aren't eligible for foster care stipends until they complete the licensing process. In most states, this can take hundreds of days, and many states allow kin caregivers to remain unlicensed (and unpaid) indefinitely. This lack of financial support can severely impact a kin caregiver's ability to provide a stable placement.
 
