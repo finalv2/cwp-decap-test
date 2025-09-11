@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Kin-specific foster home approval: Model standards"
+title: "Kin-Specific Foster Home Approval: Model Standards"
 filetype: link
 url: https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_Standards_2025.pdf
 tags:
