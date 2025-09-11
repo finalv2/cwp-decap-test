@@ -7,12 +7,11 @@ tags:
   - prevention
 order: 1
 resources:
+  - "Program flyer: Washington State Plan of Safe Care"
+  - "Presentation: Washington State Plan of Safe Care"
   - "Intake form: Washington State Plan of Safe Care"
   - "Referral flow: Washington State Plan of Safe Care"
   - "Outreach script: Washington State Plan of Safe Care"
-  - "Presentation: Washington State Plan of Safe Care"
-  - "Program flyer: Washington State Plan of Safe Care"
-  - "Referral portal: Washington State Plan of Safe Care"
   - "Reporting infant substance exposure: Things to consider"
   - Terminology for infants affected by substance use
 ---
