@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Kin licensing template forms "
+title: "Kin licensing forms "
 filetype: link
 url: https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms
 tags:
