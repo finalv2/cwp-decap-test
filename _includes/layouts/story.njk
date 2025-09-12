@@ -5,7 +5,7 @@ pagefind:
   type: story
 ---
 
-<div class="page-banner" data-type="story" data-pagefind-filter="pageType:Story" style="--background: url('{{ image }}')">
+<div class="page-banner" data-type="story" data-pagefind-filter="pageType:Story" style="--background: url('{%- if image -%}{{ image }}{%- else -%}/images/banners/story.jpg{%- endif -%}')">
   <div class="l-wrapper">
     <div class="l-stack-basic">
       <div class="nametag">
@@ -30,7 +30,7 @@ pagefind:
     </div>
   </div>
 
-  {% if image %}<div class="page-banner-img"></div>{% endif %}
+  <div class="page-banner-img"></div>
 </div>
 
 <div class="l-wrapper">
