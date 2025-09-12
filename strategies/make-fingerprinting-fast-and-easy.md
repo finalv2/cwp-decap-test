@@ -22,7 +22,7 @@ Make this process easier for potential caregivers by providing quick and accessi
 
 **Contract with community-based locations.** If you can’t do portable or in-office fingerprinting methods, contract with community-based services (like UPS or FedEx) that offer evening and weekend appointments. Help kin caregivers make an appointment that works for their schedule, and help with childcare and transportation. Make sure they don’t have to pay and that the vendors accept expanded forms of identification recommended by the [FBI Compact Council](https://ucr.fbi.gov/cc/current-initiatives/identity-verification-program-guide-single-page).
 
-**Have a policy for exceptions.** People who don’t have fingerprints due to age, exposure to chemicals, or missing fingers are often forced to try and “fail” the fingerprinting process twice before getting a name-based alternative. This is dehumanizing and delays the approval process.Create a policy for both kin and non-kin foster family homes that you can conduct a name-based background check for these people instead.
+**Have a policy for exceptions.** People who don’t have fingerprints due to age, exposure to chemicals, or missing fingers are often forced to try and “fail” the fingerprinting process twice before getting a name-based alternative. This is dehumanizing and delays the approval process. Create a policy for both kin and non-kin foster family homes that you can conduct a name-based background check for these people instead.
 
 ### Have clear turnaround times
 
