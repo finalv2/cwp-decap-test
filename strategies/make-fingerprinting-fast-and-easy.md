@@ -44,4 +44,4 @@ In **Arizona**, a [Fingerprint Clearance Card](https://www.azdps.gov/services/pu
 
 **Louisiana** and **Utah** have goals to review fingerprinting results on the same day.
 
-**Grandfamilies & Kinship Support Network** has developed a list of identification caregivers can bring to their fingerprinting appointment, available in its [kin licensing forms and templates](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms).
+**All jurisdictions** can follow the list of identification caregivers can bring to their fingerprinting appointment, found in the [kin licensing forms and templates](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms).
