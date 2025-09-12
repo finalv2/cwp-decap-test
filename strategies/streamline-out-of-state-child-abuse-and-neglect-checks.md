@@ -1,11 +1,11 @@
 ---
 layout: layouts/strategy.njk
 templateEngineOverride: md,njk
-title: Streamline out-of-state child abuse and neglect checks
+title: Simplify process for out-of-state child abuse and neglect checks
 tags:
   - strategy
   - background-checks
-order: 1
+order: "5"
 resources:
   - Kin licensing standards
   - "Kin licensing forms "
@@ -23,7 +23,7 @@ Process check requests faster by handling them efficiently and removing administ
 * Convert your form to a fillable PDF or web form.  
 * If you need to make system IT upgrades, consider using a web-based system for accepting and fulfilling these requests in the meantime. Make sure to allow multiple users in a state to make requests.
 
-**Use a general inbox for requests.** Sending requests to an email address that only 1 person can access creates delays when that staff member goes on vacation, gets sick, or retires. Make sure that multiple staff members can access the email address for requests, rather than directing requests to a specific individual.
+**Use a general inbox for requests.** Requests that go to an email address that only one person in your agency can access creates delays when that staff member goes on vacation, gets sick, or retires. Make sure multiple staff members can access the email address for requests, rather than directing requests to a specific individual. If you don’t already have one, develop a policy in your agency that includes who should submit and follow up on all requests, and specify that you’ll fulfill requests within 1 week. 
 
 **Let agencies attest they have consent.** Requiring a separate consent form for each individual being checked with every request creates extra paperwork and delays. Instead, allow the requesting agency to check a box to confirm that they have consent on file. This dramatically reduces the time and complexity of completing checks.
 
@@ -33,4 +33,6 @@ Process check requests faster by handling them efficiently and removing administ
 
 ## This strategy in action
 
-Check out the [Out-of-State Child Abuse and Neglect dashboard](/dashboards/adam-walsh/) to compare which jurisdictions have implemented these promising practices.[](https://www.google.com/url?q=https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab%3Dt.0%23heading%3Dh.yd2gyy5b38kz&sa=D&source=docs&ust=1750798774259355&usg=AOvVaw2yTL2zyUIGHpRFEo_0wQvZ)
+**Compare which jurisdictions** have implemented these promising practices at the [Out-of-State Child Abuse and Neglect dashboard](https://childwelfareplaybook.com/compare/background-checks/).
+
+**Grandfamilies & Kinship Support Network** has a form template to help jurisdictions request [out-of-state child abuse and neglect checks](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms).[](https://www.google.com/url?q=https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab%3Dt.0%23heading%3Dh.yd2gyy5b38kz&sa=D&source=docs&ust=1750798774259355&usg=AOvVaw2yTL2zyUIGHpRFEo_0wQvZ)

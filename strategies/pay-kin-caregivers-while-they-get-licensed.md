@@ -7,17 +7,19 @@ tags:
   - caregiver-licensing
 order: 4
 resources:
-  - "Kin-Specific Foster Home Approval: Model Standards"
+  - Kin licensing standards
 ---
-Kin caregivers aren't eligible for foster care stipends until they complete the licensing process. In most states, this can take hundreds of days, and many states allow kin caregivers to remain unlicensed (and unpaid) indefinitely. This lack of financial support can severely impact a kin caregiver's ability to provide a stable placement.
+Kin caregivers aren't eligible for federal foster care reimbursement until they complete the licensing process. In many states, this can take hundreds of days, and some states have allowed kin caregivers to remain unlicensed (and unpaid) idefinitely. This lack of financial support can severely impact a kin caregiver's ability to provide a stable placement.
 
-Pay kin caregivers while they work through the licensing process to help them financially support the children in their care.
+Pay kin caregivers while they work through the licensing process to help them financially support youth in their care. 
 
 ## How to do this
 
-**Pay kin caregivers from day 1 and get them cash immediately**. This generally requires state funds. Don't rely only on your standard payment system. Agencies typically use payment systems that cut checks twice a month, which means a caregiver could wait up to 40 days to get their first check. Give cash or vouchers to caregivers immediately to cover this gap.
+**Pay kin caregivers from day 1 and get them cash immediately**. This generally requires state funds. Don't rely only on your standard payment system. Agencies typically use payment systems that cut checks twice a month, which means a caregiver could wait up to 40 days to get their first check. Investigate ways to speed up this process while you give cash or vouchers to immediately to cover this gap.
 
-**Streamline your kin licensing process.** This includes exempting kin caregivers from as many non-safety requirements as possible, which gets them licensed and eligible for regular payments faster.
+**Streamline your kin licensing process.** Follow the recommended [kin licensing standards](https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_Standards_2025.pdf) to help kin get licensed and eligible for regular payments faster.
+
+**Make payments regardless of federal reimbursement.** If a kin caregiver is disqualified from federal reimbursement, but you or the court have determined youth are safe to stay in their home, use agency funds upon placement to provide full foster care maintenance payments. Kin should never have to pay this back.
 
 ## This strategy in action
 
