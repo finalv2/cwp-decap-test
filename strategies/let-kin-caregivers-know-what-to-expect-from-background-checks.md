@@ -19,7 +19,7 @@ How you explain this process can make the difference in whether kin caregivers f
 
 **Be specific about the benefits of approval.** Being approved as a formal kin caregiver means their household will get money to help with related expenses, and they’ll be able to make decisions around local school enrollment and medical care. They’ll also have input on when and how youth interact with previous caregivers until they can reunite.
 
-**Explain each step upfront.** Tell them that this process involves sensitive information about the kin caregiver’s history, home, and other adults they live with. Explain upfront what they need to do to get approved as a formal kin caregiver, which includes checks of criminal background records, child abuse and neglect records, and sex offender registry records in any states they and other adults in the home have lived in the past 5 years, and a home and caregiver assessment. 
+**Explain each step upfront.** The process to get approved as a formal kin caregiver includes checks of criminal background records, child abuse and neglect records, and sex offender registry records in any states they and other adults in the home have lived in the past 5 years, along with a home and caregiver assessment. 
 
 Reassure them:
 
