@@ -16,6 +16,8 @@ Kin often face over-collection of information, requests for detailed criminal hi
 
 **Collect only essential information**. This includes names, other names used, date of birth, and addresses for the past 5 years from the kin caregiver and other adults in the household. Focus on critical data first. Social Security numbers or tax ID numbers help identify the right person quickly, but name and date of birth are most important for running checks. Avoid collecting demographic information like sex, gender, or race or ethnicity unless you can clearly explain how it will be used. 
 
+Do this as soon as possible after kin indicate their interest in and consent to being a caregiver. Name-based, immediate background checks of state or local criminal history can usually be conducted over the phone, with immediate results. 
+
 You should also collect this information from any people over 18 who regularly live, sleep, and share common areas in the home. This includes adults staying temporarily for more than 2 weeks. This doesn’t include tenants with separate entrances.
 
 **Don't ask applicants to write out their criminal history.** Let background checks reveal criminal history rather than asking kin to self-report. Engage kin caregivers in conversations about their history when needed, but never require them to write down a complete criminal history. Self-reporting can lead to mistakes. And it creates barriers when kin share information about issues that may not actually prevent them from caring for youth.
