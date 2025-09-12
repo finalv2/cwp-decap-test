@@ -4,6 +4,7 @@ templateEngineOverride: md,njk
 title: Establish clear standards for evaluating background checks
 tags:
   - background-checks
+  - strategy
 order: "4"
 resources:
   - Kin licensing standards
