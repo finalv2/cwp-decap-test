@@ -1,5 +1,5 @@
 .topic-grid {
-  --grid-col-width: calc(var(--t-measure) * 0.5);
+  --grid-col-width: calc(var(--t-measure) * 0.6);
   max-inline-size: unset;
   align-content: center;
 }
@@ -57,8 +57,10 @@
 
 .topic-card svg {
   fill: var(--header-color);
-  inline-size: 2em;
+  inline-size: 1.5em;
   aspect-ratio: 1 / 1;
+  align-self: start;
+  translate: 0 0.125em;
 }
 
 .topic-card:hover {

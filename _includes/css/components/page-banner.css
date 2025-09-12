@@ -117,18 +117,30 @@
   padding: var(--rhythm) calc(var(--rhythm) * 2);
   color: #fff;
   transform: rotate(-2deg);
+  z-index: 3;
 }
 
 .nametag-text {
   margin-block-start: 0;
   padding: var(--t-paragraph) calc(var(--t-paragraph) * 1.5);
-  background: #fff;
-  border: 2px solid var(--c-blue);
-  color: var(--c-blue);
   border-radius: var(--radius-lg);
+  background: #fff;
+  color: var(--c-blue);
   display: flex;
   gap: 1em;
   align-items: center;
+  position: relative;
+}
+
+.nametag-text::before {
+  border: 2px solid var(--c-blue);
+  border-radius: var(--radius-lg);
+  position: absolute;
+  content: "";
+  inset: 0;
+  filter: url("#tornEdge");
+  z-index: 2;
+  pointer-events: none;
 }
 
 .nametag-text h2 {
