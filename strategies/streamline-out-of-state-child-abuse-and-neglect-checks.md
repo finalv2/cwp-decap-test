@@ -5,7 +5,7 @@ title: Simplify process for out-of-state child abuse and neglect checks
 tags:
   - strategy
   - background-checks
-order: 1
+order: "5"
 resources:
   - Kin licensing standards
   - "Kin licensing forms "
