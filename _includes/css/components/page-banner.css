@@ -54,6 +54,19 @@
   background-size: cover;
 }
 
+.page-banner[data-type="story"] {
+  background: var(--c-light-blue);
+}
+
+[data-type="story"] .page-banner-img {
+  inset: 0;
+  background: var(--background);
+  opacity: 0.2;
+  filter: blur(6px);
+  mix-blend-mode: multiply;
+}
+
+
 [data-type="story"] .page-banner-img::after {
   background-image: url("/images/scribbles/story.svg");
   inset-block-end: 30%;
@@ -62,6 +75,15 @@
 
 [data-type="topic"] .page-banner-img::after {
   content: none;
+}
+
+[data-width="full"] :is(.l-wrapper, .nametag-text h2) {
+  align-items: center;
+  text-align: center;
+}
+
+[data-width="full"] .nametag-badge {
+  translate: -50% 0;
 }
 
 .page-banner .l-wrapper {
@@ -86,7 +108,7 @@
 }
 
 
-.page-banner[data-type="strategy"] .l-wrapper {
+[data-width="full"] .l-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -145,6 +167,7 @@
 
 .nametag-text h2 {
   margin: 0;
+  text-wrap: balance;
 }
 
 .nametag-text svg {
@@ -212,6 +235,7 @@
   font-weight: var(--font-bold);
   text-decoration: none;
   gap: 1em;
+  justify-self: start;
 }
 
 .page-banner-back svg {
@@ -221,12 +245,15 @@
 }
 
 @media (min-width: 60rem) {
-
   .page-banner:not([data-type="strategy"]) :is(h2, h1, .h1, p) {
     max-inline-size: 40dvi;
   }
 
-  .page-banner-img {
+  .page-banner:not([data-width="full"]) :is(h2, h1, .h1, p) {
+    max-inline-size: 40dvi;
+  }
+
+  .page-banner:not([data-width="full"]) .page-banner-img {
     mask-position: 0 15%;
     mask-size: cover;
     mask-repeat: no-repeat;
@@ -241,10 +268,6 @@
 
   [data-type="topic"] .page-banner-img {
     mask-image: url("/images/banners/mask3.svg");
-  }
-
-  [data-type="story"] .page-banner-img {
-    mask-image: url("/images/banners/mask-story.svg");
   }
 
   [data-type="about"] .page-banner-img {

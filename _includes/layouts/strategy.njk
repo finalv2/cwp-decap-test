@@ -46,7 +46,7 @@ pagefind:
 {%- endset -%}
 
 
-<div class="page-banner" data-type="strategy">
+<div class="page-banner" data-type="strategy" data-width="full">
 <div class="l-wrapper">
   <div class="nametag">
     <span class="nametag-badge subhead">Strategy</span>
@@ -80,8 +80,8 @@ pagefind:
 {%- endset -%}
 
 <div class="l-section">
-<div class="l-wrapper-text">
 <div class="l-stack">
+<div class="l-wrapper-text l-center">
   {{ content | md | safe }}
 
 {%- if resourceData !== "" -%}
@@ -93,6 +93,7 @@ pagefind:
   <h2>Stories</h2>
   {{ storyData | safe }}
 {%- endif -%}
+</div>
 </div>
 </div>
 </div>

@@ -5,9 +5,8 @@ pagefind:
   type: story
 ---
 
-<div class="page-banner" data-type="story" data-pagefind-filter="pageType:Story" style="--background: url('{%- if image -%}{{ image }}{%- else -%}/images/banners/story.jpg{%- endif -%}')">
+<div class="page-banner" data-type="story" data-width="full" data-pagefind-filter="pageType:Story" style="--background: url('{%- if image -%}{{ image }}{%- else -%}/images/banners/story.jpg{%- endif -%}')">
   <div class="l-wrapper">
-    <div class="l-stack-basic">
       <div class="nametag">
         <span class="nametag-badge subhead">{{ type }}</span>
         <div class="nametag-text">
@@ -28,14 +27,13 @@ pagefind:
       </div>
       <p class="subhead">Written by {{ author }} on {{ date | humanDate }}</p>
     </div>
-  </div>
 
   <div class="page-banner-img"></div>
 </div>
 
 <div class="l-wrapper">
 <div class="l-section">
-<div class="l-wrapper-text">
+<div class="l-wrapper-text l-center">
 <div class="l-stack">
       {{ content | md | safe }}
 </div>
