@@ -14,7 +14,7 @@ Children and youth are often placed in general foster care or group homes when t
 
 ## How to do this
 
-**Make asking about connections a standard practice.** Require workers to talk to children and youth about their connections, no matter how young. Supervisors can encourage this by regularly asking, "What did the child/youth say?" Ask children and youth about their supportive connections at every placement change and at regular intervals, like monthly check-ins.
+**Make asking about connections a standard practice.** Require workers to talk to children and youth about their connections, no matter how young. Supervisors can encourage this by regularly asking, "What did the youth say?" Ask children and youth about their supportive connections at every placement change and at regular intervals, like monthly check-ins.
 
 **Use careful, non-threatening language.** Phrase inquiries so young people don't feel like they have to supply a placement option or they'll be homeless. Helpful prompts include: "Who came to your last family gathering?" and "Who would you call if you needed a ride home from school?"
 
