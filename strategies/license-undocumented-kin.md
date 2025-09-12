@@ -9,15 +9,13 @@ order: 5
 resources:
   - Kin licensing standards
 ---
-There is no federal requirement for kin caregivers to be in the country legally in order to get licensed. These caregivers should be eligible for licensing and financial support. License undocumented family members to increase your pool of kin caregivers and ensure they can get financial support.
-
-**Note**: Children must either be U.S. citizens or “qualified” immigrants for 5 years before the state can be reimbursed through federal funds for the children’s foster care maintenance payments. In these cases, kin caregivers themselves must either be U.S. citizens or “qualified” immigrants for 5 years.
+There is no federal requirement for kin caregivers to be in the country legally in order to get licensed. These caregivers should be eligible for licensing and financial support. Create a pathway to approve undocumented family members to increase your pool of kin caregivers and ensure they can get financial support. You can offer full foster care maintenance payments from agency funds in lieu of federal reimbursement.
 
 ## How to do this
 
 **First, build trust with caregivers.** If they think you'll report them to authorities for their immigration status, they won't work with you. Make it clear that your focus is only on making sure the youth have a safe and supported placement.
 
-**Conduct name-based background checks** instead of fingerprint-based checks in case a potential caregiver doesn’t have an appropriate form of ID to get registered for fingerprinting.
+**Conduct name-based background checks** instead of fingerprint-based checks when a potential caregiver doesn’t have an appropriate form of ID to get registered for fingerprinting.
 
 **Don't record immigration status in your case management system.**
 
