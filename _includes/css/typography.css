@@ -45,12 +45,15 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--font-primary);
   font-weight: var(--font-bold);
-  color: var(--c-headline);
   margin-inline: 0;
   margin-block-end: var(--t-paragraph);
   margin-block-start: 0;
   inline-size: fit-content;
   padding: 0;
+}
+
+h1, h2, .h1, .h2 {
+  color: var(--c-headline);
 }
 
 
@@ -86,9 +89,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: var(--font-2xl-size);
-  line-height: var(--font-2xl-leading);
+  font-size: var(--font-xl-size);
+  line-height: var(--font-xl-leading);
   --l-stack-gap: calc(var(--t-paragraph) * 1.5);
+  color: var(--c-headline);
+  font-weight: 700;
 }
 
 h4, .h4 {
@@ -108,8 +113,8 @@ h4, .h4 {
   }
 
   h3, .h3 {
-    font-size: var(--font-3xl-size);
-    line-height: var(--font-3xl-leading);
+    font-size: var(--font-2xl-size);
+    line-height: var(--font-2xl-leading);
   }
 }
 
