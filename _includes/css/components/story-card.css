@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  border-radius: var(--radius-lg);
   max-inline-size: calc(var(--t-measure) * 2.25);
 }
 
@@ -55,6 +56,9 @@
   position: relative;
   padding-block: calc(var(--t-paragraph) / 2);
   background: var(--c-light-blue);
+  border-radius: 0;
+  border-start-end-radius: var(--radius-lg);
+  border-end-start-radius: var(--radius-lg);
 }
 
 .story-card p,
@@ -80,6 +84,7 @@
 
 .story-card-content::before {
   border-block-start: var(--border);
+  border-start-end-radius: 400px;
 }
 
 .story-card-content * {
