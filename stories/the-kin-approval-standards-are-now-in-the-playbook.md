@@ -21,15 +21,15 @@ Now, the key recommendations from these standards are available as new and revis
 ## Strategies
 
 * [Let kin caregivers know what to expect from background checks](/strategies/let-kin-caregivers-know-what-to-expect-from-background-checks/)
-* Collect only essential information from kin
-* Make fingerprinting fast and easy
-* Simplify process for out-of-state child abuse and neglect checks
-* Make kin assessments collaborative and supportive 
-* Help caregivers fulfill home safety requirements 
-* Establish clear standards for evaluating background checks for kin
-* Help potential caregivers correct errors in background check results
-* Allow kin to appeal denied placements
-* Provide convenient training for active caregivers
+* [Collect only essential information from kin and other adults in the household](/strategies/collect-only-essential-information-from-kin-and-other-adults-in-household/)
+* [Make fingerprinting fast and easy](/strategies/make-fingerprinting-fast-and-easy/)
+* [Simplify process for out-of-state child abuse and neglect checks](/strategies/streamline-out-of-state-child-abuse-and-neglect-checks/)
+* [Make kin assessments collaborative and supportive ](/strategies/make-kin-assessments-collaborative-and-supportive/)
+* [Help caregivers fulfill home safety requirements ](/strategies/provide-safety-inspection-support/)
+* [Establish clear standards for evaluating background checks for kin](/strategies/establish-clear-standards-for-evaluating-background-checks/)
+* [Help potential caregivers correct errors in background check results](/strategies/help-potential-caregivers-correct-errors-in-background-check-results/)
+* [Allow kin to appeal denied placements](/strategies/allow-kin-to-appeal-denied-placements/)
+* [Provide convenient training for active caregivers](/strategies/provide-convenient-training-events-for-license-renewals/)
 
 ## Resources
 
