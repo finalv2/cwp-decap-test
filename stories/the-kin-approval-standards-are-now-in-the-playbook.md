@@ -20,7 +20,7 @@ Now, the key recommendations from these standards are available as new and revis
 
 ## Strategies
 
-* Let kin caregivers know what to expect from background checks
+* [Let kin caregivers know what to expect from background checks](/strategies/let-kin-caregivers-know-what-to-expect-from-background-checks/)
 * Collect only essential information from kin
 * Make fingerprinting fast and easy
 * Simplify process for out-of-state child abuse and neglect checks
