@@ -5,7 +5,7 @@ title: Allow kin to appeal denied placements
 tags:
   - strategy
   - background-checks
-order: "7"
+order: "8"
 resources:
   - Kin licensing standards
   - "Kin licensing forms "
