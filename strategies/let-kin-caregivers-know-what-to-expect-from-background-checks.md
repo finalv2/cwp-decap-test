@@ -5,7 +5,7 @@ title: "Let kin caregivers know what to expect from background checks "
 tags:
   - strategy
   - background-checks
-order: "2"
+order: "1"
 resources:
   - Kin licensing standards
   - "Kin licensing forms "
