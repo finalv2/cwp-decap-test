@@ -13,7 +13,7 @@ Kin caregivers may face financial barriers that make it difficult to provide for
 
 **License kin caregivers without financial requirements.** Don't require minimum income or financial stability to approve kin. Instead, focus on the caregiver's ability to meet the physical, emotional, medical, and educational needs of the child.
 
-**Connect kin caregivers to assistance at the start.** Provide a list of benefits that families may qualify for, or offer 1-on-1 application assistance. Examples include TANF, SNAP, unemployment insurance, social security, and VA benefits.
+**Connect kin caregivers to assistance at the start.** Provide a list of benefits that families may qualify for, or offer 1-on-1 application assistance. Examples include TANF, SNAP, unemployment insurance, social security, and VA benefits for those who qualify. For caregivers who can't access federal programs, connect them with local food banks, community assistance programs, charitable organizations, and other local resources.
 
 **Provide application assistance that’s customized to your area.** This includes providing translated materials and local program information.
 
