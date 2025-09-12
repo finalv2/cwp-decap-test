@@ -9,7 +9,7 @@ order: 4
 resources:
   - Kin licensing standards
 ---
-Kin caregivers aren't eligible for federal foster care reimbursement until they complete the licensing process. In some states, this can take hundreds of days, with some allowing kin caregivers to remain unlicensed (and unpaid) indefinitely. This lack of financial support can severely impact a kin caregiver's ability to provide a stable placement.
+Kin caregivers aren't eligible for federal foster care reimbursement until they complete the licensing process. In many states, this can take hundreds of days, and some states have allowed kin caregivers to remain unlicensed (and unpaid) idefinitely. This lack of financial support can severely impact a kin caregiver's ability to provide a stable placement.
 
 Pay kin caregivers while they work through the licensing process to help them financially support youth in their care. 
 
