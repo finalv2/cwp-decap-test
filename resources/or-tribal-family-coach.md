@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 title: "Oregon tribal family coach: Job description"
-filetype: url
+filetype: pdf
 url: https://drive.google.com/file/d/1XrW887S_Cl9Xm-0PTra1696XVpH24BZT/view?usp=sharing
 file: https://drive.google.com/file/d/1XrW887S_Cl9Xm-0PTra1696XVpH24BZT/view?usp=sharing
 tags:

@@ -1,8 +1,8 @@
 ---
 layout: layouts/resource.njk
-title: "Youth Circle program "
+title: "Hawaii Youth Circle program "
 filetype: pdf
-url: https://drive.google.com/file/d/1gXWZfp1r8yEuroNUTNZkZtwu5-KmaEyP/view?usp=sharing
+url: ""
 file: /images/hawaii-youth-circle-brochure.pdf
 tags:
   - resource

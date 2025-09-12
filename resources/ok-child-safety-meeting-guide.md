@@ -1,6 +1,6 @@
 ---
 layout: layouts/resource.njk
-title: Child safety guidebook
+title: Oklahoma child safety guidebook
 filetype: pdf
 url: https://child-welfare-playbook-v2.netlify.app/images/oklahoma-safety-guidebook.pdf
 file: /images/oklahoma-safety-guidebook.pdf

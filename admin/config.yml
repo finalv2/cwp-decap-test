@@ -11,7 +11,6 @@ collections:
         name: "home"
         file: "_data/home.yml"
         fields:
-          - { label: "Banner header", name: "bannerHeader", widget: "string", required: false }
           - { label: "Banner subheader", name: "bannerSubheader", widget: "markdown", minimal: true, required: false }
           - { label: "Topics section header", name: "topicHeader", widget: "string", required: false }
           - { label: "Topics section subheader", name: "topicSubheader", widget: "markdown", minimal: true, required: false }
@@ -81,7 +80,7 @@ collections:
       - { label: "Author", name: "author", widget: "string"}
       - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", date_format: "YYYY-MM-DD"}
       - { label: "Story type", name: "type", widget: "select", options: ["Blog post", "Case study", "Research report"], default: ["Blog post"]}
-      - { label: "Header image", name: "image", widget: "image", allow_multiple: false, media_folder: "/images/stories", public_folder: ".images/stories/"}
+      - { label: "Header image", name: "image", widget: "image", allow_multiple: false, media_folder: "/images/stories", public_folder: ".images/stories/", required: false}
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "resources"

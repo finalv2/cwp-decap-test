@@ -40,6 +40,7 @@
   background: var(--c-blue);
   gap: 0.5rem;
   color: #fff;
+  align-items: start;
 }
 
 .card-header svg {
@@ -59,12 +60,12 @@
 .card-cta {
   display: flex;
   font-weight: var(--font-bold);
-  align-items: center;
 }
 
 .card-cta {
   color: var(--c-blue);
   background: var(--c-light-blue);
+  align-items: center;
 }
 
 @keyframes topic-arrow {

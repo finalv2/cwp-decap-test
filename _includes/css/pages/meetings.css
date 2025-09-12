@@ -1,0 +1,16 @@
+.meeting-content {
+  max-inline-size: var(--t-measure);
+  margin-block-start: var(--l-stack-gap);
+}
+
+@media (min-width: 96rem) {
+  .meeting-grid {
+    display: grid;
+    grid-template-columns: 1fr var(--t-measure);
+    gap: var(--g-column-gap);
+  }
+
+  .meeting-content {
+    margin: 0;
+  }
+}

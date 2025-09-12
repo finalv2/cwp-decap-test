@@ -1,19 +1,32 @@
 .button {
-    border-radius: var(--radius-lg);
-    background: var(--c-blue);
-    color: #fff;
-    font-weight: var(--font-bold);
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    gap: 0.5rem;
-    justify-self: flex-start;
+  border-radius: var(--radius-lg);
+  background: var(--c-blue);
+  color: #fff;
+  font-weight: var(--font-bold);
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-self: flex-start;
+  transition: all 0.15s ease-out;
 }
 
 .button[data-type="secondary"] {
   background: #fff;
   border: 0.25rem solid var(--c-blue);
   color: var(--base);
+}
+
+.button:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 5px var(--c-blue);
+}
+
+.button:is(:hover, :focus) {
+  scale: 1.02;
+}
+
+.button:active {
+  scale: 0.99;
 }

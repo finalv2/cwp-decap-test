@@ -8,6 +8,43 @@ pagefind:
 
 {%- from '_macros/resource-card.njk' import resourceCard -%}
 
+{%- set resourceData -%}
+  {%- for relatedResource in resources -%}
+    {%- for item in collections.resources -%}
+      {%- if item.data.title === relatedResource -%}
+        {{ resourceCard({
+          filetype: item.data.filetype,
+          title: item.data.title,
+          description: item.content,
+          url: item.data.url,
+          file: item.data.file
+          })
+        }}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endset -%}
+
+{%- set storyData -%}
+  {%- for relatedStory in stories -%}
+    {%- for item in collections.stories -%}
+      {%- if item.data.title === relatedStory -%}
+        {{ storyCard({
+            image: story.data.image,
+            type: story.data.type,
+            title: story.data.title,
+            description: story.data.description,
+            author: story.data.author,
+            date: story.date,
+            featured: false,
+            url: story.url
+          })
+        }}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endset -%}
+
 
 <div class="page-banner" data-type="strategy">
 <div class="l-wrapper">
@@ -33,7 +70,7 @@ pagefind:
 </div>
 </div>
 
-<div class="l-wrapper play-wrapper">
+<div class="l-wrapper">
 
 {%- set pagefindMetaTags -%}
   {%- for tag in tags -%}
@@ -47,43 +84,14 @@ pagefind:
 <div class="l-stack">
   {{ content | md | safe }}
 
-{%- if resources -%}
+{%- if resourceData !== "" -%}
   <h2>Resources</h2>
-  {% for relatedResource in resources %}
-    {% for item in collections.resources %}
-      {%- if item.data.title === relatedResource -%}
-        {{ resourceCard({
-          filetype: item.data.filetype,
-          title: item.data.title,
-          description: item.content,
-          url: item.data.url,
-          file: item.data.file
-          })
-        }}
-      {%- endif -%}
-    {% endfor %}
-  {%- endfor -%}
+  {{ resourceData | safe }}
 {%- endif -%}
 
-{%- if stories -%}
+{%- if storyData !== "" -%}
   <h2>Stories</h2>
-  {% for relatedStory in stories %}
-    {% for item in collections.stories %}
-      {%- if item.data.title === relatedStory -%}
-        {{ storyCard({
-            image: story.data.image,
-            type: story.data.type,
-            title: story.data.title,
-            description: story.data.description,
-            author: story.data.author,
-            date: story.date,
-            featured: false,
-            url: story.url
-          })
-        }}
-      {%- endif -%}
-    {% endfor %}
-  {%- endfor -%}
+  {{ storyData | safe }}
 {%- endif -%}
 </div>
 </div>

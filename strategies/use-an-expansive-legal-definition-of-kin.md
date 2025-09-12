@@ -7,7 +7,8 @@ tags:
   - kin-engagement
 order: 10
 resources:
-  - Child welfare advocates' federal comment on kin definition
+  - "Kin-Specific Foster Home Approval: Model Standards"
+  - Federal comment on kin definition
 ---
 Many agencies use narrow definitions of kin that only include blood relatives or legal family members. This limits placement options and support networks for children and youth in care, potentially forcing placements with strangers when kin connections are available.
 

@@ -15,15 +15,8 @@ const rssDate = (date) => {
 }
 
 const humanDate = (date) => {
-    const printYear = date => {
-      if (date.hasSame(DateTime.local(), "year")) {
-        return '';
-      } else {
-        return `, ${date.toFormat(`yyyy`)}`
-      }
-    };
     const d = DateTime.fromISO(date.toISOString())
-    return `${d.toFormat(`LLLL`)} ${d.toFormat(`d`)}${nth(d.day)}${ printYear(d)}`
+    return `${d.toFormat(`LLLL`)} ${d.toFormat(`d`)}, ${d.toFormat(`yyyy`)}`
 }
 
 const postDateNoYear = (date) => {
