@@ -10,13 +10,13 @@ resources:
   - "Kin licensing forms "
   - Kin licensing standards
 ---
-When kin caregiver assessments feel like “suitability” checks, they can make caregivers defensive and less likely to openly discuss their needs or ask for support. 
+When kin caregiver assessments seem like “suitability” checks, they can make caregivers defensive and less likely to openly discuss their needs or ask for support. 
 
-Set up caregivers for success by making your assessments feel like clear, collaborative discussions that are culturally sensitive and collaborative. Your conversations with kin should help you understand how they can best meet the physical, emotional, medical, and educational needs of the youth, while also ensuring the physical safety of their home environment.
+Set up caregivers for success by making your assessments act as clear discussions that are culturally sensitive and collaborative. Your conversations with kin should help you understand how they can best meet the physical, emotional, medical, and educational needs of the youth, while also ensuring the physical safety of their home environment.
 
 ## How to do this
 
-**Consider access needs.** Make sure staff conducting kin assessments are fluent in the same language as the caregiver, or have a human translator available. Think about cultural and privacy preferences when planning your visit*.* When possible, send staff of the same race, ethnicity, or culture as the caregiver, or make sure agency staff understand the racial and ethnic needs of caregivers and youth in care. 
+**Consider access needs.** Make sure staff conducting kin assessments are fluent in the same language as the caregiver, or have a human translator available. Think about cultural and privacy preferences when planning your visit. When possible, send staff of the same race, ethnicity, or culture as the caregiver, or make sure agency staff understand the racial and ethnic needs of caregivers and youth in care. 
 
 **Prepare kin for your visit.** Call them before your visit so kin know what to expect, can prepare their home, and tell you what support they need. Share resources or assessment forms ahead of time to help them get ready for your discussion. Emphasize the conversational part of your visit. Kin will be sharing how they prefer to communicate and their thoughts and needs about caring for the youth. 
 
@@ -30,7 +30,7 @@ Set up caregivers for success by making your assessments feel like clear, collab
 
 **Port Gamble S’Klallam Tribe** allows caregivers to request an outside person to conduct their assessments to preserve privacy, since they are a small community.
 
-**All jurisdictions** can use and adapt the [kin caregiver assessment forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms) from the Grandfamilies & Kinship Support Network, which combines what was previously split into “caregiver suitability” and “safety and needs assessment” tasks. These kin caregiver forms also include:
+**All jurisdictions** can use and adapt the [kin caregiver assessment forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms), which combine previous “caregiver suitability” and “safety and needs assessment” tasks. These forms also include:
 
 * A “bank” of questions to pull from as your agency adapts its assessments
 * A list of questions they removed, with reasons why
