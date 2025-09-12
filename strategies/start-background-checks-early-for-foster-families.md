@@ -5,7 +5,7 @@ title: Start background checks early for foster families
 tags:
   - strategy
   - background-checks
-order: "2"
+order: "1"
 ---
 Out-of-state background checks and fingerprinting appointments can delay foster family licensing. Start these checks as early as possible, even at orientation, to speed up the process and reduce delays for families.
 
