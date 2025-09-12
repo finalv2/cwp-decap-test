@@ -5,7 +5,7 @@ title: Help potential caregivers correct errors in background check results
 tags:
   - strategy
   - background-checks
-order: "6"
+order: "7"
 resources:
   - Kin licensing standards
   - "Kin licensing forms "
