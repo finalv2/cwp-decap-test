@@ -59,14 +59,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   let pageCount = 1;
   const resultsPerPage = 5;
 
-  const pluralizeResultCount = (resultCount, isFiltered) => {
-    if (isFiltered) {
-      return (resultCount === 1) ? `${resultCount} result matches your filters` : `${resultCount} results match your filters`;
-    } else {
-      return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
-    }
-  };
-
   // Only apply collapsible mobile filters if JS is enabled
   if (isSmallScreen.matches) {
     for (const accordion of filterFormAccordions) {
@@ -112,6 +104,26 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         filters: activeFilters
       }
     );
+
+    // Logic for displaying "X result(s) match(es) your filter(s)"
+    const pluralizeFilters = () => {
+      if ((currentTypeFilter && currentTopicFilter) || currentTopicFilter && currentTopicFilter.any.length > 1 || currentTypeFilter && currentTypeFilter.any.length > 1) {
+        return "filters";
+      } else {
+        return "filter";
+      }
+    }
+
+    const pluralizeResultCount = (resultCount, isFiltered) => {
+      if (isFiltered) {
+        return (resultCount === 1) ? `${resultCount} result matches your ${pluralizeFilters()}` : `${resultCount} results match your ${pluralizeFilters()}`;
+      } else {
+        return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
+      }
+    };
+
+    // Show badges under the search bar
+    // describing all applied filters
 
     searchResultIndicators.hidden = !(currentTypeFilter || currentTopicFilter);
 
@@ -161,10 +173,9 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     window.history.replaceState({}, '', `${location.pathname}?${urlParams}`);
 
-    allResultsCount = unfilteredSearch.results.length;
-
     // Populate the search page with markup
 
+    allResultsCount = unfilteredSearch.results.length;
     matchingResultsCount = (!currentTopicFilter && !currentTypeFilter) ? allResultsCount : search.results.length;
 
     if (isUnfiltered) {
@@ -313,7 +324,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   // Click event listeners
 
   loadMoreButton.addEventListener('click', async (e) => {
-
     pageCount += 1;
 
     updateSearch("paginate");

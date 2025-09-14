@@ -11,23 +11,23 @@ tags:
 pageTypes:
   - id: strategy
     filterName: Strategy
-    title: Strategies
+    title: Strategy
     iconName: book-bookmark
   - id: stories
     filterName: Story
-    title: Stories
+    title: Story
     iconName: newspaper
   - id: resources
     filterName: Resource
-    title: Resources
+    title: Resource
     iconName: lightbulb-filament
   - id: meetings
     filterName: Meeting
-    title: Working group meetings
+    title: Working group meeting
     iconName: video-conference
   - id: other-pages
     filterName: Page
-    title: Pages
+    title: Page
     iconName: cards-three
 ---
 
@@ -46,11 +46,11 @@ pageTypes:
   <fieldset class="search-query-form-wrapper">
     <div class="search-input-wrapper">
       <input type="text" placeholder="Search" id="search-input" class="search-input" />
-      <input type="reset" id="search-query-reset" value="Reset" hidden>
+      <input type="reset" id="search-query-reset" value="Reset" aria-live="polite" hidden>
     </div>
     <input type="submit" id="search-button" class="button" value="Search" />
   </fieldset>
-      <div class="search-result-filters subhead" hidden>
+      <div class="search-result-filters" aria-live="polite" hidden>
       <div data-indicator="query" hidden>
         <strong>Query: </strong>
         <span></span>
@@ -79,7 +79,7 @@ pageTypes:
 <template id="search-blank">
   <li class="search-result-blank">{% icon "list-magnifying-glass" %}
   <strong>Start your search</strong>
-  <span>Type in keywords or select a filter to start seeing results.</span>
+  <span>Type in keywords or select a filter to see results.</span>
   </li>
 </template>
 
@@ -152,7 +152,7 @@ pageTypes:
     </details>
   </form>
 
-  <div class="search-results-wrapper">
+  <div class="search-results-wrapper" aria-live="assertive">
     <h4 id="search-result-count"></h4>
     <div id="search-results"></div>
     <button id="load-more-button" hidden>Load more results</button>

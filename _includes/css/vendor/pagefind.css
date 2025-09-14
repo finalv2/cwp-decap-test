@@ -199,6 +199,10 @@
   align-items: center;
 }
 
+.search-result-filters strong {
+  font-weight: 400;
+}
+
 .search-result-filters button {
   line-height: 1;
   padding: 0;
