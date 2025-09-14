@@ -367,7 +367,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const input = filter.querySelector("input");
     const criteria = input.dataset.filterName;
 
-    input.addEventListener("change", (e) => {
+    const updateFilter = () => {
       pageCount = 1;
 
       if (!activeFilters[filterType]) {
@@ -385,7 +385,22 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         activeFilters[filterType]["any"].push(criteria);
       }
       updateSearch(filterType);
+    }
+
+    input.addEventListener("change", () => {
+      updateFilter();
     })
+
+
+    // Since search filter checkboxes look like buttons,
+    // they should respond to Enter keypresses
+
+    input.addEventListener('keypress', e => {
+      if (e.which === 13) {
+        e.target.checked = !e.target.checked;
+        updateFilter();
+      }
+    });
   }
 
   for (const filter of topicFilters) {
