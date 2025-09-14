@@ -333,7 +333,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     updateSearch(undefined, true);
   } else {
-    resultsWrapper.innerHTML = blankTemplate.innerHTML;
+    resultsStatus.innerHTML = blankTemplate.innerHTML;
   }
 
   // Click event listeners

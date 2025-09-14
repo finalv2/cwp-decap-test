@@ -31,6 +31,13 @@ pageTypes:
     iconName: cards-three
 ---
 
+{%- macro blankTemplate(params) -%}
+  <li class="search-result-blank">{% icon "list-magnifying-glass" %}
+    <strong>Start your search</strong>
+    <span>{{ params.text }}</span>
+  </li>
+{%- endmacro -%}
+
 <div class="page-banner" data-type="search">
   <div class="l-wrapper">
     <h2 class="h1" data-pagefind-meta="title">{{ title }}</h2>
@@ -78,10 +85,7 @@ pageTypes:
 </template>
 
 <template id="search-blank">
-  <li class="search-result-blank">{% icon "list-magnifying-glass" %}
-  <strong>Start your search</strong>
-  <span>Type in keywords or select a filter to see results.</span>
-  </li>
+  {{ blankTemplate({text: "Type in keywords or select a filter to see results."}) }}
 </template>
 
 <template id="search-no-results">
@@ -107,58 +111,60 @@ pageTypes:
 </template>
 
 <div class="search-content">
-  <form id="search-filters" class="search-filters" role="region" aria-label="Filter results by topic or page type">
-    <h4>Filter by&hellip;</h4>
-    <details open>
-      <summary class="subhead">{% icon "caret-right" %} Type</summary>
-      <fieldset class="search-type-filters" id="search-type-filters">
-      <div class="search-filter-inputs">
-        {%- for type in pageTypes -%}
-          <label for="type-{{ type.id }}">
-            <span class='filter-label-name'>
-              <input type="checkbox" name="type-filter" id="type-{{ type.id }}" data-filter-type="pageType" data-type-title="{{ type.title | lower }}" data-filter-name="{{ type.filterName }}"{%- if type.checked -%} checked{%- endif -%}>
-              {% icon type.iconName %} {{ type.title }}
-            </span>
-            <!-- <span class="search-counter"{%- if type.id == "all" -%} data-counter-all{%- endif -%}></span> -->
-          </label>
-        {%- endfor -%}
-      </div>
-      </fieldset>
-    </details>
-
-    <details open>
-      <summary class="subhead">{% icon "caret-right" %} Topic</summary>
-      <fieldset id="search-topic-filters" class="search-topic-filters">
-      <div class="search-filter-inputs">
-        {%- for topic in collections.topics -%}
-          {%- if topic.url -%}
-            <label for="{{ topic.data.title | slugify }}" class="filter-label">
-              <span class="filter-label-name">
-                <input type="checkbox" id="{{ topic.data.title | slugify }}" data-filter-type="topics" data-filter-name="{{ topic.data.title }}" name="topic-filter">
-                {% icon topic.data.icon %}{{ topic.data.title }}
+  <div role="region" aria-label="Filter results by topic or page type">
+    <form id="search-filters" class="search-filters">
+      <h3 class="h4">Filter by&hellip;</h3>
+      <details open>
+        <summary class="subhead">{% icon "caret-right" %} Type</summary>
+        <fieldset class="search-type-filters" id="search-type-filters">
+        <div class="search-filter-inputs">
+          {%- for type in pageTypes -%}
+            <label for="type-{{ type.id }}">
+              <span class='filter-label-name'>
+                <input type="checkbox" name="type-filter" id="type-{{ type.id }}" data-filter-type="pageType" data-type-title="{{ type.title | lower }}" data-filter-name="{{ type.filterName }}"{%- if type.checked -%} checked{%- endif -%}>
+                {% icon type.iconName %} {{ type.title }}
               </span>
-                <!-- <span class="search-counter">0</span> -->
+              <!-- <span class="search-counter"{%- if type.id == "all" -%} data-counter-all{%- endif -%}></span> -->
             </label>
-          {%- endif -%}
-        {%- endfor -%}
-          <label for="no-topic" class="filter-label">
-              <span class="filter-label-name">
-                <input type="checkbox" id="no-topic" data-filter-type="topics" data-filter-name="noTopic" name="topic-filter">
-                {%- icon 'prohibit' -%}No topic
-              </span>
-                <!-- <span class="search-counter">0</span> -->
-            </label>
+          {%- endfor -%}
         </div>
-      </fieldset>
-    </details>
-  </form>
+        </fieldset>
+      </details>
+
+      <details open>
+        <summary class="subhead">{% icon "caret-right" %} Topic</summary>
+        <fieldset id="search-topic-filters" class="search-topic-filters">
+        <div class="search-filter-inputs">
+          {%- for topic in collections.topics -%}
+            {%- if topic.url -%}
+              <label for="{{ topic.data.title | slugify }}" class="filter-label">
+                <span class="filter-label-name">
+                  <input type="checkbox" id="{{ topic.data.title | slugify }}" data-filter-type="topics" data-filter-name="{{ topic.data.title }}" name="topic-filter">
+                  {% icon topic.data.icon %}{{ topic.data.title }}
+                </span>
+                  <!-- <span class="search-counter">0</span> -->
+              </label>
+            {%- endif -%}
+          {%- endfor -%}
+            <label for="no-topic" class="filter-label">
+                <span class="filter-label-name">
+                  <input type="checkbox" id="no-topic" data-filter-type="topics" data-filter-name="noTopic" name="topic-filter">
+                  {%- icon 'prohibit' -%}No topic
+                </span>
+                  <!-- <span class="search-counter">0</span> -->
+              </label>
+          </div>
+        </fieldset>
+      </details>
+    </form>
+  </div>
 
   <div class="search-results-wrapper" aria-atomic="true">
     <div role="status">
-      <h4 id="search-result-count"></h4>
-      <div id="search-results-status-template"></div>
+      <h3 class="h4" id="search-result-count"></h3>
+      <ul id="search-results-status-template">{{ blankTemplate({text: "Type in a keyword to see results."}) }}</ul>
     </div>
-    <div id="search-results"></div>
+    <ul id="search-results"></ul>
     <button id="load-more-button" hidden>Load more results</button>
   </div>
 </div>

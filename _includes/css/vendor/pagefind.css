@@ -71,7 +71,7 @@
   flex-direction: column;
 }
 
-.search-content h4 {
+.search-content h3 {
   margin-block-start: 0;
 }
 
@@ -227,12 +227,12 @@
   box-shadow: 0 2px 1px rgb(0 0 0 / 0.06);
 }
 
-.search-filters h4 {
+.search-filters h3 {
   margin: 0;
   padding-block: 0.5em;
 }
 
-.search-filters :is(h4, summary, fieldset) {
+.search-filters :is(h3, summary, fieldset) {
   padding-inline: 1em;
 }
 
@@ -283,9 +283,8 @@
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  opacity: 0.7;
-  border: 2px solid #999;
-  box-shadow: 0 2px 0 #ddd;
+  border: 1px solid #999;
+  box-shadow: 0 1px 0 #ddd;
   padding: 0.25rem 0.75rem 0.25rem 0.25rem;
   /*padding-inline-start: 2rem;*/
   border-radius: var(--radius-lg);
@@ -414,7 +413,7 @@
     inline-size: calc(var(--t-measure) * 2 / 3);
   }
 
-  .search-filters :is(summary, h4) {
+  .search-filters :is(summary, h3) {
     padding-block: 0.5em;
   }
 
