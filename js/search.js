@@ -6,9 +6,14 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
   // Initialize Pagefind
   const pagefind = await import("/pagefind/pagefind.js");
-  const filters = await pagefind.filters();
   await pagefind.init();
 
+  // Initialize Pagefind filters
+  // (This is required for loading result counts by page type and topic,
+  // even though the variable is unused)
+  const filters = await pagefind.filters();
+
+  // Track the filters the user selected
   const activeFilters = {};
 
   // Select elements
