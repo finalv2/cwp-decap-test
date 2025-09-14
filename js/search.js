@@ -20,19 +20,17 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const searchButton = document.querySelector("#search-button");
   const resultsWrapper = document.querySelector("#search-results");
 
-  const filterWrapper = document.querySelector("#search-filters");
   const filterFormAccordions = document.querySelectorAll("#search-filters details");
   const allFilters = document.querySelectorAll("#search-filters label");
   const typeFilters = document.querySelectorAll ("#search-type-filters label");
   const topicFilters = document.querySelectorAll("#search-topic-filters label");
-  const resultCountText = document.querySelector("#search-result-count");
+
   const searchInput = document.querySelector("#search-input");
   const searchReset = document.querySelector("#search-query-reset");
 
+  const resultCountText = document.querySelector("#search-result-count");
   const loadMoreButton = document.querySelector("#load-more-button");
 
-  let allResultsCount = 0;
-  let visibleResultsCount;
   // Filter indicators
 
   // const queryResultIndicator = document.querySelector("[data-indicator='query']");
@@ -46,11 +44,27 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const typeReset = document.querySelector("#type-reset");
   const topicReset = document.querySelector("#topic-reset");
 
+
+  // Get HTML templates
+  const blankTemplate = document.querySelector("#search-blank");
+  const noResultsTemplate = document.querySelector("#search-no-results");
+  const noMatchesTemplate = document.querySelector("#search-no-matches");
+  const resultTemplate = document.querySelector("#search-result");
+
+  // Track search result counts
+  let allResultsCount = 0;
+  let matchingResultsCount;
+
+  // Track page count
   let pageCount = 1;
   const resultsPerPage = 5;
 
-  const pluralizeResultCount = resultCount => {
-    return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
+  const pluralizeResultCount = (resultCount, isFiltered) => {
+    if (isFiltered) {
+      return (resultCount === 1) ? `${resultCount} result matches your filters` : `${resultCount} results match your filters`;
+    } else {
+      return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
+    }
   };
 
   // Only apply collapsible mobile filters if JS is enabled
@@ -66,6 +80,8 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
   });
 
+  // Add the right number of skeleton UI list items
+  // while results are loading
   const populateSkeleton = count => {
     const skeletonTemplate = document.querySelector("#search-skeleton");
 
@@ -76,27 +92,27 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
   }
 
-  // Handle each search
+  // Handle each new search
   const updateSearch = async (searchType, isNew) => {
-    // Get markup templates
-    const noResultsTemplate = document.querySelector("#search-no-results");
-    const noMatchesTemplate = document.querySelector("#search-no-matches");
-    const resultTemplate = document.querySelector("#search-result");
-
-    const currentQuery = searchInput.value || null;
-
-    if (searchType !== "paginate") {
-      resultsWrapper.innerHTML = '';
-    }
-
-    // If the user has already filtered their search,
-    // store the filters so we can re-apply them once the
-    // search is done
-
     const currentTopicFilter = activeFilters.topics;
     const currentTypeFilter = activeFilters.pageType;
+    const resultPane = document.createElement("div");
 
-    if (urlParams.has('q')) {
+    const currentQuery = (searchType === "reset") ? null : (searchInput.value || null);
+
+    // Search with no filters applied (to determine which topic
+    // and page type filters we should show and hide)
+    const unfilteredSearch = await pagefind.search(currentQuery);
+
+    const isUnfiltered = !currentQuery && !activeFilters.topics && !activeFilters.pageType;
+
+    // Search with filters applied
+    const search = await pagefind.search(
+      currentQuery, {
+        filters: activeFilters
+      }
+    );
+
     searchResultIndicators.hidden = !(currentTypeFilter || currentTopicFilter);
 
     typeResultIndicator.hidden = !currentTypeFilter;
@@ -105,118 +121,125 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     topicResultIndicator.hidden = !currentTopicFilter;
     topicResultIndicatorText.textContent = currentTopicFilter?.any.toString();
 
+    // Always clear the search results area
+    // unless the user has clicked the "load more" button
+    if (searchType === "paginate") {
+      resultsWrapper.innerHTML = '';
+    }
+
+    // Update URL parameters
+    if (urlParams.has('q') && currentQuery) {
       urlParams.set('q', currentQuery);
     } else if (currentQuery) {
       urlParams.append('q', currentQuery);
     } else {
-      urlParams.set('q', null);
+      urlParams.delete('q');
     }
 
     if (currentTopicFilter) {
       urlParams.set('topics', currentTopicFilter.any.toString());
     } else {
-      urlParams.set('topics', 'all');
+      urlParams.delete('topics');
     }
 
     if (currentTypeFilter) {
       urlParams.set('type', currentTypeFilter.any.toString());
     } else {
-      urlParams.set('type', 'all');
+      urlParams.delete('type');
     }
 
     window.history.replaceState({}, '', `${location.pathname}?${urlParams}`);
 
-    // For accurate result count numbers,
-    // always retrieve unfiltered results for new search terms
-    if (searchType === "query") {
-      activeFilters.topics = undefined;
-      activeFilters.pageType = undefined;
-    }
-
-    // Conduct search
-    const search = await pagefind.search(
-      currentQuery, {
-        filters: activeFilters
-      }
-    );
-
-    const unfilteredSearch = await pagefind.search(currentQuery);
-
     allResultsCount = unfilteredSearch.results.length;
 
     // Populate the search page with markup
-    const resultPane = document.createElement("div");
 
-    if (isNew) {
-      visibleResultsCount = allResultsCount;
-    } else {
-      visibleResultsCount = search.results.length;
-    }
+    matchingResultsCount = (!currentTopicFilter && !currentTypeFilter) ? allResultsCount : search.results.length;
 
-    if (allResultsCount < 1) {
+    if (isUnfiltered) {
       resultCountText.hidden = true;
-      resultPane.innerHTML = noResultsTemplate.innerHTML;
+      resultPane.innerHTML = blankTemplate.innerHTML;
     } else {
-      filterWrapper.hidden = false;
-      if (visibleResultsCount < 1) {
+      if (allResultsCount < 1) {
+        resultCountText.hidden = true;
+        resultPane.innerHTML = noResultsTemplate.innerHTML;
+      } else if (matchingResultsCount < 1) {
         resultCountText.hidden = true;
         resultPane.innerHTML = noMatchesTemplate.innerHTML;
-      } else if (visibleResultsCount !== allResultsCount) {
+      } else if (matchingResultsCount !== allResultsCount) {
         resultCountText.hidden = false;
-        resultCountText.innerHTML = `${visibleResultsCount} of ${pluralizeResultCount(allResultsCount)} match your filters`;
-        populateSkeleton(visibleResultsCount - (resultsPerPage * (pageCount - 1)));
+        if (currentTypeFilter || currentTopicFilter) {
+          resultCountText.innerHTML = pluralizeResultCount(matchingResultsCount, true);
+        } else {
+          resultCountText.innerHTML = pluralizeResultCount(matchingResultsCount);
+        }
+
+        populateSkeleton(matchingResultsCount - (resultsPerPage * (pageCount - 1)));
       } else {
         resultCountText.hidden = false;
         resultCountText.innerHTML = pluralizeResultCount(allResultsCount);
         populateSkeleton(allResultsCount - (resultsPerPage * (pageCount - 1)));
       }
-    }
 
-    if (resultsPerPage * pageCount >= visibleResultsCount) {
-      loadMoreButton.hidden = true;
-    } else if (visibleResultsCount > resultsPerPage) {
-      loadMoreButton.hidden = false;
-    } else {
-      loadMoreButton.hidden = true;
-    }
 
-    // Populate search results
-    if (visibleResultsCount >= 1) {
-      for (const i in search.results.slice(0, resultsPerPage * pageCount)) {
-        const thisResult = await search.results[i].data();
+      // Populate search results
+      if (matchingResultsCount >= 1) {
+        for (const i in search.results.slice(0, resultsPerPage * pageCount)) {
+          const thisResult = await search.results[i].data();
 
-        const resultClone = resultTemplate.content.cloneNode(true);
-        const resultLink = resultClone.querySelector("a");
-        const resultTitle = resultClone.querySelector("h3");
-        const resultExcerpt = resultClone.querySelector("p");
+          const resultClone = resultTemplate.content.cloneNode(true);
+          const resultLink = resultClone.querySelector("a");
+          const resultTitle = resultClone.querySelector("h3");
+          const resultExcerpt = resultClone.querySelector("p");
 
-        resultLink.href = thisResult.url;
-        resultTitle.innerHTML = thisResult.meta.title;
-        resultExcerpt.innerHTML = thisResult.excerpt;
+          resultLink.href = thisResult.url;
+          resultTitle.innerHTML = thisResult.meta.title;
+          resultExcerpt.innerHTML = thisResult.excerpt;
 
-        resultPane.appendChild(resultClone);
+          resultPane.appendChild(resultClone);
+        }
       }
-    }
 
-    // Toggle filter visibility
+      // Toggle visibility of filters when the
+      // user changes their free-text query
 
-    if (isNew && currentQuery !== null) {
-      for (const filter of allFilters) {
-        const input = filter.querySelector("input");
-        const filterType = input.dataset.filterType;
-        const filterName = input.dataset.filterName;
-        console.log(`${filterType}.${filterName}`)
-        const filteredCount = search.filters[filterType][filterName];
+      if ((urlParams.has("q") && isNew) || searchType === "query") {
+        for (const filter of allFilters) {
+          const input = filter.querySelector("input");
+          const filterType = input.dataset.filterType;
+          const filterName = input.dataset.filterName;
+          let filteredCount = undefined;
 
-        if (filteredCount > 0 || input.checked) {
+
+          if (unfilteredSearch.filters[filterType] && searchType === "query") {
+            filteredCount = search.filters[filterType][filterName];
+          } else if (search.filters[filterType]) {
+            filteredCount = search.totalFilters[filterType][filterName];
+          }
+
+          if (filteredCount === undefined || filteredCount > 0 || input.checked || allResultsCount < 1) {
+            filter.hidden = false;
+          } else {
+            filter.hidden = true;
+          }
+        }
+      } else if (searchType === "reset") {
+        for (const filter of allFilters) {
           filter.hidden = false;
-        } else {
-          filter.hidden = true;
         }
       }
     }
 
+    // Hide and show the "Load more" button based on
+    // whether there are more results to display
 
+    if (isUnfiltered || resultsPerPage * pageCount >= matchingResultsCount) {
+      loadMoreButton.hidden = true;
+    } else if (matchingResultsCount > resultsPerPage) {
+      loadMoreButton.hidden = false;
+    } else {
+      loadMoreButton.hidden = true;
+    }
 
     if (currentTopicFilter) {
       activeFilters.topics = currentTopicFilter;
@@ -226,9 +249,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       activeFilters.pageType = currentTypeFilter;
     }
 
-    const skeletonItems = document.querySelectorAll(".search-result[data-blank]");
-
-    for (let item of skeletonItems) {
+    for (const item of document.querySelectorAll(".search-result[data-blank]")) {
       item.remove();
     }
 
@@ -240,12 +261,12 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const typeParam = urlParams.get("type");
     const topicParam = urlParams.get("topics");
 
-    if (queryParam && queryParam !== "null") {
+    if (queryParam) {
       searchInput.value = queryParam;
       searchReset.hidden = false;
     }
 
-    if (topicParam && topicParam !== "all") {
+    if (topicParam) {
       activeFilters.topics = new Object();
       activeFilters.topics.any = new Array();
 
@@ -259,26 +280,33 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       }
     }
 
-    if (typeParam && typeParam !== "all") {
-      activeFilters.pageTypes = new Object();
-      activeFilters.pageTypes.any = new Array();
+    if (typeParam) {
+      activeFilters.pageType = new Object();
+      activeFilters.pageType.any = new Array();
 
-      const pageTypesArray = typeParam.split(",");
+      const pageTypeArray = typeParam.split(",");
 
-      activeFilters.pageTypes.any = pageTypesArray;
+      activeFilters.pageType.any = pageTypeArray;
 
-      for (let i in pageTypesArray) {
-        const typeInput = document.querySelector(`[data-filter-name="${pageTypesArray[i]}"]`);
+      for (let i in pageTypeArray) {
+        const typeInput = document.querySelector(`[data-filter-name="${pageTypeArray[i]}"]`);
         typeInput.checked = true;
       }
     }
 
     updateSearch(undefined, true);
+  } else {
+    resultsWrapper.innerHTML = blankTemplate.innerHTML;
   }
 
+  // Click event listeners
+
   loadMoreButton.addEventListener('click', async (e) => {
+
     pageCount += 1;
+
     updateSearch("paginate");
+  });
 
   searchButton.addEventListener('click', async (e) => {
     pageCount = 1;
@@ -323,6 +351,18 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     updateSearch("query");
   });
 
+
+  searchInput.addEventListener("input", async (e) => {
+    const value = e.target.value;
+
+    searchReset.hidden = !value;
+
+    // Attempt to preload search results as the user types
+    pagefind.preload(value);
+  });
+
+  // Handle filter updates
+
   const updateFilters = (filter, filterType) => {
     const input = filter.querySelector("input");
     const criteria = input.dataset.filterName;
@@ -348,14 +388,11 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     })
   }
 
-  // Handle updates to topic filters
   for (const filter of topicFilters) {
     updateFilters(filter, "topics");
   };
 
-  // Handle updates to type filter
   for (const filter of typeFilters) {
     updateFilters(filter, "pageType");
   };
-
 });
