@@ -46,6 +46,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
 
   // Get HTML templates
+  const resultsStatus = document.querySelector("#search-results-status-template");
   const blankTemplate = document.querySelector("#search-blank");
   const noResultsTemplate = document.querySelector("#search-no-results");
   const noMatchesTemplate = document.querySelector("#search-no-matches");
@@ -75,6 +76,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   // Add the right number of skeleton UI list items
   // while results are loading
   const populateSkeleton = count => {
+    resultsWrapper.ariaBusy = true;
     const skeletonTemplate = document.querySelector("#search-skeleton");
 
     const skeletonCount = count >= 5 ? 5 : count;
@@ -114,11 +116,20 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       }
     }
 
-    const pluralizeResultCount = (resultCount, isFiltered) => {
+    const replaceResultsWith = template => {
+      resultCountText.hidden = true;
+      resultPane.innerHTML = '';
+      resultsStatus.innerHTML = template.innerHTML;
+    }
+
+    const showResultCount = (resultCount, isFiltered) => {
+      resultCountText.hidden = false;
+      resultsStatus.innerHTML = '';
+
       if (isFiltered) {
-        return (resultCount === 1) ? `${resultCount} result matches your ${pluralizeFilters()}` : `${resultCount} results match your ${pluralizeFilters()}`;
+        resultCountText.innerHTML = (resultCount === 1) ? `${resultCount} result matches your ${pluralizeFilters()}` : `${resultCount} results match your ${pluralizeFilters()}`;
       } else {
-        return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
+        resultCountText.innerHTML = (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
       }
     };
 
@@ -179,27 +190,21 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     matchingResultsCount = (!currentTopicFilter && !currentTypeFilter) ? allResultsCount : search.results.length;
 
     if (isUnfiltered) {
-      resultCountText.hidden = true;
-      resultPane.innerHTML = blankTemplate.innerHTML;
+      replaceResultsWith(blankTemplate);
     } else {
       if (allResultsCount < 1) {
-        resultCountText.hidden = true;
-        resultPane.innerHTML = noResultsTemplate.innerHTML;
+        replaceResultsWith(noResultsTemplate);
       } else if (matchingResultsCount < 1) {
-        resultCountText.hidden = true;
-        resultPane.innerHTML = noMatchesTemplate.innerHTML;
+        replaceResultsWith(noMatchesTemplate);
       } else if (matchingResultsCount !== allResultsCount) {
-        resultCountText.hidden = false;
         if (currentTypeFilter || currentTopicFilter) {
-          resultCountText.innerHTML = pluralizeResultCount(matchingResultsCount, true);
+          showResultCount(matchingResultsCount, true);
         } else {
-          resultCountText.innerHTML = pluralizeResultCount(matchingResultsCount);
+          showResultCount(matchingResultsCount);
         }
-
         populateSkeleton(matchingResultsCount - (resultsPerPage * (pageCount - 1)));
       } else {
-        resultCountText.hidden = false;
-        resultCountText.innerHTML = pluralizeResultCount(allResultsCount);
+        showResultCount(allResultsCount);
         populateSkeleton(allResultsCount - (resultsPerPage * (pageCount - 1)));
       }
 
@@ -276,6 +281,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
 
     resultsWrapper.innerHTML = resultPane.innerHTML;
+    resultsWrapper.ariaBusy = false;
   }
 
   if (urlParams.size > 0) {

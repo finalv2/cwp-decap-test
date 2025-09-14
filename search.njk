@@ -42,7 +42,7 @@ pageTypes:
 <div class="l-section">
 <div class="l-wrapper">
 <div class="search-wrapper">
-<form id="search" class="search-form">
+<form id="search" class="search-form" role="search">
   <fieldset class="search-query-form-wrapper">
     <div class="search-input-wrapper">
       <input type="text" placeholder="Search" id="search-input" class="search-input" />
@@ -106,7 +106,7 @@ pageTypes:
 </template>
 
 <div class="search-content">
-  <form id="search-filters" class="search-filters">
+  <form id="search-filters" class="search-filters" role="region" aria-label="Filter results by topic or page type">
     <h4>Filter by&hellip;</h4>
     <details open>
       <summary class="subhead">{% icon "caret-right" %} Type</summary>
@@ -153,7 +153,10 @@ pageTypes:
   </form>
 
   <div class="search-results-wrapper" aria-live="assertive">
-    <h4 id="search-result-count"></h4>
+    <div role="status" aria-atomic="true">
+      <h4 id="search-result-count"></h4>
+      <div id="search-results-status-template"></div>
+    </div>
     <div id="search-results"></div>
     <button id="load-more-button" hidden>Load more results</button>
   </div>
