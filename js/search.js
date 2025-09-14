@@ -116,10 +116,21 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     searchResultIndicators.hidden = !(currentTypeFilter || currentTopicFilter);
 
     typeResultIndicator.hidden = !currentTypeFilter;
-    typeResultIndicatorText.textContent = currentTypeFilter?.any.toString();
+
+    if (currentTypeFilter?.any.length > 1) {
+      typeResultIndicatorText.textContent = currentTypeFilter?.any.sort((a, b) => a.localeCompare(b)).join(', ');
+    } else {
+      typeResultIndicatorText.textContent = currentTypeFilter?.any.join(', ');
+    }
+
 
     topicResultIndicator.hidden = !currentTopicFilter;
-    topicResultIndicatorText.textContent = currentTopicFilter?.any.toString();
+
+    if (currentTopicFilter?.any.length > 1) {
+      topicResultIndicatorText.textContent = currentTopicFilter?.any.sort((a, b) => a.localeCompare(b)).join(', ');
+    } else {
+      topicResultIndicatorText.textContent = currentTopicFilter?.any.join(', ');
+    }
 
     // Always clear the search results area
     // unless the user has clicked the "load more" button
