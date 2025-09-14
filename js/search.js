@@ -149,10 +149,18 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     topicResultIndicator.hidden = !currentTopicFilter;
 
-    if (currentTopicFilter?.any.length > 1) {
-      topicResultIndicatorText.textContent = currentTopicFilter?.any.sort((a, b) => a.localeCompare(b)).join(', ');
-    } else {
-      topicResultIndicatorText.textContent = currentTopicFilter?.any.join(', ');
+    if (currentTopicFilter?.any) {
+      let topicClone;
+
+      if (currentTopicFilter?.any.length > 1) {
+        topicClone = currentTopicFilter.any.slice().sort((a, b) => a.localeCompare(b));
+      } else {
+        topicClone = currentTopicFilter.any.slice();
+      }
+
+      const topicString = topicClone.join(", ").replace("noTopic", "No topic");
+
+      topicResultIndicatorText.textContent = topicString;
     }
 
     // Always clear the search results area
