@@ -97,11 +97,20 @@
   transition: all 0.15s ease-out;
 }
 
-.search-result:not([data-skeleton]):is(:hover, :focus) {
+.search-result:has(a:hover, a:focus) {
   background: var(--c-light-blue);
+  border-color: var(--c-blue) !important;
 }
 
-.search-result:not([data-skeleton]):active {
+.search-result:has(a:hover, a:focus) + .search-result {
+  border-block-start-color: var(--c-blue);
+}
+
+.search-result a:is(:focus, :focus-visible) {
+  outline: none;
+}
+
+.search-result:has(a:active) {
   scale: 0.99;
 }
 
@@ -206,9 +215,7 @@
 /* Filters  */
 
 .search-filters {
-  background: #fafafa;
   border-radius: var(--radius-lg);
-  padding: 1rem;
   align-self: start;
   inline-size: 100%;
   border: 1px solid rgb(0 0 0 / 0.2);
@@ -281,6 +288,11 @@
   border-radius: var(--radius-lg);
 }
 
+.search-filters label:has(:focus:not(:checked)) {
+  color: var(--c-blue);
+  border-color: var(--c-blue);
+}
+
 .search-filters label:has(:checked) {
   opacity: 1;
   font-weight: var(--font-bold);
@@ -288,6 +300,10 @@
   color: #fff;
   border-color: var(--c-blue);
   box-shadow: inset 0 -2px 0 rgb(0 0 0 / 0.25);
+}
+
+.search-filters label:has(:focus:checked) {
+  box-shadow: 0 0 3px var(--c-blue);
 }
 
 .search-filters[hidden] {
@@ -302,11 +318,11 @@
 
 .search-filter-inputs {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.search-filters input {
+.search-filters input[type="checkbox"] {
   inline-size: 0;
   block-size: 0;
   opacity: 0;
@@ -404,6 +420,6 @@
 
   .search-filter-inputs {
     flex-direction: column;
-    gap: var(--l-stack-gap);
+    gap: calc(var(--t-paragraph) / 2);
   }
 }
