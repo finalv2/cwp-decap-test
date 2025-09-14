@@ -88,8 +88,9 @@ pageTypes:
 <div class="search-content">
   <form id="search-filters" class="search-filters">
     <h4>Filter by&hellip;</h4>
-    <h5 class="subhead">Type</h5>
-    <fieldset class="search-type-filters" id="search-type-filters">
+    <details open>
+      <summary class="subhead">{% icon "caret-right" %} Type</summary>
+      <fieldset class="search-type-filters" id="search-type-filters">
       <div class="search-filter-inputs">
         {%- for type in pageTypes -%}
           <label for="type-{{ type.id }}">
@@ -101,11 +102,12 @@ pageTypes:
           </label>
         {%- endfor -%}
       </div>
-    </fieldset>
+      </fieldset>
+    </details>
 
-    <h5 class="subhead">Topic</h5>
-    <fieldset id="search-topic-filters" class="search-topic-filters">
-
+    <details open>
+      <summary class="subhead">{% icon "caret-right" %} Topic</summary>
+      <fieldset id="search-topic-filters" class="search-topic-filters">
       <div class="search-filter-inputs">
         {%- for topic in collections.topics -%}
           {%- if topic.url -%}
@@ -125,8 +127,9 @@ pageTypes:
               </span>
                 <!-- <span class="search-counter">0</span> -->
             </label>
-      </div>
-    </fieldset>
+        </div>
+      </fieldset>
+    </details>
   </form>
 
   <div class="search-results-wrapper">

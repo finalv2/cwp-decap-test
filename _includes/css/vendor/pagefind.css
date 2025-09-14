@@ -155,6 +155,56 @@
   border-radius: var(--radius-lg);
   padding: 1rem;
   align-self: start;
+  inline-size: 100%;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  box-shadow: 0 2px 1px rgb(0 0 0 / 0.06);
+}
+
+.search-filters h4 {
+  margin: 0;
+  padding-block: 0.5em;
+}
+
+.search-filters :is(h4, summary, fieldset) {
+  padding-inline: 1em;
+}
+
+.search-filters summary {
+  --border: 2px solid rgb(0 0 0 / 0.1);
+  color: var(--c-blue);
+  padding-block: 1em;
+  border-block-start: var(--border);
+  background: rgb(0 0 0 / 0.02);
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.search-filters summary svg {
+  inline-size: 1.5em;
+  aspect-ratio: 1 / 1;
+  transition: rotate 0.15s ease-out;
+}
+
+.search-filters [open] summary {
+  border-block-end: var(--border);
+}
+
+.search-filters [open] summary svg {
+  rotate: 90deg;
+}
+
+.search-filters fieldset {
+  padding-block: 1em;
+  margin: 0;
+  background: #fff;
+}
+
+.search-filters[data-mobile] fieldset:not(:has(input:focus)) {
+  opacity: 0;
+  block-size: 0;
+  overflow: hidden;
 }
 
 .search-filters h5 {
@@ -287,6 +337,10 @@
 
   .search-filters {
     inline-size: calc(var(--t-measure) * 2 / 3);
+  }
+
+  .search-filters h4 {
+    padding-block: 1em;
   }
 
   .search-filters label {

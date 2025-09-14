@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', async (e) => {
 
+  const isSmallScreen = window.matchMedia("(width <= 60rem)");
+
   const urlParams = new URLSearchParams(document.location.search);
 
   // Initialize Pagefind
@@ -14,6 +16,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const resultsWrapper = document.querySelector("#search-results");
 
   const filterWrapper = document.querySelector("#search-filters");
+  const filterFormAccordions = document.querySelectorAll("#search-filters details");
   const allFilters = document.querySelectorAll("#search-filters label");
   const typeFilters = document.querySelectorAll ("#search-type-filters label");
   const topicFilters = document.querySelectorAll("#search-topic-filters label");
@@ -24,6 +27,15 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
   let allResultsCount = 0;
   let visibleResultsCount;
+  // Filter indicators
+
+  // const queryResultIndicator = document.querySelector("[data-indicator='query']");
+  // const queryResultIndicatorText = queryResultIndicator.querySelector("span");
+  const searchResultIndicators = document.querySelector(".search-result-filters");
+  const typeResultIndicator = document.querySelector("[data-indicator='type']");
+  const typeResultIndicatorText = typeResultIndicator.querySelector("span");
+  const topicResultIndicator = document.querySelector("[data-indicator='topic']");
+  const topicResultIndicatorText = topicResultIndicator.querySelector("span");
 
   // let otherSearchCounts = {};
 
@@ -33,6 +45,19 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const pluralizeResultCount = resultCount => {
     return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
   };
+
+  // Only apply collapsible mobile filters if JS is enabled
+  if (isSmallScreen.matches) {
+    for (const accordion of filterFormAccordions) {
+      accordion.open = false;
+    }
+  }
+
+  isSmallScreen.addEventListener('change', e => {
+    for (const accordion of filterFormAccordions) {
+      accordion.open = !e.matches;
+    }
+  });
 
   const populateSkeleton = count => {
     const skeletonTemplate = document.querySelector("#search-skeleton");
