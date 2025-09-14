@@ -44,6 +44,8 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const topicResultIndicatorText = topicResultIndicator.querySelector("span");
 
   // let otherSearchCounts = {};
+  const typeReset = document.querySelector("#type-reset");
+  const topicReset = document.querySelector("#topic-reset");
 
   let pageCount = 1;
   const resultsPerPage = 5;
@@ -100,6 +102,14 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     const currentTypeFilter = activeFilters.pageType;
 
     if (urlParams.has('q')) {
+    searchResultIndicators.hidden = !(currentTypeFilter || currentTopicFilter);
+
+    typeResultIndicator.hidden = !currentTypeFilter;
+    typeResultIndicatorText.textContent = currentTypeFilter?.any.toString();
+
+    topicResultIndicator.hidden = !currentTopicFilter;
+    topicResultIndicatorText.textContent = currentTopicFilter?.any.toString();
+
       urlParams.set('q', currentQuery);
     } else if (currentQuery) {
       urlParams.append('q', currentQuery);
@@ -371,15 +381,32 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     updateSearch("reset", true);
   });
 
+  typeReset.addEventListener("click", async (e) => {
     pageCount = 1;
     e.preventDefault();
 
-    for (const filter of allFilters) {
-      filter.querySelector("input").checked = false;
+    activeFilters["pageType"] = undefined;
+
+    for (const filter of typeFilters) {
+      const input = filter.querySelector("input");
+      input.checked = false;
     }
 
-    updateSearch("query", true);
+    updateSearch("query");
+  });
 
+  topicReset.addEventListener("click", async (e) => {
+    pageCount = 1;
+    e.preventDefault();
+
+    activeFilters["topics"] = undefined;
+
+    for (const filter of topicFilters) {
+      const input = filter.querySelector("input");
+      input.checked = false;
+    }
+
+    updateSearch("query");
   });
 
   const updateFilters = (filter, filterType) => {

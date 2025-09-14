@@ -173,6 +173,36 @@
   fill: var(--c-gray-200);
 }
 
+.search-result-filters {
+  display: flex;
+  gap: 0.5em;
+  font-size: var(--font-sm-size);
+  flex-wrap: wrap;
+}
+
+.search-result-filters div {
+  padding: 0.125em 0.75em;
+  background: var(--c-light-blue);
+  border: 1px solid var(--c-blue);
+  border-radius: 1em;
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+}
+
+.search-result-filters button {
+  line-height: 1;
+  padding: 0;
+  background: transparent;
+}
+
+.search-result-filters svg {
+  inline-size: 1.5em;
+  aspect-ratio: 1 / 1;
+  fill: var(--c-blue);
+  flex: none;
+}
+
 /* Filters  */
 
 .search-filters {

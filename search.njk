@@ -43,10 +43,30 @@ pageTypes:
 <div class="l-wrapper">
 <div class="search-wrapper">
 <form id="search" class="search-form">
-  <fieldset class="search-input-wrapper">
-    <input type="text" placeholder="Search" id="search-input" class="search-input" />
+  <fieldset class="search-query-form-wrapper">
+    <div class="search-input-wrapper">
+      <input type="text" placeholder="Search" id="search-input" class="search-input" />
+      <input type="reset" id="search-query-reset" value="Reset" hidden>
+    </div>
     <input type="submit" id="search-button" class="button" value="Search" />
   </fieldset>
+      <div class="search-result-filters subhead" hidden>
+      <div data-indicator="query" hidden>
+        <strong>Query: </strong>
+        <span></span>
+        <button id="query-reset">{% icon "x-circle" %}</button>
+      </div>
+      <div data-indicator="type" hidden>
+        <strong>Type: </strong>
+        <span></span>
+        <button id="type-reset">{% icon "x-circle" %}</button>
+      </div>
+      <div data-indicator="topic" hidden>
+        <strong>Topic:</strong>
+        <span></span>
+        <button id="topic-reset">{% icon "x-circle" %}</button>
+      </div>
+    </div>
 </form>
 
 <template id="search-skeleton">
