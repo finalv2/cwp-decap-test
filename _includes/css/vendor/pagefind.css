@@ -21,12 +21,33 @@
   max-inline-size: unset;
 }
 
-.search-input-wrapper {
+.search-query-form-wrapper {
   gap: 0.5rem;
+  display: flex;
+  width: 100%;
+}
+
+.search-input-wrapper {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.search-form input[type="reset"] {
+  color: transparent;
+  position: absolute;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  inset-inline-end: 1rem;
+  inset-block-start: 50%;
+  translate: 0 -50%;
+  background: center center no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M165.66%2C101.66%2C139.31%2C128l26.35%2C26.34a8%2C8%2C0%2C0%2C1-11.32%2C11.32L128%2C139.31l-26.34%2C26.35a8%2C8%2C0%2C0%2C1-11.32-11.32L116.69%2C128%2C90.34%2C101.66a8%2C8%2C0%2C0%2C1%2C11.32-11.32L128%2C116.69l26.34-26.35a8%2C8%2C0%2C0%2C1%2C11.32%2C11.32ZM232%2C128A104%2C104%2C0%2C1%2C1%2C128%2C24%2C104.11%2C104.11%2C0%2C0%2C1%2C232%2C128Zm-16%2C0a88%2C88%2C0%2C1%2C0-88%2C88A88.1%2C88.1%2C0%2C0%2C0%2C216%2C128Z%22%20fill%3D%22%23888%22%20%2F%3E%3C%2Fsvg%3E");
+  background-size: contain;
 }
 
 .search-form input[type="text"] {
-  border: 3px solid var(--c-blue);
+  border: 3px solid #888;
   padding-block: 0.5rem;
   padding-inline-start: 2.5rem;
   padding-inline-end: 1rem;
@@ -35,6 +56,10 @@
   inline-size: 100%;
   background: var(--search-icon) 0.5rem center no-repeat;
   background-size: 1.5rem;
+}
+
+.search-form input[type="text"]:focus {
+  border-color: var(--c-blue);
 }
 
 .search-content {

@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   const topicFilters = document.querySelectorAll("#search-topic-filters label");
   const resultCountText = document.querySelector("#search-result-count");
   const searchInput = document.querySelector("#search-input");
+  const searchReset = document.querySelector("#search-query-reset");
 
   const loadMoreButton = document.querySelector("#load-more-button");
 
@@ -312,6 +313,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     if (queryParam && queryParam !== "null") {
       searchInput.value = queryParam;
+      searchReset.hidden = false;
     }
 
     if (topicParam && topicParam !== "all") {
@@ -349,15 +351,21 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     pageCount += 1;
     updateSearch("paginate");
 
+  searchButton.addEventListener('click', async (e) => {
+    pageCount = 1;
+    e.preventDefault();
+
+    updateSearch("query", true);
   });
 
-  searchInput.addEventListener("input", (e) => {
-    pagefind.preload(e.target.value);
-  })
+  searchReset.addEventListener("click", async (e) => {
+    e.target.hidden = true;
 
+    pageCount = 1;
 
-  // Handle new search queries
-  searchButton.addEventListener('click', async (e) => {
+    updateSearch("reset", true);
+  });
+
     pageCount = 1;
     e.preventDefault();
 
