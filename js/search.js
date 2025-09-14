@@ -292,6 +292,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     resultsWrapper.ariaBusy = false;
   }
 
+  // Process URL parameters upon page load
   if (urlParams.size > 0) {
     const queryParam = urlParams.get("q");
     const typeParam = urlParams.get("type");
@@ -388,6 +389,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
 
   searchInput.addEventListener("input", async (e) => {
+    e.preventDefault();
     const value = e.target.value;
 
     searchReset.hidden = !value;
