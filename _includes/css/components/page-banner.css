@@ -77,8 +77,9 @@
   content: none;
 }
 
-[data-width="full"] :is(.l-wrapper, .nametag-text h2) {
+[data-width="full"] :is(.l-wrapper, .nametag, .nametag-text h2) {
   align-items: center;
+  align-self: center;
   text-align: center;
 }
 

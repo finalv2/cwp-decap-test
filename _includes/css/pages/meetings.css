@@ -1,12 +1,13 @@
 .meeting-content {
   max-inline-size: var(--t-measure);
   margin-block-start: var(--l-stack-gap);
+  justify-self: center;
 }
 
-@media (min-width: 96rem) {
+@media (min-width: 60rem) {
   .meeting-grid {
     display: grid;
-    grid-template-columns: 1fr var(--t-measure);
+    grid-template-columns: 1fr calc(var(--t-measure) * 0.75);
     gap: var(--g-column-gap);
   }
 
