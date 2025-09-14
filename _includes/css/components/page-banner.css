@@ -91,7 +91,7 @@
     z-index: 3;
 }
 
-.page-banner:not[data-type="strategy"] :is(p, h1, h2) {
+.page-banner:not([data-width="full"]) :is(p, h1, h2) {
   max-inline-size: var(--t-measure);
 }
 
@@ -115,14 +115,6 @@
   /*align-items: center;*/
   gap: var(--t-paragraph);
 }
-
-/*.page-banner[data-type="strategy"] * {
-  text-align: center;
-}
-
-.page-banner[data-type="strategy"] .nametag-badge {
-  translate: -50% 0;
-}*/
 
 .nametag {
   position: relative;
@@ -245,10 +237,6 @@
 }
 
 @media (min-width: 60rem) {
-  .page-banner:not([data-type="strategy"]) :is(h2, h1, .h1, p) {
-    max-inline-size: 40dvi;
-  }
-
   .page-banner:not([data-width="full"]) :is(h2, h1, .h1, p) {
     max-inline-size: 40dvi;
   }
