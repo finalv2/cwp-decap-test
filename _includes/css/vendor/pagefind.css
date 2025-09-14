@@ -263,7 +263,6 @@
 .search-filters fieldset {
   padding-block: 1em;
   margin: 0;
-  background: #fff;
 }
 
 .search-filters[data-mobile] fieldset:not(:has(input:focus)) {
