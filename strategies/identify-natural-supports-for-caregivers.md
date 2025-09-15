@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Identify natural supports for caregivers
-order: 8
 tags:
   - strategy
   - retention
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 8
+redirectFrom: https://childwelfareplaybook.com/recommendations/identify-natural-supports-for-caregivers/
 ---
 
 Caregivers need support beyond what your agency can provide. Help caregivers identify and plan how to use their natural support networks early in the process so they can be activated when needed.
