@@ -8,6 +8,7 @@ tags:
 order: 1
 resources:
   - "Family Connections: Yuvia’s Story"
+redirectFrom: https://childwelfareplaybook.com/recommendations/focus-recruitment-on-fostering-not-adoption/
 ---
 Many child welfare systems license hundreds of families who only want to adopt infants. These families aren't always needed, and licensing and maintaining them consumes valuable staff time and money. Instead, focus on recruiting foster families who will help reunite children and youth with their families, or provide permanency for older youth and sibling groups.
 
