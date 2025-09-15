@@ -16,10 +16,12 @@ Federal rules now allow child welfare agencies to create separate approval proce
 
 This collaboration developed [new licensing standards](https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_Standards_2025.pdf) that focus on two key components: background checks and kinship caregiver assessments. It also produced ready-to-use [forms, templates, and implementation guidance](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms).
 
-Now, key recommendations from these standards are available as new and revised strategies and resources in the Child Welfare Playbook.
+Now, key recommendations from these standards are available as new strategies and resources in the Child Welfare Playbook.
 
 ## Strategies
 
+* [Use an expansive legal definition of kin ](<>)
+* [Involve kin before removing children or youth](<>)
 * [Let kin caregivers know what to expect from background checks](/strategies/let-kin-caregivers-know-what-to-expect-from-background-checks/)
 * [Collect only essential information from kin and other adults in the household](/strategies/collect-only-essential-information-from-kin-and-other-adults-in-household/)
 * [Make fingerprinting fast and easy](/strategies/make-fingerprinting-fast-and-easy/)
@@ -30,8 +32,6 @@ Now, key recommendations from these standards are available as new and revised s
 * [Help caregivers fulfill home safety requirements ](/strategies/provide-safety-inspection-support/)
 * [Allow kin to appeal denied placements](/strategies/allow-kin-to-appeal-denied-placements/)[](/strategies/provide-convenient-training-events-for-license-renewals/)
 * [Pay kin caregivers while they get licensed](/strategies/pay-kin-caregivers-while-they-get-licensed/)
-* [Use an expansive legal definition of kin ](/strategies/use-an-expansive-legal-definition-of-kin/)
-* [Involve kin before removing children or youth](/strategies/involve-kin-before-removing-children-or-youth/)
 
 ## Resources
 
