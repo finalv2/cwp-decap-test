@@ -6,6 +6,7 @@ tags:
   - strategy
   - recruitment
 order: 7
+redirectFrom: https://childwelfareplaybook.com/recommendations/recruit-relative-caregivers-to-become-general-caregivers/
 ---
 Kin caregivers who are already licensed and familiar with the system can make excellent general foster parents. Some may be interested in caring for additional children but haven't considered it or don't know how to make the transition. Ask kin caregivers if they're interested in becoming general foster parents to expand your pool of available families.
 
