@@ -12,7 +12,7 @@ resources:
 ---
 The fingerprinting process can be stressful for caregivers and their families for reasons that have nothing to do with their ability to provide safe, supportive care for youth. 
 
-Make this process easier for potential caregivers by providing quick and accessible fingerprinting services and keeping records to ensure you never have to fingerprint the same person twice. 
+Make this process easier for potential caregivers by providing quick and accessible fingerprinting services and recordkeeping to ensure you never have to fingerprint the same person twice. 
 
 ## How to do this
 
