@@ -9,6 +9,13 @@ pagefind:
 {%- from '_macros/resource-card.njk' import resourceCard -%}
 {%- from '_macros/story-card.njk' import storyCard -%}
 
+{% set pageCss %}
+{% include "css/pages/meetings.css" %}
+{% include "css/vendor/plyr.css" %}
+{% endset %}
+
+<style>{{ pageCss | cssmin | safe }}</style>
+
 {%- set resourceData -%}
   {%- for relatedResource in resources -%}
     {%- for item in collections.resources -%}

@@ -31,6 +31,12 @@ pageTypes:
     iconName: cards-three
 ---
 
+{% set pageCss %}
+  {% include "css/vendor/pagefind.css" %}
+{% endset %}
+
+<style>{{ pageCss | cssmin | safe }}</style>
+
 {%- macro blankTemplate(params) -%}
   <li class="search-result-blank">{% icon "list-magnifying-glass" %}
     <strong>Start your search</strong>
@@ -170,4 +176,5 @@ pageTypes:
 </div>
 </div>
 </div></div>
+
 <script type="module" src="/js/search.js"></script>

@@ -10,19 +10,12 @@ permalink: theme.css
 {% include "css/typography.css" %}
 
 {% include "css/components/button.css" %}
-{% include "css/components/dashboard-card.css" %}
 {% include "css/components/footer.css" %}
 {% include "css/components/navbar.css" %}
 {% include "css/components/page-banner.css" %}
 {% include "css/components/resource-detail.css" %}
 {% include "css/components/story-card.css" %}
 {% include "css/components/strategy-card.css" %}
-
-{% include "css/pages/home.css" %}
-{% include "css/pages/meetings.css" %}
-{% include "css/pages/topics.css" %}
-
-{% include "css/vendor/pagefind.css" %}
-{% include "css/vendor/plyr.css" %}
+{% include "css/components/topic-card.css" %}
 {% endset %}
 {{ css | cssmin | safe }}

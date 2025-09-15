@@ -16,7 +16,7 @@ pagefind:
     <h2 class="h1">Welcome to the Child&nbsp;Welfare Playbook</h2>
     <p>{{ home.bannerSubheader }}</p>
   </div>
-  <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
+  <div class="page-banner-img" fetchpriority="high" style="--background: url('{{ image }}')"></div>
 </div>
 
 <section class="l-section">
@@ -71,3 +71,7 @@ pagefind:
     {%- endfor -%}
   </div>
 </section>
+
+{% set pageCss %}{% include "css/pages/home.css" %}{% endset %}
+
+<style>{{ pageCss | cssmin | safe }}</style>

@@ -30,3 +30,10 @@ pageIndex: all
 </div>
 
 <span hidden data-pagefind-meta="title">Dashboard: {{ title }}</span>
+
+
+{% set pageCss %}
+  {% include "css/components/dashboard-card.css" %}
+{% endset %}
+
+<style>{{ pageCss | cssmin | safe }}</style>
