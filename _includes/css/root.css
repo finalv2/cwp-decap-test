@@ -58,14 +58,14 @@
 
   /* LAYOUT WIDTHS */
 
-  --t-measure: 43ch; /* Typographic measure */
+  --t-measure: 55ch; /* Typographic measure */
   --w-container: 90%;
   --w-container-unitless: 90;
   --w-content-max: 60rem;
   --w-content-max-unitless: 60;
   --w-max: 80rem;
   --w-max-unitless: 80;
-  --g-column-gap: calc(var(--t-paragraph) * 2);
+  --g-column-gap: calc(var(--t-paragraph) * 1.5);
 
   /* Padding between sections */
 
