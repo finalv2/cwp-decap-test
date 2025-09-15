@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Hire youth with lived experience for roles at your agency
-order: 5
 tags:
   - strategy
   - supporting-older-youth
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 5
+redirectFrom: https://childwelfareplaybook.com/recommendations/hire-youth-with-lived-experience/
 ---
 
 Child welfare agencies often lack the perspective of people who experienced the system. Without it, agencies may miss important problems or make choices that don't work for the youth they serve.
