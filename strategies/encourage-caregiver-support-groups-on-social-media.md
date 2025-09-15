@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Encourage caregiver support groups on social media
-order: 6
 tags:
   - strategy
   - retention
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 6
+redirectFrom: https://childwelfareplaybook.com/recommendations/foster-family-support-groups-on-social/
 ---
 
 Caregivers need peer support and community connection, but busy schedules and geographic barriers can make in-person meetings difficult. Help families access social media support groups where they can connect with other caregivers, share experiences, and get advice. This increases community among caregivers and serves as an indirect source of recruitment and retention.
