@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Use scheduling tools to prevent licensing delays
-order: 8
 tags:
   - strategy
   - caregiver-licensing
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 8
+redirectFrom: https://childwelfareplaybook.com/recommendations/send-appointment-reminders/
 ---
 
 Home study and inspection appointments are often scheduled for families without their input and confirmation. As a result, families can miss important appointments, which is frustrating and delays the licensing process.
