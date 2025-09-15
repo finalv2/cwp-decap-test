@@ -28,8 +28,7 @@ Now, the key recommendations from these standards are available as new and revis
 * [Help caregivers fulfill home safety requirements ](/strategies/provide-safety-inspection-support/)
 * [Establish clear standards for evaluating background checks](/strategies/establish-clear-standards-for-evaluating-background-checks/)
 * [Help potential caregivers correct errors in background check results](/strategies/help-potential-caregivers-correct-errors-in-background-check-results/)
-* [Allow kin to appeal denied placements](/strategies/allow-kin-to-appeal-denied-placements/)
-* [Provide convenient training for active caregivers](/strategies/provide-convenient-training-events-for-license-renewals/)
+* [Allow kin to appeal denied placements](/strategies/allow-kin-to-appeal-denied-placements/)[](/strategies/provide-convenient-training-events-for-license-renewals/)
 
 ## Resources
 
