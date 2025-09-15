@@ -30,7 +30,7 @@ Set up caregivers for success by having your assessments be clear discussions th
 
 **Port Gamble S’Klallam Tribe** allows caregivers to request an outside person to conduct their assessments to preserve privacy, since they are a small community.
 
-**All jurisdictions** can use and adapt the kin caregiver assessment templates that are part of the [kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms), which combine previous “caregiver suitability” and “safety and needs assessment” tasks. These forms also include:
+**All jurisdictions** can use and adapt the kin caregiver assessment templates found in the [kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms), which combine previous “caregiver suitability” and “safety and needs" assessments. These forms also include:
 
 * A “bank” of questions to pull from as your agency adapts its assessments
 * A list of questions they removed, with reasons why
