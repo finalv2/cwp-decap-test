@@ -36,4 +36,4 @@ Speed up decision-making by creating consistent, case-by-case review standards t
 
 **Iowa** asks caregivers with histories of abuse, neglect, and criminal convictions what changes they’ve made to become safe to work around others, including their work history, counseling, parenting classes, and other experiences. 
 
-**Grandfamilies & Kinship Support Network’s** collection of kin licensing forms and templatesincludes a form template to evaluate criminal history. They also have a template to explain denials of kin placements and how to appeal them.
+**All jurisdictions** can use the [kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms) that include a template to evaluate criminal history and a template to explain denials and how to appeal them.
