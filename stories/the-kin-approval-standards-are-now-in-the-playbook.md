@@ -6,7 +6,7 @@ description: The Child Welfare Playbook now includes strategies and resources
   from the federal kin licensing standards to help agencies improve approval
   processes for kin caregivers.
 author: Bloom Works
-date: 2025-09-09
+date: 2025-09-15
 type: Blog post
 image: .images/stories/kin-engagement.jpg
 tags:
