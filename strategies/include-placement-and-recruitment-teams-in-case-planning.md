@@ -1,12 +1,13 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Include placement and recruitment teams in case planning
-order: 3
 tags:
   - strategy
   - kin-engagement
   - recruitment
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 3
+redirectFrom: https://childwelfareplaybook.com/recommendations/include-placement-and-recruitment-in-case-planning/
 ---
 
 Placement and recruitment teams do their best work when they understand the specific needs and circumstances of the children and youth in your system. 
