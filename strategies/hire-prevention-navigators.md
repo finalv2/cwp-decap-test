@@ -2,6 +2,7 @@
 layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 title: Hire prevention navigators
+redirectFrom: /recommendations/hiring-prevention-navigators/
 tags:
   - strategy
   - prevention
