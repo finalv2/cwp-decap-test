@@ -9,6 +9,8 @@ order: 6
 resources:
   - Iowa release of information form
   - "Podcast: Kin engagement in Wisconsin"
+  - Kin licensing standards
+  - "Kin licensing forms "
 ---
 Sometimes a family could stay together safely if they had more support, but the agency may not engage kin before it's necessary to remove the child or youth.
 
@@ -26,8 +28,10 @@ Identify and engage kin early in your work with families to provide kin-based su
 
 ## This strategy in action
 
-**Many states** allow kin to begin approval processes, like fingerprinting, before removal becomes necessary.
+**Many states** allow kin to begin approval processes, like background checks, before removal becomes necessary.
 
 **Outagamie County, Wisconsin** has developed effective strategies for engaging kin during intake processes.
 
-**Iowa** created a standardized release of information form. Parents fill it out to give the agency permission to share case information with kin. This makes it easier to have specific conversations about how kin can help.*[](https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd)
+**Wisconsin** also has a policy says that a background check on kin prior to removal is good for 120 days; in **Hawaii**, it’s up to a year.
+
+**Iowa** created a standardized release of information form. Parents fill it out to give the agency permission to share case information with kin. This makes it easier to have specific conversations about how kin can help.[](https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd)
