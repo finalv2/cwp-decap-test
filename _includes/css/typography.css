@@ -134,7 +134,7 @@ h5, .h5,
 h6, .h6 {
   font-size: var(--font-base-size);
   line-height: var(--font-base-leading);
-  font-weight: var(--t-normal);
+  font-weight: var(--font-normal);
 }
 
 .subhead {

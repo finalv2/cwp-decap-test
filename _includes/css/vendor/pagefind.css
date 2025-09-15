@@ -201,7 +201,7 @@
 }
 
 .search-result-filters strong {
-  font-weight: 400;
+  font-weight: var(--font-normal);
 }
 
 .search-result-filters button {
