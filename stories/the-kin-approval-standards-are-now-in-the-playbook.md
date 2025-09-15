@@ -36,4 +36,4 @@ Now, key recommendations from these standards are available as new strategies an
 ## Resources
 
 * [Kin licensing standards](https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_Standards_2025.pdf)
-* [Kin licensing forms ](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms)
+* [Kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms)
