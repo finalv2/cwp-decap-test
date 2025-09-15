@@ -24,7 +24,7 @@ Identify and engage kin early in your work with families to provide kin-based su
 
 **Keep asking about kin at every interaction.** The stress and potential shame of being involved with the child welfare system may discourage people from sharing at first.
 
-**Let kin complete approval steps ahead of time.** Allow kin to complete steps like background checks before it becomes necessary to remove the child or youth. That way, they’re already approved if they’re needed.
+**Let kin complete approval steps ahead of time.** Allow kin to complete steps like background checks before it becomes necessary to remove the child or youth. That way, they’re already approved if they’re needed. These proactive background checks for kin caregivers should be good for 1 year, though you should confirm if placement is needed that there are no new state, local, or tribal history or sex offender registry results since the original check.
 
 ## This strategy in action
 
