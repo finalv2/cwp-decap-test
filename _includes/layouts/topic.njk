@@ -1,10 +1,10 @@
 ---
 layout: layouts/default.njk
+eleventyComputed:
+  description: "{{ summary }}"
 pagefind:
   type: Page
   topic: noTopic
-eleventyComputed:
-  description: "{{ content }}"
 ---
 
 {%- from '_macros/story-card.njk' import storyCard %}
