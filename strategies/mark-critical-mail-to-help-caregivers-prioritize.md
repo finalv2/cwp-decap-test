@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Mark critical mail to help caregivers prioritize
-order: 4
 tags:
   - strategy
   - retention
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 4
+redirectFrom: https://childwelfareplaybook.com/recommendations/distinguish-important-mail-for-foster-families/
 ---
 
 Kin and foster caregivers report feeling overwhelmed by the amount of mail they receive. Sometimes it stacks up and time-sensitive documents go unopened. 
