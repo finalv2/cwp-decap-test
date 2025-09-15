@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Improve kin communications through user feedback
-order: 8
 tags:
   - strategy
   - kin-engagement
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 8
+redirectFrom: https://childwelfareplaybook.com/recommendations/test-your-communications-with-real-kin/
 ---
 
 Potential kin placements and connections may be scared off by your existing messages and forms. If your communications look like legal notices, use lots of government acronyms and jargon, or aren't translated, they may be discarded or overlooked.
