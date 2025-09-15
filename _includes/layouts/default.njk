@@ -27,6 +27,7 @@
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="/images/header-bg.svg" as="image">
+    {% if image %}<link rel="preload" href="{{ image }}" as="image">{% endif %}
     <link rel="apple-touch-icon" href="/favicon-180.png">
     {% if video %}
       <link rel="stylesheet" href="https://cdn.plyr.io/3.8.3/plyr.css" />
