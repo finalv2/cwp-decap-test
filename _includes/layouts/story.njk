@@ -5,6 +5,23 @@ pagefind:
   type: story
 ---
 
+{%- set resourceData -%}
+  {%- for relatedResource in resources -%}
+    {%- for item in collections.resources -%}
+      {%- if item.data.title === relatedResource -%}
+        {{ resourceCard({
+          filetype: item.data.filetype,
+          title: item.data.title,
+          description: item.content,
+          url: item.data.url,
+          file: item.data.file
+          })
+        }}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endset -%}
+
 <div class="page-banner" data-type="story" data-width="full" data-pagefind-filter="pageType:Story" style="--background: url('{%- if image -%}{{ image }}{%- else -%}/images/banners/story.jpg{%- endif -%}')">
   <div class="l-wrapper">
       <div class="nametag">
@@ -36,6 +53,11 @@ pagefind:
 <div class="l-wrapper-text l-center">
 <div class="l-stack">
       {{ content | md | safe }}
+
+      {%- if resourceData !== "" -%}
+      <h2>Resources</h2>
+      {{ resourceData | safe }}
+    {%- endif -%}
 </div>
 </div>
 </div>

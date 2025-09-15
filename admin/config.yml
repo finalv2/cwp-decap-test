@@ -87,6 +87,7 @@ collections:
       - { label: "Header image", name: "image", widget: "image", allow_multiple: false, media_folder: "/images/stories", public_folder: ".images/stories/", required: false}
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Related resources", required: false, name: "resources", widget: "relation", collection: "resources", value_field: "title", search_fields: ["title", "url"], multiple: true}
       - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
   - name: "resources"
     label: "Resources"
