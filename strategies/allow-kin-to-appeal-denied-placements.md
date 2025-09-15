@@ -18,7 +18,7 @@ If you don’t already have an appeals process, set one up. Make sure kin unders
 
 **Clearly explain why you denied the placement.** Thank kin for offering their home, and give them a clear, specific reason why your agency didn’t place the youth with them. This could be a disqualifying issue from their background check or a decision to place youth with another caregiver. 
 
-**Make this a conversation.** Don’t just send a form letter.Talk with the caregiver about this decision, and listen to any concerns they might have. Let them know they can still play an active role in the youth’s life through visits and other support. 
+**Make this a conversation.** Don’t just send a form letter. Talk with the caregiver about this decision, and listen to any concerns they might have. Let them know they can still play an active role in the youth’s life through visits and other support. 
 
 **Tell kin how to appeal.** If your agency doesn’t currently have an appeal process, create one that both kin and staff can easily follow. Kin can appeal when your decision is based on criminal record results, home licensing standards, or your assessment of the youth’s needs. They should describe the issue they’d like resolved, anything your agency might not know about, what outcome they’re looking for, and any accommodations they’d need during the appeals process.
 
