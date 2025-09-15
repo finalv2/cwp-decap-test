@@ -9,6 +9,7 @@ order: 11
 resources:
   - Relative notification letter
   - Wisconsin kin engagement guide
+redirectFrom: https://childwelfareplaybook.com/recommendations/be-gentle-when-interacting-with-kin-first-time/
 ---
 Kin connections may be permanently lost if an initial communication feels too overwhelming and demanding. Some connections may be learning they have a family member for the first time while simultaneously being asked to serve as a placement. 
 
