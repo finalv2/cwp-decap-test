@@ -7,8 +7,8 @@ tags:
   - background-checks
 order: "2"
 resources:
-  - Kin licensing standards
   - "Kin licensing forms "
+  - Kin licensing standards
 stories: []
 ---
 Some kin caregivers may feel anxious about the background check process, a fear rooted in past harms and learned mistrust of the child welfare system. Others worry they might be disqualified for issues that shouldn’t matter in placement decisions, such as decades-old minor convictions.
@@ -19,7 +19,7 @@ How you explain this process can make the difference in whether kin caregivers f
 
 **Be specific about the benefits of approval.** Being approved as a formal kin caregiver means their household will get money to help with related expenses, and they’ll be able to make decisions around local school enrollment and medical care. They’ll also have input on when and how youth interact with previous caregivers until they can reunite.
 
-**Explain each step upfront.** Tell them the process to get approved as a formal kin caregiver includes checks of criminal background records, child abuse and neglect records, and sex offender registry records in any states they and other adults in the home have lived in the past 5 years, along with a home and caregiver assessment. Tell them you recognize this process will look into sensitive information about their history, home, and other adults they live with.
+**Explain each step upfront.** Explain that the process to get approved as a formal kin caregiver includes checks of criminal background records, child abuse and neglect records, and sex offender registry records in any states they and other adults in the home have lived in the past 5 years, along with a home and caregiver assessment. Tell them you recognize this process will look into sensitive information about their history, home, and other adults they live with.
 
 Reassure them:
 
@@ -36,7 +36,7 @@ Reassure them:
 
 **Texas** uses kinship navigators to hold these conversations with kin. They also put their background check form on a tablet that kin caregivers can fill out and sign anywhere.
 
-**Grandfamilies & Kinship Support Network’s** kin model licensing forms and templates include resources that jurisdictions can adapt:
+**All jurisdictions** can use and adapt the model [kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms) that include:
 
 * Background check consent form 
 * Background check application form
