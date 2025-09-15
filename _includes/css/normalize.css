@@ -151,6 +151,18 @@ img {
   border-style: none;
 }
 
+picture {
+  inline-size: 100%;
+  block-size: 100%;
+  display: flex;
+}
+
+picture img {
+  object-fit: cover;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
 /**
  * Hide the overflow in IE.
  */

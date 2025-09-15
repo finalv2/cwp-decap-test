@@ -5,7 +5,7 @@ import svgSprite from "eleventy-plugin-svg-sprite";
 import eleventyAutoCacheBuster from "eleventy-auto-cache-buster";
 import dateFilters from './filters/dateFilters.js'
 import CleanCSS from "clean-css";
-
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 const alphaSort = (a, b) => {
   if (a.data.title < b.data.title) {
@@ -44,6 +44,22 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./favicon-512.png");
   eleventyConfig.addPassthroughCopy("./site.webmanifest");
 
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // output image formats
+    formats: ["avif", "webp", "jpeg"],
+
+    // output image widths
+    widths: ["auto"],
+
+    // optional, attributes assigned on <img> nodes override these values
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+      pictureAttributes: {}
+    },
+  });
 
   eleventyConfig.addPassthroughCopy("./images/");
   eleventyConfig.addPassthroughCopy("./js/");
