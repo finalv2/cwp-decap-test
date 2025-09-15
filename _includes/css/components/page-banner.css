@@ -33,6 +33,7 @@
   top: 0;
   bottom: 0;
   right: -10vw;
+  display: none;
 }
 
 .page-banner-img::after {
@@ -238,6 +239,10 @@
 }
 
 @media (min-width: 60rem) {
+  .page-banner-img {
+    display: block;
+  }
+
   .page-banner:not([data-width="full"]) :is(h2, h1, .h1, p) {
     max-inline-size: 40dvi;
   }
