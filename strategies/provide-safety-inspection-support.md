@@ -18,7 +18,7 @@ Provide support throughout the process so families can meet requirements quickly
 
 ## How to do this
 
-**Provide assessment forms or inspection checklists early and often.** Help caregivers and their families know what to expect before assessments by giving them forms or inspection checklists in advance. You can include them in orientation packets or with other application materials online and with appointment reminders.
+**Provide assessment forms or inspection checklists early and often.** Help caregivers and their families know what to expect before assessments by giving them forms or inspection checklists in advance. You can include them in orientation packets or with other application materials online and in appointment reminders.
 
 **Collect critical safety items and give them to families who need them.** Don’t disqualify kin caregivers who don’t have appropriate safety items before placement. Instead, help them get devices like smoke detectors or carbon monoxide detectors. 
 
