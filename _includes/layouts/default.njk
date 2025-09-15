@@ -23,6 +23,15 @@
     {% elif pagefind.image %}
       <meta data-pagefind-default-meta="image[content]" content="{{ pagefind.image }}" property="og:image">
     {% endif %}
+
+    {% if pagefind.type %}
+      <meta data-pagefind-default-meta="type" property="{{ pagefind.type }}">
+    {% endif %}
+
+    {% if pagefind.title %}
+      <meta data-pagefind-default-meta="title[content]" content="{{ pagefind.title }}" property="{{ title }}">
+    {% endif %}
+
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">

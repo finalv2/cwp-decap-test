@@ -1,5 +1,6 @@
 ---
 layout: layouts/default.njk
+pageIndex: all
 pagefind:
   type: Resource
 eleventyComputed:
@@ -13,7 +14,7 @@ eleventyComputed:
       <div class="nametag-text">
         <h2 data-pagefind-meta="title" data-pagefind-weight="9">{{ title }}</h2>
         {%- if content -%}
-          <p data-pagefind-body>{{ content | md | safe }}</p>
+          <p>{{ content | md | safe }}</p>
         {%- endif -%}
       </div>
     </div>
