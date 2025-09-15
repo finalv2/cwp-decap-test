@@ -1,45 +1,82 @@
 window.addEventListener('DOMContentLoaded', async (e) => {
 
+  const isSmallScreen = window.matchMedia("(width <= 60rem)");
+
   const urlParams = new URLSearchParams(document.location.search);
 
   // Initialize Pagefind
   const pagefind = await import("/pagefind/pagefind.js");
-  const filters = await pagefind.filters();
   await pagefind.init();
 
-  const pageTypes = ["Strategy", "Story", "Resource", "Meeting", "Page"]
+  // Initialize Pagefind filters
+  // (This is required for loading result counts by page type and topic,
+  // even though the variable is unused)
+  const filters = await pagefind.filters();
 
+  // Track the filters the user selected
   const activeFilters = {};
 
   // Select elements
   const searchButton = document.querySelector("#search-button");
-  const searchContent = document.querySelector(".search-content");
   const resultsWrapper = document.querySelector("#search-results");
 
-  const allResultsInput = document.querySelector(`label[for="type-all"] input`);
-
-  const filterWrapper = document.querySelector("#search-filters");
+  const filterFormAccordions = document.querySelectorAll("#search-filters details");
   const allFilters = document.querySelectorAll("#search-filters label");
   const typeFilters = document.querySelectorAll ("#search-type-filters label");
   const topicFilters = document.querySelectorAll("#search-topic-filters label");
-  const resultCountText = document.querySelector("#search-result-count");
-  const searchInput = document.querySelector("#search-input");
 
+  const searchInput = document.querySelector("#search-input");
+  const searchReset = document.querySelector("#search-query-reset");
+
+  const resultCountText = document.querySelector("#search-result-count");
   const loadMoreButton = document.querySelector("#load-more-button");
 
+  // Filter indicators
+
+  // const queryResultIndicator = document.querySelector("[data-indicator='query']");
+  // const queryResultIndicatorText = queryResultIndicator.querySelector("span");
+  const searchResultIndicators = document.querySelector(".search-result-filters");
+  const typeResultIndicator = document.querySelector("[data-indicator='type']");
+  const typeResultIndicatorText = typeResultIndicator.querySelector("span");
+  const topicResultIndicator = document.querySelector("[data-indicator='topic']");
+  const topicResultIndicatorText = topicResultIndicator.querySelector("span");
+
+  const typeReset = document.querySelector("#type-reset");
+  const topicReset = document.querySelector("#topic-reset");
+
+
+  // Get HTML templates
+  const resultsStatus = document.querySelector("#search-results-status-template");
+  const blankTemplate = document.querySelector("#search-blank");
+  const noResultsTemplate = document.querySelector("#search-no-results");
+  const noMatchesTemplate = document.querySelector("#search-no-matches");
+  const resultTemplate = document.querySelector("#search-result");
+
+  // Track search result counts
   let allResultsCount = 0;
-  let visibleResultsCount;
+  let matchingResultsCount;
 
-  let otherSearchCounts = {};
-
+  // Track page count
   let pageCount = 1;
-  let resultsPerPage = 5;
+  const resultsPerPage = 8;
 
-  const pluralizeResultCount = resultCount => {
-    return (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
-  };
+  // Only apply collapsible mobile filters if JS is enabled
+  if (isSmallScreen.matches) {
+    for (const accordion of filterFormAccordions) {
+      accordion.open = false;
+    }
+  }
 
+  isSmallScreen.addEventListener('change', e => {
+    for (const accordion of filterFormAccordions) {
+      accordion.open = !e.matches;
+    }
+  });
+
+  // Add the right number of skeleton UI list items
+  // while results are loading
   const populateSkeleton = count => {
+    resultsWrapper.ariaBusy = true;
     const skeletonTemplate = document.querySelector("#search-skeleton");
 
     const skeletonCount = count >= 5 ? 5 : count;
@@ -49,239 +86,195 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     }
   }
 
-  // Handle each search
-  const updateSearch = async (searchType, isNew, target) => {
-    // Get markup templates
-    const noResultsTemplate = document.querySelector("#search-no-results");
-    const noMatchesTemplate = document.querySelector("#search-no-matches");
-    const resultTemplate = document.querySelector("#search-result");
-
-
-
-    const currentQuery = searchInput.value;
-
-    if (searchType !== "paginate") {
-      resultsWrapper.innerHTML = '';
-    }
-
-    // If the user has already filtered their search,
-    // store the filters so we can re-apply them once the
-    // search is done
-
+  // Handle each new search
+  const updateSearch = async (searchType, isNew) => {
     const currentTopicFilter = activeFilters.topics;
     const currentTypeFilter = activeFilters.pageType;
+    const resultPane = document.createElement("div");
 
-    if (urlParams.has('q')) {
-      urlParams.set('q', currentQuery);
-    } else {
-      urlParams.append('q', currentQuery);
-    }
+    const currentQuery = (searchType === "reset") ? null : (searchInput.value || null);
 
-    if (currentTopicFilter) {
-      urlParams.set('topics', currentTopicFilter.any.toString());
-    } else {
-      urlParams.set('topics', 'all');
-    }
+    // Search with no filters applied (to determine which topic
+    // and page type filters we should show and hide)
+    const unfilteredSearch = await pagefind.search(currentQuery);
 
-    if (currentTypeFilter) {
-      urlParams.set('type', currentTypeFilter);
-    } else {
-      urlParams.set('type', 'all');
-    }
+    const isUnfiltered = !currentQuery && !activeFilters.topics && !activeFilters.pageType;
 
-    window.history.replaceState({}, '', `${location.pathname}?${urlParams}`);
-
-    // For accurate result count numbers,
-    // always retrieve unfiltered results for new search terms
-    if (searchType === "query") {
-      activeFilters.topics = undefined;
-      activeFilters.pageType = undefined;
-    }
-
-    // Conduct search
+    // Search with filters applied
     const search = await pagefind.search(
       currentQuery, {
         filters: activeFilters
       }
     );
 
-    const unfilteredSearch = await pagefind.search(currentQuery);
-
-    allResultsCount = unfilteredSearch.results.length;
-
-    // if (isNew) {
-    //   otherSearchCounts.Strategy = await pagefind.search(
-    //     currentQuery, {
-    //       filters: {
-    //         pageType: "Strategy"
-    //       }
-    //     }
-    //   );
-
-    //   otherSearchCounts.Story = await pagefind.search(
-    //     currentQuery, {
-    //       filters: {
-    //         pageType: "Story"
-    //       }
-    //     }
-    //   );
-
-    //   otherSearchCounts.Resource = await pagefind.search(
-    //     currentQuery, {
-    //       filters: {
-    //         pageType: "Resource"
-    //       }
-    //     }
-    //   );
-
-    //   otherSearchCounts.Meeting = await pagefind.search(
-    //     currentQuery, {
-    //       filters: {
-    //         pageType: "Meeting"
-    //       }
-    //     }
-    //   );
-
-    //   otherSearchCounts.Page = await pagefind.search(
-    //     currentQuery, {
-    //       filters: {
-    //         pageType: "Page"
-    //       }
-    //     }
-    //   );
-    // }
-
-    // Populate the search page with markup
-    const resultPane = document.createElement("div");
-
-    if (searchType === "query") {
-      visibleResultsCount = allResultsCount;
-    } else {
-      visibleResultsCount = search.results.length;
-    }
-
-    if (allResultsCount < 1) {
-      resultCountText.hidden = true;
-      filterWrapper.hidden = true;
-      resultPane.innerHTML = noResultsTemplate.innerHTML;
-    } else {
-      filterWrapper.hidden = false;
-      if (visibleResultsCount < 1) {
-        resultCountText.hidden = true;
-        resultPane.innerHTML = noMatchesTemplate.innerHTML;
-      } else if (visibleResultsCount !== allResultsCount) {
-        resultCountText.hidden = false;
-        resultCountText.innerHTML = `${visibleResultsCount} of ${pluralizeResultCount(allResultsCount)} match your filters`;
-        populateSkeleton(visibleResultsCount - (resultsPerPage * (pageCount - 1)));
+    // Logic for displaying "X result(s) match(es) your filter(s)"
+    const pluralizeFilters = () => {
+      if ((currentTypeFilter && currentTopicFilter) || currentTopicFilter && currentTopicFilter.any.length > 1 || currentTypeFilter && currentTypeFilter.any.length > 1) {
+        return "filters";
       } else {
-        resultCountText.hidden = false;
-        resultCountText.innerHTML = pluralizeResultCount(allResultsCount);
-        populateSkeleton(allResultsCount - (resultsPerPage * (pageCount - 1)));
+        return "filter";
       }
     }
 
-    if (resultsPerPage * pageCount >= visibleResultsCount) {
+    const replaceResultsWith = template => {
+      resultCountText.hidden = true;
+      resultPane.innerHTML = '';
+      resultsStatus.innerHTML = template.innerHTML;
+    }
+
+    const showResultCount = (resultCount, isFiltered) => {
+      resultCountText.hidden = false;
+      resultsStatus.innerHTML = '';
+
+      if (isFiltered) {
+        resultCountText.innerHTML = (resultCount === 1) ? `${resultCount} result matches your ${pluralizeFilters()}` : `${resultCount} results match your ${pluralizeFilters()}`;
+      } else {
+        resultCountText.innerHTML = (resultCount === 1) ? `${resultCount} result` : `${resultCount} results`;
+      }
+    };
+
+    // Show badges under the search bar
+    // describing all applied filters
+
+    searchResultIndicators.hidden = !(currentTypeFilter || currentTopicFilter);
+
+    typeResultIndicator.hidden = !currentTypeFilter;
+
+    if (currentTypeFilter?.any.length > 1) {
+      typeResultIndicatorText.textContent = currentTypeFilter?.any.sort((a, b) => a.localeCompare(b)).join(', ');
+    } else {
+      typeResultIndicatorText.textContent = currentTypeFilter?.any.join(', ');
+    }
+
+
+    topicResultIndicator.hidden = !currentTopicFilter;
+
+    if (currentTopicFilter?.any) {
+      let topicClone;
+
+      if (currentTopicFilter?.any.length > 1) {
+        topicClone = currentTopicFilter.any.slice().sort((a, b) => a.localeCompare(b));
+      } else {
+        topicClone = currentTopicFilter.any.slice();
+      }
+
+      const topicString = topicClone.join(", ").replace("noTopic", "No topic");
+
+      topicResultIndicatorText.textContent = topicString;
+    }
+
+    // Always clear the search results area
+    // unless the user has clicked the "load more" button
+    if (searchType === "paginate") {
+      resultsWrapper.innerHTML = '';
+    }
+
+    // Update URL parameters
+    if (urlParams.has('q') && currentQuery) {
+      urlParams.set('q', currentQuery);
+    } else if (currentQuery) {
+      urlParams.append('q', currentQuery);
+    } else {
+      urlParams.delete('q');
+    }
+
+    if (currentTopicFilter) {
+      urlParams.set('topics', currentTopicFilter.any.toString());
+    } else {
+      urlParams.delete('topics');
+    }
+
+    if (currentTypeFilter) {
+      urlParams.set('type', currentTypeFilter.any.toString());
+    } else {
+      urlParams.delete('type');
+    }
+
+    window.history.replaceState({}, '', `${location.pathname}?${urlParams}`);
+
+    // Populate the search page with markup
+
+    allResultsCount = unfilteredSearch.results.length;
+    matchingResultsCount = (!currentTopicFilter && !currentTypeFilter) ? allResultsCount : search.results.length;
+
+    if (isUnfiltered) {
+      replaceResultsWith(blankTemplate);
+    } else {
+      if (allResultsCount < 1) {
+        replaceResultsWith(noResultsTemplate);
+      } else if (matchingResultsCount < 1) {
+        replaceResultsWith(noMatchesTemplate);
+      } else if (matchingResultsCount !== allResultsCount) {
+        if (currentTypeFilter || currentTopicFilter) {
+          showResultCount(matchingResultsCount, true);
+        } else {
+          showResultCount(matchingResultsCount);
+        }
+        populateSkeleton(matchingResultsCount - (resultsPerPage * (pageCount - 1)));
+      } else {
+        showResultCount(allResultsCount);
+        populateSkeleton(allResultsCount - (resultsPerPage * (pageCount - 1)));
+      }
+
+
+      // Populate search results
+      if (matchingResultsCount >= 1) {
+        for (const i in search.results.slice(0, resultsPerPage * pageCount)) {
+          const thisResult = await search.results[i].data();
+
+          const resultClone = resultTemplate.content.cloneNode(true);
+          const resultLink = resultClone.querySelector("a");
+          const resultTitle = resultClone.querySelector("h3");
+          const resultExcerpt = resultClone.querySelector("p");
+
+          resultLink.href = thisResult.url;
+          resultTitle.innerHTML = thisResult.meta.title;
+          resultExcerpt.innerHTML = thisResult.excerpt;
+
+          resultPane.appendChild(resultClone);
+        }
+      }
+
+      // Toggle visibility of filters when the
+      // user changes their free-text query
+
+      if ((urlParams.has("q") && isNew) || searchType === "query") {
+        for (const filter of allFilters) {
+          const input = filter.querySelector("input");
+          const filterType = input.dataset.filterType;
+          const filterName = input.dataset.filterName;
+          let filteredCount = undefined;
+
+
+          if (unfilteredSearch.filters[filterType] && searchType === "query") {
+            filteredCount = search.filters[filterType][filterName];
+          } else if (search.filters[filterType]) {
+            filteredCount = search.totalFilters[filterType][filterName];
+          }
+
+          if (filteredCount === undefined || filteredCount > 0 || input.checked || allResultsCount < 1) {
+            filter.hidden = false;
+          } else {
+            filter.hidden = true;
+          }
+        }
+      } else if (searchType === "reset") {
+        for (const filter of allFilters) {
+          filter.hidden = false;
+        }
+      }
+    }
+
+    // Hide and show the "Load more" button based on
+    // whether there are more results to display
+
+    if (isUnfiltered || resultsPerPage * pageCount >= matchingResultsCount) {
       loadMoreButton.hidden = true;
-    } else if (visibleResultsCount > resultsPerPage) {
+    } else if (matchingResultsCount > resultsPerPage) {
       loadMoreButton.hidden = false;
     } else {
       loadMoreButton.hidden = true;
     }
-
-    // Show the search content area
-    searchContent.hidden = false;
-
-    // Populate search results
-    if (visibleResultsCount >= 1) {
-      for (const i in search.results.slice(0, resultsPerPage * pageCount)) {
-        const thisResult = await search.results[i].data();
-
-        const resultClone = resultTemplate.content.cloneNode(true);
-        const resultLink = resultClone.querySelector("a");
-        const resultTitle = resultClone.querySelector("h3");
-        const resultExcerpt = resultClone.querySelector("p");
-
-        resultLink.href = thisResult.url;
-        resultTitle.innerHTML = thisResult.meta.title;
-        resultExcerpt.innerHTML = thisResult.excerpt;
-
-        resultPane.appendChild(resultClone);
-      }
-    }
-
-    // Toggle filter visibility
-
-    if (isNew) {
-      for (const typeFilter of typeFilters) {
-        const input = typeFilter.querySelector("input");
-        const filterName = input.dataset.typeFilter;
-
-        if (filterName !== "all") {
-          const unfilteredCount = unfilteredSearch.filters["pageType"][filterName];
-
-          if (unfilteredCount > 0 && allResultsCount > 1) {
-            typeFilter.hidden = false;
-          } else {
-            typeFilter.hidden = true;
-          }
-        }
-      }
-    }
-
-    if (isNew || searchType === "type") {
-      for (const topicFilter of topicFilters) {
-        const input = topicFilter.querySelector("input");
-        const filterName = input.dataset.topicFilter;
-        const filteredCount = search.filters.topics[filterName];
-
-        if (filteredCount > 0 || input.checked) {
-          topicFilter.hidden = false;
-        } else {
-          topicFilter.hidden = true;
-        }
-      }
-    }
-
-
-
-    // // Populate the result counts next to each filter
-    // for (const filter of allFilters) {
-    //   const input = filter.querySelector("input");
-    //   const filterType = input.dataset.typeFilter ? "pageType" : "topics";
-    //   // const counter = filter.querySelector(".search-counter");
-    //   const isAllResults = filter.dataset.allResults;
-    //   const criteria = input.dataset.typeFilter || input.dataset.topicFilter;
-    //   const unfilteredCount = unfilteredSearch.filters[filterType][criteria]
-    //   const currentCount = search.filters[filterType][criteria];
-    //   let count;
-
-
-
-    //   if (searchType === "type" && input.dataset.topicFilter) {
-    //     if (target === "all") {
-    //       count = unfilteredSearch[criteria];
-    //     } else {
-    //       count = otherSearchCounts[target].filters.topics[criteria];
-    //     }
-    //   } else {
-    //     count = currentCount;
-    //   }
-
-    //   if (isNew || (searchType === "type" && input.dataset.topicFilter)) {
-    //     // if (isAllResults) {
-    //     //   counter.innerHTML = allResultsCount;
-    //     // } else {
-    //     //   counter.innerHTML = count;
-    //     // }
-    //     if (count || isAllResults) {
-    //       filter.hidden = false;
-    //     } else if (!count && input.checked) {
-    //       filter.hidden = false;
-    //     } else {
-    //       filter.hidden = true;
-    //     }
-    //   }
-    // }
 
     if (currentTopicFilter) {
       activeFilters.topics = currentTopicFilter;
@@ -291,23 +284,26 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       activeFilters.pageType = currentTypeFilter;
     }
 
-    const skeletonItems = document.querySelectorAll(".search-result[data-blank]");
-
-    for (let item of skeletonItems) {
+    for (const item of document.querySelectorAll(".search-result[data-blank]")) {
       item.remove();
     }
 
     resultsWrapper.innerHTML = resultPane.innerHTML;
+    resultsWrapper.ariaBusy = false;
   }
 
+  // Process URL parameters upon page load
   if (urlParams.size > 0) {
     const queryParam = urlParams.get("q");
     const typeParam = urlParams.get("type");
     const topicParam = urlParams.get("topics");
 
-    searchInput.value = queryParam;
+    if (queryParam) {
+      searchInput.value = queryParam;
+      searchReset.hidden = false;
+    }
 
-    if (topicParam !== "all") {
+    if (topicParam) {
       activeFilters.topics = new Object();
       activeFilters.topics.any = new Array();
 
@@ -316,90 +312,139 @@ window.addEventListener('DOMContentLoaded', async (e) => {
       activeFilters.topics.any = topicArray;
 
       for (let i in topicArray) {
-        const topicInput = document.querySelector(`[data-topic-filter="${topicArray[i]}"]`);
+        const topicInput = document.querySelector(`[data-filter-name="${topicArray[i]}"]`);
         topicInput.checked = true;
       }
     }
 
-    if (typeParam !== "all") {
-      activeFilters.pageType = typeParam;
+    if (typeParam) {
+      activeFilters.pageType = new Object();
+      activeFilters.pageType.any = new Array();
 
-      const typeInput = document.querySelector(`[data-type-filter="${typeParam}"]`);
+      const pageTypeArray = typeParam.split(",");
 
-      typeInput.checked = true;
+      activeFilters.pageType.any = pageTypeArray;
+
+      for (let i in pageTypeArray) {
+        const typeInput = document.querySelector(`[data-filter-name="${pageTypeArray[i]}"]`);
+        typeInput.checked = true;
+      }
     }
 
     updateSearch(undefined, true);
+  } else {
+    resultsStatus.innerHTML = blankTemplate.innerHTML;
   }
+
+  // Click event listeners
 
   loadMoreButton.addEventListener('click', async (e) => {
     pageCount += 1;
-    updateSearch("paginate");
 
+    updateSearch("paginate");
   });
 
-  searchInput.addEventListener("input", (e) => {
-    pagefind.preload(e.target.value);
-  })
-
-
-  // Handle new search queries
   searchButton.addEventListener('click', async (e) => {
     pageCount = 1;
     e.preventDefault();
-    allResultsInput.checked = true;
-
-    for (const filter of topicFilters) {
-      filter.querySelector("input").checked = false;
-    }
 
     updateSearch("query", true);
-
   });
 
-  // Handle updates to topic filters
-  for (const filter of topicFilters) {
+  searchReset.addEventListener("click", async (e) => {
+    e.target.hidden = true;
 
+    pageCount = 1;
+
+    updateSearch("reset", true);
+  });
+
+  typeReset.addEventListener("click", async (e) => {
+    pageCount = 1;
+    e.preventDefault();
+
+    activeFilters["pageType"] = undefined;
+
+    for (const filter of typeFilters) {
+      const input = filter.querySelector("input");
+      input.checked = false;
+    }
+
+    updateSearch("query");
+  });
+
+  topicReset.addEventListener("click", async (e) => {
+    pageCount = 1;
+    e.preventDefault();
+
+    activeFilters["topics"] = undefined;
+
+    for (const filter of topicFilters) {
+      const input = filter.querySelector("input");
+      input.checked = false;
+    }
+
+    updateSearch("query");
+  });
+
+
+  searchInput.addEventListener("input", async (e) => {
+    e.preventDefault();
+    const value = e.target.value;
+
+    searchReset.hidden = !value;
+
+    // Attempt to preload search results as the user types
+    pagefind.preload(value);
+  });
+
+  // Handle filter updates
+
+  const updateFilters = (filter, filterType) => {
     const input = filter.querySelector("input");
-    const criteria = input.dataset.topicFilter;
+    const criteria = input.dataset.filterName;
 
-    input.addEventListener("change", (e) => {
+    const updateFilter = () => {
       pageCount = 1;
 
-      if (!activeFilters.topics) {
-        activeFilters.topics = new Object();
-        activeFilters.topics.any = new Array();
+      if (!activeFilters[filterType]) {
+        activeFilters[filterType] = new Object();
+        activeFilters[filterType]["any"] = new Array();
       }
       if (!input.checked) {
-        if (activeFilters.topics.any.length === 1) {
-          activeFilters.topics = undefined;
+        if (activeFilters[filterType]["any"].length === 1) {
+          activeFilters[filterType] = undefined;
         } else {
-          const index = activeFilters.topics.any.indexOf(criteria);
-          activeFilters.topics.any.splice(index,1);
+          const index = activeFilters[filterType]["any"].indexOf(criteria);
+          activeFilters[filterType]["any"].splice(index,1);
         }
       } else {
-        activeFilters.topics.any.push(criteria);
+        activeFilters[filterType]["any"].push(criteria);
       }
-      updateSearch("topic");
+      updateSearch(filterType);
+    }
+
+    input.addEventListener("change", () => {
+      updateFilter();
     })
-  };
 
-  // Handle updates to type filter
-  for (const tab of typeFilters) {
-    tab.addEventListener('change', async (e) => {
-      pageCount = 1;
 
-      const currentType = e.target.dataset.typeFilter;
+    // Since search filter checkboxes look like buttons,
+    // they should respond to Enter keypresses
 
-      if (currentType === "all") {
-        activeFilters.pageType = undefined;
-      } else {
-        activeFilters.pageType = currentType;
+    input.addEventListener('keypress', e => {
+      if (e.which === 13) {
+        e.target.checked = !e.target.checked;
+        updateFilter();
       }
-
-      updateSearch("type", false, currentType);
     });
+  }
 
+  for (const filter of topicFilters) {
+    updateFilters(filter, "topics");
   };
 
+  for (const filter of typeFilters) {
+    updateFilters(filter, "pageType");
+  };
 });

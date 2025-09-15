@@ -419,3 +419,11 @@ template {
 [hidden] {
   display: none !important;
 }
+
+details summary {
+  cursor: pointer;
+}
+
+details summary > * {
+  display: inline;
+}

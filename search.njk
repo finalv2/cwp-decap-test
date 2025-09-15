@@ -1,0 +1,173 @@
+---
+layout: "layouts/default.njk"
+eleventyComputed:
+  title: "{{ search.title }}"
+  description: "{{ search.description }}"
+type: search
+search: true
+image: /images/banners/search.jpg
+tags:
+  - noTopic
+pageTypes:
+  - id: strategy
+    filterName: Strategy
+    title: Strategy
+    iconName: book-bookmark
+  - id: stories
+    filterName: Story
+    title: Story
+    iconName: newspaper
+  - id: resources
+    filterName: Resource
+    title: Resource
+    iconName: lightbulb-filament
+  - id: meetings
+    filterName: Meeting
+    title: Working group meeting
+    iconName: video-conference
+  - id: other-pages
+    filterName: Page
+    title: Page
+    iconName: cards-three
+---
+
+{%- macro blankTemplate(params) -%}
+  <li class="search-result-blank">{% icon "list-magnifying-glass" %}
+    <strong>Start your search</strong>
+    <span>{{ params.text }}</span>
+  </li>
+{%- endmacro -%}
+
+<div class="page-banner" data-type="search">
+  <div class="l-wrapper">
+    <h2 class="h1" data-pagefind-meta="title">{{ title }}</h2>
+    <p>{{ description }}</p>
+  </div>
+  <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
+</div>
+
+<div class="l-section">
+<div class="l-wrapper">
+<div class="search-wrapper">
+<form id="search" class="search-form" role="search" method="get" action="https://duckduckgo.com">
+  <fieldset class="search-query-form-wrapper">
+    <div class="search-input-wrapper">
+      <input type="hidden" name="sites" value="childwelfareplaybook.com"/>
+      <input type="text" name="q" placeholder="Search" id="search-input" class="search-input" />
+      <input type="reset" id="search-query-reset" value="Reset" aria-live="polite" hidden>
+    </div>
+    <input type="submit" id="search-button" class="button" value="Search" />
+  </fieldset>
+      <div class="search-result-filters" aria-live="polite" hidden>
+      <div data-indicator="query" hidden>
+        <strong>Query: </strong>
+        <span></span>
+        <button id="query-reset">{% icon "x-circle" %}</button>
+      </div>
+      <div data-indicator="type" hidden>
+        <strong>Type: </strong>
+        <span></span>
+        <button id="type-reset">{% icon "x-circle" %}</button>
+      </div>
+      <div data-indicator="topic" hidden>
+        <strong>Topic:</strong>
+        <span></span>
+        <button id="topic-reset">{% icon "x-circle" %}</button>
+      </div>
+    </div>
+</form>
+
+<template id="search-skeleton">
+  <li class="search-result" data-skeleton>
+    <span></span>
+    <span></span>
+  </li>
+</template>
+
+<template id="search-blank">
+  {{ blankTemplate({text: "Type in keywords or select a filter to see results."}) }}
+</template>
+
+<template id="search-no-results">
+  <li class="search-result-blank">{% icon "empty" %}
+  <strong>No results</strong>
+  </li>
+</template>
+
+<template id="search-no-matches">
+  <li class="search-result-blank">{% icon "empty" %}
+  <strong>No matching results.</strong>
+  <span>Adjust your filters or try a new search.</span>
+  </li>
+</template>
+
+<template id="search-result">
+  <li class="search-result">
+    <a href="#">
+      <h3 class="h5"></h3>
+      <p></p>
+    </a>
+  </li>
+</template>
+
+<div class="search-content">
+  <div role="region" aria-label="Filter results by topic or page type">
+    <form id="search-filters" class="search-filters">
+      <h3 class="h4">Filter by&hellip;</h3>
+      <details open>
+        <summary class="subhead">{% icon "caret-right" %} Type</summary>
+        <fieldset class="search-type-filters" id="search-type-filters">
+        <div class="search-filter-inputs">
+          {%- for type in pageTypes -%}
+            <label for="type-{{ type.id }}">
+              <span class='filter-label-name'>
+                <input type="checkbox" name="type-filter" id="type-{{ type.id }}" data-filter-type="pageType" data-type-title="{{ type.title | lower }}" data-filter-name="{{ type.filterName }}"{%- if type.checked -%} checked{%- endif -%}>
+                {% icon type.iconName %} {{ type.title }}
+              </span>
+              <!-- <span class="search-counter"{%- if type.id == "all" -%} data-counter-all{%- endif -%}></span> -->
+            </label>
+          {%- endfor -%}
+        </div>
+        </fieldset>
+      </details>
+
+      <details open>
+        <summary class="subhead">{% icon "caret-right" %} Topic</summary>
+        <fieldset id="search-topic-filters" class="search-topic-filters">
+        <div class="search-filter-inputs">
+          {%- for topic in collections.topics -%}
+            {%- if topic.url -%}
+              <label for="{{ topic.data.title | slugify }}" class="filter-label">
+                <span class="filter-label-name">
+                  <input type="checkbox" id="{{ topic.data.title | slugify }}" data-filter-type="topics" data-filter-name="{{ topic.data.title }}" name="topic-filter">
+                  {% icon topic.data.icon %}{{ topic.data.title }}
+                </span>
+                  <!-- <span class="search-counter">0</span> -->
+              </label>
+            {%- endif -%}
+          {%- endfor -%}
+            <label for="no-topic" class="filter-label">
+                <span class="filter-label-name">
+                  <input type="checkbox" id="no-topic" data-filter-type="topics" data-filter-name="noTopic" name="topic-filter">
+                  {%- icon 'prohibit' -%}No topic
+                </span>
+                  <!-- <span class="search-counter">0</span> -->
+              </label>
+          </div>
+        </fieldset>
+      </details>
+    </form>
+  </div>
+
+  <div class="search-results-wrapper" aria-atomic="true">
+    <div role="status">
+      <h3 id="search-result-count"></h3>
+      <ul id="search-results-status-template">{{ blankTemplate({text: "Type in a keyword to see results."}) }}</ul>
+    </div>
+    <ul id="search-results"></ul>
+    <button id="load-more-button" hidden>Load more results</button>
+  </div>
+</div>
+</div>
+</div></div>
+<script type="module" src="/js/search.js"></script>
