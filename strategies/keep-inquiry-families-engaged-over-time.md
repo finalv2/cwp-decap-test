@@ -6,7 +6,7 @@ tags:
   - strategy
   - recruitment
 order: 3
-redirectFrom: https://childwelfareplaybook.com/recommendations/dont-close-inquiries/
+redirectFrom: https://childwelfareplaybook.com/recommendations/reminders-to-stay-in-touch-with-families-who-submit-inquiries/
 ---
 Families often take years between first showing interest in fostering and actually applying. When someone fills out an inquiry form, they might be ready to become a caregiver right away. Or they might need time and more information to think about such a big commitment.
 
