@@ -31,6 +31,7 @@ Now, key recommendations from these standards are available as new and revised s
 * [Allow kin to appeal denied placements](/strategies/allow-kin-to-appeal-denied-placements/)[](/strategies/provide-convenient-training-events-for-license-renewals/)
 * [Pay kin caregivers while they get licensed](/strategies/pay-kin-caregivers-while-they-get-licensed/)
 * [Use an expansive legal definition of kin ](/strategies/use-an-expansive-legal-definition-of-kin/)
+* [Involve kin before removing children or youth](/strategies/involve-kin-before-removing-children-or-youth/)
 
 ## Resources
 
