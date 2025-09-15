@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Use flexible payment methods for youth stipends
-order: 3
 tags:
   - strategy
   - supporting-older-youth
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 3
+redirectFrom: https://childwelfareplaybook.com/recommendations/give-cash-or-prepaid-cards-for-youth-stipends/
 ---
 
 Older youth often rely on their stipends to cover food and basic necessities. But restrictions like store-specific gift cards or requiring in-person pickup can make it hard for them to get what they need. 
