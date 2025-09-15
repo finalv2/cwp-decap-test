@@ -26,7 +26,7 @@ Now, the key recommendations from these standards are available as new and revis
 * [Simplify process for out-of-state child abuse and neglect checks](/strategies/streamline-out-of-state-child-abuse-and-neglect-checks/)
 * [Make kin assessments collaborative and supportive ](/strategies/make-kin-assessments-collaborative-and-supportive/)
 * [Help caregivers fulfill home safety requirements ](/strategies/provide-safety-inspection-support/)
-* [Establish clear standards for evaluating background checks for kin](/strategies/establish-clear-standards-for-evaluating-background-checks/)
+* [Establish clear standards for evaluating background checks](/strategies/establish-clear-standards-for-evaluating-background-checks/)
 * [Help potential caregivers correct errors in background check results](/strategies/help-potential-caregivers-correct-errors-in-background-check-results/)
 * [Allow kin to appeal denied placements](/strategies/allow-kin-to-appeal-denied-placements/)
 * [Provide convenient training for active caregivers](/strategies/provide-convenient-training-events-for-license-renewals/)
