@@ -16,7 +16,7 @@ Federal rules now allow child welfare agencies to create separate approval proce
 
 This collaboration developed [new licensing standards](https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_Standards_2025.pdf) that focus on two key components: background checks and kinship caregiver assessments. It also produced ready-to-use [forms, templates, and implementation guidance](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms).
 
-Now, the key recommendations from these standards are available as new and revised strategies and resources in the Child Welfare Playbook.
+Now, key recommendations from these standards are available as new and revised strategies and resources in the Child Welfare Playbook.
 
 ## Strategies
 
