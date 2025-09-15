@@ -7,6 +7,7 @@ tags:
   - kin-engagement
   - recruitment
 order: 2
+redirectFrom: https://childwelfareplaybook.com/recommendations/provide-childcare-at-resource-parent-events/
 ---
 
 Childcare can be a major barrier to potential caregivers. It can stop them from attending training, recognition events, and support groups. You can make it easier for them by providing childcare on-site.
