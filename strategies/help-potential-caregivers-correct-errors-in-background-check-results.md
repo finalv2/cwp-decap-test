@@ -18,7 +18,7 @@ Help families understand how to correct factual errors in their background check
 
 **Tell caregivers how they can review results.** Caregivers have a right to view the results of their background check and request any corrections. Your agency staff usually can't provide criminal records directly, but you can give prospective caregivers the contact information for the criminal records agency who can.
 
-**Share resources for clearing expunged convictions.** Most background check companies have a process that allows people to contest a cleared case if it’s still showing up in results (which you should never include in your evaluations). 
+**Share resources for clearing expunged convictions.** Most background check companies have a process that allows people to contest a cleared case if it’s still showing up in results (which you should never include in your evaluations).
 
 You can also explain how they can get help clearing their records with public defender and legal aid resources, like California’s [Clear My Record](https://www.clearmyrecord.org/what-to-expect-after-clearance/#what-shows-up-on-a-background-check).
 
