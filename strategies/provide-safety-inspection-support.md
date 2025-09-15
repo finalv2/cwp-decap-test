@@ -18,9 +18,11 @@ Provide support throughout the process so families can meet requirements quickly
 
 ## How to do this
 
-**Provide assessment forms or inspection checklists early and often.** Help caregivers and their families know what to expect before assessments by giving them forms or inspection checklists in advance. You can include them in orientation packets or with other application materials online, in appointment reminders, and with renewal reminders.
+**Provide assessment forms or inspection checklists early and often.** Help caregivers and their families know what to expect before assessments by giving them forms or inspection checklists in advance. You can include them in orientation packets or with other application materials online and in appointment reminders.
 
-**Collect critical safety items and give them to families who need them.** Don’t disqualify kin caregivers who don’t have appropriate safety items before placement. Instead, help them get devices like smoke detectors or carbon monoxide detectors. The most frequently needed items for all families include fire extinguishers, baby gates, first aid kits, and medication lock boxes. You can collect these items through safety inspection drives, similar to backpack or food drives. Work with local partners like churches to host drive events or fundraisers, or use Family Preservation Service dollars to buy items.
+**Collect critical safety items and give them to families who need them.** Don’t disqualify kin caregivers who don’t have appropriate safety items before placement. Instead, help them get devices like smoke detectors or carbon monoxide detectors. 
+
+The most frequently needed items for all families include fire extinguishers, baby gates, first aid kits, and medication lock boxes. You can collect these items through safety inspection drives, similar to backpack or food drives. Work with local partners like churches to host drive events or fundraisers, or use Family Preservation Service dollars to buy items.
 
 **Keep a stash of essentials in locations that are easy to access.** You might use a supply closet or the trunk of a case worker's car. You can also provide important items at training or orientation.
 
