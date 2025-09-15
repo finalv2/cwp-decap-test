@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Provide transportation support for sibling visits
-order: 10
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 10
+redirectFrom: https://childwelfareplaybook.com/recommendations/reimburse-for-sibling-visit-transportation/
 ---
 
 Transportation can often be the biggest barrier to sibling visits. Provide transportation options and reimburse caregivers for transportation costs to make it easier for siblings to visit more often.
