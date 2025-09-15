@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
   // Track page count
   let pageCount = 1;
-  const resultsPerPage = 5;
+  const resultsPerPage = 8;
 
   // Only apply collapsible mobile filters if JS is enabled
   if (isSmallScreen.matches) {
