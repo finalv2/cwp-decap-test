@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Remove restrictions for contact with familiar adult siblings
-order: 7
 tags:
   - strategy
   - supportive-relationships
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 7
+redirectFrom: https://childwelfareplaybook.com/recommendations/remove-barriers-for-visits-with-adult-siblings/
 ---
 
 Adult siblings are often prevented from visiting their younger siblings in care by unnecessary restrictions. This is especially frustrating for siblings who have just aged out of foster care themselves. Let foster parents make simple decisions about sibling visits without requiring agency approval for every interaction.
