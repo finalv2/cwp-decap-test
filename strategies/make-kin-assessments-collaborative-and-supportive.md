@@ -10,9 +10,9 @@ resources:
   - "Kin licensing forms "
   - Kin licensing standards
 ---
-When kin caregiver assessments seem like “suitability” checks, they can make caregivers defensive and less likely to openly discuss their needs or ask for support. 
+When kin caregiver assessments are positioned instead as “suitability” checks, they can make caregivers defensive and less likely to openly discuss their needs or ask for support. 
 
-Set up caregivers for success by making your assessments act as clear discussions that are culturally sensitive and collaborative. Your conversations with kin should help you understand how they can best meet the physical, emotional, medical, and educational needs of the youth, while also ensuring the physical safety of their home environment.
+Set up caregivers for success by having your assessments be clear discussions that are culturally sensitive and collaborative. Your conversations with kin should help you understand how they can best meet the physical, emotional, medical, and educational needs of the youth, while also ensuring the physical safety of their home environment.
 
 ## How to do this
 
@@ -30,7 +30,7 @@ Set up caregivers for success by making your assessments act as clear discussion
 
 **Port Gamble S’Klallam Tribe** allows caregivers to request an outside person to conduct their assessments to preserve privacy, since they are a small community.
 
-**All jurisdictions** can use and adapt the [kin caregiver assessment forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms), which combine previous “caregiver suitability” and “safety and needs assessment” tasks. These forms also include:
+**All jurisdictions** can use and adapt the kin caregiver assessment templates that are part of the [kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms), which combine previous “caregiver suitability” and “safety and needs assessment” tasks. These forms also include:
 
 * A “bank” of questions to pull from as your agency adapts its assessments
 * A list of questions they removed, with reasons why
