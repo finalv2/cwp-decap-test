@@ -6,6 +6,8 @@ tags: ["noTopic"]
 image: /images/banners/home.jpg
 pagefind:
   type: Page
+eleventyComputed:
+  description: "{{ home.bannerSubheader }}"
 ---
 
 {%- from '_macros/topic-card.njk' import topicCard %}

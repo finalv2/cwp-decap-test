@@ -2,6 +2,8 @@
 layout: layouts/default.njk
 pagefind:
   type: Resource
+eleventyComputed:
+  description: "{{ content | md | safe }}"
 ---
 
 <div class="resource-detail">

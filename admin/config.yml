@@ -23,12 +23,14 @@ collections:
           - { label: "Title", name: "title", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "markdown", minimal: true, required: false }
           - { label: "Content", name: "content", widget: "markdown", required: false }
+          - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
       - label: "Search"
         name: "search"
         file: "_data/search.yml"
         fields:
           - { label: "Title", name: "title", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "markdown", minimal: true, required: false }
+          - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
       - label: "Footer"
         name: "footer"
         file: "_data/footer.yml"
@@ -53,6 +55,7 @@ collections:
       - { label: "Icon", name: "icon", widget: "string" }
       - { label: "Introduction", name: "body", widget: "markdown" }
       - { label: "Related topics", name: "related", widget: "relation", collection: "topics", value_field: "id", search_fields: ["title", "id"], multiple: true}
+      - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
   - name: "strategies"
     label: "Strategies"
     folder: "strategies"
@@ -67,6 +70,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Related resources", required: false, name: "resources", widget: "relation", collection: "resources", value_field: "title", search_fields: ["title", "url"], multiple: true}
       - { label: "Related stories", required: false, name: "stories", widget: "relation", collection: "stories", value_field: "title", search_fields: ["title", "url"], multiple: true}
+      - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
   - name: "stories"
     label: "Stories"
     folder: "stories"
@@ -83,6 +87,7 @@ collections:
       - { label: "Header image", name: "image", widget: "image", allow_multiple: false, media_folder: "/images/stories", public_folder: ".images/stories/", required: false}
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
   - name: "resources"
     label: "Resources"
     folder: "resources"
@@ -97,6 +102,7 @@ collections:
       - { label: "Upload resource", name: "file", widget: "file", media_library: { media_folder: "/assets/"}, required: false}
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["resource"], hint: "Add your topics here"}
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
   - name: "meetings"
     label: "Meetings"
     folder: "meetings"
@@ -111,3 +117,4 @@ collections:
       - { label: "Description of meeting", name: "body", widget: "markdown", required: false }
       - { label: "Related resources", required: false, name: "resources", widget: "relation", collection: "resources", value_field: "title", search_fields: ["title", "url"], multiple: true}
       - { label: "Related stories", required: false, name: "stories", widget: "relation", collection: "stories", value_field: "title", search_fields: ["title", "url"], multiple: true}
+      - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
