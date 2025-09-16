@@ -11,6 +11,9 @@ type: Blog post
 image: .images/stories/kin-engagement.jpg
 tags:
   - story
+resources:
+  - Kin licensing standards
+  - "Kin licensing forms "
 ---
 Federal rules now allow child welfare agencies to create separate approval processes for kin caregivers. To implement these changes effectively, a group was assembled to develop model standards. The group included 9 national organizations, over 50 agencies, and more than 430 individual participants, including kin caregivers and agency staff. 
 
@@ -31,9 +34,4 @@ Now, key recommendations from these standards are available as new strategies an
 * [Make kin assessments collaborative and supportive ](/strategies/make-kin-assessments-collaborative-and-supportive/)
 * [Help caregivers fulfill home safety requirements ](/strategies/provide-safety-inspection-support/)
 * [Allow kin to appeal denied placements](/strategies/allow-kin-to-appeal-denied-placements/)[](/strategies/provide-convenient-training-events-for-license-renewals/)
-* [Pay kin caregivers while they get licensed](/strategies/pay-kin-caregivers-while-they-get-licensed/)
-
-## Resources
-
-* [Kin licensing standards](https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_Standards_2025.pdf)
-* [Kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms)
+* [Pay kin caregivers while they get licensed](/strategies/pay-kin-caregivers-while-they-get-licensed/)[](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms)
