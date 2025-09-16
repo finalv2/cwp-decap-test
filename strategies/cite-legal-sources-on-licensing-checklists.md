@@ -24,4 +24,4 @@ Align licensing checklist items to specific statutes so everyone understands wha
 
 ## This strategy in action
 
-**Washington State** created a statute-aligned checklist that helps decision-makers understand the legal basis for each licensing requirement.[](https://childwelfareplaybook.com/static/assets/10-183%20Foster%20Inspection%20Checklist.docx)
+**Washington State** created a [statute-aligned checklist](/resources/wa-statute-aligned-checklist/) that helps decision-makers understand the legal basis for each licensing requirement.[](https://childwelfareplaybook.com/static/assets/10-183%20Foster%20Inspection%20Checklist.docx)

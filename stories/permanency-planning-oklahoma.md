@@ -1,6 +1,6 @@
 ---
 layout: layouts/story
-title: Permanency Planning with Kin Caregivers in Oklahoma
+title: Permanency planning with kin caregivers in Oklahoma
 description: Oklahoma researched whether streamlined kin-specific licensing
   requirements would affect permanency outcomes and found no negative impacts.
 author: Bloom Works
@@ -18,10 +18,13 @@ featured: true
 ## **Overview**
 
 From August to December 2024, we partnered with Oklahoma Human Services (OHS) to research if Oklahoma’s amended licensure requirements, based on the updated kin-specific foster home approval model standards, would have unintended impacts on adoption or guardianship outcomes with kin caregivers. 
+
 Research confirmed that the amended kin-specific home study would not negatively impact permanency planning in Oklahoma and judges’ decision-making on permanency outcomes. 
 
 For this study, we spoke with OHS child welfare staff, Tribal child welfare agency staff, judges, Assistant District Attorneys (ADAs), kin caregivers, and parent, child and adoption attorneys. 
-In Oklahoma, court partners — which include judges, ADAs, and parent or child representation — are largely consistently assigned to one family throughout the life of their case unless the family moves to another county. 
+
+In Oklahoma, court partners — which include judges, ADAs, and parent or child representation — are often consistently assigned to one family throughout the life of their case unless the family moves to another county. 
+
 As judges often follow cases from the start, they said they weren’t looking for additional information about kin caregivers by the time they are finalizing an adoption or guardianship. 
 
 ## **Limitations**
@@ -36,10 +39,10 @@ For other jurisdictions, based on this work we recommend that if information not
 
 **Judges don’t seem to need information from placement,** but   
 
-* Communicate why kin-approval requirements are changing to agency partners, including courts  and Tribes.  
+* Communicate why kin-approval requirements are changing to agency partners, including courts and Tribes.  
 * Train staff to advocate for changes that support placements with kin.  
 * Gather additional information for permanency when it’s needed for finalizing adoptions or guardianships.  
-* If additional information is needed, use an addendum when it’s needed instead of asking for unnecessary information at placement.   
+* If additional information is needed, use an addendum instead of asking for unnecessary information at placement.   
 
 **Guardianships are an important option for kin. But it’s important that they are funded and navigated equitably.** 
 
@@ -58,7 +61,7 @@ Make sure to:
 * Explain the difference between guardianship adoption pathways.  
 * Ensure caregivers understand how to participate in court and permanency planning, and have accessibility support.  
 * Explain early that case goals can change.  
-* Create transition plans and a point of contact for  post-permanency.   
+* Create transition plans and a point of contact for post-permanency.   
 
 **Staff burnout and retention are consistently cited as a barrier to permanency for kin.** 
 
@@ -85,21 +88,3 @@ To avoid case delays:
 * Prepare staff that state definitions of kin may not qualify as kin in ICWA cases.  
 * Learn from court partners that collaborate well with Tribal partners and uphold ICWA.  
 * Employ Tribal child welfare experts to train on the history and purpose of ICWA.
-
-## **Language for model standards**
-
-From August to December 2024, we partnered with Oklahoma Human Services (OHS) to research if Oklahoma’s amended licensure requirements, based on  updated kin-specific foster home approval model standards, would have unintended impacts on adoption or guardianship outcomes with kin caregivers. 
-
-Research confirmed that the amended kin-specific home study would not negatively impact permanency planning in Oklahoma  and the judges’ decision-making on permanency outcomes. 
-
-For this study, we spoke with OHS child welfare staff, Tribal child welfare agency staff, judges, Assistant District Attorneys (ADAs), kin caregivers, and parent, child and adoption attorneys. In Oklahoma, court teams— which include judges, ADAs, and parent or child representation — are largely consistently assigned to one family throughout the life of their case unless the family moves to another county. 
-
-As judges often follow cases from the start, they said they weren’t looking for additional information about kin caregivers by the time they are finalizing an adoption or guardianship. 
-
-## **Limitations** 
-
-There were some limitations to this study. While we spoke with participants representing different counties in Oklahoma, there was some variation across decision-making practices and team structures even within the state. As we only studied permanency court processes in Oklahoma, we cannot generalize if judges and courts would operate the same in other jurisdictions. 
-
-## **Recommendation**
-
-Based on this work, we recommend that if additional information which is not collected in the initial kin caregiver approval process, is required by law to finalize an adoption or guardianship in other jurisdictions, that this be collected via an addendum form, only when it is necessary to finalize an adoption or guardianship.

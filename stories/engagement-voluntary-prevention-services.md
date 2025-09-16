@@ -1,6 +1,6 @@
 ---
 layout: layouts/story
-title: Engagement in Voluntary Prevention Services
+title: Engagement in voluntary prevention services
 description: Learn about effective strategies for reaching and engaging people
   in voluntary prevention services.
 author: Bloom Works
@@ -36,11 +36,11 @@ A social services organization we spoke to has been running housing and food acc
 
 ## Shared lived experience between teams and community is critical to success
 
-Staff with shared lived experience may know better how, where, and when to deliver outreach and engagement messages, because of a shared understanding of service users needs. Participation and engagement is improved by allowing staff to build authentic connections and by sharing decision-making power with service users through advisory groups or councils.
+Staff with shared lived experience may know better how, where, and when to deliver outreach and engagement messages, because of a shared understanding of the needs of service users. Participation and engagement is improved by allowing staff to build authentic connections and by sharing decision-making power with service users through advisory groups or councils.
 
 ### Practical example: developing and hiring outreach providers
 
-A family-centered social services organization we spoke to has been serving a neighborhood in an urban center for more than 45 years. Through a business development program, this organization incubated a women-, worker-owned business cooperative. They lead outreach and engagement initiatives including: conducting surveys, running focus groups with people with lived experience, hosting events, and entering shelter spaces to recruit people for services. This organization had received a contract in which they had to enroll 200 families in a program in a short period of time, and this group of 3 women were able to sign people and recruit for them. 
+A family-centered social services organization we spoke to has been serving a neighborhood in an urban center for more than 45 years. Through a business development program, this organization incubated a women- and worker-owned business cooperative. They lead outreach and engagement initiatives including: conducting surveys, running focus groups with people with lived experience, hosting events, and entering shelter spaces to recruit people for services. This organization had received a contract in which they had to enroll 200 families in a program in a short period of time, and this group of 3 women were able to sign people and recruit for them. 
 
 ## Center the needs of service users
 
