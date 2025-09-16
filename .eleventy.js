@@ -6,6 +6,7 @@ import eleventyAutoCacheBuster from "eleventy-auto-cache-buster";
 import dateFilters from './filters/dateFilters.js'
 import CleanCSS from "clean-css";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import removeMarkdown from "remove-markdown";
 
 const alphaSort = (a, b) => {
   if (a.data.title < b.data.title) {
@@ -144,5 +145,29 @@ export default async function(eleventyConfig) {
   eleventyConfig.addCollection("homeResources", (collection) =>
     collection.getFilteredByTags("homepage", "resource")
   );
+
+
+  // Borrowed from https://www.williamkillerud.com/blog/blog-post-excerpts-in-11ty/
+  // to generate automatic meta descriptions for some page types
+
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: (file) => {
+      // I use https://www.npmjs.com/package/remove-markdown here,
+      // but you can bring your own de-markdownifier.
+      let plaintext = removeMarkdown(file.content).trim();
+
+      // End the description at a period (inclusive) or newline (not)
+      // somewhere around the lenghtish mark.
+      let approximateLength = 170;
+      let dot = plaintext.indexOf(".", approximateLength) + 1;
+      let newline = plaintext.indexOf("\n", approximateLength);
+
+      // Avoid substringing to the empty string
+      if (dot === -1) dot = plaintext.length;
+      if (newline === -1) newline = plaintext.length;
+
+      file.excerpt = plaintext.substring(0, Math.min(dot, newline));
+    },
+  });
 
 }

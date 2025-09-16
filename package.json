@@ -16,7 +16,8 @@
     "common-tags": "^1.8.2",
     "js-yaml": "^4.1.0",
     "markdown-it": "^14.1.0",
-    "markdown-it-attrs": "^4.3.1"
+    "markdown-it-attrs": "^4.3.1",
+    "remove-markdown": "^0.6.2"
   },
   "devDependencies": {
     "clean-css": "^5.3.3",
