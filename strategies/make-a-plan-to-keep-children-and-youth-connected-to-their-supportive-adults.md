@@ -79,4 +79,4 @@ Make sure your plan includes resources or support to help supportive adults stay
 
 **Epic O'Hana in Hawaii** uses meetings to find and engage extended families. This includes creating concrete plans for how each person will remain involved with the youth.
 
-**Iowa's** policy asks workers to find out if people who can't take placements might still provide other support. This could include emails, phone calls, visits, or joining holiday gatherings.[](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)
+**Iowa's** [policy](https://hhs.iowa.gov/media/3917/download?inline) asks workers to find out if people who can't take placements might still provide other support. This could include emails, phone calls, visits, or joining holiday gatherings.[](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)
