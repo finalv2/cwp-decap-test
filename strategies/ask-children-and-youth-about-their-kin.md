@@ -19,7 +19,7 @@ Children and youth are often placed in general foster care or group homes when t
 
 **Use careful, non-threatening language.** Phrase inquiries so young people don't feel like they have to supply a placement option or they'll be homeless. Helpful prompts include: "Who came to your last family gathering?" and "Who would you call if you needed a ride home from school?"
 
-**Document and maintain connections.** Designate an official place in your IT system for keeping a child or youth's list of kin. Use heart maps with children and youth to learn more about their supportive adults. Help children and youth stay connected to supportive adults even when they're not placement options by creating opportunities for regular phone calls, visits, or other contact.
+**Document and maintain connections.** Designate an official place in your IT system for keeping a child or youth's list of kin. Use [heart maps](https://drive.google.com/file/d/1T5B5ZGW-Q5wT5ZOwFCBsmr_j_haJfWKg/view?usp=sharing) with children and youth to learn more about their supportive adults. Help children and youth stay connected to supportive adults even when they're not placement options by creating opportunities for regular phone calls, visits, or other contact.
 
 ## This strategy in action
 
