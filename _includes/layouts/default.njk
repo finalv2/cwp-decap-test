@@ -40,8 +40,7 @@
     {% if image %}<link rel="preload" href="{{ image }}" as="image">{% endif %}
     <link rel="apple-touch-icon" href="/favicon-180.png">
     {% if video %}
-      <link rel="stylesheet" type="text/css" href="/plyr.css"/>
-      <script src="/js/plyr.js"></script>
+      <script type="module" src="/js/lite-youtube.js"></script>
     {% endif %}
     <link rel="stylesheet" type="text/css" href="/theme.css"/>
   </head>

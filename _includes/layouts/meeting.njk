@@ -83,16 +83,7 @@ pagefind:
 
 <div class="l-section">
 <div class="meeting-grid">
-  <div class="plyr-wrapper">
-    <div class="plyr__video-embed" id="plyr">
-      <iframe
-        src="https://www.youtube.com/embed/{{ youtubeId }}?origin=https://childwelfareplaybook.com&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-        allowfullscreen
-        allowtransparency
-        allow="autoplay"
-      ></iframe>
-    </div>
-  </div>
+  <lite-youtube videoid="{{ youtubeId }}"></lite-youtube>
 
   <div class="meeting-content l-stack">
   <h3>What we discussed</h3>
@@ -118,8 +109,3 @@ pagefind:
 </div>
 
 </div>
-
-<script>
-  const player = new Plyr('#plyr', {});
-  window.player = player;
-</script>
