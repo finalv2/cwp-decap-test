@@ -1,6 +1,6 @@
 ---
 layout: layouts/story
-title: Engagement in Voluntary Prevention Services
+title: Engagement in voluntary prevention services
 description: Learn about effective strategies for reaching and engaging people
   in voluntary prevention services.
 author: Bloom Works
