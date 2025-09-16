@@ -26,7 +26,7 @@ Make this process easier for potential caregivers by providing quick and accessi
 
 ### Have clear turnaround times
 
-**Track how long it takes to collect, process, and evaluate fingerprint-based checks.** Evaluate your policies and practices to figure out how to speed results. It is possible to collect, receive, and evaluate fingerprint-based background check results within hours. Aim for processing fingerprint-based results and evaluating fingerprint-based history within one day each (though there may sometimes be unusual circumstances).
+**Track how long it takes to collect, process, and evaluate fingerprint-based checks.** Evaluate your policies and practices to figure out how to speed results. It is possible to collect, receive, and evaluate fingerprint-based background check results within hours. Aim for processing fingerprint-based results and evaluating fingerprint-based history within 1 day each (though there may sometimes be unusual circumstances).
 
 ### Plan for future needs
 
@@ -36,7 +36,7 @@ Make this process easier for potential caregivers by providing quick and accessi
 
 ## This strategy in action
 
-**Minnesota’s** contract for community-based fingerprinting requires one location every 35 miles across the state, along with weekend and evening hours.
+**Minnesota’s** contract for community-based fingerprinting requires 1 location every 35 miles across the state, along with weekend and evening hours.
 
 In **Utah**, fingerprints can be used across multiple agencies, such as foster care and school employment.
 

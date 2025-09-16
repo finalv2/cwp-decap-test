@@ -16,7 +16,7 @@ Offer convenient, high-value training opportunities and events for families that
 
 ## How to do this
 
-**Plan ongoing training.** Schedule all-day training events on a recurring basis at times convenient for families, like one weekend a month. Survey caregivers, listen to questions at events, and speak with case workers to identify the most-requested and most-needed trainings, then plan a day-long curriculum around these priorities.
+**Plan ongoing training.** Schedule all-day training events on a recurring basis at times convenient for families, like 1 weekend a month. Survey caregivers, listen to questions at events, and speak with case workers to identify the most-requested and most-needed trainings, then plan a day-long curriculum around these priorities.
 
 **Make attendance easy.** Secure childcare, provide lunch and snacks, and make transportation accessible by providing bus vouchers or choosing convenient locations. Post the training online with clear instructions on how to sign up, and notify families with renewal dates in the next 4 to 6 months about upcoming training dates.
 
