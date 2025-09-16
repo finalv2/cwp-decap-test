@@ -28,8 +28,14 @@ pagefind:
       {%- endfor -%}
     </ul>
 
+    {% if file %}
+      {% set linkUrl = file %}
+    {% else %}
+      {% set linkUrl = url %}
+    {% endif %}
+
     <p>
-      <a class="button resource-download" href="{{ url }}">
+      <a class="button resource-download" href="{{ linkUrl }}">
         {%- if file -%}
           <span class="icon-animation download-animation">
             {% icon 'download-simple-arrow', 'card-download-arrow' %}
