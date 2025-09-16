@@ -43,6 +43,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./favicon-180.png");
   eleventyConfig.addPassthroughCopy("./favicon-192.png");
   eleventyConfig.addPassthroughCopy("./favicon-512.png");
+  eleventyConfig.addPassthroughCopy("./open-graph.jpg");
   eleventyConfig.addPassthroughCopy("./site.webmanifest");
 
 

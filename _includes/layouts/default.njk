@@ -15,6 +15,7 @@
     <title>
       {% if title %}{{title}} | {% endif %}Child Welfare Playbook
     </title>
+    <meta property="og:site_name" content="Child Welfare Playbook" />
     {% if description %}
       <meta name="description" content="{{description}}"/>
     {% endif %}
@@ -22,6 +23,8 @@
       <meta data-pagefind-default-meta="image[content]" content="{{ image }}" property="og:image">
     {% elif pagefind.image %}
       <meta data-pagefind-default-meta="image[content]" content="{{ pagefind.image }}" property="og:image">
+    {% else %}
+      <meta data-pagefind-default-meta="image[content]" content="./open-graph.jpg" property="og:image">
     {% endif %}
 
     {% if pagefind.type %}
@@ -30,6 +33,12 @@
 
     {% if pagefind.title %}
       <meta data-pagefind-default-meta="title[content]" content="{{ pagefind.title }}" property="{{ title }}">
+    {% endif %}
+
+    {% if pagefind.type === "Strategy" or pagefind.type === "Story" %}
+      <meta property="og:type" content="article">
+    {% else %}
+      <meta property="og:type" content="website">
     {% endif %}
 
     <link rel="manifest" href="/site.webmanifest">
