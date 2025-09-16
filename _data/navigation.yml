@@ -1,6 +1,6 @@
 ---
 items:
-- text: Read
+- text: Explore
   url: "/#browse-topics"
 - text: About
   url: "/about/"
