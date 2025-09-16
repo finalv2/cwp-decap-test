@@ -15,7 +15,7 @@ resources:
   - Kin licensing standards
   - "Kin licensing forms "
 ---
-Federal rules now allow child welfare agencies to create separate approval processes for kin caregivers. To implement these changes effectively, a group was assembled to develop model standards. The group included 9 national organizations, over 50 agencies, and more than 430 individual participants, including kin caregivers and agency staff. 
+Federal rules now allow child welfare agencies to create separate approval processes for kin caregivers. To implement these changes effectively, a group was assembled to develop model standards. The group included 9 national organizations, over 50 agencies, and more than 430 individual participants, including kin caregivers and agency staff.
 
 This collaboration developed [new licensing standards](https://www.grandfamilies.org/Portals/0/Kin-Specific_Foster_Home_Approval_Standards_2025.pdf) that focus on two key components: background checks and kinship caregiver assessments. It also produced ready-to-use [forms, templates, and implementation guidance](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms).
 
