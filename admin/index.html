@@ -44,13 +44,6 @@
                 h('p', {}, entry.getIn(["data", "description"]))
               )
             ),
-            h('div', { className: 'l-wrapper' },
-              h('div', { className: 'l-section' },
-                h('div', {"className": "l-stack"},
-                  this.props.widgetFor('body')
-                )
-              )
-            )
           );
         }
       });
