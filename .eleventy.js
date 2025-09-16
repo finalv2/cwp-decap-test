@@ -45,6 +45,18 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./favicon-512.png");
   eleventyConfig.addPassthroughCopy("./site.webmanifest");
 
+
+  // Host plyr.js locally to avoid issues with Netlify
+  // asset optimization interacting with third-party CDNs
+
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/plyr/dist/plyr.min.js": "./js/plyr.js"
+  });
+
+  eleventyConfig.addPassthroughCopy({
+    "./node_modules/plyr/dist/plyr.css": "./plyr.css"
+  });
+
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // output image formats
     formats: ["avif", "webp", "jpeg"],
