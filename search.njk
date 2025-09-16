@@ -3,6 +3,7 @@ layout: "layouts/default.njk"
 eleventyComputed:
   title: "{{ search.title }}"
   description: "{{ search.description }}"
+  subheader: "{{ search.subheader }}"
 type: search
 search: true
 image: /images/banners/search.jpg
@@ -47,7 +48,7 @@ pageTypes:
 <div class="page-banner" data-type="search">
   <div class="l-wrapper">
     <h2 class="h1">{{ title }}</h2>
-    <p>{{ description }}</p>
+    <p>{{ subheader }}</p>
   </div>
   <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
 </div>

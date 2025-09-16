@@ -5,7 +5,11 @@ layout: layouts/default.njk
 <div class="page-banner" {% if type or id %}data-type="{{ type }}"{% endif %}>
   <div class="l-wrapper">
     <h2 class="h1" data-pagefind-meta="title">{{ title }}</h2>
-    {% if description %}<p>{{ description }}</p>{% endif %}
+    {%- if pageDescription -%}
+      <p>{{ pageDescription }}</p>
+    {%- elif description -%}
+      <p>{{ description }}</p>
+    {%- endif -%}
   </div>
     {%- if image -%}
       <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
