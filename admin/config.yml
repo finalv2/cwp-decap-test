@@ -65,6 +65,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/strategy.njk" }
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Format your permalink like: '/strategies/strategy-name'. Make sure not to include the childwelfareplaybook.com domain." }
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["strategy"], hint: "Add your topics here"}
       - { label: "Order", name: "order", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
