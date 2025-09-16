@@ -7,7 +7,7 @@ tags:
   - retention
 order: 3
 resources:
-  - Foster home retention and recruitment data
+  - The dynamics of foster home recruitment and retention
 redirectFrom: /recommendations/measure-retention-carefully/
 ---
 Retention percentages can be misleading if you’re not tracking them carefully. Some caregivers leave your system for good reasons, like adopting the child or youth or moving out of state. Others leave because caregiving isn't a good fit for them, which may be best for everyone involved. 
