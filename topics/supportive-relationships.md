@@ -8,6 +8,7 @@ title: Supportive relationships
 id: supportive-relationships
 icon: hand-heart
 image: /images/banners/supportive-relationships.jpg
+order: 2
 ---
 
 Children and youth often lose connections with siblings, family members, and other important people while they’re in care. These strategies can help you promote and strengthen these vital relationships.

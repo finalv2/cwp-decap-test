@@ -8,6 +8,7 @@ title: Prevention
 id: prevention
 icon: barricade
 image: images/banners/prevention.jpg
+order: 1
 ---
 
 Extra support can allow families to stay together safely and avoid child welfare involvement. These strategies can help you provide early intervention and community-based support to prevent the need for out-of-home placements

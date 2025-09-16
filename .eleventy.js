@@ -137,7 +137,7 @@ export default async function(eleventyConfig) {
 
     // All resources
   eleventyConfig.addCollection("topics", (collection) =>
-      collection.getFilteredByGlob("topics/*.md")
+      collection.getFilteredByGlob("topics/*.md").sort((a, b) => a.data.order - b.data.order)
   );
 
   // All resources
