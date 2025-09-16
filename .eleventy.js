@@ -169,7 +169,7 @@ export default async function(eleventyConfig) {
       let plaintext = removeMarkdown(file.content).trim();
 
       // End the description at a period (inclusive) or newline (not)
-      // somewhere around the lenghtish mark.
+      // somewhere around the approximate length.
       let approximateLength = 170;
       let dot = plaintext.indexOf(".", approximateLength) + 1;
       let newline = plaintext.indexOf("\n", approximateLength);
