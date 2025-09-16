@@ -35,4 +35,4 @@ Identify and engage kin early in your work with families to provide kin-based su
 
 **Wisconsin** also has a policy says that a background check on kin prior to removal is good for 120 days; in **Hawaii**, it’s up to a year.
 
-**Iowa** created a standardized release of information form. Parents fill it out to give the agency permission to share case information with kin. This makes it easier to have specific conversations about how kin can help.[](https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd)
+**Iowa** created a standardized [release of information form](/resources/iowa-roi-form/). Parents fill it out to give the agency permission to share case information with kin. This makes it easier to have specific conversations about how kin can help.[](https://open.spotify.com/episode/0GRYSP8UA21ZevmYMSSRHd)
