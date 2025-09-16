@@ -6,7 +6,7 @@ tags:
   - strategy
   - caregiver-licensing
 order: 1
-redirectFrom: https://childwelfareplaybook.com/recommendations/give-families-a-dedicated-licensor/
+redirectFrom: /recommendations/give-families-a-dedicated-licensor/
 ---
 The licensing process often involves multiple case workers handling different parts. This delays the process, makes errors more likely, and means each worker only has part of the story about a family.
 

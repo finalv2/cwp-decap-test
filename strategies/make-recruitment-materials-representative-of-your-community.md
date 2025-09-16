@@ -6,7 +6,7 @@ tags:
   - strategy
   - recruitment
 order: 4
-redirectFrom: https://childwelfareplaybook.com/recommendations/reflect-community-in-recruitment/
+redirectFrom: /recommendations/reflect-community-in-recruitment/
 ---
 Some potential foster parents may feel discouraged or excluded before they even submit an inquiry. The way foster parenting is portrayed in marketing materials, forms, and the process can send unintended signals about who should (and shouldn't) be a foster parent.
 

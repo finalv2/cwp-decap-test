@@ -6,7 +6,7 @@ tags:
   - strategy
   - caregiver-licensing
 order: 3
-redirectFrom: https://childwelfareplaybook.com/recommendations/help-relative-placements-access-financial-assistance/
+redirectFrom: /recommendations/help-relative-placements-access-financial-assistance/
 ---
 Kin caregivers may face financial barriers that make it difficult to provide for children and youth in their care, even though they're willing and able to provide safe, loving homes. License kin caregivers regardless of their financial situation and connect them with financial assistance and support programs.
 

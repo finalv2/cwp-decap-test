@@ -6,7 +6,7 @@ tags:
   - strategy
   - kin-engagement
 order: 8
-redirectFrom: https://childwelfareplaybook.com/recommendations/test-your-communications-with-real-kin/
+redirectFrom: /recommendations/test-your-communications-with-real-kin/
 ---
 
 Potential kin placements and connections may be scared off by your existing messages and forms. If your communications look like legal notices, use lots of government acronyms and jargon, or aren't translated, they may be discarded or overlooked.

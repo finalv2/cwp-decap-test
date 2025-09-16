@@ -6,7 +6,7 @@ tags:
   - strategy
   - emergency-placements
 order: 1
-redirectFrom: https://childwelfareplaybook.com/recommendations/on-call-families/
+redirectFrom: /recommendations/on-call-families/
 ---
 When children need immediate placement, agencies often struggle to find options quickly. Children may end up in group homes, offices overnight, or inappropriate placements.
 

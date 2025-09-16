@@ -6,7 +6,7 @@ tags:
   - strategy
   - recruitment
 order: 2
-redirectFrom: https://childwelfareplaybook.com/recommendations/use-data-analytics-to-prevent-child-welfare-involvement/
+redirectFrom: /recommendations/use-data-analytics-to-prevent-child-welfare-involvement/
 ---
 It can be hard to tell which recruitment methods work best or whether you're recruiting the types of families that youth need most. Use data about the children and youth who enter foster care to guide your recruitment, considering things like language spoken, religion, and school district. Also capture detailed information about how families were referred to your agency so you can focus on the most effective recruitment methods.
 

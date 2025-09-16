@@ -7,7 +7,7 @@ tags:
   - kin-engagement
   - recruitment
 order: 3
-redirectFrom: https://childwelfareplaybook.com/recommendations/include-placement-and-recruitment-in-case-planning/
+redirectFrom: /recommendations/include-placement-and-recruitment-in-case-planning/
 ---
 
 Placement and recruitment teams do their best work when they understand the specific needs and circumstances of the children and youth in your system. 

@@ -6,7 +6,7 @@ tags:
   - strategy
   - prevention
 order: 5
-redirectFrom: https://childwelfareplaybook.com/recommendations/charge-service-providers-rent/
+redirectFrom: /recommendations/charge-service-providers-rent/
 ---
 
 Many families have complex needs that require them to navigate multiple government services. That means traveling to different government buildings, finding transportation to far-away locations, navigating intimidating security procedures, and waiting for long hours in uncomfortable waiting rooms.

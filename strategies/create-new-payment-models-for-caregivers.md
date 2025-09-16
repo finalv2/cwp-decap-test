@@ -6,7 +6,7 @@ tags:
   - strategy
   - retention
 order: 9
-redirectFrom: https://childwelfareplaybook.com/recommendations/placement-stability-bonuses/
+redirectFrom: /recommendations/placement-stability-bonuses/
 ---
 Traditional foster care payments often don't cover the full costs of meeting the needs of children and youth in care, especially those with complex needs. Many young people in institutions could be thriving in family settings, but income requirements prevent caregivers from providing the full-time care they need.
 

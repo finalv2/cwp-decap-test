@@ -7,7 +7,7 @@ tags:
   - strategy
   - supportive-relationships
 order: 6
-redirectFrom: https://childwelfareplaybook.com/recommendations/never-stop-looking-for-placements-for-sibling-groups/
+redirectFrom: /recommendations/never-stop-looking-for-placements-for-sibling-groups/
 ---
 Almost every state has official policies requiring agencies to search for placements that can reunite separated sibling groups. But without formal tracking and accountability, it doesn't happen consistently. Create systems to actively and regularly search for placements that can take entire sibling groups.
 

@@ -8,7 +8,7 @@ tags:
 order: 7
 resources:
   - Treehouse store
-redirectFrom: https://childwelfareplaybook.com/recommendations/provide-more-ways-for-foster-parents-to-earn-money/
+redirectFrom: /recommendations/provide-more-ways-for-foster-parents-to-earn-money/
 ---
 Caregivers often leave the system feeling overextended and underappreciated, especially when basic maintenance payments don't cover the full costs of caregiving. Caregivers need regular breaks to avoid burnout and maintain their ability to provide quality care.
 

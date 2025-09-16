@@ -6,7 +6,7 @@ tags:
   - strategy
   - retention
 order: 4
-redirectFrom: https://childwelfareplaybook.com/recommendations/distinguish-important-mail-for-foster-families/
+redirectFrom: /recommendations/distinguish-important-mail-for-foster-families/
 ---
 
 Kin and foster caregivers report feeling overwhelmed by the amount of mail they receive. Sometimes it stacks up and time-sensitive documents go unopened. 

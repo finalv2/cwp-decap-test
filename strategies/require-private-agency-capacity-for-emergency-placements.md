@@ -6,7 +6,7 @@ tags:
   - strategy
   - emergency-placements
 order: 2
-redirectFrom: https://childwelfareplaybook.com/recommendations/require-private-agency-emergency-beds/
+redirectFrom: /recommendations/require-private-agency-emergency-beds/
 ---
 
 Even if you contract beds from private agencies, you may find that they don't have capacity for emergency placements. This can lead to placing children inappropriately.

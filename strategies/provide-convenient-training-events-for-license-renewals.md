@@ -8,7 +8,7 @@ tags:
 order: 6
 resources:
   - Kin licensing standards
-redirectFrom: https://childwelfareplaybook.com/recommendations/high-value-training-for-renewals/
+redirectFrom: /recommendations/high-value-training-for-renewals/
 ---
 Current caregivers are often overwhelmed with day-to-day responsibilities and may miss out on specialized training or put off any required training until just before renewal dates. In some systems, this means the only training available to caregivers is reading books or watching movies, which doesn't give them the best preparation for the needs of youth in their care. 
 

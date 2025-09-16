@@ -6,7 +6,7 @@ tags:
   - strategy
   - supporting-older-youth
 order: 2
-redirectFrom: https://childwelfareplaybook.com/recommendations/use-specific-language-about-the-end-of-foster-care/
+redirectFrom: /recommendations/use-specific-language-about-the-end-of-foster-care/
 ---
 Some of the language that child welfare agencies use to describe the end of foster care can be confusing for youth. When they hear that foster care goes "until 21," they may think that means "until their 22nd birthday," when it really ends on their 21st birthday. This may lead them to delay plans and activities that can prepare them for independence.
 

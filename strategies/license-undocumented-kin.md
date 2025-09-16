@@ -8,7 +8,7 @@ tags:
 order: 5
 resources:
   - Kin licensing standards
-redirectFrom: https://childwelfareplaybook.com/recommendations/license-undocumented-kin/
+redirectFrom: /recommendations/license-undocumented-kin/
 ---
 There is no federal requirement for kin caregivers to be in the country legally in order to get licensed. These caregivers should be eligible for licensing and financial support. Create a pathway to approve undocumented family members to increase your pool of kin caregivers and ensure they can get financial support. You can offer full foster care maintenance payments from agency funds in lieu of federal reimbursement.
 
