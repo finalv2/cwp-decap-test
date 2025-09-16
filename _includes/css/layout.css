@@ -50,6 +50,10 @@ and var(--l-frame-height) within specific components.
   align-items: center;
 }
 
+.plyr__video-embed {
+  position: relative;
+}
+
 .plyr-wrapper {
   inline-size: 100%;
 }
