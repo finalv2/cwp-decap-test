@@ -50,11 +50,11 @@ collections:
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
       - { label: "Name of topic", name: "title", widget: "string" }
       - { label: "ID", name: "id", widget: "string" }
-      - { label: "URL", name: "permalink", widget: "string" }
-      - { label: "Order", name: "order", widget: "string" }
+      - { label: "URL", name: "permalink", widget: "string", required: false }
+      - { label: "Order", name: "order", widget: "string", required: false }
       - { label: "Icon", name: "icon", widget: "string" }
       - { label: "Introduction", name: "body", widget: "markdown" }
-      - { label: "Related topics", name: "related", widget: "relation", collection: "topics", value_field: "id", search_fields: ["title", "id"], multiple: true}
+      - { label: "Related topics", required: false, name: "related", widget: "relation", collection: "topics", value_field: "id", search_fields: ["title", "id"], multiple: true}
       - { label: "Redirect from the URL...", name: "redirectFrom", widget: "string", required: false }
   - name: "strategies"
     label: "Strategies"
