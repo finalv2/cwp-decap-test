@@ -2,7 +2,7 @@
 layout: layouts/strategy.njk
 templateEngineOverride: md,njk
 title: Allow kin to appeal denied placements
-permalink: /strategies/allow-kin-to-appeal/
+permalink: ""
 tags:
   - strategy
   - background-checks
