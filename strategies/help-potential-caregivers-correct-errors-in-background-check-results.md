@@ -8,7 +8,7 @@ tags:
 order: "7"
 resources:
   - Kin licensing standards
-  - "Kin licensing forms "
+  - Kin licensing forms
 ---
 Cleared convictions and other errors may continue to show up on background checks. These mistakes create unreasonable obstacles for anyone who needs to go through the background check process to secure a job, home, or license.
 

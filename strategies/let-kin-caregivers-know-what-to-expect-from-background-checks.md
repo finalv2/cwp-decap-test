@@ -7,7 +7,7 @@ tags:
   - background-checks
 order: "2"
 resources:
-  - "Kin licensing forms "
+  - Kin licensing forms
   - Kin licensing standards
 stories: []
 ---

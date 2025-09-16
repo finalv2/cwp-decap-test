@@ -7,7 +7,7 @@ tags:
   - caregiver-licensing
 order: "4"
 resources:
-  - "Kin licensing forms "
+  - Kin licensing forms
   - Kin licensing standards
 ---
 When kin caregiver assessments are positioned instead as “suitability” checks, they can make caregivers defensive and less likely to openly discuss their needs or ask for support. 

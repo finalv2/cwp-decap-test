@@ -8,7 +8,7 @@ tags:
 order: "6"
 resources:
   - Kin licensing standards
-  - "Kin licensing forms "
+  - Kin licensing forms
 redirectFrom: ""
 ---
 Agency responsibilities are often split between staff who engage with potential caregivers, others who access background check files, and those who can make approvals, sometimes with only one person who can make final decisions. 

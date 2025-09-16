@@ -8,7 +8,7 @@ tags:
 order: "4"
 resources:
   - Kin licensing standards
-  - "Kin licensing forms "
+  - Kin licensing forms
 ---
 The fingerprinting process can be stressful for caregivers and their families for reasons that have nothing to do with their ability to provide safe, supportive care for youth. 
 

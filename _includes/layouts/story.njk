@@ -5,6 +5,8 @@ pagefind:
   type: story
 ---
 
+{%- from '_macros/resource-card.njk' import resourceCard -%}
+
 {%- set resourceData -%}
   {%- for relatedResource in resources -%}
     {%- for item in collections.resources -%}

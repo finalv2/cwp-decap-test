@@ -10,7 +10,7 @@ resources:
   - Iowa release of information form
   - "Podcast: Kin engagement in Wisconsin"
   - Kin licensing standards
-  - "Kin licensing forms "
+  - Kin licensing forms
 redirectFrom: /recommendations/involve-kin-prior-to-removal/
 ---
 Sometimes a family could stay together safely if they had more support, but the agency may not engage kin before it's necessary to remove the child or youth.

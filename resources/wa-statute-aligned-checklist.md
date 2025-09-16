@@ -7,5 +7,5 @@ file: /images/washington-state-home-licensing-inspection-policy-checklist.docx
 tags:
   - resource
   - caregiver-licensing
+description: This foster home inspection checklist aligns each item with the related statute to clarify legal licensing requirements.
 ---
-This foster home inspection checklist aligns each item with the related statute to clarify legal licensing requirements.

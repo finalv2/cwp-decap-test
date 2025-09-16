@@ -8,7 +8,7 @@ tags:
 order: 7
 resources:
   - Kin licensing standards
-  - "Kin licensing forms "
+  - Kin licensing forms
   - Rhode Island fire and lead safety inspection checklist
   - Washington State inspection checklist
 ---

@@ -8,7 +8,7 @@ tags:
 order: "8"
 resources:
   - Kin licensing standards
-  - "Kin licensing forms "
+  - Kin licensing forms
 ---
 Kin caregivers have a right to appeal if your agency decides that youth should not live with them.
 

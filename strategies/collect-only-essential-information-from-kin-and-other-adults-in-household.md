@@ -8,7 +8,7 @@ tags:
 order: "3"
 resources:
   - Kin licensing standards
-  - "Kin licensing forms "
+  - Kin licensing forms
 ---
 Kin often face over-collection of information, requests for detailed criminal histories, and unclear explanations about why sensitive information is needed. These practices create fear, delays, and unnecessary barriers. Limit collection to essential information and explain its purpose. This builds trust, speeds up the process, and increases kin participation.
 
