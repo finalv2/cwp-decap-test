@@ -30,7 +30,19 @@ pagefind:
 
     <p>
       <a class="button resource-download" href="{{ url }}">
-        <span>Download</span>
+        {%- if file -%}
+          <span class="icon-animation download-animation">
+            {% icon 'download-simple-arrow', 'card-download-arrow' %}
+            {% icon 'download-simple-box' %}
+          </span>
+          Download
+        {%- else -%}
+          <span class="icon-animation learn-more-animation">
+            {% icon 'learn-more-circle' %}
+            {% icon 'learn-more-arrow', 'card-learn-arrow' %}
+          </span>
+          Learn more
+        {%- endif -%}
       </a>
     </p>
 
