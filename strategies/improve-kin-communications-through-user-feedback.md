@@ -13,7 +13,7 @@ Potential kin placements and connections may be scared off by your existing mess
 
 Test your messages with kin to make sure they are clear and actionable. Improve your messaging based on the feedback you get. This can increase the effectiveness of your kin engagement. It's particularly important to test notices that are sent to kin within 30 days of a child or youth’s removal.
 
-## How to run this play
+## How to do this
 
 **Gather and review your current communications.** Compile a list of all communications used for finding kin, like notification letters, forms, meeting invitations, and phone call scripts. Identify someone who can collect feedback from kin about these existing communications.
 
