@@ -39,11 +39,27 @@
     <link rel="preload" href="/images/banners/bg-scribble.svg" as="image">
     {% if image %}<link rel="preload" href="{{ image }}" as="image">{% endif %}
     <link rel="apple-touch-icon" href="/favicon-180.png">
-    {% if video %}
-      <link rel="stylesheet" type="text/css" href="/plyr.css"/>
-      <script src="/js/plyr.js"></script>
-    {% endif %}
     <link rel="stylesheet" type="text/css" href="/theme.css"/>
+    {% if video %}
+      <script type="module" src="/js/lite-youtube.js"></script>
+      <style>
+        lite-youtube::part(playButton) {
+          background: var(--c-blue);
+          opacity: 0.93;
+          border-radius: 50%;
+          block-size: 7em;
+          inline-size: 7em;
+        }
+
+        lite-youtube::part(playButton)::before {
+          border: none;
+          background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M72%2C39.88V216.12a8%2C8%2C0%2C0%2C0%2C12.15%2C6.69l144.08-88.12a7.82%2C7.82%2C0%2C0%2C0%2C0-13.38L84.15%2C33.19A8%2C8%2C0%2C0%2C0%2C72%2C39.88Z%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2216%22%2F%3E%3C%2Fsvg%3E") center center no-repeat;
+          block-size: 3em;
+          inline-size: 3em;
+          background-size: cover;
+        }
+    </style>
+  {% endif %}
   </head>
   <body{% if class %} class="{{ class }}"{% endif %}{% if type %} data-type="{{ type }}"{% endif %}>
     <svg class="sr-only">
