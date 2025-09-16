@@ -17,11 +17,22 @@
           const entry = this.props.entry;
 
           return h('div', {},
-            h('div', { className: 'l-wrapper play-wrapper' },
-              h('div', { className: 'l-section' },
+            h('div', { className: 'page-banner', 'data-type': 'strategy', 'data-width': 'full' },
+              h('div', { className: 'l-wrapper' },
+                h('div', { className: 'nametag' },
+                  h('span', { className: 'nametag-badge subhead'}, "Strategy"),
+                  h('div', { className: 'nametag-text'},
+                    h('h2', { className: "h1" }, entry.getIn(['data', 'title'])),
+                  )
+                )
+              )
+            ),
+            h('div', {"className": "l-wrapper"},
+              h('div', {"className": "l-section"},
                 h('div', {"className": "l-stack"},
-                  h('h2', {}, entry.getIn(['data', 'title'])),
-                  this.props.widgetFor('body')
+                  h('div', {"className": "l-wrapper-text l-center"},
+                    this.props.widgetFor('body')
+                  )
                 )
               )
             )
@@ -33,15 +44,17 @@
         render: function() {
           const entry = this.props.entry;
 
-          return h('div', {},
-            h('div', { className: 'page-banner', 'data-bg-color': 'dark' },
-              h('div', { className: 'l-wrapper'},
-                h('h1', {},
-                  h('a', { href: entry.getIn(["data", "url"]) },
-                    entry.getIn(['data', 'title'])
-                  )
+          return h('div', { className: 'resource-detail'},
+            h('div', { className: 'l-wrapper l-center' },
+              h('div', { className: 'nametag'},
+                h('span', { className: 'nametag-badge subhead' }, "Resource"),
+                h('div', { className: 'nametag-text'},
+                  h('h2', { className: "h1" }, entry.getIn(['data', 'title'])),
+                  h('p', {}, entry.getIn(["data", "description"]))
                 ),
-                h('p', {}, entry.getIn(["data", "description"]))
+              ),
+              h('p', {},
+                h('button', { className: 'button resource-download'}, "Download")
               )
             ),
           );
@@ -52,22 +65,30 @@
         render: function() {
           const entry = this.props.entry;
           const image = entry.getIn(['data', 'image']);
-          const bg = `/images/stories/` + this.props.getAsset(image).toString();
+          const bg = this.props.getAsset(image).toString();
 
           return h('div', {},
-            h('div', { className: 'page-banner', 'data-type': 'story', style: { '--bg-image': 'url("' + bg + '")'} },
+            h('div', { className: 'page-banner', 'data-type': 'story', 'data-width': 'full', style: { '--background': `url("${bg}")`}},
               h('div', { className: 'l-wrapper'},
-                h('h1', {}, entry.getIn(['data', 'title'])),
+                h('div', { className: 'nametag' },
+                  h('span', { className: 'nametag-badge subhead'}, entry.getIn(['data', 'type'])),
+                  h('div', { className: 'nametag-text'},
+                    h('h2', { className: "h1" }, entry.getIn(['data', 'title'])),
+                  )
+                ),
+                h('p', { className: 'subhead'}, `Written by ${entry.getIn(['data', 'author'])} on ${entry.getIn(['data', 'date'])}`)
               )
             ),
             h('div', { className: 'l-wrapper' },
               h('div', { className: 'l-section' },
-                h('div', {"className": "l-stack"},
-                  this.props.widgetFor('body')
+                h('div', {className: "l-wrapper-text l-center"},
+                  h('div', {className: "l-stack"},
+                    this.props.widgetFor('body')
+                  )
                 )
               )
             )
-          );
+          )
         }
       });
 
