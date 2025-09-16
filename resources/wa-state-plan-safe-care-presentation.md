@@ -7,6 +7,5 @@ file: /images/washington-state-plan-of-safe-care-info-engagement.pdf
 tags:
   - resource
   - prevention
+description: Slides that describe key aspects of the program to help families of newborns with prenatal substance exposure.
 ---
-
-Slides that describe key aspects of the program to help families of newborns with prenatal substance exposure. 

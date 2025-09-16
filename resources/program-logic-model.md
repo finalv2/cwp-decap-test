@@ -7,5 +7,5 @@ file: https://drive.google.com/file/d/13i_thxow_Dd1dkJyS2Zz-uaPmLlahWXx/view?usp
 tags:
   - resource
   - prevention
+description: Expected steps to connect families with tribal support.
 ---
-Expected steps to connect families with tribal support.

@@ -6,5 +6,5 @@ url: https://drive.google.com/file/d/1GeJN4ogdAmq0qWnkmdxFU4TNO7_WOcKQ/view?usp=
 tags:
   - resource
   - noTopic
+description: Administrative directive from New York State on establishing safe and appropriate kin-first placements.
 ---
-Administrative directive from New York State on establishing safe and appropriate kin-first placements.

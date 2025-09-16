@@ -7,6 +7,5 @@ file: /images/washington-state-plan-of-safe-care-intake-form-15-491.pdf
 tags:
   - resource
   - prevention
+description: Intake form used in Washington State when newborns are exposed to substances prenatally.
 ---
-
-Intake form used in Washington State when newborns are exposed to substances prenatally. 

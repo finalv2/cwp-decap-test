@@ -6,5 +6,5 @@ url: https://www.regulations.gov/document/ACF-2023-0001-0002/comment?filter=new%
 tags:
   - resource
   - noTopic
+description: View submissions from child welfare advocates on the proposed federal rule around kin licensing and approval standards.
 ---
-View submissions from child welfare advocates on the proposed federal rule around kin licensing and approval standards.

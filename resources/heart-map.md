@@ -6,5 +6,5 @@ url: https://drive.google.com/file/d/1T5B5ZGW-Q5wT5ZOwFCBsmr_j_haJfWKg/view?usp=
 tags:
   - resource
   - kin-engagement
+description: Youth can diagram people important to them to help identify and maintain connections.
 ---
-Youth can diagram people important to them to help identify and maintain connections.

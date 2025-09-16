@@ -7,5 +7,5 @@ file: /images/michigan-diligent-search-kin-checklist.pdf
 tags:
   - resource
   - kin-engagement
+description: State form that includes many prompts for finding kin connections.
 ---
-State form that includes many prompts for finding kin connections.

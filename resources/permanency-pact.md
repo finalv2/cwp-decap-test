@@ -7,5 +7,5 @@ file: /images/permanency-pact.pdf
 tags:
   - resource
   - supportive-relationships
+description: This pledge is made when a supportive adult intends to provide a lifelong kin-like relationship with youth.
 ---
-This pledge is made when a supportive adult intends to provide a lifelong kin-like relationship with youth.

@@ -7,5 +7,5 @@ file: /images/oklahoma-safety-guidebook.pdf
 tags:
   - resource
   - prevention
+description: Guidance from Oklahoma Human Services on how to assess and document child safety decisions, from initial call to case closure.
 ---
-Guidance from Oklahoma Human Services on how to assess and document child safety decisions, from initial call to case closure.

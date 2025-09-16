@@ -7,5 +7,5 @@ file: https://drive.google.com/file/d/1XrW887S_Cl9Xm-0PTra1696XVpH24BZT/view?usp
 tags:
   - resource
   - prevention
+description: Description of role and responsibilities for coach who works alongside a tribal support person to improve outcomes for families.
 ---
-Description of role and responsibilities for coach who works alongside a tribal support person to improve outcomes for families.

@@ -7,5 +7,5 @@ file: /images/rhode-island-fire-lead-safety-checklist-english-spanish.pdf
 tags:
   - resource
   - caregiver-licensing
+description: Checklists in English and Spanish to guide families to check condition and safety of items at home.
 ---
-Checklists in English and Spanish to guide families to check condition and safety of items at home.

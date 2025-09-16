@@ -6,5 +6,5 @@ url: https://www.gksnetwork.org/resources/kin-mobilization-learning-collaborativ
 tags:
   - resource
   - kin-engagement
+description: Video and downloadable resources from the Kin Mobilization Learning Collaborative’s March 2025 session on the use of social media to help find and engage with kin.
 ---
-Video and downloadable resources from the Kin Mobilization Learning Collaborative’s March 2025 session on the use of social media to help find and engage with kin.

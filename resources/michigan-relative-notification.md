@@ -6,5 +6,5 @@ url: https://www.michigan.gov/mdhhs/doing-business/contractor/foster-care-templa
 tags:
   - resource
   - kin-engagement
+description: This relative notification letter found under "Relative Search" is offered in Spanish, English, and Arabic to reach out to kin and gauge interest in involvement.
 ---
-This relative notification letter found under "Relative Search" is offered in Spanish, English, and Arabic to reach out to kin and gauge interest in involvement.

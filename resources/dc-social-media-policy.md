@@ -7,5 +7,5 @@ file: /images/dc-child-family-social-media-policy.pdf
 tags:
   - resource
   - kin-engagement
+description: Official policy for child welfare professionals on the use of social media for work, from DC Child and Family Services Agency.
 ---
-Official policy for child welfare professionals on the use of social media for work, from DC Child and Family Services Agency.

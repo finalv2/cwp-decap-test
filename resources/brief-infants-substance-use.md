@@ -7,5 +7,5 @@ file: /images/washington-state-workgroup-infant-definitions-plan-of-safe-care.pd
 tags:
   - resource
   - prevention
+description: Washington State-aligned definitions for infants impacted by substance use, withdrawal, and fetal alcohol spectrum disorders.
 ---
-Washington State-aligned definitions for infants impacted by substance use, withdrawal, and fetal alcohol spectrum disorders.

@@ -4,6 +4,5 @@ filetype: url
 url: https://safecarewa.communityos.org/safecareWA 
 layout: "layouts/resource.njk"
 tags: ["resource", "prevention"]
+description: Progressive online form for birthing hospital staff to complete to refer family for wraparound services in Washington State.
 ---
-
-Progressive online form for birthing hospital staff to complete to refer family for wraparound services in Washington State.

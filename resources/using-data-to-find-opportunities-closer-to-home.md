@@ -6,5 +6,5 @@ filetype: pdf
 file: /images/foster-insights-using-data-out-of-county-placement.pptx.pdf
 tags:
   - resource
+description: Presentation slides from Foster Insights on how data can be used to better understand and prevent out-of-county placements.
 ---
-Presentation slides from Foster Insights on how data can be used to better understand and prevent out-of-county placements.

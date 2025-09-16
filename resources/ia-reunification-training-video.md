@@ -6,5 +6,5 @@ url: https://www.youtube.com/watch?v=bdTyJUO5Vqw
 tags:
   - resource
   - recruitment
+description: Video story from Washington State on supporting reunification through maintaining family connections.
 ---
-Video story from Washington State on supporting reunification through maintaining family connections.

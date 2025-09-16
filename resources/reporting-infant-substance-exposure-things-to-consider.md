@@ -8,5 +8,5 @@ file: /images/reporting-infant-substance-exposure-brochure.pdf
 tags:
   - resource
   - prevention
+description: Questions from Washington State for providers to think about when assessing risk with birthing parents, including checking bias.
 ---
-Questions from Washington State for providers to think about when assessing risk with birthing parents, including checking bias.

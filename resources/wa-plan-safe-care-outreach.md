@@ -7,6 +7,5 @@ file: /images/washington-state-outreach-script-example.pdf
 tags:
   - resource
   - prevention
+description: Suggested scripts for reaching out to client families who have been referred to for Help Me Grow Washington resources.
 ---
-
-Suggested scripts for reaching out to client families who have been referred to for Help Me Grow Washington resources.

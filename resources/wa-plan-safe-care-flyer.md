@@ -7,6 +7,5 @@ file: /images/washington-state-plan-of-safe-care-flyer-2024-final.pdf
 tags:
   - resource
   - prevention
+description: Information on free resources families can access for newborns and infants, on behalf of Help Me Grow Washington.
 ---
-
-Information on free resources families can access for newborns and infants, on behalf of Help Me Grow Washington.

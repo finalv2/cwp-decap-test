@@ -6,6 +6,5 @@ url: https://digitalcollections.library.oregon.gov/nodes/view/144888
 tags:
   - resource
   - kin-engagement
+description: Court procedures to consider safe housing for youth and placement with kin caregivers.
 ---
-
-Court procedures to consider safe housing for youth and placement with kin caregivers.
