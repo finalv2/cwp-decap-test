@@ -9,6 +9,7 @@ order: 6
 resources:
   - Michigan’s kin notification form
   - Michigan kin placement case review template
+redirectFrom: https://childwelfareplaybook.com/recommendations/use-the-snowball-method/
 ---
 The beginning of foster care is a difficult and emotional time for children or youth and their families. They may be too stressed or afraid to share a complete list of connections during an initial meeting. By continuing to search for kin throughout a child or youth's time in care and asking each connection about others, you can uncover more supportive relationships and help them leave care with more connections than they entered with.
 

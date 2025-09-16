@@ -6,6 +6,7 @@ tags:
   - strategy
   - recruitment
 order: 6
+redirectFrom: https://childwelfareplaybook.com/recommendations/social-media-for-recruitment/
 ---
 Most child welfare systems don't use online marketing to recruit foster families, even though digital ads can target potential caregivers with specific characteristics your children need. Use social media and targeted digital campaigns to reach more potential families in your community.
 

@@ -9,6 +9,7 @@ order: 8
 resources:
   - "Oregon tribal family coach: Job description"
   - "Oregon tribal family coach: Logic model"
+redirectFrom: https://childwelfareplaybook.com/recommendations/tribal-coaches/
 ---
 Native American and Alaska Native families are disproportionately likely to be involved with child welfare systems. And they may not get culturally appropriate support from standard services.
 

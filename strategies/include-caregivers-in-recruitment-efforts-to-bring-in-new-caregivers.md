@@ -7,6 +7,7 @@ tags:
   - kin-engagement
   - recruitment
 order: 1
+redirectFrom: https://childwelfareplaybook.com/recommendations/financial-bonuses-for-recruitment-referrals/
 ---
 
 Current kin caregivers and foster parents can be some of your best recruiters. They understand what caregiving really involves and can speak authentically about the experience. 

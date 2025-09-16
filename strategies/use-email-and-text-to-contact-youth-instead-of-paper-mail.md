@@ -8,6 +8,7 @@ tags:
 order: 6
 resources:
   - Online calendar example
+redirectFrom: https://childwelfareplaybook.com/recommendations/find-alternatives-to-physical-mail-for-sharing-documents-with-youth/
 ---
 Many youth in care do not have reliable addresses. This makes it difficult for them to receive mail.
 

@@ -1,11 +1,12 @@
 ---
+layout: layouts/strategy.njk
+templateEngineOverride: md,njk
 title: Require private agency capacity for emergency placements
-order: 2
 tags:
   - strategy
   - emergency-placements
-layout: layouts/strategy.njk
-templateEngineOverride: md,njk
+order: 2
+redirectFrom: https://childwelfareplaybook.com/recommendations/require-private-agency-emergency-beds/
 ---
 
 Even if you contract beds from private agencies, you may find that they don't have capacity for emergency placements. This can lead to placing children inappropriately.

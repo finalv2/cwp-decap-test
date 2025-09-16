@@ -6,6 +6,7 @@ tags:
   - strategy
   - supportive-relationships
 order: 2
+redirectFrom: https://childwelfareplaybook.com/recommendations/host-events-and-camps-to-bring-together-separated-siblings/
 ---
 Siblings who are separated in foster care often miss out on opportunities to build memories and maintain their bond through shared experiences. Regular visits may keep siblings connected, but special events and camps create positive shared experiences that strengthen sibling relationships and give them fun memories to carry forward. Host events and camps that bring separated siblings together.
 

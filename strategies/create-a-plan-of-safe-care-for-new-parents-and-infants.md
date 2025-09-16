@@ -14,6 +14,7 @@ resources:
   - "Outreach script: Washington State Plan of Safe Care"
   - "Reporting infant substance exposure: Things to consider"
   - Terminology for infants affected by substance use
+redirectFrom: https://childwelfareplaybook.com/recommendations/create-a-plan-of-safe-care/
 ---
 Infants who are exposed to substances during pregnancy need special support, but their families may struggle to access it. 
 

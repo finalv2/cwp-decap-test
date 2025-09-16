@@ -6,6 +6,7 @@ tags:
   - strategy
   - supporting-older-youth
 order: 7
+redirectFrom: https://childwelfareplaybook.com/recommendations/keep-a-schedule-of-when-youth-will-age-out/
 ---
 Child welfare agency staff often don't have an easy way to track which youth are close to aging out. This makes it difficult to plan and communicate with youth about their transition needs. 
 
