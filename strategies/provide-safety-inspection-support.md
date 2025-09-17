@@ -30,8 +30,8 @@ The most frequently needed items for all families include fire extinguishers, ba
 
 ## This strategy in action
 
-**Rhode Island** provides safety checklists for families in English and Spanish and accepts photos to resolve minor inspection items.
+**Rhode Island** provides [safety checklists for families in English and Spanish](/resources/ri-safety-checklist/) and accepts photos to resolve minor inspection items.
 
-**Washington State** uses statute-aligned checklists that families receive ahead of inspections.
+**Washington State** uses [statute-aligned checklists](/resources/wa-statute-aligned-checklist/) that families receive ahead of inspections.
 
 **California**, **Indiana**, and **Rhode Island** provide safety inspection items to families in need and accept photos to resolve minor pending items.[](https://childwelfareplaybook.com/static/assets/resolve_minor_pending_items_asset2)
