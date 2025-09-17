@@ -1,7 +1,8 @@
 ---
 layout: layouts/strategy.njk
 templateEngineOverride: md,njk
-title: Collect only essential information from kin and other adults in household
+title: Collect only essential information from kin households
+permalink: /strategies/collect-only-essential-information-from-kin-households/
 tags:
   - strategy
   - background-checks
