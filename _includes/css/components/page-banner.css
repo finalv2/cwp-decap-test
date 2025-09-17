@@ -249,7 +249,7 @@
     max-inline-size: 40dvi;
   }
 
-  .page-banner:not([data-width="full"]) .page-banner-img {
+  .page-banner .page-banner-img {
     mask-position: 0 15%;
     mask-size: cover;
     mask-repeat: no-repeat;
@@ -268,5 +268,9 @@
 
   [data-type="about"] .page-banner-img {
     mask-image: url("/images/banners/mask4.svg");
+  }
+
+  .page-banner[data-width="full"] .page-banner-img {
+    mask-image: none;
   }
 }
