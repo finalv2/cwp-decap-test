@@ -5,7 +5,7 @@ title: Use email and text to contact youth instead of paper mail
 tags:
   - strategy
   - supporting-older-youth
-order: 6
+order: "5"
 resources:
   - Online calendar example
 redirectFrom: /recommendations/find-alternatives-to-physical-mail-for-sharing-documents-with-youth/
