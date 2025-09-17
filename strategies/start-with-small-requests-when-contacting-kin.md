@@ -7,8 +7,8 @@ tags:
   - kin-engagement
 order: 11
 resources:
-  - Relative notification letter
-  - Wisconsin kin engagement guide
+  - Michigan’s kin notification form
+  - Wisconsin kin engagement training tools
 redirectFrom: /recommendations/be-gentle-when-interacting-with-kin-first-time/
 ---
 Kin connections may be permanently lost if an initial communication feels too overwhelming and demanding. Some connections may be learning they have a family member for the first time while simultaneously being asked to serve as a placement. 
@@ -25,6 +25,6 @@ Staff may feel pressure to move immediately to the next kin connection if someon
 
 ## This strategy in action
 
-**Michigan** explicitly asks identified kin to commit to staying in touch with youth on their Relative Notification Form.
+**Michigan** explicitly asks identified kin to commit to staying in touch with youth on their [relative notification form](/resources/michigan-relative-notification/).
 
 **Wisconsin** has developed suggested questions for talking to kin.[](https://drive.google.com/file/d/1vhn78eupW25aIhfTGSVri1rh2y_0GEQ9/view)
