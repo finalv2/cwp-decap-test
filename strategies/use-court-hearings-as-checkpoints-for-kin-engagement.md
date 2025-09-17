@@ -22,7 +22,7 @@ Since child welfare cases appear before judges regularly, court hearings provide
 
 ## This strategy in action
 
-**Ohio** uses a “Quality Hearing Toolkit” to facilitate discussions between judges and agency staff about what has been done to identify relatives and explore kinship care options.
+**Ohio** uses a [Quality Hearing Toolkit](https://www.supremecourt.ohio.gov/JCS/CFC/resources/QualityHearingToolkit.pdf) to facilitate discussions between judges and agency staff about what has been done to identify relatives and explore kinship care options.
 
 **Oregon** court reports include the questions:
 
