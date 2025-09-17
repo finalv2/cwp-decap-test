@@ -5,7 +5,7 @@ title: Involve kin before removing children or youth
 tags:
   - strategy
   - prevention
-order: 6
+order: "2"
 resources:
   - Iowa release of information form
   - "Podcast: Kin engagement in Wisconsin"
