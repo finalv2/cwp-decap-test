@@ -5,7 +5,7 @@ title: Provide financial support to retain caregivers
 tags:
   - strategy
   - retention
-order: 7
+order: "1"
 resources:
   - Treehouse store
 redirectFrom: /recommendations/provide-more-ways-for-foster-parents-to-earn-money/
