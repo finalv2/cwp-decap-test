@@ -5,7 +5,7 @@ title: Improve kin communications through user feedback
 tags:
   - strategy
   - kin-engagement
-order: 8
+order: "12"
 redirectFrom: /recommendations/test-your-communications-with-real-kin/
 ---
 
