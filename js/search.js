@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     resultsWrapper.ariaBusy = true;
     const skeletonTemplate = document.querySelector("#search-skeleton");
 
-    const skeletonCount = count >= 5 ? 5 : count;
+    const skeletonCount = count >= resultsPerPage ? resultsPerPage : count;
 
     for (let i = 1; i <= skeletonCount; i++) {
       resultsWrapper.innerHTML += skeletonTemplate.innerHTML;
@@ -210,10 +210,10 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         } else {
           showResultCount(matchingResultsCount);
         }
-        populateSkeleton(matchingResultsCount - (resultsPerPage * pageCount));
+        populateSkeleton(matchingResultsCount - (resultsPerPage * (pageCount - 1)));
       } else {
         showResultCount(allResultsCount);
-        populateSkeleton(allResultsCount - (resultsPerPage * pageCount));
+        populateSkeleton(allResultsCount - (resultsPerPage * (pageCount - 1)));
       }
 
 
