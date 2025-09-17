@@ -1,7 +1,8 @@
 ---
 layout: layouts/strategy.njk
 templateEngineOverride: md,njk
-title: Simplify process for out-of-state child abuse and neglect checks
+title: Simplify the process for out-of-state child abuse and neglect checks
+permalink: /strategies/simplify-the-process-for-out-of-state-child-abuse-and-neglect-checks/
 tags:
   - strategy
   - background-checks
