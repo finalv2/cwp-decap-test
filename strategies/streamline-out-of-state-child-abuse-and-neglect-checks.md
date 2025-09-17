@@ -9,6 +9,7 @@ order: "5"
 resources:
   - Kin licensing standards
   - Kin licensing forms
+stories: []
 redirectFrom: https://childwelfareplaybook.com/topics/out-of-state-background-checks/
 ---
 Out-of-state child abuse and neglect registry checks (often referred to as Adam Walsh checks) can take months to complete and delay approvals for foster families that are ready to care for children. They are particularly burdensome for kin caregivers who already have children in their home, but cannot get licensed until this step is complete.
@@ -20,7 +21,7 @@ Process check requests faster by handling them efficiently and removing administ
 **Accept and fulfill requests electronically.** Processing out-of-state child abuse and neglect registry checks through the mail creates delays and opportunities for errors. Instead, process requests electronically:
 
 * Create a secure email address for receiving and fulfilling requests from other states.  
-* Use the [model template form](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms). Any additional data fields, formatting requirements, or steps beyond the model template should be eliminated if not absolutely required by state law.  
+* Use the [template for out-of-state child abuse and neglect forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms). Any additional data fields, formatting requirements, or steps beyond the form template should be eliminated if not absolutely required by state law.  
 * Convert your form to a fillable PDF or web form.  
 * If you need to make system IT upgrades, consider using a web-based system for accepting and fulfilling these requests in the meantime. Make sure to allow multiple users in a state to make requests.
 
@@ -34,6 +35,6 @@ Process check requests faster by handling them efficiently and removing administ
 
 ## This strategy in action
 
-**Compare which jurisdictions** have implemented these promising practices at the [Out-of-State Child Abuse and Neglect dashboard](https://childwelfareplaybook.com/compare/background-checks/).
+**Compare which jurisdictions** have implemented these promising practices at the [Out-of-State Child Abuse and Neglect dashboard](/dashboards/adam-walsh/).
 
 **All jurisdictions** can use and adapt the template for requesting out-of-state child abuse and neglect checks that are part of the [kin licensing forms](https://www.grandfamilies.org/Resources/Kin-Specific-Licensing-Standards-Sample-Forms).[](https://www.google.com/url?q=https://docs.google.com/document/d/1V30W6Ft_uEUpVIQ062wPh12HrYHNod0b43T25wrp190/edit?tab%3Dt.0%23heading%3Dh.yd2gyy5b38kz&sa=D&source=docs&ust=1750798774259355&usg=AOvVaw2yTL2zyUIGHpRFEo_0wQvZ)
