@@ -20,4 +20,4 @@ Vague references to "services" or "resources" don’t make it clear to families 
 
 **Michigan** co-designed their outreach scripts with individuals with lived experience. They report that clarity about what services they can offer in the first 20 seconds of the call is important. For example: "Are you all good on coats? How about holiday gifts?"
 
-**Hello Baby in Allegheny County** reports success in offering free diapers as an entry point. From there, they can engage more with families that may need additional support.
+**Hello Baby in Allegheny County** reports success in offering [free diapers](https://www.hellobabypgh.org/baby-items/) as an entry point. From there, they can engage more with families that may need additional support.
