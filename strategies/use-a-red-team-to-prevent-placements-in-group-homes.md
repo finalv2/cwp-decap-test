@@ -5,7 +5,7 @@ title: Use a red team to prevent placements in group homes
 tags:
   - strategy
   - kin-engagement
-order: 1
+order: "13"
 redirectFrom: /recommendations/red-team-to-prevent-group-home-placements/
 ---
 Youth often end up in group homes even when the alternatives haven't been explored. A dedicated team (called a “red team”) may be able to find other placements.

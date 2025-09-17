@@ -5,7 +5,7 @@ title: Hold child safety meetings to find the least restrictive interventions
 tags:
   - strategy
   - prevention
-order: 4
+order: "1"
 resources:
   - Oklahoma child safety guidebook
   - Oklahoma safety plan template

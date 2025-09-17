@@ -5,7 +5,7 @@ title: Hire youth with lived experience for roles at your agency
 tags:
   - strategy
   - supporting-older-youth
-order: 5
+order: "3"
 redirectFrom: /recommendations/hire-youth-with-lived-experience/
 ---
 

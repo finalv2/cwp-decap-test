@@ -6,7 +6,7 @@ tags:
   - strategy
   - kin-engagement
   - recruitment
-order: 2
+order: "14"
 redirectFrom: /recommendations/provide-childcare-at-resource-parent-events/
 ---
 

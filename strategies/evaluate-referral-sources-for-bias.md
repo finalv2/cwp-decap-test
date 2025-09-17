@@ -5,7 +5,7 @@ title: Evaluate referral sources for bias
 tags:
   - strategy
   - prevention
-order: 2
+order: "7"
 redirectFrom: /recommendations/evaluate-referral-sources-for-bias/
 ---
 

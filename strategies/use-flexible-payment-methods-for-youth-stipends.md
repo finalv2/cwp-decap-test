@@ -5,7 +5,7 @@ title: Use flexible payment methods for youth stipends
 tags:
   - strategy
   - supporting-older-youth
-order: 3
+order: "2"
 redirectFrom: /recommendations/give-cash-or-prepaid-cards-for-youth-stipends/
 ---
 

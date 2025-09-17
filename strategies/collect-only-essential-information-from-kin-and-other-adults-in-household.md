@@ -5,7 +5,7 @@ title: Collect only essential information from kin and other adults in household
 tags:
   - strategy
   - background-checks
-order: "3"
+order: "5"
 resources:
   - Kin licensing standards
   - Kin licensing forms

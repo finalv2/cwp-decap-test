@@ -5,7 +5,7 @@ title: Require senior staff sign-off for non-kin placements
 tags:
   - strategy
   - kin-engagement
-order: 7
+order: "4"
 resources:
   - New York kin-first policy
 redirectFrom: /recommendations/senior-staff-sign-off-for-non-relative-placements/

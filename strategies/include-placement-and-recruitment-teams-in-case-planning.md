@@ -6,7 +6,7 @@ tags:
   - strategy
   - kin-engagement
   - recruitment
-order: 3
+order: "6"
 redirectFrom: /recommendations/include-placement-and-recruitment-in-case-planning/
 ---
 

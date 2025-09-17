@@ -5,7 +5,7 @@ title: Set expectations with caregivers for maintaining connections
 tags:
   - strategy
   - supportive-relationships
-order: 8
+order: "2"
 resources:
   - Washington State policy on visits with relatives
   - Oklahoma policy on visits with parents and siblings

@@ -5,7 +5,7 @@ title: Ask children and youth about their kin
 tags:
   - strategy
   - kin-engagement
-order: 2
+order: "1"
 resources:
   - Heart map template
   - Wisconsin kin engagement training tools

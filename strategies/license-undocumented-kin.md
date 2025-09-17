@@ -5,7 +5,7 @@ title: License undocumented kin
 tags:
   - strategy
   - caregiver-licensing
-order: 5
+order: "4"
 resources:
   - Kin licensing standards
 redirectFrom: /recommendations/license-undocumented-kin/
