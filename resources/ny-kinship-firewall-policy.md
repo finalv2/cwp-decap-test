@@ -1,10 +1,12 @@
 ---
 layout: layouts/resource.njk
-title: New York's kin-first policy
+title: New York kin-first policy
 filetype: pdf
-url: https://drive.google.com/file/d/1GeJN4ogdAmq0qWnkmdxFU4TNO7_WOcKQ/view?usp=sharing
+url: ""
+file: /images/new-york-state-kin-first-practice-directive.pdf
 tags:
   - resource
   - noTopic
-description: Administrative directive from New York State on establishing safe and appropriate kin-first placements.
+description: Administrative directive from New York State on establishing safe
+  and appropriate kin-first placements.
 ---

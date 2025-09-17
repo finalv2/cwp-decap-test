@@ -7,7 +7,7 @@ tags:
   - retention
 order: 3
 resources:
-  - Foster home retention and recruitment data
+  - The dynamics of foster home recruitment and retention
 redirectFrom: /recommendations/measure-retention-carefully/
 ---
 Retention percentages can be misleading if you’re not tracking them carefully. Some caregivers leave your system for good reasons, like adopting the child or youth or moving out of state. Others leave because caregiving isn't a good fit for them, which may be best for everyone involved. 
@@ -24,6 +24,6 @@ Focus your retention efforts on caregivers who drop out due to frustration or bu
 
 ## This strategy in action
 
-**Chapin Hall** provides a framework for categorizing retention reasons in their report "The Dynamics of Foster Home Recruitment and Retention." It includes 7 specific categories.
+**The Center for State Child Welfare Data** provides a framework for categorizing retention reasons in their report "[The Dynamics of Foster Home Recruitment and Retention](/resources/dynamics-foster-home/)." It includes 7 specific categories.
 
 **Washington State** tracks detailed termination reasons. They track more than 20 specific categories.[](https://fcda.chapinhall.org/wp-content/uploads/2018/10/Foster-Home-Report-Final_FCDA_October2018.pdf)

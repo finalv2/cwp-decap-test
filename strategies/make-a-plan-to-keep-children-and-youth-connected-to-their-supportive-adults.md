@@ -9,9 +9,9 @@ order: 5
 resources:
   - Heart map template
   - Permanency pact
-  - "Maintaining connections manual "
   - Michigan’s kin notification form
   - Iowa policy requirements
+  - "Hawaii maintaining connections manual "
 redirectFrom: /recommendations/plan-for-youth-to-keep-connected-supportive-adults/
 ---
 Long-term, consistent relationships with supportive adults are critical to a child or youth’s well-being. Supportive adults can provide emotional support, stability, and a sense of belonging, as well as practical support like transportation, tutoring, and advice. 
@@ -77,6 +77,6 @@ Make sure your plan includes resources or support to help supportive adults stay
 
 **Arizona's Fostering Sustainable Connections** program helps children reconnect with important people in their lives. A Family Engagement Specialist then helps plan how these people can stay involved with the child.
 
-**Epic O'Hana in Hawaii** uses meetings to find and engage extended families. This includes creating concrete plans for how each person will remain involved with the youth.
+**Epic 'Ohana in Hawaii** uses meetings to find and engage extended families. This includes creating concrete plans for how each person will remain involved with the youth.
 
-**Iowa's** policy asks workers to find out if people who can't take placements might still provide other support. This could include emails, phone calls, visits, or joining holiday gatherings.[](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)
+**Iowa's** [policy](https://hhs.iowa.gov/media/3917/download?inline) asks workers to find out if people who can't take placements might still provide other support. This could include emails, phone calls, visits, or joining holiday gatherings.[](https://hhs.iowa.gov/sites/default/files/18-B1.pdf)

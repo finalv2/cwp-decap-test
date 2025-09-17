@@ -7,7 +7,7 @@ tags:
   - kin-engagement
 order: 7
 resources:
-  - New York's kin-first policy
+  - New York kin-first policy
 redirectFrom: /recommendations/senior-staff-sign-off-for-non-relative-placements/
 ---
 Caseworkers don't want to wake a director in the middle of the night to sign off on a non-relative placement. Requiring this level of sign-off incentivizes thorough efforts to engage kin and may prevent placements in group homes by encouraging workers to exhaust all kin options first.
@@ -22,4 +22,4 @@ Caseworkers don't want to wake a director in the middle of the night to sign off
 
 **New Mexico** has a policy that a director must sign off on any placement with non-kin, whether general foster care or a group home, even if it's the middle of the night.
 
-**New York** has implemented a [kinship firewall policy](https://drive.google.com/file/d/1GeJN4ogdAmq0qWnkmdxFU4TNO7_WOcKQ/view) with similar requirements.[](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/20-OCFS-ADM-18%20kinfirst%20firewall.pdf?ver=aRW2qPM7j_EMROWXTct8SA%3d%3d)
+**New York** has implemented a [kinship firewall policy](/resources/ny-kinship-firewall-policy/) with similar requirements.[](https://www.grandfamilies.org/Portals/0/Documents/Wikihow/20-OCFS-ADM-18%20kinfirst%20firewall.pdf?ver=aRW2qPM7j_EMROWXTct8SA%3d%3d)

@@ -2,10 +2,11 @@
 layout: layouts/resource.njk
 title: "Oregon tribal family coach: Job description"
 filetype: pdf
-url: https://drive.google.com/file/d/1XrW887S_Cl9Xm-0PTra1696XVpH24BZT/view?usp=sharing
-file: https://drive.google.com/file/d/1XrW887S_Cl9Xm-0PTra1696XVpH24BZT/view?usp=sharing
+url: ""
+file: /images/oregon-tribal-coach-job-description.pdf
 tags:
   - resource
   - prevention
-description: Description of role and responsibilities for coach who works alongside a tribal support person to improve outcomes for families.
+description: Description of role and responsibilities for coach who works
+  alongside a tribal support person to improve outcomes for families.
 ---
