@@ -5,7 +5,7 @@ title: Consider placements with families that are still getting licensed
 tags:
   - strategy
   - recruitment
-order: 5
+order: "7"
 redirectFrom: /recommendations/include-pending-families-in-placement-searches/
 ---
 After kin, the best placement for a child or youth is with a foster family in their area that shares their language and culture. Sometimes this can be hard to find, but placement teams may miss strong matches simply because a foster family hasn’t finished licensing yet.
