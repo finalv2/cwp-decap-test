@@ -20,7 +20,7 @@ Kin caregivers who are already licensed and familiar with the system can make ex
 
 ## This strategy in action
 
-**Colorado's [Kin Connect](https://kinconnect.org/) Child Placing Agency** specializes in encouraging and helping relative caregivers to become generally licensed caregivers.
+**Colorado's** [Kin Connect](https://kinconnect.org/) child placement agency specializes in encouraging and helping relative caregivers to become generally licensed caregivers.
 
 **Washington, D.C.** caseworkers track kin caregivers' capacity and milestones on a monthly basis. If they see that a kin caregiver may have extra capacity after a child or youth returns home, they start conversations about becoming a general foster home instead of closing.
 
