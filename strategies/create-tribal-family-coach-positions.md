@@ -5,7 +5,7 @@ title: Create tribal family coach positions
 tags:
   - strategy
   - prevention
-order: 8
+order: "9"
 resources:
   - "Oregon tribal family coach: Job description"
   - "Oregon tribal family coach: Logic model"
