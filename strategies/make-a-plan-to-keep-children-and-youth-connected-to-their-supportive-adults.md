@@ -5,7 +5,7 @@ title: Make a plan to keep children and youth connected to their supportive adul
 tags:
   - strategy
   - supportive-relationships
-order: 5
+order: "1"
 resources:
   - Heart map template
   - Permanency pact
