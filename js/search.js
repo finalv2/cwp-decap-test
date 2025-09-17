@@ -210,10 +210,10 @@ window.addEventListener('DOMContentLoaded', async (e) => {
         } else {
           showResultCount(matchingResultsCount);
         }
-        populateSkeleton(matchingResultsCount - (resultsPerPage * (pageCount - 1)));
+        populateSkeleton(matchingResultsCount - (resultsPerPage * pageCount));
       } else {
         showResultCount(allResultsCount);
-        populateSkeleton(allResultsCount - (resultsPerPage * (pageCount - 1)));
+        populateSkeleton(allResultsCount - (resultsPerPage * pageCount));
       }
 
 
