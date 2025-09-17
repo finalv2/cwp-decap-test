@@ -165,7 +165,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
     // Always clear the search results area
     // unless the user has clicked the "load more" button
-    if (searchType === "paginate") {
+    if (searchType !== "paginate") {
       resultsWrapper.innerHTML = '';
     }
 
