@@ -5,7 +5,7 @@ title: Provide convenient training for active caregivers
 tags:
   - strategy
   - caregiver-licensing
-order: 6
+order: "9"
 resources:
   - Kin licensing standards
 redirectFrom: /recommendations/high-value-training-for-renewals/
