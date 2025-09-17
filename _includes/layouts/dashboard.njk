@@ -14,7 +14,7 @@ eleventyComputed:
           <h2 class="h1" data-pagefind-weight="9">{{ title }}</h2>
         </div>
       </div>
-      {% if description %}<p>{{ description }}</p>{% endif %}
+      {% if pageDescription %}<p>{{ pageDescription }}</p>{% endif %}
       {% if tags and tags.length <= 2 %}
         {% for tag in tags %}
           {% if tag != "dashboard" %}<p><a href="/topics/{{ tag }}" class="page-banner-back subhead">{% icon "arrow-u-up-left" %} Back to topic</a></p>{% endif %}
