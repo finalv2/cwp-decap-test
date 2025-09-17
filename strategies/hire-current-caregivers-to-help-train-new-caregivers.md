@@ -5,7 +5,7 @@ title: Hire current caregivers to help train new caregivers
 tags:
   - strategy
   - retention
-order: 2
+order: "8"
 redirectFrom: /recommendations/hire-current-foster-parents-to-train-new-foster-parents/
 ---
 Current caregivers who do not work for your department can provide additional empathy and perspectives that help new families decide to sign up or expand their placement preferences. 
