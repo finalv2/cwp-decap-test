@@ -55,9 +55,12 @@
   border-end-start-radius: var(--radius-lg);
 }
 
-.story-card p,
-.story-card-meta {
+.story-card p {
   color: var(--c-base);
+}
+
+.story-card-meta {
+  color: var(--c-secondary);
 }
 
 .story-card::before,
@@ -121,6 +124,7 @@
     flex-direction: column;
     justify-content: center;
     padding-inline: var(--t-paragraph);
+    flex: 1;
   }
 
   .story-card-content::before {
@@ -145,12 +149,6 @@
   }
 
   .story-card p {
-    font-size: var(--font-xl-size);
-    line-height: var(--font-xl-leading);
-  }
-
-  p.story-card-meta {
-    font-size: var(--font-base-size);
-    line-height: var(--font-base-leading);
+    max-inline-size: calc(var(--t-measure) * 1.25);
   }
 }
