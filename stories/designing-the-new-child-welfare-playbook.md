@@ -32,4 +32,4 @@ Based on that, we updated the website’s organization to match the most importa
 
 The new playbook creates a foundation for continued growth and improvement. We've established new feedback mechanisms that make it easier to add strategies, stories, and resources. We've also created new content types to showcase your work and research in the field.
 
-Join the community or contribute to the playbook.
+[Join the community](https://childwelfareplaybook.com/about/).
