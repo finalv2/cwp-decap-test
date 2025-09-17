@@ -5,7 +5,7 @@ title: Provide regular check-ins and support
 tags:
   - strategy
   - retention
-order: 1
+order: "2"
 redirectFrom: /recommendations/check-in-with-your-resource-families-regularly/
 ---
 No matter how many hours of training or experience a caregiver has, it's a different experience once a child or youth is placed in their home. Kin caregivers may be especially impacted because they may have had no notice before placement. 
