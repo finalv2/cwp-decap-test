@@ -5,7 +5,7 @@ title: Use social media to engage kin
 tags:
   - strategy
   - kin-engagement
-order: 12
+order: "11"
 resources:
   - DC Child and Family Services social media policy
   - Michigan diligent search checklist
