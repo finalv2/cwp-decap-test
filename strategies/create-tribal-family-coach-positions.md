@@ -1,7 +1,8 @@
 ---
 layout: layouts/strategy.njk
 templateEngineOverride: md,njk
-title: Create tribal family coach positions
+title: Hire tribal family coaches
+permalink: /strategies/hire-tribal-family-coaches/
 tags:
   - strategy
   - prevention
