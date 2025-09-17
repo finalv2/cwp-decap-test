@@ -34,8 +34,8 @@ Compare your youth data report with new inquiries to find and focus on matching 
 
 **Colorado** has a data-focused digital recruitment plan. It includes data on age, race, gender, intellectual and developmental disabilities, large sibling groups, and trauma-related sexual behaviors. They also use Geographic Information System (GIS) mapping for targeted recruitment.
 
-**Fairfax County, VA** compares zip codes where they have the most need against zip codes on new foster family inquiry forms. They host recruitment booths at farmers' markets and other events in neighborhoods with the highest removal rates. They use Census data to pick which local libraries to host recruitment events at. They also ask for referral information in the initial orientation phone call. They report that this provides richer and more detailed answers than a form.
+**Fairfax County, VA** compares ZIP codes where they have the most need against ZIP codes on new foster family inquiry forms. They host recruitment booths at farmers' markets and other events in neighborhoods with the highest removal rates. They use Census data to pick which local libraries to host recruitment events at. They also ask for referral information in the initial orientation phone call. They report that this provides richer and more detailed answers than a form.
 
 **Frederick County, MD** asks interested families to specify in detail how they became interested in fostering and asks them to indicate on their inquiry form all the places where they heard about fostering. This helped them realize that their mailers were actually reaching a lot of families.
 
-**Prince George's County, MD** tracks the zip codes of new inquiries against the zip codes where they most need placement options, and then focuses recruitment efforts in the missing zip code areas.
+**Prince George's County, MD** tracks the ZIP codes of new inquiries against the ZIP codes where they most need placement options, and then focuses recruitment efforts in the missing ZIP code areas.
