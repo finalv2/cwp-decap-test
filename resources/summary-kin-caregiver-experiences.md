@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Summary: Kin caregiver experiences"
+title: "Research summary: Kin caregiver experiences"
 filetype: pdf
 file: /images/kin-caregiver-summary-bloom.pdf
 tags:
