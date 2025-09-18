@@ -159,6 +159,11 @@ picture {
 
 picture img {
   object-fit: cover;
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+picture img:not(.l-wrapper-text img) {
   block-size: 100%;
   inline-size: 100%;
 }
