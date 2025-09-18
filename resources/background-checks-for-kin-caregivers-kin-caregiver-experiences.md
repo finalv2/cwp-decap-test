@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Background checks for kin caregivers: Kin caregiver experiences"
+title: "Final report: Background checks for kin caregivers"
 filetype: pdf
 file: /images/background-checks-kin-caregivers-bloom-report.pdf
 tags:
