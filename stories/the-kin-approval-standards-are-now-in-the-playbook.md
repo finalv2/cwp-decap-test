@@ -14,6 +14,7 @@ tags:
 resources:
   - Kin licensing standards
   - Kin licensing forms
+redirectFrom: https://childwelfareplaybook.com/kinship-caregivers
 ---
 Federal rules now allow child welfare agencies to create separate approval processes for kin caregivers. To implement these changes effectively, a group was assembled to develop model standards. The group included 9 national organizations, over 50 agencies, and more than 430 individual participants, including kin caregivers and agency staff.
 
