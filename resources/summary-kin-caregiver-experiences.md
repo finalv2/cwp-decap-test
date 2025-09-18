@@ -7,6 +7,6 @@ file: /images/kin-caregiver-summary-bloom.pdf
 tags:
   - resource
   - caregiver-licensing
-description: Summarized feedback from kin caregivers who shared their
-  experiences of the child welfare system with Bloom Works.
+description: Summarized feedback of kin caregivers who shared their experiences
+  of the child welfare system with Bloom Works.
 ---
