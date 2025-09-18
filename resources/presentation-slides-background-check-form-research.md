@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Presentation slides: Background check form research"
+title: "Presentation slides: Research on background check forms"
 filetype: pdf
 file: /images/background-check-form-research-bloom-slides-phase2.pdf
 tags:
