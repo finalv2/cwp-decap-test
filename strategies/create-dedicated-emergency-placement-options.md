@@ -58,6 +58,6 @@ Placing children who are new to foster care in short-term emergency homes can gi
 
 **Michigan** has transitional placement providers, which is a contract with current licensed foster parents. These homes have preferences, but can't decline a placement within those preferences. They must keep the placement for 2 to 4 weeks. They are paid $100 a day during placement plus $245 a month to keep the bed open when they don't have a child there.
 
-**Rhode Island** has an [Emergency Response Program](/resources/rhode-island-emergency-response-program/) where some families are paid a $15 stipend per day in exchange for being on call. If they get a call, they have a no-reject, no-eject policy for 14 days. These families are for children under the age of 12. There is a second program, Emergency Response X, for children age 12 and older, with lighter requirements.
+**Rhode Island** has an Emergency Response Program where some families are paid a $15 stipend per day in exchange for being on call. If they get a call, they have a no-reject, no-eject policy for 14 days. These families are for children under the age of 12. There is a second program, Emergency Response X, for children age 12 and older, with lighter requirements.
 
 **New Hampshire** foster families can earn a credential for emergency and crisis care. Emergency care means a child who is already in care and their placement disrupts. Families receive a higher stipend for up to 10 days. Crisis care means a child who needs to come into care during off-hours. They receive a higher stipend for up to 5 days.

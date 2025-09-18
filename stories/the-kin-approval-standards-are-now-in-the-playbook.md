@@ -14,6 +14,7 @@ tags:
 resources:
   - Kin licensing standards
   - Kin licensing forms
+redirectFrom: https://childwelfareplaybook.com/kinship-caregivers
 ---
 Federal rules now allow child welfare agencies to create separate approval processes for kin caregivers. To implement these changes effectively, a group was assembled to develop model standards. The group included 9 national organizations, over 50 agencies, and more than 430 individual participants, including kin caregivers and agency staff.
 
@@ -26,7 +27,7 @@ Now, key recommendations from these standards are available as new strategies an
 * [Use an expansive legal definition of kin ](/strategies/use-an-expansive-legal-definition-of-kin/)
 * [Involve kin before removing children or youth](/strategies/involve-kin-before-removing-children-or-youth/)
 * [Let kin caregivers know what to expect from background checks](/strategies/let-kin-caregivers-know-what-to-expect-from-background-checks/)
-* [Collect only essential information from kin and other adults in the household](/strategies/collect-only-essential-information-from-kin-households/)
+* [Collect only essential information from kin households](/strategies/collect-only-essential-information-from-kin-households/)
 * [Make fingerprinting fast and easy](/strategies/make-fingerprinting-fast-and-easy/)
 * [Simplify process for out-of-state child abuse and neglect checks](/strategies/simplify-the-process-for-out-of-state-child-abuse-and-neglect-checks/)
 * [Establish clear standards for evaluating background checks](/strategies/establish-clear-standards-for-evaluating-background-checks/)
