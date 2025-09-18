@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Research summary: Placement for teens"
+title: "Summary: Placement for teens in Michigan"
 filetype: pdf
 file: /images/michigan-bloom-memo-summary-placement-teens-research.pdf
 tags:
