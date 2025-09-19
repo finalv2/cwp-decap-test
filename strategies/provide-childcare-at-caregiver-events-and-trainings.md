@@ -5,7 +5,6 @@ title: Provide childcare at caregiver events and trainings
 tags:
   - strategy
   - kin-engagement
-  - recruitment
 order: "14"
 redirectFrom: /recommendations/provide-childcare-at-resource-parent-events/
 ---
