@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Research summary: Queer safety for youth"
+title: "Research summary: Queer youth safety"
 filetype: pdf
 file: /images/queer-safety-research-summary-memo-bloom.pdf
 tags:
