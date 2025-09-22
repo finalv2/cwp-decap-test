@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: Using Structured Case Reviews to Strengthen Kin Placement Stability
+title: Using structured case reviews to strengthen kin placement stability
 filetype: link
 url: https://govlab.hks.harvard.edu/insight/using-structured-case-reviews-to-strengthen-kin-placement-stability/
 tags:
