@@ -11,7 +11,7 @@ resources:
   - Wisconsin kin engagement training tools
 redirectFrom: /recommendations/ask-about-supportive-adults/
 ---
-Children and youth are often placed in general foster care or group homes when they have placement options with adults they already know and trust. Asking children and youth about the supportive adults in their lives can help find more kin placements faster, and avoid unnecessary placements with strangers.
+Children and youth are often placed in general foster care or group homes when they have placement options with adults they already know and trust. Asking children and youth about the supportive adults in their lives can help find more kin placements faster, and avoid unnecessary placements with strangers. 
 
 ## How to do this
 
