@@ -29,7 +29,7 @@ Aim for comprehensive mapping. Some programs recommend identifying 150 to 200 pe
 
 **Florida** has a template for logging communication efforts to source kin connections.
 
-**30 Days to Family** suggests that agencies identify at least 80 kin upfront for each child, with balanced representation across both parents whenever possible.
+**30 Days to Family** suggests that agencies identify [at least 80 kin upfront for each child](https://www.cebc4cw.org/program/30-days-to-family/), with balanced representation across both parents whenever possible.
 
 **Washington State** maintains a [policy for engaging local tribal partners](https://www.dcyf.wa.gov/tribal-relations/icw) to source kin connections.
 
