@@ -50,19 +50,6 @@ and var(--l-frame-height) within specific components.
   align-items: center;
 }
 
-.plyr__video-embed {
-  position: relative;
-}
-
-.plyr-wrapper {
-  inline-size: 100%;
-}
-
-.plyr-wrapper < * {
-  inline-size: 100%;
-  block-size: 100%;
-}
-
 .l-frame > img,
 .l-frame > iframe {
   inline-size: 100%;
