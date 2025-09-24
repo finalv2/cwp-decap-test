@@ -64,11 +64,11 @@
 }
 
 .topic-card:hover {
-  --header-color: #fff;
+  --header-color: var(--c-white);
 }
 
 .topic-card:hover p {
-  color: #fff;
+  color: var(--c-white);
 }
 
 .strategy-list {

@@ -43,13 +43,13 @@
 }
 
 .story-card:is(:hover, :focus) .story-card-content * {
-  color: #fff;
+  color: var(--c-white);
 }
 
 .story-card-content {
   position: relative;
   padding-block: calc(var(--t-paragraph) / 2);
-  background: var(--c-light-blue);
+  background: var(--c-lighter-blue);
   border-radius: 0;
   border-start-end-radius: var(--radius-lg);
   border-end-start-radius: var(--radius-lg);

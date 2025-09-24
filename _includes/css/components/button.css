@@ -1,9 +1,9 @@
 .button {
   border-radius: var(--radius-lg);
   background: var(--c-blue);
-  color: #fff;
-  fill: #fff;
-  font-weight: var(--font-bold);
+  color: var(--c-white);
+  fill: var(--c-white);
+  font-weight: var(--font-black);
   display: inline-block;
   padding: 0.75rem 1.5rem;
   text-align: center;
@@ -16,7 +16,7 @@
 }
 
 .button[data-type="secondary"] {
-  background: #fff;
+  background: var(--c-white);
   border: 0.25rem solid var(--c-blue);
   color: var(--base);
 }
@@ -26,7 +26,7 @@
 }
 
 .button:focus {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 5px var(--c-blue);
+  box-shadow: 0 0 0 2px var(--c-white), 0 0 0 5px var(--c-blue);
 }
 
 .button:is(:hover, :focus) {

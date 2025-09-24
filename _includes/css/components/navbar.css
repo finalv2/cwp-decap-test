@@ -1,7 +1,7 @@
 /* Top navbar */
 
 .nav {
-  border-block-end: 1px solid #fff;
+  border-block-end: 1px solid var(--c-white);
   padding-block: 0.5rem;
   border-bottom: 1px solid rgb(0 0 0 / 0.08);
   box-shadow: 0 1px 4px rgba(0 0 0 / 0.06);
@@ -20,7 +20,7 @@
 .nav a.active,
 .nav a.active:is(:hover, :focus, :active) {
   background: var(--c-blue);
-  color: #fff;
+  color: var(--c-white);
 }
 
 .nav-inner {
@@ -32,7 +32,7 @@
 
 .nav h1 {
   font-size: var(--font-3xl-size);
-  color: #fff;
+  color: var(--c-white);
   margin: 0;
 }
 
@@ -79,12 +79,12 @@
 
 
 .nav-hamburger:hover {
-  background: #fff;
-  color: var(--c-primary);
+  background: var(--c-white);
+  color: var(--c-blue);
 }
 
 .nav-hamburger:focus {
-  box-shadow: 0 0 0 2px #fff;
+  box-shadow: 0 0 0 2px var(--c-white);
 }
 
 .nav-mobile-menu {
@@ -101,7 +101,7 @@
 
 .nav-mobile-menu ul {
   display: flex;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
   color: var(--c-blue);
   font-family: var(--font-secondary);
   text-transform: uppercase;
@@ -125,7 +125,7 @@
 
 .nav-mobile-menu a:hover {
   color: var(--c-blue);
-  background: #ccecff;
+  background: var(--c-light-blue);
 }
 
 @media (min-width: 1024px) {

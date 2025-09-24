@@ -39,7 +39,7 @@
 .card-header {
   background: var(--c-blue);
   gap: 0.5rem;
-  color: #fff;
+  color: var(--c-white);
   align-items: start;
 }
 
@@ -59,12 +59,12 @@
 .card-header,
 .card-cta {
   display: flex;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
 }
 
 .card-cta {
   color: var(--c-blue);
-  background: var(--c-light-blue);
+  background: var(--c-lighter-blue);
   align-items: center;
 }
 
@@ -147,7 +147,7 @@
 
 [data-type="resource"] .card-header {
   background: var(--c-blue);
-  color: #fff;
+  color: var(--c-white);
 }
 
 [data-type="resource"] .card-cta {
@@ -208,7 +208,7 @@
   position: relative;
   translate: -1rem 0;
   border-radius: var(--radius-lg);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
   color: var(--c-blue);
   text-decoration: none;
   border-block-end: 1px solid;
@@ -227,7 +227,7 @@
 }
 
 .strategy-card a:is(:focus, :hover) {
-  background: #CFE6FF;
+  background: var(--c-light-blue);
   scale: 1.01;
 }
 

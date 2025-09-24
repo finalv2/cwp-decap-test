@@ -36,7 +36,7 @@ body {
 /* Set bold weight according to imported font */
 
 b, strong {
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
 }
 
 /* Heading styles */
@@ -44,7 +44,7 @@ b, strong {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--font-primary);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
   margin-inline: 0;
   margin-block-end: var(--t-paragraph);
   margin-block-start: 0;
@@ -93,7 +93,7 @@ h3, .h3 {
   line-height: var(--font-xl-leading);
   --l-stack-gap: calc(var(--t-paragraph) * 1.5);
   color: var(--c-headline);
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 h4, .h4 {
@@ -139,7 +139,7 @@ h6, .h6 {
 
 .subhead {
   font-size: var(--t-small);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
   font-family: var(--font-secondary);
   font-size: var(--font-sm-size);
   line-height: var(--font-sm-leading);
@@ -232,7 +232,7 @@ time {
 }
 
 mark {
-  background: var(--c-light-blue);
+  background: var(--c-lighter-blue);
   border: 1px solid var(--c-blue);
   color: var(--c-blue);
   padding-inline: 0.25rem;
