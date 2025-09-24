@@ -83,6 +83,11 @@
       </filter>
     </defs>
   </svg>
+
+  {%- if pageCss -%}
+    <style>{{ pageCss | cssmin | safe }}</style>
+  {%- endif -%}
+
     {% include "partials/navbar.njk" %}
 
     {%- set pagefindTopics -%}

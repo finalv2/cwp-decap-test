@@ -8,6 +8,7 @@ pagefind:
   type: Page
 eleventyComputed:
   description: "{{ home.description }}"
+  pageCss: "{% include 'css/pages/home.css' %}"
 ---
 
 {%- from '_macros/topic-card.njk' import topicCard %}
@@ -73,7 +74,3 @@ eleventyComputed:
     {%- endfor -%}
   </div>
 </section>
-
-{% set pageCss %}{% include "css/pages/home.css" %}{% endset %}
-
-<style>{{ pageCss | cssmin | safe }}</style>
