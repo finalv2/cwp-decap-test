@@ -1,0 +1,64 @@
+/* List of strategies */
+
+.strategy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Play card */
+
+.strategy-card {
+  padding: 0;
+  --l-stack-gap: 0.5rem;
+}
+
+.strategy-card a {
+  text-decoration: none;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  translate: -1rem 0;
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-black);
+  color: var(--c-blue);
+  text-decoration: none;
+  border-block-end: 1px solid;
+  border-color: transparent;
+  transition: scale 100ms ease-out,
+              background 50ms ease-out,
+              color 50ms ease-out,
+              border-color 150ms ease-out;
+}
+
+
+@keyframes arrowWiggle {
+  to {
+    transform: translateX(-0.25rem)
+  }
+}
+
+.strategy-card a:is(:focus, :hover) {
+  background: var(--c-light-blue);
+  scale: 1.01;
+}
+
+.strategy-card a:is(:focus, :hover) svg {
+  animation: arrowWiggle 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
+}
+
+.strategy-card a:active {
+  scale: 1.02;
+}
+
+.strategy-card span {
+  flex: 1;
+}
+
+.strategy-card svg {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  fill: currentColor;
+  flex: none;
+}

@@ -4,12 +4,6 @@
   grid-template-columns: repeat(auto-fit, 100%);
 }
 
-@media (min-width: 60rem) {
-  .story-list-wrapper {
-    grid-template-columns: repeat(auto-fit, calc(var(--t-measure) * 0.75));
-  }
-}
-
 .story-card-wrapper {
   container-type: inline-size;
 }
@@ -111,6 +105,12 @@
   font-size: var(--font-sm-size);
   display: flex;
   gap: 1.5rem;
+}
+
+@media (min-width: 60rem) {
+  .story-list-wrapper {
+    grid-template-columns: repeat(auto-fit, calc(var(--t-measure) * 0.75));
+  }
 }
 
 @container (inline-size > 60rem) {

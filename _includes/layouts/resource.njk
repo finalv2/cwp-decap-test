@@ -37,7 +37,7 @@ pagefind:
     {% endif %}
 
     <p>
-      <a class="button resource-download" href="{{ linkUrl }}">
+      <a class="button resource-download" data-has-icon href="{{ linkUrl }}">
         {%- if file -%}
           <span class="icon-animation download-animation">
             {% icon 'download-simple-arrow', 'card-download-arrow' %}

@@ -36,7 +36,7 @@ pagefind:
     {%- for play in collections[id + '-strategies'] -%}
     <li class="strategy-card">
       <a href="{{ play.url }}">
-        <span>{{ play.data.title }}</span>
+        <span class="strategy-card-name">{{ play.data.title }}</span>
         {% icon 'arrow-right' %}
       </a>
     </li>

@@ -17,6 +17,27 @@
   right: -10vw;
 }
 
+.footer-divider {
+  fill: var(--c-blue);
+  margin-block: calc(var(--t-paragraph) * 2);
+  margin-inline: auto;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--rhythm);
+  padding-block: 2rem;
+}
+
+.footer-copyright {
+    color: var(--c-blue);
+    width: 100%;
+    font-size: var(--font-sm-size);
+    line-height: var(--font-sm-leading);
+}
+
 @media (min-width: 60rem) {
   .footer h2,
   .footer p {
@@ -32,46 +53,4 @@
     background: url("/images/banners/contribute.jpg") right center no-repeat;
     background-size: cover;
   }
-}
-
-.footer-divider {
-  fill: var(--c-blue);
-  margin-block: calc(var(--t-paragraph) * 2);
-  margin-inline: auto;
-}
-
-.footer-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--rhythm);
-    padding-block: 2rem;
-}
-
-.footer li {
-  padding: 0;
-}
-
-.footer h3 {
-    margin-block-end: 1rem;
-    opacity: 0.8;
-}
-
-.footer-logos {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-copyright {
-    color: var(--c-blue);
-    width: 100%;
-    font-size: var(--font-sm-size);
-    line-height: var(--font-sm-leading);
-}
-
-@media (min-width: 768px) {
-    .footer ul {
-        flex-wrap: nowrap;
-        inline-size: max-content;
-    }
 }

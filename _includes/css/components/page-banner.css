@@ -67,7 +67,6 @@
   mix-blend-mode: multiply;
 }
 
-
 [data-type="story"] .page-banner-img::after {
   background-image: url("/images/scribbles/story.svg");
   inset-block-end: 30%;
@@ -116,61 +115,6 @@
   justify-content: stretch;
   /*align-items: center;*/
   gap: var(--t-paragraph);
-}
-
-.nametag {
-  position: relative;
-  inline-size: fit-content;
-  max-inline-size: 75ch;
-}
-
-.nametag-badge {
-  position: absolute;
-  inset-block-end: calc(100% - var(--rhythm) * 2);
-  z-index: 2;
-  background: var(--c-blue);
-  border-radius: 1em;
-  padding: var(--rhythm) calc(var(--rhythm) * 2);
-  color: var(--c-white);
-  transform: rotate(-2deg);
-  z-index: 3;
-}
-
-.nametag-text {
-  margin-block-start: 0;
-  padding: var(--t-paragraph) calc(var(--t-paragraph) * 1.5);
-  border-radius: var(--radius-lg);
-  background: var(--c-white);
-  color: var(--c-blue);
-  display: flex;
-  gap: 1em;
-  align-items: center;
-  position: relative;
-}
-
-.nametag-text::before {
-  border: 2px solid var(--c-blue);
-  border-radius: var(--radius-lg);
-  position: absolute;
-  content: "";
-  inset: 0;
-  filter: url("#tornEdge");
-  z-index: 2;
-  pointer-events: none;
-}
-
-.nametag-text h2 {
-  margin: 0;
-  text-wrap: balance;
-}
-
-.nametag-text svg {
-  fill: var(--c-blue);
-  inline-size: var(--font-5xl-size);
-  block-size: var(--font-5xl-size);
-  position: relative;
-  left: -0.25rem;
-  flex: none;
 }
 
 .page-topics i {

@@ -18,10 +18,10 @@ eleventyExcludeFromCollections: true
   {% set link = params.url %}
 {% endif %}
 
-<a href="{{ link }}" class="card" data-type="{{ params.type }}">
-  <h3 class="card-header h5">{% icon cardIcon %}{{ params.title | safe }}</h3>
-  <div class="card-body">{{ params.description | md | safe }}</div>
-  <p class="card-cta">
+<a href="{{ link }}" class="resource-card" data-has-icon data-type="{{ params.type }}">
+  <h3 class="resource-card-header h5">{% icon cardIcon %}{{ params.title | safe }}</h3>
+  <div class="resource-card-body">{{ params.description | md | safe }}</div>
+  <p class="resource-card-cta">
     {%- if params.file -%}
     <span class="icon-animation download-animation">
       {% icon 'download-simple-arrow', 'card-download-arrow' %}

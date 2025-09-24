@@ -70,8 +70,3 @@
 .topic-card:hover p {
   color: var(--c-white);
 }
-
-.strategy-list {
-  padding: 0;
-  list-style: none;
-}
