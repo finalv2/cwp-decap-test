@@ -4,6 +4,7 @@ eleventyComputed:
   title: "{{ search.title }}"
   description: "{{ search.description }}"
   subheader: "{{ search.subheader }}"
+  pageCss: "{% include 'css/pages/search.css' %}"
 type: search
 search: true
 image: /images/banners/search.jpg
@@ -31,12 +32,6 @@ pageTypes:
     title: Page
     iconName: cards-three
 ---
-
-{% set pageCss %}
-  {% include "css/vendor/pagefind.css" %}
-{% endset %}
-
-<style>{{ pageCss | cssmin | safe }}</style>
 
 {%- macro blankTemplate(params) -%}
   <li class="search-result-blank">{% icon "list-magnifying-glass" %}
