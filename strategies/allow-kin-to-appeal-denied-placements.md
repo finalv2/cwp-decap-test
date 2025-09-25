@@ -11,9 +11,7 @@ resources:
   - Kin licensing standards
   - Kin licensing forms
 ---
-Kin caregivers have a right to appeal if your agency decides that youth should not live with them.
-
-If you don’t already have an appeals process, set one up. Make sure kin understand how to request a reconsideration.
+Kin caregivers have a right to appeal if your agency decides that youth should not live with them. If you don’t already have an appeals process, set one up. Make sure kin understand how to request a reconsideration.
 
 ## How to do this
 
