@@ -8,7 +8,7 @@ description: The Child Welfare Playbook now includes strategies and resources
 author: Bloom Works
 date: 2025-09-15
 type: Blog post
-image: .images/stories/kin-engagement.jpg
+image: /images/stories/kin-engagement.jpg
 tags:
   - story
   - caregiver-licensing

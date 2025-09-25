@@ -7,7 +7,7 @@ description: Here’s the terminology that we use in the Child Welfare Playbook
 author: Bloom Works
 date: 2025-09-09
 type: Blog post
-image: .images/stories/kin-engagement.jpg
+image: /images/stories/kin-engagement.jpg
 tags:
   - story
 ---
