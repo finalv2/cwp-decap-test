@@ -28,12 +28,32 @@
     {% endif %}
 
     {% if pagefind.type %}
-      <meta data-pagefind-default-meta="type" property="{{ pagefind.type }}">
+      <meta data-pagefind-filter="pageType[content]" content="{{ pagefind.type }}">
     {% endif %}
 
     {% if pagefind.title %}
       <meta data-pagefind-default-meta="title[content]" content="{{ pagefind.title }}" property="{{ title }}">
     {% endif %}
+
+    {%- if tags -%}
+      {%- if tags.length == 1 and (tags | first == "resource" or tags | first == "story" or  tags | first == "dashboard" or tags | first == "topic" or tags | first == "meeting") %}
+          <meta data-pagefind-filter="topics[content]" content="noTopic">
+      {%- else -%}
+        {%- for tag in tags -%}
+          {%- if tag == "noTopic" -%}
+            <meta data-pagefind-filter="topics[content]" content="noTopic">
+          {%- else -%}
+            {%- for topic in collections.topics -%}
+              {%- if topic.data.id == tag -%}
+                <meta data-pagefind-filter="topics[content]" content="{{ topic.data.title }}">
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- else -%}
+      <meta data-pagefind-filter="topics[content]" content="noTopic">
+    {%- endif -%}
 
     {% if pagefind.type === "Strategy" or pagefind.type === "Story" %}
       <meta property="og:type" content="article">
@@ -90,39 +110,10 @@
 
     {% include "partials/navbar.njk" %}
 
-    {%- set pagefindTopics -%}
-      {%- if tags -%}
-        {%- if tags.length == 1 and (tags | first == "resource" or tags | first == "story" or  tags | first == "dashboard" or tags | first == "topic" or tags | first == "meeting") %}
-          <span data-pagefind-filter="topics">noTopic</span>
-        {%- else -%}
-          {%- for tag in tags -%}
-            {%- if tag == "noTopic" -%}
-              <span data-pagefind-filter="topics">noTopic</span>
-            {%- else -%}
-              {%- for topic in collections.topics -%}
-                {%- if topic.data.id == tag -%}
-                  <span data-pagefind-filter="topics">{{ topic.data.title }}</span>
-                {%- endif -%}
-              {%- endfor -%}
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
-      {%- else -%}
-        <span data-pagefind-filter="topics">noTopic</span>
-      {%- endif -%}
-    {%- endset -%}
-
     <div class="content" {% if pageIndex == "all" %}data-pagefind-body{% endif %}>
       {{ content | md | safe }}
     </div>
     {% include "partials/footer.njk" %}
-
-    {%- if pagefind -%}
-      <div hidden>
-        {% if pagefind.type %}<span data-pagefind-filter="pageType">{{ pagefind.type }}</span>{% endif %}
-        {{ pagefindTopics | safe }}
-      </div>
-    {%- endif -%}
 
     {% svgsprite %}
     <script src="/js/script.js"></script>
