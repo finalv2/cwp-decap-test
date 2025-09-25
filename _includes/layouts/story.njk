@@ -6,26 +6,9 @@ pagefind:
 image: /images/banners/story.jpg
 ---
 {%- from '_macros/page-banner.njk' import pageBanner with context -%}
-{%- from '_macros/resource-card.njk' import resourceCard -%}
-{%- from '_macros/topic-card.njk' import topicCard %}
-{%- from '_macros/story-card.njk' import storyCard %}
-
-{%- set resourceData -%}
-  {%- for relatedResource in resources -%}
-    {%- for item in collections.resources -%}
-      {%- if item.data.title === relatedResource -%}
-        {{ resourceCard({
-          filetype: item.data.filetype,
-          title: item.data.title,
-          description: item.data.description,
-          url: item.data.url,
-          file: item.data.file
-          })
-        }}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endfor -%}
-{%- endset -%}
+{%- from '_macros/resource-list.njk' import resourceList with context -%}
+{%- from '_macros/story-list.njk' import storyList with context %}
+{%- from '_macros/topic-card.njk' import topicCard with context%}
 
 {{ pageBanner({
   header: title,
@@ -46,12 +29,9 @@ image: /images/banners/story.jpg
 <div class="l-section">
 <div class="l-wrapper-text l-center">
 <div class="l-stack">
-      {{ content | md | safe }}
+  {{ content | md | safe }}
 
-      {%- if resourceData !== "" -%}
-      <h2>Resources</h2>
-      {{ resourceData | safe }}
-    {%- endif -%}
+  {{ resourceList({title: "Resources", resources: resources}) }}
 </div>
 </div>
 </div>

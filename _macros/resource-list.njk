@@ -1,0 +1,28 @@
+---
+eleventyExcludeFromCollections: true
+---
+
+{%- from '_macros/resource-card.njk' import resourceCard with context -%}
+
+{% macro resourceList(params) %}
+{%- set resourceData -%}
+{%- for resource in params.resources -%}
+  {%- for item in collections.resources -%}
+    {%- if item.data.title === resource -%}
+      {{ resourceCard({
+        filetype: item.data.filetype,
+        title: item.data.title,
+        description: item.data.description,
+        url: item.data.url,
+        file: item.data.file
+        }) | safe }}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- endset -%}
+
+{%- if resourceData !== "" -%}
+  <h2>{{ params.title }}</h2>
+  {{ resourceData | safe }}
+{%- endif -%}
+{% endmacro %}

@@ -10,46 +10,9 @@ pagefind:
   type: Meeting
 ---
 {%- from '_macros/page-banner.njk' import pageBanner with context -%}
-{%- from '_macros/resource-card.njk' import resourceCard -%}
-{%- from '_macros/topic-card.njk' import topicCard %}
-{%- from '_macros/story-card.njk' import storyCard %}
-
-{%- set resourceData -%}
-  {%- for relatedResource in resources -%}
-    {%- for item in collections.resources -%}
-      {%- if item.data.title === relatedResource -%}
-        {{ resourceCard({
-          filetype: item.data.filetype,
-          title: item.data.title,
-          description: item.data.description,
-          url: item.data.url,
-          file: item.data.file
-          })
-        }}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endfor -%}
-{%- endset -%}
-
-{%- set storyData -%}
-  {%- for relatedStory in stories -%}
-    {%- for item in collections.stories -%}
-      {%- if item.data.title === relatedStory -%}
-        {{ storyCard({
-            image: story.data.image,
-            type: story.data.type,
-            title: story.data.title,
-            description: story.data.description,
-            author: story.data.author,
-            date: story.date,
-            featured: false,
-            url: story.url
-          })
-        }}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endfor -%}
-{%- endset -%}
+{%- from '_macros/resource-list.njk' import resourceList with context -%}
+{%- from '_macros/story-list.njk' import storyList with context %}
+{%- from '_macros/topic-card.njk' import topicCard with context %}
 
 {% set pagefindTitle %}{{ title }} community meeting{% endset %}
 
@@ -77,18 +40,9 @@ pagefind:
   <h3>What we discussed</h3>
   {{ content | md | safe }}
 
+  {{ resourceList({title: "Related resources", resources: resources}) }}
 
-    {%- if resourceData !== "" -%}
-      <h3>Related resources</h3>
-
-      {{ resourceData | safe }}
-    {%- endif -%}
-
-    {%- if storyData !== "" -%}
-      <h3>Related stories</h3>
-
-      {{ storyData | safe }}
-    {%- endif -%}
+  {{ storyList({title: "Related stories", stories: stories}) }}
   </div>
 </div>
 </div>

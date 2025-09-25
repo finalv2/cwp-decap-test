@@ -1,0 +1,32 @@
+---
+eleventyExcludeFromCollections: true
+---
+
+{%- from '_macros/story-card.njk' import storyCard -%}
+
+{% macro storyList(params) %}
+{%- set storyData -%}
+{%- for relatedStory in params.stories -%}
+  {%- for item in collections.stories -%}
+    {%- if item.data.title === relatedStory -%}
+      {{ storyCard({
+          image: story.data.image,
+          type: story.data.type,
+          title: story.data.title,
+          description: story.data.description,
+          author: story.data.author,
+          date: story.date,
+          featured: false,
+          url: story.url
+        })
+      }}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- endset -%}
+
+{%- if storyData !=="" -%}
+  <h2>{{ params.title }}</h2>
+  {{ storyData | safe }}
+{%- endif -%}
+{% endmacro %}
