@@ -2,19 +2,16 @@
 layout: layouts/default.njk
 ---
 
-<div class="page-banner" {% if type or id %}data-type="{{ type }}"{% endif %}>
-  <div class="l-wrapper">
-    <h2 class="h1" data-pagefind-meta="title">{{ title }}</h2>
-    {%- if pageDescription -%}
-      <p>{{ pageDescription }}</p>
-    {%- elif description -%}
-      <p>{{ description }}</p>
-    {%- endif -%}
-  </div>
-    {%- if image -%}
-      <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
-    {%- endif -%}
-</div>
+{%- from '_macros/page-banner.njk' import pageBanner with context -%}
+
+{{ pageBanner({
+  type: type,
+  header: title,
+  image: banner.image,
+  mask: banner.mask,
+  circle: banner.circle
+  })
+}}
 
 <div class="l-wrapper">
   <div class="l-section">

@@ -41,17 +41,12 @@
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: url("/images/banners/banner-circle-1.svg") center center no-repeat;
+  background: var(--circle, url("/images/banners/banner-circle-1.svg")) center center no-repeat;
   background-size: contain;
   mix-blend-mode: overlay;
 }
 
-[data-type="search"] .page-banner-img::after {
-  background-image: url("/images/banners/banner-circle-5.svg");
-}
-
 [data-type="about"] .page-banner-img::after {
-  background-image: url("/images/banners/banner-circle-3.svg");
   background-size: cover;
 }
 
@@ -60,8 +55,9 @@
 }
 
 [data-type="story"] .page-banner-img {
+  display: block;
   inset: 0;
-  background: var(--background);
+  background: var(--background) center center no-repeat;
   opacity: 0.2;
   filter: blur(6px);
   mix-blend-mode: multiply;
@@ -71,10 +67,6 @@
   background-image: url("/images/scribbles/story.svg");
   inset-block-end: 30%;
   background-position: right top;
-}
-
-[data-type="topic"] .page-banner-img::after {
-  content: none;
 }
 
 [data-width="full"] :is(.l-wrapper, .nametag, .nametag-text h2) {
@@ -88,32 +80,29 @@
 }
 
 .page-banner .l-wrapper {
-    position: relative;
-    z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 
 .page-banner:not([data-width="full"]) :is(p, h1, h2) {
   max-inline-size: var(--t-measure);
 }
 
-.page-banner h1,
-.page-banner .h1 {
-    text-align: left;
-    max-inline-size: 38ch;
-    margin-block-start: 0;
+.page-banner :is(h1, .h1) {
+  text-align: left;
+  max-inline-size: 38ch;
+  margin-block-start: 0;
 }
 
 .page-banner p {
-    text-wrap: balance;
-    max-inline-size: var(--t-measure);
+  text-wrap: balance;
+  max-inline-size: var(--t-measure);
 }
-
 
 [data-width="full"] .l-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  /*align-items: center;*/
   gap: var(--t-paragraph);
 }
 
@@ -176,6 +165,7 @@
   text-decoration: none;
   gap: 1em;
   justify-self: start;
+  margin-block-start: var(--l-stack-gap);
 }
 
 .page-banner-back svg {
@@ -199,19 +189,7 @@
     mask-repeat: no-repeat;
     background: var(--background) center center no-repeat;
     background-size: cover;
-    mask-image: url("/images/banners/mask.svg");
-  }
-
-  [data-type="search"] .page-banner-img {
-    mask-image: url("/images/banners/mask2.svg");
-  }
-
-  [data-type="topic"] .page-banner-img {
-    mask-image: url("/images/banners/mask3.svg");
-  }
-
-  [data-type="about"] .page-banner-img {
-    mask-image: url("/images/banners/mask4.svg");
+    mask-image: var(--mask, url("/images/banners/mask.svg"));
   }
 
   .page-banner[data-width="full"] .page-banner-img {

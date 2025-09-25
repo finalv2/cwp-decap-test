@@ -52,3 +52,7 @@
   left: -0.25rem;
   flex: none;
 }
+
+.nametag + p {
+  margin-block-start: var(--l-stack-gap);
+}

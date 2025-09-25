@@ -1,0 +1,68 @@
+---
+eleventyExcludeFromCollections: true
+---
+
+
+{%- macro pageBanner(params) -%}
+
+{% if params.pagefindTitle %}
+  {% set pagefindTitle = params.pagefindTitle %}
+{% else %}
+  {% set pagefindTitle = title %}
+{% endif %}
+
+{%- set headline -%}
+  <h2 data-pagefind-weight="9" class="h1" data-pagefind-meta="title:{{ pagefindTitle }}">{{ params.header | safe }}</h2>
+{%- endset -%}
+
+<div class="page-banner"{%- if params.type -%} data-type="{{ params.type }}"{%- endif -%}{%- if params.full -%} data-width="full"{%- endif -%}>
+  <div class="l-wrapper">
+    {%- if params.badge or params.icon -%}
+      <div class="nametag">
+        {%- if params.badge -%}
+          <span class="nametag-badge subhead">{{ params.badge }}<span class="sr-only">: </span></span>
+        {%- endif -%}
+        <div class="nametag-text">
+          {%- if params.icon -%}
+            {% icon params.icon %}
+          {%- endif -%}
+          {{- headline | safe -}}
+        </div>
+      </div>
+    {%- else -%}
+      {{- headline | safe -}}
+    {%- endif -%}
+    {%- if params.subheader -%}
+      <p>{{ params.subheader | safe }}</p>
+    {%- elif pageDescription and not params.hideSubheader -%}
+      <p>{{ pageDescription | safe }}</p>
+    {%- elif description and not params.hideSubheader -%}
+      <p>{{ description | safe }}
+    {%- endif -%}
+
+    {%- if params.backLinkText -%}
+      <p><a href="{{ params.backLinkUrl }}" class="page-banner-back subhead">{% icon "arrow-u-up-left" %}{{ params.backLinkText }}</a></p>
+    {%- elif params.tags -%}
+      <div class="page-topics" data-pagefind-weight="0.5">
+        <h3 class="sr-only">Topics</h3>
+        <ul>
+          {%- for topic in collections.topics -%}
+            {%- for tag in params.tags -%}
+              {%- if topic.data.id == tag -%}
+                <li><a href="{{ topic.url }}">{% icon topic.data.icon %} {{ topic.data.title }}</a></li>
+                {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+
+    {%- if params.author or params.date-%}
+      <p class="subhead">Written{%- if params.author %} by {{ author }}{%- endif -%}{%- if params.date %} on {{ params.date | humanDate }}{%- endif -%}</p>
+    {%- endif -%}
+  </div>
+  {%- if params.image -%}
+    <div class="page-banner-img" fetchpriority="high" style="--background: url('{{ params.image }}'); {%- if params.mask -%}--mask: url('{{ params.mask}}');{%- endif -%}{%- if params.circle -%} --circle: url('{{ params.circle }}');{%- endif -%}"></div>
+  {% endif %}
+</div>
+{%- endmacro -%}

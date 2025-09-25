@@ -7,7 +7,10 @@ eleventyComputed:
   pageCss: "{% include 'css/pages/search.css' %}"
 type: search
 search: true
-image: /images/banners/search.jpg
+banner:
+  image: /images/banners/search.jpg
+  mask: /images/banners/mask2.svg
+  circle: /images/banners/banner-circle-5.svg
 tags:
   - noTopic
 pageTypes:
@@ -33,6 +36,11 @@ pageTypes:
     iconName: cards-three
 ---
 
+{%- from '_macros/page-banner.njk' import pageBanner with context -%}
+{%- from '_macros/resource-card.njk' import resourceCard -%}
+{%- from '_macros/topic-card.njk' import topicCard %}
+{%- from '_macros/story-card.njk' import storyCard %}
+
 {%- macro blankTemplate(params) -%}
   <li class="search-result-blank">{% icon "list-magnifying-glass" %}
     <strong>Start your search</strong>
@@ -40,13 +48,15 @@ pageTypes:
   </li>
 {%- endmacro -%}
 
-<div class="page-banner" data-type="search">
-  <div class="l-wrapper">
-    <h2 class="h1">{{ title }}</h2>
-    <p>{{ subheader }}</p>
-  </div>
-  <div class="page-banner-img" style="--background: url('{{ image }}')"></div>
-</div>
+{{ pageBanner({
+  type: type,
+  header: title,
+  subheader: subheader,
+  image: banner.image,
+  mask: banner.mask,
+  circle: banner.circle
+  })
+}}
 
 <div class="l-section">
 <div class="l-wrapper">

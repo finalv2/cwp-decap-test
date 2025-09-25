@@ -1,6 +1,7 @@
 ---
 layout: layouts/default.njk
 video: true
+type: meeting
 pageIndex: all
 eleventyComputed:
   description: "{{ meetingsDashboards.meetingsMetaDescription }}"
@@ -8,9 +9,10 @@ eleventyComputed:
 pagefind:
   type: Meeting
 ---
-
+{%- from '_macros/page-banner.njk' import pageBanner with context -%}
 {%- from '_macros/resource-card.njk' import resourceCard -%}
-{%- from '_macros/story-card.njk' import storyCard -%}
+{%- from '_macros/topic-card.njk' import topicCard %}
+{%- from '_macros/story-card.njk' import storyCard %}
 
 {%- set resourceData -%}
   {%- for relatedResource in resources -%}
@@ -49,31 +51,19 @@ pagefind:
   {%- endfor -%}
 {%- endset -%}
 
-<div class="page-banner" data-type="meeting" data-width="full">
-  <div class="l-wrapper">
-    <div class="l-stack-basic">
-      <div class="nametag" data-pagefind-meta="title:{{ title}} community meeting" data-pagefind-weight="9">
-        <span class="nametag-badge subhead">Community meeting<span class="sr-only">:</span></span>
-        <div class="nametag-text">
-          <h2 class="h1">{{ title }}</h2>
-        </div>
-      </div>
+{% set pagefindTitle %}{{ title }} community meeting{% endset %}
 
-      <div class="page-topics" data-pagefind-weight="0.5">
-        <h3 class="sr-only">Topics</h3>
-        <ul>
-          {%- for topic in collections.topics -%}
-            {%- for tag in tags -%}
-              {%- if topic.data.id == tag -%}
-                <li><a href="{{ topic.url }}">{% icon topic.data.icon %} {{ topic.data.title }}</a></li>
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endfor -%}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+{{ pageBanner({
+  type: type,
+  pagefindTitle: pagefindTitle,
+  header: title,
+  badge: "Community meeting",
+  tags: tags,
+  topics: collections.topics,
+  full: true,
+  hideSubheader: true
+  })
+}}
 
 <div class="l-wrapper">
 
