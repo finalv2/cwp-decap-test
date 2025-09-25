@@ -5,6 +5,13 @@ eleventyExcludeFromCollections: true
 {%- from '_macros/story-card.njk' import storyCard -%}
 
 {% macro storyList(params) %}
+
+{%- if params.headerLevel %}
+  {%- set headerLevel = params.headerLevel -%}
+{%- else -%}
+  {%- set headerLevel = "2" -%}
+{%- endif -%}
+
 {%- set storyData -%}
 {%- for relatedStory in params.stories -%}
   {%- for item in collections.stories -%}
@@ -26,7 +33,7 @@ eleventyExcludeFromCollections: true
 {%- endset -%}
 
 {%- if storyData !=="" -%}
-  <h2>{{ params.title }}</h2>
+  <h{{ headerLevel }}>{{ params.title }}</h{{ headerLevel }}>
   {{ storyData | safe }}
 {%- endif -%}
 {% endmacro %}

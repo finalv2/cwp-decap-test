@@ -5,6 +5,13 @@ eleventyExcludeFromCollections: true
 {%- from '_macros/resource-card.njk' import resourceCard with context -%}
 
 {% macro resourceList(params) %}
+
+{%- if params.headerLevel %}
+  {%- set headerLevel = params.headerLevel -%}
+{%- else -%}
+  {%- set headerLevel = "2" -%}
+{%- endif -%}
+
 {%- set resourceData -%}
 {%- for resource in params.resources -%}
   {%- for item in collections.resources -%}
@@ -22,7 +29,7 @@ eleventyExcludeFromCollections: true
 {%- endset -%}
 
 {%- if resourceData !== "" -%}
-  <h2>{{ params.title }}</h2>
+  <h{{ headerLevel }}>{{ params.title }}</h{{ headerLevel }}>
   {{ resourceData | safe }}
 {%- endif -%}
 {% endmacro %}

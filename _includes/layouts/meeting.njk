@@ -40,9 +40,9 @@ pagefind:
   <h3>What we discussed</h3>
   {{ content | md | safe }}
 
-  {{ resourceList({title: "Related resources", resources: resources}) }}
+  {{ resourceList({title: "Related resources", resources: resources, headerLevel: "3"}) }}
 
-  {{ storyList({title: "Related stories", stories: stories}) }}
+  {{ storyList({title: "Related stories", stories: stories, headerLevel: "3"}) }}
   </div>
 </div>
 </div>
