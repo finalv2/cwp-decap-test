@@ -338,22 +338,6 @@
   flex: 1;
 }
 
-.search-counter:empty {
-  display: none;
-}
-
-.search-counter {
-  border-radius: var(--radius-lg);
-  background: var(--c-gray-lighter);
-  padding-inline: 0.5rem;
-  align-self: center;
-}
-
-.topic-filter-label:has(:checked) .search-counter {
-  color: var(--c-white);
-  background: var(--c-blue);
-}
-
 #load-more-button {
   border: 3px solid var(--c-gray-lighter);
   background: var(--c-white);

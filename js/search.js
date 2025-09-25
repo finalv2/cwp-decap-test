@@ -33,8 +33,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
 
   // Filter indicators
 
-  // const queryResultIndicator = document.querySelector("[data-indicator='query']");
-  // const queryResultIndicatorText = queryResultIndicator.querySelector("span");
   const searchResultIndicators = document.querySelector(".search-result-filters");
   const typeResultIndicator = document.querySelector("[data-indicator='type']");
   const typeResultIndicatorText = typeResultIndicator.querySelector("span");
