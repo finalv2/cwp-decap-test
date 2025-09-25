@@ -11,6 +11,8 @@ type: Blog post
 image: .images/stories/kin-engagement.jpg
 tags:
   - story
+  - caregiver-licensing
+  - kin-engagement
 resources:
   - Kin licensing standards
   - Kin licensing forms
