@@ -40,8 +40,8 @@
   position: absolute;
   content: "";
   inset: -2rem;
-  background: url("/images/banners/banner-circle-1.svg") center center no-repeat;
+  background: url("/images/banners/banner-circle-resource.svg") center center no-repeat;
   background-size: contain;
   mix-blend-mode: multiply;
-  z-index: 1;
+  z-index: -1;
 }

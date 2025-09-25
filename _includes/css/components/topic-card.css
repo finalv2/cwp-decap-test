@@ -12,6 +12,7 @@
   position: relative;
   border-radius: var(--radius-lg);
   align-self: start;
+  cursor: pointer;
 }
 
 .topic-card::before {
@@ -49,12 +50,6 @@
   color: var(--header-color);
 }
 
-.topic-card:hover {
-  background: var(--c-blue);
-  border-color: var(--c-blue);
-  transform: scale(1.02);
-}
-
 .topic-card svg {
   fill: var(--header-color);
   inline-size: 1.5em;
@@ -63,10 +58,17 @@
   translate: 0 0.125em;
 }
 
-.topic-card:hover {
+.topic-card:is(:hover, :focus) {
   --header-color: var(--c-white);
+  background: var(--c-blue);
+  border-color: var(--c-blue);
+  scale: 1.02;
 }
 
-.topic-card:hover p {
+.topic-card:is(:hover, :focus) p {
   color: var(--c-white);
+}
+
+.topic-card:active {
+  scale: 0.99;
 }

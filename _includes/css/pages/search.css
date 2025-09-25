@@ -117,11 +117,11 @@
 
 @keyframes resultFade {
   from {
-    background: #ddd;
+    background: #D2D9E8;
   }
 
   to {
-    background: #bbb;
+    background: #B2B8C4;
   }
 }
 

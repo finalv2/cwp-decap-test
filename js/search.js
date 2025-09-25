@@ -96,7 +96,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     // and page type filters we should show and hide)
     const unfilteredSearch = await pagefind.search(currentQuery);
 
-    const isUnfiltered = !currentQuery && !activeFilters.topics && !activeFilters.pageType;
+    const isNotSearching = !currentQuery && !activeFilters.topics && !activeFilters.pageType;
 
     // Search with filters applied
     const search = await pagefind.search(
@@ -195,7 +195,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     allResultsCount = unfilteredSearch.results.length;
     matchingResultsCount = (!currentTopicFilter && !currentTypeFilter) ? allResultsCount : search.results.length;
 
-    if (isUnfiltered) {
+    if (isNotSearching) {
       replaceResultsWith(blankTemplate);
     } else {
       if (allResultsCount < 1) {
@@ -266,7 +266,7 @@ window.addEventListener('DOMContentLoaded', async (e) => {
     // Hide and show the "Load more" button based on
     // whether there are more results to display
 
-    if (isUnfiltered || resultsPerPage * pageCount >= matchingResultsCount) {
+    if (isNotSearching || resultsPerPage * pageCount >= matchingResultsCount) {
       loadMoreButton.hidden = true;
     } else if (matchingResultsCount > resultsPerPage) {
       loadMoreButton.hidden = false;
@@ -335,7 +335,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
   }
 
   // Click event listeners
-
   loadMoreButton.addEventListener('click', async (e) => {
     pageCount += 1;
 

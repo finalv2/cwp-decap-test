@@ -3,10 +3,10 @@
   margin-block-end: calc(var(--t-paragraph) * 2);
 }
 
-.home-header + .story-card-wrapper {
-  margin-block-start: calc(var(--t-paragraph) * 2.5);
-}
-
 .home-header * {
   max-inline-size: unset;
+}
+
+.home-header + .story-card-wrapper {
+  margin-block-start: calc(var(--t-paragraph) * 2.5);
 }

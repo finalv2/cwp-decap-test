@@ -6,7 +6,13 @@
   margin: 0;
 }
 
-/* Play card */
+/* Strategy card */
+
+@keyframes strategyCardWiggle {
+  to {
+    transform: translateX(-0.25rem)
+  }
+}
 
 .strategy-card {
   padding: 0;
@@ -32,26 +38,6 @@
               border-color 150ms ease-out;
 }
 
-
-@keyframes arrowWiggle {
-  to {
-    transform: translateX(-0.25rem)
-  }
-}
-
-.strategy-card a:is(:focus, :hover) {
-  background: var(--c-light-blue);
-  scale: 1.01;
-}
-
-.strategy-card a:is(:focus, :hover) svg {
-  animation: arrowWiggle 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
-}
-
-.strategy-card a:active {
-  scale: 1.02;
-}
-
 .strategy-card span {
   flex: 1;
 }
@@ -61,4 +47,17 @@
   block-size: 1.5rem;
   fill: currentColor;
   flex: none;
+}
+
+.strategy-card a:is(:focus, :hover) {
+  background: var(--c-light-blue);
+  scale: 1.01;
+}
+
+.strategy-card a:is(:focus, :hover) svg {
+  animation: strategyCardWiggle 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
+}
+
+.strategy-card a:active {
+  scale: 1.02;
 }
