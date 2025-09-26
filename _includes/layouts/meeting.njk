@@ -14,13 +14,10 @@ pagefind:
 {%- from '_macros/story-list.njk' import storyList with context %}
 {%- from '_macros/topic-card.njk' import topicCard with context %}
 
-{% set pagefindTitle %}{{ title }} community meeting{% endset %}
-
 {{ pageBanner({
   type: type,
-  pagefindTitle: pagefindTitle,
   header: title,
-  badge: "Community meeting",
+  badge: "Meeting",
   tags: tags,
   topics: collections.topics,
   full: true,
