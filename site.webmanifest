@@ -11,5 +11,13 @@
       "sizes": "512x512",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#0052AF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0052AF",
+  "name": "Child Welfare Playbook",
+  "short_name": "CWP"
 }
