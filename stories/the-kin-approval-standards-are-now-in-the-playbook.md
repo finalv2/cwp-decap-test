@@ -2,6 +2,7 @@
 layout: layouts/story.njk
 templateEngineOverride: md,njk
 title: The kin licensing standards are now in the playbook
+permalink: /kinstandards
 description: The Child Welfare Playbook now includes strategies and resources
   from the federal kin licensing standards to help agencies improve approval
   processes for kin caregivers.
