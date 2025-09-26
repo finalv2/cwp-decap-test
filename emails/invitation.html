@@ -9,4 +9,4 @@ templateEngineOverride: md
   You have been invited to create an account to edit content on {{ .SiteURL }}. Follow
   this link to accept the invite:
 </p>
-<p><a href="/admin/{{ .ConfirmationURL }}">Accept the invite</a></p>
+<p><a href="{{ .SiteURL }}/admin/#invite_token={{ .Token }}">Accept the invite</a></p>
