@@ -9,7 +9,8 @@ order: "1"
 resources:
   - Oklahoma child safety guidebook
   - Oklahoma safety plan template
-redirectFrom: /recommendations/hold-child-safety-meetings-to-find-least-restrictive-interventions/
+redirectFrom:
+  - /recommendations/hold-child-safety-meetings-to-find-least-restrictive-interventions/
 ---
 Even when there are safety concerns, it isn't always necessary to remove a child or youth from their home. 
 

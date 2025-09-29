@@ -1,5 +1,6 @@
 ---
-redirectFrom: https://childwelfareplaybook.com/topics/connecting-youth-to-their-supportive-adults/
+redirectFrom:
+  - https://childwelfareplaybook.com/topics/connecting-youth-to-their-supportive-adults/
 summary: Help children and youth maintain relationships with siblings, family
   members, and other important people in their lives.
 layout: layouts/topic.njk

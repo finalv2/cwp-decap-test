@@ -6,7 +6,8 @@ tags:
   - strategy
   - retention
 order: "4"
-redirectFrom: /recommendations/identify-natural-supports-for-caregivers/
+redirectFrom:
+  - /recommendations/identify-natural-supports-for-caregivers/
 ---
 
 Caregivers need support beyond what your agency can provide. Help caregivers identify and plan how to use their natural support networks early in the process so they can be activated when needed.

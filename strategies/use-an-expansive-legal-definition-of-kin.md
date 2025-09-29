@@ -9,7 +9,8 @@ order: "2"
 resources:
   - Federal comment on kin definition
   - Kin licensing standards
-redirectFrom: /recommendations/use-expansive-legal-definition-of-kin/
+redirectFrom:
+  - /recommendations/use-expansive-legal-definition-of-kin/
 ---
 Many agencies use narrow definitions of kin that only include blood relatives or legal family members. This limits placement options and support networks for children and youth in care, potentially forcing placements with strangers when kin connections are available.
 

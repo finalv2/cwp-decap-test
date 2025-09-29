@@ -9,7 +9,8 @@ order: 5
 resources:
   - Michigan diligent search checklist
   - Florida kin engagement guide
-redirectFrom: /recommendations/maintain-a-shared-list-of-kin/
+redirectFrom:
+  - /recommendations/maintain-a-shared-list-of-kin/
 ---
 Kin information often gets lost in case notes or scattered across different workers' files, leaving children and youth without access to potential placements and ongoing support.
 

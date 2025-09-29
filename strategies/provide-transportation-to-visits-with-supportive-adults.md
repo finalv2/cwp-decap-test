@@ -6,7 +6,8 @@ tags:
   - strategy
   - supportive-relationships
 order: "7"
-redirectFrom: /recommendations/provide-transportation-to-visits-with-supportive-adults/
+redirectFrom:
+  - /recommendations/provide-transportation-to-visits-with-supportive-adults/
 ---
 Children and youth in care often lose touch with supportive adults because transportation becomes a barrier to maintaining those relationships. Caseworkers and foster parents can sometimes provide this transportation, but your system should make sure that good transportation options are available. Provide reliable transportation options to keep children and youth connected with their supportive adults.
 

@@ -11,7 +11,8 @@ resources:
   - Kin licensing standards
   - Kin licensing forms
 stories: []
-redirectFrom: https://childwelfareplaybook.com/topics/out-of-state-background-checks/
+redirectFrom:
+  - https://childwelfareplaybook.com/topics/out-of-state-background-checks/
 ---
 Out-of-state child abuse and neglect registry checks (often referred to as Adam Walsh checks) can take months to complete and delay approvals for foster families that are ready to care for children. They are particularly burdensome for kin caregivers who already have children in their home, but cannot get licensed until this step is complete.
 

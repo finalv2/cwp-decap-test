@@ -6,7 +6,8 @@ tags:
   - strategy
   - retention
 order: 5
-redirectFrom: /recommendations/recognize-foster-families/
+redirectFrom:
+  - /recommendations/recognize-foster-families/
 ---
 Caregivers often leave the system when they feel overextended and undervalued. Recognize current caregivers through awards, events, welcome bags, and other gestures so they feel appreciated and supported. This may also attract potential foster parents or encourage kin to become caregivers through positive word-of-mouth.
 

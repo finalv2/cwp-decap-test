@@ -6,7 +6,8 @@ tags:
   - strategy
   - retention
 order: "6"
-redirectFrom: /recommendations/increase-retention-with-renewal-check-ins/
+redirectFrom:
+  - /recommendations/increase-retention-with-renewal-check-ins/
 ---
 
 With foster homes in such high demand, it's all too easy to keep making placements in a home until the family burns out and quits. Families that are feeling overwhelmed might benefit from respite or taking lower-need children for a time, while families that are gaining experience may be ready to take on higher-need placements.

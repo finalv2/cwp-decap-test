@@ -8,7 +8,8 @@ tags:
 order: "9"
 resources:
   - Life book templates
-redirectFrom: /recommendations/create-life-books/
+redirectFrom:
+  - /recommendations/create-life-books/
 ---
 Children's histories, relationships, and important memories can easily get lost as they move through the foster care system. You can help preserve these connections by capturing key milestones and relationships in a life book. Create and maintain life books that follow children and youth wherever they go.
 

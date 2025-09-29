@@ -6,7 +6,8 @@ tags:
   - strategy
   - prevention
 order: "4"
-redirectFrom: /recommendations/set-a-time-limit-on-voluntary-safety-plans/
+redirectFrom:
+  - /recommendations/set-a-time-limit-on-voluntary-safety-plans/
 ---
 Voluntary safety plans can help families stay together when safety concerns arise. But without clear time limits, families may feel coerced into following a plan indefinitely out of fear their child will be removed. This creates "hidden foster care" that undermines family autonomy.
 

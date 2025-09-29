@@ -8,7 +8,8 @@ tags:
 order: "6"
 resources:
   - Oregon shelter hearing benchbook
-redirectFrom: /recommendations/leverage-the-court-system-to-encourage-kin/
+redirectFrom:
+  - /recommendations/leverage-the-court-system-to-encourage-kin/
 ---
 Since child welfare cases appear before judges regularly, court hearings provide natural opportunities to hold agencies accountable and check on efforts to engage kin. Courts can also remove legal barriers that prevent agencies from finding paternal kin.
 

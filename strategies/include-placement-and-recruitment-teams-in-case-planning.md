@@ -6,7 +6,8 @@ tags:
   - strategy
   - kin-engagement
 order: "6"
-redirectFrom: /recommendations/include-placement-and-recruitment-in-case-planning/
+redirectFrom:
+  - /recommendations/include-placement-and-recruitment-in-case-planning/
 ---
 
 Placement and recruitment teams do their best work when they understand the specific needs and circumstances of the children and youth in your system. 

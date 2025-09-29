@@ -10,7 +10,8 @@ resources:
   - DC Child and Family Services social media policy
   - Michigan diligent search checklist
   - "Kin finding learning community session: Using social media"
-redirectFrom: /recommendations/use-social-media/
+redirectFrom:
+  - /recommendations/use-social-media/
 ---
 Social media can help you identify kin that traditional search tactics might miss. Make social media searches part of your regular process for locating and connecting with kin.
 

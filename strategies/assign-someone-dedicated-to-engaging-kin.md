@@ -6,7 +6,8 @@ tags:
   - strategy
   - kin-engagement
 order: 3
-redirectFrom: /recommendations/establish-a-dedicated-family-finding-responsibility/
+redirectFrom:
+  - /recommendations/establish-a-dedicated-family-finding-responsibility/
 ---
 Though every team member can play a role in maintaining kin connections, without clear ownership over engaging kin, important steps can fall through the cracks.  
 

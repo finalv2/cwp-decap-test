@@ -6,7 +6,8 @@ tags:
   - strategy
   - supportive-relationships
 order: "10"
-redirectFrom: /recommendations/provide-training-for-supportive-adults/
+redirectFrom:
+  - /recommendations/provide-training-for-supportive-adults/
 ---
 Supportive adults want to be helpful, but they may not know how. Offer training and support to supportive adults to help them be a more active and supportive presence in the lives of children or youth in your system.
 
