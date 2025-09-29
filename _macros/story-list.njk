@@ -33,7 +33,7 @@ eleventyExcludeFromCollections: true
 {%- endset -%}
 
 {%- if storyData !=="" -%}
-  <h{{ headerLevel }}>{{ params.title }}</h{{ headerLevel }}>
+<h{{ headerLevel }}>{{ params.title }}</h{{ headerLevel }}>
   {{ storyData | safe }}
 {%- endif -%}
 {% endmacro %}
