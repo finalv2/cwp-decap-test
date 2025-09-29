@@ -12,7 +12,6 @@ resources:
   - Kin licensing forms
 redirectFrom:
   - example 1
-  - example 2
 ---
 Kin caregivers have a right to appeal if your agency decides that youth should not live with them. 
 
