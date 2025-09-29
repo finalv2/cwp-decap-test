@@ -12,7 +12,7 @@ tags:
   - story
   - prevention
 resources:
-  - "Warmlines: Key features and lessons learned"
+  - "Research summary: Warmlines"
   - Warmlines component map
 redirectFrom: https://childwelfareplaybook.com/blog/understanding-warmlines/
 ---
