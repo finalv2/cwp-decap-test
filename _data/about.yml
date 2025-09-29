@@ -32,4 +32,5 @@ content: >-
 
 
   [Watch recordings of our past meetings](https://childwelfareplaybook.com/search/?type=Meeting).
-redirectFrom: /about/
+redirectFrom:
+  - /about/

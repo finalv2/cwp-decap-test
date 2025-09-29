@@ -1,5 +1,6 @@
 ---
-redirectFrom: https://childwelfareplaybook.com/topics/finding-kin/
+redirectFrom:
+  - https://childwelfareplaybook.com/topics/finding-kin/
 summary: Find and engage family members and other trusted adults who can care
   for children and youth or provide ongoing support.
 layout: layouts/topic.njk

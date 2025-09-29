@@ -4,4 +4,5 @@ subheader: Search the playbook for strategies, stories, resources, and working
   group meetings.
 metaDescription: Search the playbook for strategies, stories, resources, and
   working group meetings.
-redirectFrom: /search/
+redirectFrom:
+  - /search/

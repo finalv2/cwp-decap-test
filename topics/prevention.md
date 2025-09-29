@@ -1,5 +1,6 @@
 ---
-redirectFrom: https://childwelfareplaybook.com/topics/prevention/
+redirectFrom:
+  - https://childwelfareplaybook.com/topics/prevention/
 summary: Strengthen and support families and communities to avoid the need for
   child welfare involvement.
 layout: layouts/topic.njk

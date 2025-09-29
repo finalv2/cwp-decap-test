@@ -6,7 +6,8 @@ tags:
   - strategy
   - prevention
 order: "5"
-redirectFrom: /recommendations/quickly-offer-specific-concrete-goods/
+redirectFrom:
+  - /recommendations/quickly-offer-specific-concrete-goods/
 ---
 Vague references to "services" or "resources" don’t make it clear to families why you're calling or what help is available. This makes them less likely to engage. Tell families exactly what items or assistance you can provide to build trust and show immediate value.
 

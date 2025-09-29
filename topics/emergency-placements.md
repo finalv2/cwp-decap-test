@@ -6,7 +6,8 @@ layout: layouts/topic.njk
 icon: lifebuoy
 summary: Find safe, temporary placements for children and youth who need a place
   to go immediately.
-redirectFrom: https://childwelfareplaybook.com/topics/emergency-placements/
+redirectFrom:
+  - https://childwelfareplaybook.com/topics/emergency-placements/
 order: 4
 ---
 

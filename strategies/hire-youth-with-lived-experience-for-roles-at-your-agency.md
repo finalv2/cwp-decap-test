@@ -6,7 +6,8 @@ tags:
   - strategy
   - supporting-older-youth
 order: "3"
-redirectFrom: /recommendations/hire-youth-with-lived-experience/
+redirectFrom:
+  - /recommendations/hire-youth-with-lived-experience/
 ---
 
 Child welfare agencies often lack the perspective of people who experienced the system. Without it, agencies may miss important problems or make choices that don't work for the youth they serve.

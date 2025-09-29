@@ -6,7 +6,8 @@ tags:
   - strategy
   - kin-engagement
 order: "14"
-redirectFrom: /recommendations/provide-childcare-at-resource-parent-events/
+redirectFrom:
+  - /recommendations/provide-childcare-at-resource-parent-events/
 ---
 
 Childcare can be a major barrier to potential caregivers. It can stop them from attending training, recognition events, and support groups. You can make it easier for them by providing childcare on-site.

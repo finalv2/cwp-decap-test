@@ -12,7 +12,8 @@ resources:
   - Michigan’s kin notification form
   - Iowa policy requirements
   - "Hawaii maintaining connections manual "
-redirectFrom: /recommendations/plan-for-youth-to-keep-connected-supportive-adults/
+redirectFrom:
+  - /recommendations/plan-for-youth-to-keep-connected-supportive-adults/
 ---
 Long-term, consistent relationships with supportive adults are critical to a child or youth’s well-being. Supportive adults can provide emotional support, stability, and a sense of belonging, as well as practical support like transportation, tutoring, and advice. 
 

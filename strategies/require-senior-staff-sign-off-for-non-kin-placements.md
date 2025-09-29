@@ -8,7 +8,8 @@ tags:
 order: "4"
 resources:
   - New York kin-first policy
-redirectFrom: /recommendations/senior-staff-sign-off-for-non-relative-placements/
+redirectFrom:
+  - /recommendations/senior-staff-sign-off-for-non-relative-placements/
 ---
 Caseworkers don't want to wake a director in the middle of the night to sign off on a non-relative placement. Requiring this level of sign-off incentivizes thorough efforts to engage kin and may prevent placements in group homes by encouraging workers to exhaust all kin options first.
 

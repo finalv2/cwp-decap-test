@@ -6,7 +6,8 @@ icon: handshake
 image: /images/banners/retention.jpg
 summary: Keep experienced caregivers engaged through support, financial
   assistance, and recognition.
-redirectFrom: https://childwelfareplaybook.com/topics/retention
+redirectFrom:
+  - https://childwelfareplaybook.com/topics/retention
 order: 8
 ---
 

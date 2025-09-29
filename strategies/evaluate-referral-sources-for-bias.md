@@ -6,7 +6,8 @@ tags:
   - strategy
   - prevention
 order: "7"
-redirectFrom: /recommendations/evaluate-referral-sources-for-bias/
+redirectFrom:
+  - /recommendations/evaluate-referral-sources-for-bias/
 ---
 
 Sources that refer families to child welfare may have biases that aren’t immediately clear. For example, they may over-refer Black and Brown families, or refer families for reasons that don't require child welfare involvement. If you aren’t looking for these patterns, they can persist and harm families. 

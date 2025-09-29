@@ -6,7 +6,8 @@ tags:
   - strategy
   - supportive-relationships
 order: "5"
-redirectFrom: /recommendations/remove-barriers-for-visits-with-adult-siblings/
+redirectFrom:
+  - /recommendations/remove-barriers-for-visits-with-adult-siblings/
 ---
 
 Adult siblings are often prevented from visiting their younger siblings in care by unnecessary restrictions. This is especially frustrating for siblings who have just aged out of foster care themselves. Let foster parents make simple decisions about sibling visits without requiring agency approval for every interaction.

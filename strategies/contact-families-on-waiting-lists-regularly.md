@@ -6,7 +6,8 @@ tags:
   - strategy
   - prevention
 order: "6"
-redirectFrom: /recommendations/keep-your-wait-list-warm/
+redirectFrom:
+  - /recommendations/keep-your-wait-list-warm/
 ---
 When demand for prevention services is greater than the supply, families end up on waiting lists. Families may lose interest while they’re waiting, or they may not be ready to participate when services become available.
 

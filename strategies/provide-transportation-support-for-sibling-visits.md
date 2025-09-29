@@ -6,7 +6,8 @@ tags:
   - strategy
   - supportive-relationships
 order: "6"
-redirectFrom: /recommendations/provide-transportation-for-sibling-visits/
+redirectFrom:
+  - /recommendations/provide-transportation-for-sibling-visits/
 ---
 Transportation can often be the biggest barrier to sibling visits. Provide transportation options and reimburse caregivers for transportation costs to make it easier for siblings to visit more often.
 

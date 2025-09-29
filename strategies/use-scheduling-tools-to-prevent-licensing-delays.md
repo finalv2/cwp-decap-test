@@ -6,7 +6,8 @@ tags:
   - strategy
   - caregiver-licensing
 order: "7"
-redirectFrom: /recommendations/send-appointment-reminders/
+redirectFrom:
+  - /recommendations/send-appointment-reminders/
 ---
 
 Home study and inspection appointments are often scheduled for families without their input and confirmation. As a result, families can miss important appointments, which is frustrating and delays the licensing process.

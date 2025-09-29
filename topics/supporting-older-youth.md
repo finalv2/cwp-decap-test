@@ -6,7 +6,8 @@ layout: layouts/topic.njk
 icon: cake
 summary: Provide guidance and resources to support older youth as they
   transition to independence.
-redirectFrom: https://childwelfareplaybook.com/topics/extended-foster-care/
+redirectFrom:
+  - https://childwelfareplaybook.com/topics/extended-foster-care/
 order: 9
 ---
 

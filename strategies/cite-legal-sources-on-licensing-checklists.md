@@ -8,7 +8,8 @@ tags:
 order: "8"
 resources:
   - Washington State inspection checklist
-redirectFrom: /recommendations/align-checklists-to-statutes/
+redirectFrom:
+  - /recommendations/align-checklists-to-statutes/
 ---
 Licensing checklists often include requirements that seem arbitrary or outdated to families and staff. And when decision-makers can't see the legal source behind each requirement, it's hard to know which items can be updated and which require policy changes.
 

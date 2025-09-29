@@ -12,7 +12,8 @@ tags:
   - caregiver-licensing
 resources:
   - Oklahoma permanency planning
-redirectFrom: https://childwelfareplaybook.com/blog/permanency-planning-oklahoma/
+redirectFrom:
+  - https://childwelfareplaybook.com/blog/permanency-planning-oklahoma/
 featured: true
 ---
 ## **Overview**
