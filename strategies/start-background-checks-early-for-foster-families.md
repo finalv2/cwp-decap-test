@@ -6,9 +6,8 @@ tags:
   - strategy
   - background-checks
 order: "3"
-redirectFrom:
-  - ""
 ---
+
 Out-of-state background checks and fingerprinting appointments can delay foster family licensing. Start these checks as early as possible, even at orientation, to speed up the process and reduce delays for families.
 
 ### How to do this
