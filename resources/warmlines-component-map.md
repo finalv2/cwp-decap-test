@@ -3,7 +3,7 @@ layout: layouts/resource.njk
 templateEngineOverride: md,njk
 title: Warmlines component map
 filetype: pdf
-file: /images/warmlines-component-map.png
+file: /images/warmlines-component-map-06-16-25.pdf
 tags:
   - resource
   - prevention

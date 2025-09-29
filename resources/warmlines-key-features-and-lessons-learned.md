@@ -1,7 +1,7 @@
 ---
 layout: layouts/resource.njk
 templateEngineOverride: md,njk
-title: "Warmlines: Key features and lessons learned"
+title: "Research summary: Warmlines"
 filetype: pdf
 file: /images/warmlines-research-summary-06-17-25.pdf
 tags:
