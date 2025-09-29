@@ -3,7 +3,9 @@ permalink: /_redirects
 eleventyExcludeFromCollections: true
 ---
 {%- for page in collections.all -%}
-  {%- if page.url and page.data.redirectFrom %}
+  {%- if page.url and page.data.redirectFrom -%}
+    {%- for redirect in page.data.redirectFrom %}
 {{ page.data.redirectFrom }}  {{ page.url }}
+    {%- endfor -%}
   {%- endif -%}
 {%- endfor -%}
