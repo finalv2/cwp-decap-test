@@ -10,6 +10,6 @@ tags:
   - caregiver-licensing
   - retention
 description: People can sign up to fulfill items from a real-time list of needs
-  submitted by verified families, caregivers, and youth connected to Oregon's
-  foster and human services system.
+  submitted by verified families and youth connected to Oregon's foster and
+  human services system.
 ---
