@@ -8,6 +8,7 @@ tags:
 order: "1"
 resources:
   - Treehouse store
+  - My NeighbOR needs list
 redirectFrom:
   - /recommendations/provide-more-ways-for-foster-parents-to-earn-money/
 ---
