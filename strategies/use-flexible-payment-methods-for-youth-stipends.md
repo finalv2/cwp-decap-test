@@ -6,13 +6,14 @@ tags:
   - strategy
   - supporting-older-youth
 order: "2"
+resources:
+  - My NeighbOR needs list
 redirectFrom:
   - /recommendations/give-cash-or-prepaid-cards-for-youth-stipends/
 ---
-
 Older youth often rely on their stipends to cover food and basic necessities. But restrictions like store-specific gift cards or requiring in-person pickup can make it hard for them to get what they need. 
 
-Use flexible payment methods like cash, prepaid cards, or direct deposit to ensure youth can  use their stipends.
+Use flexible payment methods like cash, prepaid cards, or direct deposit to ensure youth can use their stipends.
 
 ## How to do this
 
