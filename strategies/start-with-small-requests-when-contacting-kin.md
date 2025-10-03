@@ -9,6 +9,7 @@ order: "9"
 resources:
   - Michigan’s kin notification form
   - Wisconsin kin engagement training tools
+  - Kin notification letter template
 redirectFrom:
   - /recommendations/be-gentle-when-interacting-with-kin-first-time/
 ---
