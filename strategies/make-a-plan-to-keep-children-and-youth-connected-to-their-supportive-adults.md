@@ -12,6 +12,7 @@ resources:
   - Michigan’s kin notification form
   - Iowa policy requirements
   - "Hawaii maintaining connections manual "
+  - Kin notification letter template
 redirectFrom:
   - /recommendations/plan-for-youth-to-keep-connected-supportive-adults/
 ---
