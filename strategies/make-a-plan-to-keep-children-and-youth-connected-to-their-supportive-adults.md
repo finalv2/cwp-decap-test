@@ -8,6 +8,7 @@ tags:
 order: "1"
 resources:
   - Heart map template
+  - Kin notification letter template
   - Permanency pact
   - Michigan’s kin notification form
   - Iowa policy requirements
@@ -40,7 +41,7 @@ But if a supportive adult can't serve as the caregiver, it requires more intenti
 
 ### Reach out to each supportive adult
 
-**Gather contact information and reach out to each supportive connection.** When reaching out, be clear that you aren’t necessarily looking for the adult to be a caregiver and there are other ways to remain a supportive adult in the child or youth’s life. 
+**Gather contact information and reach out to each supportive connection.** When reaching out, be clear that you aren’t necessarily looking for the adult to be a caregiver and there are other ways to remain a supportive adult in the child or youth’s life. You can find an example in the [kin notification template](https://childwelfareplaybook.com/resources/kin-notification-letter-template/).
 
 **Ask if they can suggest any other supportive relationships.** They might be able to name other supportive adults in the child or youth’s life that they forgot to name.
 

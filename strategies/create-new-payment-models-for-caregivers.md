@@ -31,4 +31,6 @@ Provide support services at all hours to help families maintain placements. Cont
 
 **California** has a successful professional foster parent program through Uplift Human Services.
 
+**Tennessee** has a successful professional foster parent program through Omni Family Services.
+
 **Utah** has proctor families for children with higher levels of need who receive additional training and supports.

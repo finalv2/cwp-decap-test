@@ -11,6 +11,7 @@ resources:
   - Kin licensing forms
   - Rhode Island fire and lead safety inspection checklist
   - Washington State inspection checklist
+  - My NeighbOR needs list
 ---
 Safety inspections often delay approvals when caregivers don't know what items they need ahead of time, can't afford required safety equipment, or have to wait for return visits to resolve minor issues. 
 
