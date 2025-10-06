@@ -50,6 +50,13 @@ collections:
           - { label: "Button text", name: "buttonText", widget: "markdown", minimal: true, required: false }
           - { label: "Button URL", name: "buttonURL", widget: "string", required: false }
           - { label: "Copyright credit", name: "credit", widget: "string", required: false }
+      - label: "Adam Walsh Dashboard page"
+        name: "adamWalsh"
+        file: "_data/adamWalsh.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro copy", name: "intro", widget: "markdown", required: false }
+
   - name: "topics"
     label: "Topics"
     folder: "topics"
