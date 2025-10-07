@@ -9,7 +9,6 @@ order: "14"
 redirectFrom:
   - /recommendations/provide-childcare-at-resource-parent-events/
 ---
-
 Childcare can be a major barrier to potential caregivers. It can stop them from attending training, recognition events, and support groups. You can make it easier for them by providing childcare on-site.
 
 This helps more caregivers complete your licensing process, and do it faster. It also increases attendance at training and events, and builds community among caregivers. It may even help you find new caregivers through childcare volunteers.
@@ -28,6 +27,4 @@ This helps more caregivers complete your licensing process, and do it faster. It
 
 ## This strategy in action
 
-**Frederick County, MD** provides childcare for agency-sponsored events and trainings. Volunteers are usually from community-based organizations like churches. They have to pass a background check that includes fingerprints.  
-
-**Montgomery County, MD** provides free childcare and pizza at monthly foster parent trainings.
+**Maryland** provides childcares for agency-sponsored events and trainings whenever possible. In **Frederick County**, volunteers are usually from community-based organizations like churches. They have to pass a background check that includes fingerprints. **Montgomery County** provides free childcare and pizza at monthly foster parent trainings.
