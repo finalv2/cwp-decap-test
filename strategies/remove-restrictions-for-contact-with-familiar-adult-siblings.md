@@ -9,7 +9,6 @@ order: "5"
 redirectFrom:
   - /recommendations/remove-barriers-for-visits-with-adult-siblings/
 ---
-
 Adult siblings are often prevented from visiting their younger siblings in care by unnecessary restrictions. This is especially frustrating for siblings who have just aged out of foster care themselves. Let foster parents make simple decisions about sibling visits without requiring agency approval for every interaction.
 
 ## How to do this
@@ -24,6 +23,6 @@ Adult siblings are often prevented from visiting their younger siblings in care 
 
 **Rhode Island** treats visits with familiar adult siblings as normal parenting decisions that don't need agency approval.
 
-**Frederick County, MD** doesn’t require background checks for familiar adult siblings to visit with younger siblings.
+**Maryland** doesn’t require background checks for familiar adult siblings to visit with younger siblings.
 
 **Oklahoma** treats visits with adult siblings like other relatives with no required background check.
