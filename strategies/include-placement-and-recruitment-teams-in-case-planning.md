@@ -9,7 +9,6 @@ order: "6"
 redirectFrom:
   - /recommendations/include-placement-and-recruitment-in-case-planning/
 ---
-
 Placement and recruitment teams do their best work when they understand the specific needs and circumstances of the children and youth in your system. 
 
 Include placement and recruitment workers in your routine planning meetings so they can make better placement decisions and focus their efforts where they're most needed.
@@ -24,7 +23,7 @@ Include placement and recruitment workers in your routine planning meetings so t
 
 ## This strategy in action
 
-In **Frederick County, MD**, case workers and placement workers collaborate closely. This lets all team members work together to match children and youth to caregivers who can meet their needs.
+**Maryland** case workers and placement workers collaborate closely. This lets all team members work together to match children and youth to caregivers who can meet their needs.
 
 **Hawaii** holds monthly calls to review its list of children and youth who need placements. These meetings include case workers, shelter representatives, administrators, and recruiters.
 
