@@ -25,4 +25,4 @@ Assign a single caseworker to handle the entire licensing process for each famil
 
 ## This strategy in action
 
-**Frederick County, MD** uses dedicated licensors.
+**Maryland** uses dedicated licensors.
