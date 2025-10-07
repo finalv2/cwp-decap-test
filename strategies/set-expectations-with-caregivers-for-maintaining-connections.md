@@ -44,7 +44,7 @@ Make it standard practice for court-ordered parent visits to include entire sibl
 
 ## This strategy in action
 
-**Frederick County, MD** requires separated siblings to have contact at least monthly per policy, explicitly forbids withholding sibling visits as discipline, introduces all caregivers of separated sibling groups, connects caregivers at the start of placements, and includes content on keeping siblings connected in PRIDE training.
+**Maryland** requires separated siblings to have contact at least monthly per policy, explicitly forbids withholding sibling visits as discipline, introduces all caregivers of separated sibling groups, connects caregivers at the start of placements, and includes content on keeping siblings connected in NTDC training.
 
 **Indiana** and **Washington State** require at least 2 sibling visits per month.
 
