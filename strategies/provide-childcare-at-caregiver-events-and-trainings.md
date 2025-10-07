@@ -27,4 +27,8 @@ This helps more caregivers complete your licensing process, and do it faster. It
 
 ## This strategy in action
 
-**Maryland** provides childcares for agency-sponsored events and trainings whenever possible. In **Frederick County**, volunteers are usually from community-based organizations like churches. They have to pass a background check that includes fingerprints. **Montgomery County** provides free childcare and pizza at monthly foster parent trainings.
+**Maryland** provides childcares for agency-sponsored events and trainings whenever possible. 
+
+In **Frederick County, MD**, volunteers are usually from community-based organizations like churches. They have to pass a background check that includes fingerprints. 
+
+**Montgomery County, MD** provides free childcare and pizza at monthly foster parent trainings.
