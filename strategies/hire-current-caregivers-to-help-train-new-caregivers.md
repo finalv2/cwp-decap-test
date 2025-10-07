@@ -23,6 +23,6 @@ Hire current caregivers to assist as co-leads in new or continuing trainings, or
 
 ## This strategy in action
 
-**Frederick County, MD** hires experienced foster parents to co-facilitate PRIDE foster parent training.  
+**Maryland** hires experienced foster parents to co-facilitate NTDC foster parent training.  
 
 **Fairfax County, VA** hires experienced foster parents to conduct initial home visits for prospective foster families.
