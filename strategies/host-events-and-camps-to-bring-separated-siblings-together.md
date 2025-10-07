@@ -23,11 +23,9 @@ Siblings who are separated in foster care often miss out on opportunities to bui
 
 ## This strategy in action
 
-**Maryland** has Camp Connect, a sleepaway camp for siblings in foster care. Department employees can sign up to work shifts at the camp and receive their normal salary during this time.
+**Maryland** hosts special events, like a petting zoo, for siblings and family members to come together. The state also has Camp Connect, a sleepaway camp for siblings in foster care. Department employees can sign up to work shifts at the camp and receive their normal salary during this time.
 
 **San Diego County, CA** has Camp Connect for siblings to have fun together. It also has other activities throughout the year like beach day and SeaWorld Day. All siblings qualify for Camp Connect.
-
-**Frederick County, MD** hosts events like a petting zoo for siblings to get together. Parents are invited, too!
 
 **Michigan** hosts fun events, such as taking families to the movies or trampoline park. They include siblings, even if those siblings are not in care.
 
