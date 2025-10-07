@@ -25,7 +25,7 @@ Transportation can often be the biggest barrier to sibling visits. Provide trans
 
 **New Hampshire** has a Safe Passage transportation program that can be used for sibling transport.
 
-**Frederick County, MD** uses taxi cabs to transport older children to sibling visits.
+**Maryland** provides transportation for older children to visit their siblings.
 
 **Oklahoma** and **South Carolina** provide transportation reimbursement and incentives for sibling visits.
 
