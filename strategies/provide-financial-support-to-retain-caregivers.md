@@ -34,7 +34,9 @@ Prioritize caregivers when hiring for part-time and full-time roles at your agen
 
 ## This strategy in action
 
-**Maryland** offers 7 paid respite days per year at approved respite providers. Both families get paid for those 7 days. **Frederick County** pays caregivers $20 per session to co-lead trainings, and has extended respite benefits to unlicensed kinship caregivers.
+**Maryland** offers 7 paid respite days per year at approved respite providers. Both families get paid for those 7 days. 
+
+**Frederick County, MD** pays caregivers $20 per session to co-lead trainings, and has extended respite benefits to unlicensed kinship caregivers.
 
 **Washington State** provides 2 paid respite days per month to foster families.
 
