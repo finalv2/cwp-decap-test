@@ -21,6 +21,6 @@ Children's histories, relationships, and important memories can easily get lost 
 
 ## This strategy in action
 
-**Frederick County, MD** prints [life book templates](/resources/life-book-templates/) and puts them in a 3-ring binder.
+**Maryland** provides [life books](/resources/life-book-templates/) to children when they're in care.
 
 **Other jurisdictions** have used free online photo sharing websites like [Moment Garden](http://www.momentgarden.com).
