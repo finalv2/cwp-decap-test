@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import yaml from "js-yaml";
 import markdownIt from "markdown-it";
 import markdownLibrary from "./markdown.js";
@@ -18,18 +20,28 @@ const alphaSort = (a, b) => {
   }
 };
 
-const topicList = [
-  "background-checks",
-  "emergency-placements",
-  "supporting-older-youth",
-  "caregiver-licensing",
-  "kin-engagement",
-  "prevention",
-  "recruitment",
-  "retention",
-  "supportive-relationships",
-  "noTopic"
-];
+
+// Get list of topics
+const getTopics =  () => {
+  const topics = fs.readdirSync("./topics/").filter((file) => {
+    const filePath = path.join("./topics/", file);
+    return fs.statSync(filePath).isFile();
+  });
+
+  const dsStoreIndex = topics.indexOf(".DS_Store");
+  topics.splice(topics[dsStoreIndex], 1);
+
+  topics.forEach((topic, i) => {
+    // Remove file extension
+    topics[i] = topic.replace(/\.[^/.]+$/, "");
+  });
+
+  topics.push("noTopic");
+
+  return topics;
+};
+
+const topicList = getTopics();
 
 export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyAutoCacheBuster);
