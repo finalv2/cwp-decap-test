@@ -5,4 +5,4 @@ const humanDate = (date) => {
     return `${d.toFormat(`LLLL`)} ${d.toFormat(`d`)}, ${d.toFormat(`yyyy`)}`
 }
 
-export default humanDate;
+export default { humanDate };
