@@ -22,6 +22,8 @@
     "clean-css": "^5.3.3",
     "eleventy-auto-cache-buster": "^0.8.1",
     "eleventy-plugin-svg-sprite": "^2.4.3",
-    "luxon": "^3.6.1"
+    "fs": "^0.0.1-security",
+    "luxon": "^3.6.1",
+    "path": "^0.12.7"
   }
 }
