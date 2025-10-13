@@ -29,7 +29,7 @@ Sort information by area and by worker if you are in a larger system. You don't 
 
 ## This strategy in action
 
-**Frederick County, MD** checks in frequently with new caregivers after their first placement and joins new caregivers in many of their new experiences, such as agency meetings and court hearings, to help them get comfortable with the process.
+**Maryland** checks in frequently with new caregivers after their first placement and joins new caregivers in many of their new experiences, such as agency meetings and court hearings, to help them get comfortable with the process.
 
 **Washington State** conducts an annual caregiver survey and has a team that pays close attention to the responses.
 

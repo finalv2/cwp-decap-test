@@ -23,7 +23,7 @@ Caregivers often leave the system when they feel overextended and undervalued. R
 
 **Washington, DC** has "squads" of foster families who support each other with monthly get-togethers and events that include recognition awards and modest prizes. The squads build relationships and help each other through challenges. Each year, there is a competition to see which squad recruits the most new families, with a ceremony and gift card prizes for the winning squad.
 
-**Frederick County, MD** hosts an annual adults-only reception with free childcare, drive-through celebrations with catered meals, drive-by caravans with signs and music, recognition baskets with games and snacks, and welcome baskets for new families with handbooks, mugs, and books.
+Local social service departments in **Maryland** host appreciation events throughout the year. These events have included an annual adults-only reception with free childcare, drive-through celebrations with catered meals, drive-by caravans with signs and music, recognition baskets with games and snacks, and welcome baskets for new families with handbooks, mugs, and books.
 
 **Ohio** uses billboards to recognize individual foster families. Some families take friends to visit their billboard.
 
