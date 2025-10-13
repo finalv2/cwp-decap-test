@@ -44,6 +44,6 @@ It uses [DecapCMS](http://decapcms.org/) for the admin UI. We use [Netlify Ident
 
 ## Project history
 
-The previous site design is hosted at bloom-works/child-welfare-playbook.
+The previous site design is hosted at [bloom-works/child-welfare-playbook](https://github.com/bloom-works/child-welfare-playbook).
 
-For unknown reasons, the `main` branch of that repo has no commits prior to 2024. To browse early versions of the site going back to 2021, switch to the the `NEW-CA-Counties` branch.
+For unknown reasons, the `main` branch of that repo has no commits prior to 2024. To browse early versions of the site going back to 2021, switch to [the `NEW-CA-Counties` branch](https://github.com/bloom-works/child-welfare-playbook/tree/NEW-CA-Counties).
