@@ -10,6 +10,8 @@ import CleanCSS from "clean-css";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import removeMarkdown from "remove-markdown";
 
+
+// Alphabetically sort lists and collections
 const alphaSort = (a, b) => {
   if (a.data.title < b.data.title) {
     return -1;
@@ -46,7 +48,7 @@ const topicList = getTopics();
 export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyAutoCacheBuster);
 
-  eleventyConfig.addNunjucksFilter("cssmin", function (code) {
+  eleventyConfig.addNunjucksFilter("cssmin", code => {
     return new CleanCSS({}).minify(code).styles;
   });
 
@@ -106,31 +108,29 @@ export default async function(eleventyConfig) {
   })
 
   // All strategies sorted alphabetically
-
   eleventyConfig.addCollection("strategiesAlpha", (collection) =>
     collection.getFilteredByGlob("strategies/*.md").sort(alphaSort)
   );
 
-  for (let topic in topicList) {
-    eleventyConfig.addCollection(`${topicList[topic]}-strategies`, function (collectionsApi) {
+  for (const topic in topicList) {
+    eleventyConfig.addCollection(`${topicList[topic]}-strategies`, collectionsApi => {
       return collectionsApi.getFilteredByTags('strategy', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
 
-    eleventyConfig.addCollection(`${topicList[topic]}-stories`, function (collectionsApi) {
+    eleventyConfig.addCollection(`${topicList[topic]}-stories`, collectionsApi => {
       return collectionsApi.getFilteredByTags('story', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
 
-    eleventyConfig.addCollection(`${topicList[topic]}-resources`, function (collectionsApi) {
+    eleventyConfig.addCollection(`${topicList[topic]}-resources`, collectionsApi => {
       return collectionsApi.getFilteredByTags('resource', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
 
-    eleventyConfig.addCollection(`${topicList[topic]}-dashboards`, function (collectionsApi) {
+    eleventyConfig.addCollection(`${topicList[topic]}-dashboards`, collectionsApi => {
       return collectionsApi.getFilteredByTags('dashboard', `${topicList[topic]}`).sort((a, b) => a.data.order - b.data.order);
     });
   }
 
   // Stories
-
   eleventyConfig.addCollection("stories", (collection) =>
     collection.getFilteredByGlob("stories/*.md")
   );
@@ -167,11 +167,11 @@ export default async function(eleventyConfig) {
     excerpt: (file) => {
       // I use https://www.npmjs.com/package/remove-markdown here,
       // but you can bring your own de-markdownifier.
-      let plaintext = removeMarkdown(file.content).trim();
+      const plaintext = removeMarkdown(file.content).trim();
 
       // End the description at a period (inclusive) or newline (not)
       // somewhere around the approximate length.
-      let approximateLength = 170;
+      const approximateLength = 170;
       let dot = plaintext.indexOf(".", approximateLength) + 1;
       let newline = plaintext.indexOf("\n", approximateLength);
 
