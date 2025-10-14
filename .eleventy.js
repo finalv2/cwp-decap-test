@@ -97,9 +97,6 @@ export default async function(eleventyConfig) {
       return fs.statSync(filePath).isFile();
     });
 
-    const dsStoreIndex = topics.indexOf(".DS_Store");
-    topics.splice(topics[dsStoreIndex], 1);
-
     topics.forEach((topic, i) => {
       // Remove file extension
       topics[i] = topic.replace(/\.[^/.]+$/, "");
