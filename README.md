@@ -2,7 +2,7 @@
 
 This repository contains a redesigned version of childwelfareplaybook.com. The redesign launched in September 2025.
 
-Below, we'll refer to the site (or the Child Welfare Playbook as a whole) as "CWP.""
+Below, we'll refer to the site (or the Child Welfare Playbook as a whole) as "CWP."
 
 ## Bootstrapping
 
