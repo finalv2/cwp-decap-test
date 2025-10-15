@@ -1,7 +1,6 @@
 publish_mode: editorial_workflow
 backend:
-  name: github
-  repo: bloom-works/child-welfare-playbook-v2
+  name: git-gateway
   branch: main
 media_folder: 'images'
 collections:
@@ -72,7 +71,7 @@ collections:
       - { label: "Order", name: "order", widget: "string", required: false }
       - { label: "Icon", name: "icon", widget: "string" }
       - { label: "Introduction", name: "body", widget: "markdown" }
-      - { label: "Summary", name: "summary", hint: "For search engines and the topic card that appears in the homepage." }
+      - { label: "Summary", name: "summary", hint: "For search engines and the topic card that appears in the homepage."}
       - { label: "Related topics", required: false, name: "related", widget: "relation", collection: "topics", value_field: "id", search_fields: ["title", "id"], multiple: true}
       - { label: "URL redirect(s)", minimize_collapsed: true, name: "redirectFrom", widget: "list", label_singular: "redirect", allow_add: true, field: {label: "URL", name: "url", widget: "string"}, required: false }
   - name: "strategies"
