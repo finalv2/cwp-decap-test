@@ -1,6 +1,7 @@
 publish_mode: editorial_workflow
 backend:
-  name: git-gateway
+  name: github
+  repo: bloom-works/child-welfare-playbook-v2
   branch: main
 media_folder: 'images'
 collections:
