@@ -5,6 +5,7 @@ title: Include caregivers in recruitment efforts to bring in new caregivers
 tags:
   - strategy
   - kin-engagement
+  - recruitment
 order: "15"
 redirectFrom:
   - /recommendations/financial-bonuses-for-recruitment-referrals/
