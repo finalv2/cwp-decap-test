@@ -1,7 +1,10 @@
 publish_mode: editorial_workflow
 backend:
-  name: git-gateway
+  name: github
+  repo: bloom-works/child-welfare-playbook-v2
   branch: main
+  site_domain: child-welfare-playbook-v2.netlify.app
+  base_url: https://api.netlify.com
 site_url: https://child-welfare-playbook-v2.netlify.app
 display_url: https://childwelfareplaybook.com
 media_folder: 'images'
