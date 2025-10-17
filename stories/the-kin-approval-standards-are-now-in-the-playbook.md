@@ -8,7 +8,7 @@ description: The Child Welfare Playbook now includes strategies and resources
   processes for kin caregivers.
 author: Bloom Works
 date: 2025-09-15
-storyType: Blog post
+type: Blog post
 image: /images/stories/kin-engagement.jpg
 tags:
   - story
@@ -19,6 +19,7 @@ resources:
   - Kin licensing forms
 redirectFrom:
   - https://childwelfareplaybook.com/kinship-caregivers
+storyType: Blog post
 ---
 Federal rules now allow child welfare agencies to create separate approval processes for kin caregivers. To implement these changes effectively, a group was assembled to develop model standards. The group included 9 national organizations, over 50 agencies, and more than 430 individual participants, including kin caregivers and agency staff.
 
