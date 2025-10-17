@@ -3,6 +3,7 @@ backend:
   name: github
   repo: bloom-works/child-welfare-playbook-v2
   branch: main
+  base_url: https://api.netlify.com
 site_url: https://child-welfare-playbook-v2.netlify.app
 display_url: https://childwelfareplaybook.com
 media_folder: 'images'
