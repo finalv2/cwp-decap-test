@@ -136,7 +136,8 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/meeting.njk" }
       - { label: "Template Engine", name: "templateEngineOverride", widget: "hidden", default: "md,njk" }
-      - { label: "Date of meeting", name: "title", widget: "string" }
+      - { label: "Meeting type", name: "type", widget: "select", options: ["Working group meeting", "Prevention collaborative meeting"], default: ["Working group meeting"]}
+      - { label: "Title", name: "title", widget: "string", hint: "This should usually be the date the meeting took place." }
       - { label: "Permalink", name: "permalink", widget: "string", required: false, hint: "Format your permalink like: '/meetings/meeting-name/'. Make sure to include the backslash at the end, and to omit the childwelfareplaybook.com domain." }
       - { label: "YouTube ID", name: "youtubeId", widget: "string", hint: "The YouTube ID is the set of ~12 characters that appears after https://www.youtube.com/watch?v= in the video URL(s)." }
       - { label: "Tags", name: "tags", widget: "select", multiple: true, options: ["background-checks", "emergency-placements", "supporting-older-youth", "caregiver-licensing", "kin-engagement", "prevention", "recruitment", "retention", "supportive-relationships", "strategy", "resource", "story"], default: ["story"], hint: "Add your topics here"}
