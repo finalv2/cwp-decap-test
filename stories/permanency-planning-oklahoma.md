@@ -5,7 +5,7 @@ description: Oklahoma researched whether streamlined kin-specific licensing
   requirements would affect permanency outcomes and found no negative impacts.
 author: Bloom Works
 date: 2025-01-23T12:00:00.000
-type: Research report
+storyType: Research report
 image: /images/oklahoma.jpg
 tags:
   - story
