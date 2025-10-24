@@ -8,7 +8,7 @@ description: The Child Welfare Playbook now includes strategies and resources
   processes for kin caregivers.
 author: Bloom Works
 date: 2025-09-15
-type: Blog post
+type: Story
 image: /images/stories/kin-engagement.jpg
 tags:
   - story

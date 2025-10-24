@@ -6,6 +6,7 @@ description: Learn about warmlines as a way to prevent child welfare system
   services.
 author: Bloom Works
 date: 2025-07-10T12:00:00.000
+type: story
 storyType: Research report
 image: /images/warmlines-component-map.png
 tags:

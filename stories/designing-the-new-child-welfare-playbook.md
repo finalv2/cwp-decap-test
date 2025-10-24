@@ -6,6 +6,7 @@ description: We spent 10 months rebuilding of the Child Welfare Playbook, and
   we're so excited to share it with you.
 author: Bloom Works
 date: 2025-09-12
+type: story
 storyType: Blog post
 tags:
   - story

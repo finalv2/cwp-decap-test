@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
     {%- if item.data.title === relatedStory -%}
       {{ storyCard({
           image: story.data.image,
-          type: story.data.type,
+          type: story.data.storyType,
           title: story.data.title,
           description: story.data.description,
           author: story.data.author,

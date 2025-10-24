@@ -5,6 +5,7 @@ description: Learn about effective strategies for reaching and engaging people
   in voluntary prevention services.
 author: Bloom Works
 date: 2025-04-06T12:00:00.000
+type: story
 storyType: Blog post
 image: /images/engagement-voluntary-prevention.jpg
 tags:
