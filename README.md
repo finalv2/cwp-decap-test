@@ -14,7 +14,7 @@ Below, we'll refer to the site (or the Child Welfare Playbook as a whole) as "CW
 
 CWP is an [11ty](https://11ty.dev) project hosted on [Netlify](https://www.netlify.com/).
 
-It uses [DecapCMS](http://decapcms.org/) for the admin UI. We use [Netlify Identity](https://docs.netlify.com/manage/security/secure-access-to-sites/identity/overview/) as an auth system for DecapCMS.
+It uses [DecapCMS](http://decapcms.org/) for the admin UI with auth handled via GitHub.
 
 ### Libraries
 
@@ -30,7 +30,6 @@ It uses [DecapCMS](http://decapcms.org/) for the admin UI. We use [Netlify Ident
 - `/admin/` contains the admin UI for this project.
   - `/admin/config.yml` stores all [DecapCMS settings](https://decapcms.org/docs/configuration-options/), including the fields for each content type.
   - `/admin/index.html` references DecapCMS itself, as well as the [preview templates](https://decapcms.org/docs/customization/#registerpreviewtemplate) for each page type.
-- `/emails/` contains customized email templates for Netlify Identity. For performance reasons, we do not embed the Netlify Identity widget on the CWP homepage, which breaks the links in the standard transactional emails for admins. These templates fix those links.
 - `/fonts/` contains CWP's brand typefaces: Libre Franklin and Space Mono. Netlify's built-in asset optimization can lead to slower page load times for externally hosted files. So the site hosts fonts locally instead of using the Google Fonts CDN.
 - `/icons/` contains the [Phosphor Icons](https://phosphoricons.com/) we use on the site. We then [bundle these icons into an SVG sprite](https://github.com/patrickxchong/eleventy-plugin-svg-sprite) which we embed in our default layout (`_includes/layouts/default.njk`).
 
