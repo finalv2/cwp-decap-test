@@ -1,6 +1,6 @@
 ---
 layout: layouts/topic.njk
-title: Background check
+title: Background chec
 id: background-checks
 order: 3
 icon: shield-plus
